@@ -1,0 +1,626 @@
+Aluminum,Al,solid,16.5
+Aluminum fluoride,AlF3,solid,-13.9
+Aluminum oxide (α),Al2O3,solid,-37
+Aluminum sulfate,Al2(SO4)3,solid,-93
+Ammonia,NH3,gas,-16.3
+Ammonia,NH3,aq.soln.,-18.3
+Ammonium acetate,NH4C2H3O2,solid,-41.1
+Ammonium bromide,NH4Br,solid,-47
+Ammonium carbonate,(NH4)2CO3,solid,-42.5
+Ammonium chlorate,NH4ClO3,solid,-42.1
+Ammonium chloride,NH4Cl,solid,-36.7
+Ammonium fluoride,NH4F,solid,-23
+Ammonium iodate,NH4IO3,solid,-62.3
+Ammonium iodide,NH4I,solid,-66
+Ammonium nitrate,NH4NO3,solid,-33
+Ammonium sulfate,(NH4)2SO4,solid,-67
+Ammonium thiocyanate,NH4SCN,solid,-48.1
+Antimony,Sb,solid,-99
+Antimony(III) bromide,SbBr3,solid,-111.4
+Antimony(III) chloride,SbCl3,solid,-86.7
+Antimony(V) chloride,SbCl5,solid,-120.5
+Antimony(III) fluoride,SbF3,solid,-46
+Antimony(III) iodide,SbI3,solid,-147.2
+Antimony(III) oxide (senarmontite),Sb2O3,solid,-69.4
+Antimony(III) sulfide,Sb2S3,solid,-86
+Argon,Ar,gas,-19.32
+Arsenic (gray),As,solid,-5.6
+Arsenic(III) bromide,AsBr3,solid,-106
+Arsenic(III) chloride,AsCl3,solid,-72.5
+Arsenic(III) iodide,AsI3,solid,-142.2
+Arsenic(III) oxide (arsenolite),As2O3,solid,-30.34
+Arsenic(III) sulfide,As2S3,solid,-70
+Arsenic (yellow),As,solid,-23.2
+Arsine,AsH3,gas,-35.2
+Barium,Ba,solid,20.6
+Barium bromide,BaBr2,solid,-92
+Barium bromide dihydrate,BaBr2·2H2O,solid,-119.3
+Barium carbonate,BaCO3,solid,-58.9
+Barium chloride,BaCl2,solid,-72.6
+Barium chloride dihydrate,BaCl2·2H2O,solid,-100
+Barium fluoride,BaF2,solid,-51
+Barium hydroxide,Ba(OH)2,solid,-53.2
+Barium iodate,Ba(IO3)2,solid,-122.5
+Barium iodide,BaI2,solid,-124.4
+Barium iodide dihydrate,BaI2·2H2O,solid,-163
+Barium nitrate,Ba(NO3)2,solid,-66.5
+Barium oxide,BaO,solid,-29.1
+Barium peroxide,BaO2,solid,-40.6
+Barium sulfate,BaSO4,solid,-65.8
+Beryllium,Be,solid,-9.0
+Beryllium chloride,BeCl2,solid,-26.5
+Beryllium hydroxide (α),Be(OH)2,solid,-23.1
+Beryllium oxide,BeO,solid,-11.9
+Beryllium sulfate,BeSO4,solid,-37
+Bismuth,Bi,solid,-280.1
+Bismuth hydroxide,Bi(OH)3,solid,-65.8
+Bismuth nitrate pentahydrate,Bi(NO3)3·5H2O,solid,-159
+Bismuth oxide,Bi2O3,solid,-83
+Bismuth phosphate,BiPO4,solid,-77
+Bismuth sulfate,Bi2(SO4)3,solid,-199
+Bismuth sulfide,Bi2S3,solid,-123
+Bismuth tribromide,BiBr3,solid,-147
+Bismuth trichloride,BiCl3,solid,-26.5
+Bismuth trifluoride,BiF3,solid,-61.2
+Bismuth triiodide,BiI3,solid,-200.5
+Boric acid,H3BO3,solid,-34.1
+Boron,B,solid,-6.7
+Boron oxide,B2O3,solid,-38.7
+Boron trichloride,BCl3,gas,-59.9
+Bromine,Br2,liquid,-56.4
+Bromine,Br2,gas,-73.5
+Bromine pentafluoride,BrF5,liquid,-45.1
+Bromine trifluoride,BrF3,gas,-33.9
+Cadmium,Cd,solid,-19.7
+Cadmium bromide,CdBr2,solid,-87.3
+Cadmium bromide tetrahydrate,CdBr2·4H2O,solid,-131.5
+Cadmium carbonate,CdCO3,solid,-46.7
+Cadmium chloride,CdCl2,solid,-68.7
+Cadmium chromate,CdCrO4,solid,-16.8
+Cadmium cyanide,Cd(CN)2,solid,-54
+Cadmium fluoride,CdF2,solid,-40.6
+Cadmium hydroxide,Cd(OH)2,solid,-41
+Cadmium iodate,Cd(IO3)2,solid,-108.4
+Cadmium iodide,CdI2,solid,-117.2
+Cadmium nitrate,Cd(NO3)2,solid,-55.1
+Cadmium nitrate tetrahydrate,Cd(NO3)2·4H2O,solid,-140
+Cadmium oxide,CdO,solid,-30
+Cadmium sulfate,CdSO4,solid,-59.2
+Cadmium sulfide,CdS,solid,-50
+Calcium,Ca,solid,40
+Calcium bromide,CaBr2,solid,-73.8
+Calcium carbonate (calcite),CaCO3,solid,-38.2
+Calcium chloride,CaCl2,solid,-54.7
+Calcium fluoride,CaF2,solid,-28
+Calcium hydroxide,Ca(OH)2,solid,-22
+Calcium iodate,Ca(IO3)2,solid,-101.4
+Calcium iodide,CaI2,solid,-109
+Calcium oxide,CaO,solid,-15.0
+Calcium sulfate,CaSO4,solid,-49.7
+Calcium sulfate dihydrate,CaSO4·2H2O,solid,-74
+Carbon (diamond),C,solid,-5.9
+Carbon dioxide,CO2,gas,-21.0
+Carbon (graphite),C,solid,-6.0
+Carbon monoxide,CO,gas,-9.8
+Cerium,Ce,β-form,2500
+Cerium(III) chloride,CeCl3,solid,2490
+Cerium(III) fluoride,CeF3,solid,2190
+Cerium(IV) oxide,CeO2,solid,26
+Cerium(IV) sulfate tetrahydrate,Ce(SO4)2·4H2O,solid,-97
+Cerium(II) sulfide,CeS,solid,2110
+Cerium(III) sulfide,Ce2S3,solid,5080
+Cesium,Cs,solid,29
+Cesium bromate,CsBrO3,solid,-75.1
+Cesium bromide,CsBr,solid,-67.2
+Cesium carbonate,Cs2CO3,solid,-103.6
+Cesium chlorate,CsClO3,solid,-65
+Cesium chloride,CsCl,solid,-56.7
+Cesium fluoride,CsF,solid,-44.5
+Cesium iodide,CsI,solid,-82.6
+Cesium sulfate,Cs2SO4,solid,-116
+Cesium superoxide,CsO2,solid,1534
+Chlorine,Cl2,liquid,-40.4
+Chlorine trifluoride,ClF3,gas,-26.5
+Chromium,Cr,solid,167
+Chromium(II) chloride,CrCl2,solid,7230
+Chromium(III) chloride,CrCl3,solid,6350
+Chromium(III) fluoride,CrF3,solid,4370
+Chromium(III) oxide,Cr2O3,solid,1960
+Chromium(VI) oxide,CrO3,solid,40
+Chromium(III) sulfate,Cr2(SO4)3,solid,11800
+Cobalt,Co,solid,a
+Cobalt(II) bromide,CoBr2,solid,13000
+Cobalt(II) chloride,CoCl2,solid,12660
+Cobalt(II) chloride hexahydrate,CoCl2·6H2O,solid,9710
+Cobalt(II) cyanide,Co(CN)2,solid,3825
+Cobalt(II) fluoride,CoF2,solid,9490
+Cobalt(III) fluoride,CoF3,solid,1900
+Cobalt(II) iodide,CoI2,solid,10760
+Cobalt(II-III) oxide,Co3O4,solid,7380
+Cobalt(III) oxide,Co2O3,solid,4560
+Cobalt(II) sulfate,CoSO4,solid,10000
+Cobalt(II) sulfide,CoS,solid,225
+Copper,Cu,solid,-5.46
+Copper(I) bromide,CuBr,solid,-49
+Copper(II) bromide,CuBr2,solid,685
+Copper(I) chloride,CuCl,solid,-40
+Copper(II) chloride,CuCl2,solid,1080
+Copper(II) chloride dihydrate,CuCl2·2H2O,solid,1420
+Copper(I) cyanide,CuCN,solid,-24
+Copper(II) fluoride,CuF2,solid,1050
+Copper(II) fluoride dihydrate,CuF2·2H2O,solid,1600
+Copper(II) hydroxide,Cu(OH)2,solid,1170
+Copper(I) iodide,CuI,solid,-63
+Copper(II) nitrate hexahydrate,Cu(NO3)2·6H2O,solid,1625
+Copper(II) nitrate trihydrate,Cu(NO3)2·3H2O,solid,1570
+Copper(I) oxide,Cu2O,solid,-20
+Copper(II) oxide,CuO,solid,238
+Copper(II) sulfate,CuSO4,solid,1330
+Copper(II) sulfate pentahydrate,CuSO4·5H2O,solid,1460
+Copper(II) sulfide,CuS,solid,-2.0
+Diborane,B2H6,gas,-21.0
+Disilane,Si2H6,gas,-37.3
+Dysprosium,Dy,α-form,98000
+Dysprosium(III) oxide,Dy2O3,solid,89600
+Dysprosium(III) sulfide,Dy2S3,solid,95200
+Erbium,Er,solid,48000
+Erbium oxide,Er2O3,solid,73920
+Erbium sulfate octahydrate,Er2(SO4)3·8H2O,solid,74600
+Erbium sulfide,Er2S3,solid,77200
+Europium,Eu,solid,30900
+Europium(II) bromide,EuBr2,solid,26800
+Europium(II) chloride,EuCl2,solid,26500
+Europium(II) fluoride,EuF2,solid,23750
+Europium(II) iodide,EuI2,solid,26000
+Europium(III) oxide,Eu2O3,solid,10100
+Europium(III) sulfate,Eu2(SO4)3,solid,10400
+Europium(II) sulfide,EuS,solid,23800
+Gadolinium,Gd,solid-350K,185000
+Gadolinium(III) chloride,GdCl3,solid,27930
+Gadolinium(III) oxide,Gd2O3,solid,53200
+Gadolinium(III) sulfate octahydrate,Gd2(SO4)3·8H2O,solid,53280
+Gadolinium(III) sulfide,Gd2S3,solid,55500
+Gallium,Ga,solid,-21.6
+Gallium(III) chloride,GaCl3,solid,-63
+Gallium suboxide,Ga2O,solid,-34
+Gallium(II) sulfide,GaS,solid,-23
+Gallium(III) sulfide,Ga2S3,solid,-80
+Germane,GeH4,gas,-29.7
+Germanium,Ge,solid,-11.6
+Germanium(IV) chloride,GeCl4,solid,-72
+Germanium(IV) fluoride,GeF4,solid,-50
+Germanium(IV) iodide,GeI4,solid,-171
+Germanium(II) oxide,GeO,solid,-28.8
+Germanium(IV) oxide,GeO2,solid,-34.3
+Germanium(II) sulfide,GeS,solid,-40.9
+Germanium(IV) sulfide,GeS2,solid,-53.9
+Gold,Au,solid,-28
+Gold(I) bromide,AuBr,solid,-61
+Gold(I) chloride,AuCl,solid,-67
+Gold(III) chloride,AuCl3,solid,-112
+Gold(I) iodide,AuI,solid,-91
+Hafnium,Hf,solid,71
+Hafnium(IV) oxide,HfO2,solid,-23
+Helium,He,gas,-2.02
+Holmium,Ho,solid,72900
+Holmium oxide,Ho2O3,solid,88100
+Hydrazine,N2H4,liquid,-201
+Hydrogen,H2,liquid-20.3K,-5.44
+Hydrogen,H2,gas,-3.99
+Hydrogen chloride,HCl,liquid,-22.6
+Hydrogen chloride,HCl,aq.soln.,-22
+Hydrogen fluoride,HF,liquid,-8.6
+Hydrogen fluoride,HF,aq.soln.,-9.3
+Hydrogen iodide,HI,solid-195K,-47.3
+Hydrogen iodide,HI,liquid-233K,-48.3
+Hydrogen iodide,HI,aq.soln.,-50.2
+Hydrogen peroxide,H2O2,liquid,-17.3
+Hydrogen sulfide,H2S,gas,-25.5
+Indium,In,solid,-10.2
+Indium(III) bromide,InBr3,solid,-107
+Indium(I) chloride,InCl,solid,-30
+Indium(II) chloride,InCl2,solid,-56
+Indium(III) chloride,InCl3,solid,-86
+Indium(III) oxide,In2O3,solid,-56
+Indium(II) sulfide,InS,solid,-28
+Indium(III) sulfide,In2S3,solid,-98
+Iodic acid,HIO3,solid,-48
+Iodine,I2,solid,-90
+Iodine chloride,ICl,liquid,-54.6
+Iodine pentafluoride,IF5,liquid,-58.1
+Iodine pentoxide,I2O5,solid,-79.4
+Iodine trichloride,ICl3,solid,-90.2
+Iridium,Ir,solid,25
+Iridium(III) chloride,IrCl3,solid,-14.4
+Iridium(IV) oxide,IrO2,solid,224
+Iron,Fe,solid,a
+Iron(II) bromide,FeBr2,solid,13600
+Iron(II) carbonate,FeCO3,solid,11300
+Iron(II) chloride,FeCl2,solid,14750
+Iron(III) chloride,FeCl3,solid,13450
+Iron(III) chloride hexahydrate,FeCl3·6H2O,solid,15250
+Iron(II) chloride tetrahydrate,FeCl2·4H2O,solid,12900
+Iron(II) fluoride,FeF2,solid,9500
+Iron(III) fluoride,FeF3,solid,13760
+Iron(III) fluoride trihydrate,FeF3·3H2O,solid,7870
+Iron(II) iodide,FeI2,solid,13600
+Iron(III) nitrate nonahydrate,Fe(NO3)3·9H2O,solid,15200
+Iron(II) oxide,FeO,solid,7200
+Iron(II) sulfate,FeSO4,solid,12400
+Iron(II) sulfate heptahydrate,FeSO4·7H2O,solid,11200
+Iron(II) sulfate monohydrate,FeSO4·H2O,solid,10500
+Iron(II) sulfide,FeS,solid,1074
+Krypton,Kr,gas,-29.0
+Lanthanum,La,α-form,95.9
+Lanthanum oxide,La2O3,solid,-78
+Lanthanum sulfate nonahydrate,La2(SO4)3·9H2O,solid,-262
+Lanthanum sulfide,La2S3,solid,-37
+Lead,Pb,solid,-23
+Lead(II) acetate,Pb(C2H3O2)2,solid,-89.1
+Lead(II) bromide,PbBr2,solid,-90.6
+Lead(II) carbonate,PbCO3,solid,-61.2
+Lead(II) chloride,PbCl2,solid,-73.8
+Lead(II) chromate,PbCrO4,solid,-18
+Lead(II) fluoride,PbF2,solid,-58.1
+Lead(II) iodate,Pb(IO3)2,solid,-131
+Lead(II) iodide,PbI2,solid,-126.5
+Lead(II) nitrate,Pb(NO3)2,solid,-74
+Lead(II) oxide (massicot),PbO,solid,-42
+Lead(II) phosphate,Pb3(PO4)2,solid,-182
+Lead(II) sulfate,PbSO4,solid,-69.7
+Lead(II) sulfide,PbS,solid,-83.6
+Lithium,Li,solid,14.2
+Lithium bromide,LiBr,solid,-34.3
+Lithium carbonate,Li2CO3,solid,-27
+Lithium chloride,LiCl,solid,-24.3
+Lithium fluoride,LiF,solid,-10.1
+Lithium hydride,LiH,solid,-4.6
+Lithium hydroxide,LiOH,aq.soln.,-12.3
+Lithium iodide,LiI,solid,-50
+Lithium sulfate,Li2SO4,solid,-41.6
+Lutetium,Lu,solid,182.9
+Magnesium,Mg,solid,13.1
+Magnesium bromide,MgBr2,solid,-72
+Magnesium carbonate,MgCO3,solid,-32.4
+Magnesium chloride,MgCl2,solid,-47.4
+Magnesium fluoride,MgF2,solid,-22.7
+Magnesium hydroxide,Mg(OH)2,solid,-22.1
+Magnesium iodide,MgI2,solid,-111
+Magnesium oxide,MgO,solid,-10.2
+Magnesium sulfate,MgSO4,solid,-42
+Magnesium sulfate heptahydrate,MgSO4·7H2O,solid,-135.7
+Magnesium sulfate monohydrate,MgSO4·H2O,solid,-61
+Manganese,Mn,solid,511
+Manganese(II) bromide,MnBr2,solid,13900
+Manganese(II) carbonate,MnCO3,solid,11400
+Manganese(II) chloride,MnCl2,solid,14350
+Manganese(II) chloride tetrahydrate,MnCl2·4H2O,solid,14600
+Manganese(II) fluoride,MnF2,solid,10700
+Manganese(III) fluoride,MnF3,solid,10500
+Manganese(II) hydroxide,Mn(OH)2,solid,13500
+Manganese(II) iodide,MnI2,solid,14400
+Manganese(II) oxide,MnO,solid,4850
+Manganese(II-III) oxide,Mn3O4,solid,12400
+Manganese(III) oxide,Mn2O3,solid,14100
+Manganese(IV) oxide,MnO2,solid,2280
+Manganese(II) sulfate,MnSO4,solid,13660
+Manganese(II) sulfate monohydrate,MnSO4·H2O,solid,14200
+Manganese(II) sulfate tetrahydrate,MnSO4·4H2O,solid,14600
+Manganese(II) sulfide (αform),MnS,α-form,5630
+Manganese(II) sulfide (βform),MnS,β-form,3850
+Mercury,Hg,solid-234K,-24.1
+Mercury,Hg,liquid,-33.5
+Mercury(I) bromide,Hg2Br2,solid,-105
+Mercury(II) bromide,HgBr2,solid,-94.2
+Mercury(I) chloride,Hg2Cl2,solid,-120
+Mercury(II) chloride,HgCl2,solid,-82
+Mercury(II) cyanide,Hg(CN)2,solid,-67
+Mercury(I) fluoride,Hg2F2,solid,-106
+Mercury(II) fluoride,HgF2,solid,-57.3
+Mercury(I) iodide,Hg2I2,solid,-166
+Mercury(II) iodide (red),HgI2,solid,-165
+Mercury(I) nitrate,Hg2(NO3)2,solid,-121
+Mercury(II) nitrate,Hg(NO3)2,solid,-74
+Mercury(I) oxide,Hg2O,solid,-76.3
+Mercury(II) oxide,HgO,solid,-46
+Mercury(I) sulfate,Hg2SO4,solid,-123
+Mercury(II) sulfate,HgSO4,solid,-78.1
+Mercury(II) sulfide (red),HgS,solid,-55.4
+Mercury(II) thiocyanate,Hg(SCN)2,solid,-96.5
+Molybdenum,Mo,solid,72
+Molybdenum(III) bromide,MoBr3,solid,525
+Molybdenum(IV) bromide,MoBr4,solid,520
+Molybdenum(III) chloride,MoCl3,solid,43
+Molybdenum(IV) chloride,MoCl4,solid,1750
+Molybdenum(V) chloride,MoCl5,solid,990
+Molybdenum(VI) fluoride,MoF6,solid,-26.0
+Molybdenum(III) oxide,Mo2O3,solid,-42.0
+Molybdenum(IV) oxide,MoO2,solid,41
+Molybdenum(VI) oxide,MoO3,solid,3
+Neodymium,Nd,α-form,5930
+Neodymium(III) fluoride,NdF3,solid,4980
+Neodymium(III) oxide,Nd2O3,solid,10200
+Neodymium(III) sulfate,Nd2(SO4)3,solid,9990
+Neodymium(III) sulfide,Nd2S3,solid,5550
+Neon,Ne,gas,-6.96
+Neptunium,Np,solid,575
+Nickel,Ni,solid,a
+Nickel(II) bromide,NiBr2,solid,5600
+Nickel(II) chloride,NiCl2,solid,6145
+Nickel(II) chloride hexahydrate,NiCl2·6H2O,solid,4240
+Nickel(II) fluoride,NiF2,solid,2410
+Nickel(II) hydroxide,Ni(OH)2,solid,4500
+Nickel(II) iodide,NiI2,solid,3875
+Nickel(II) nitrate hexahydrate,Ni(NO3)2·6H2O,solid,4300
+Nickel(II) oxide,NiO,solid,660
+Nickel subsulfide,Ni3S2,solid,1030
+Nickel(II) sulfate,NiSO4,solid,4005
+Nickel(II) sulfide,NiS,solid,190
+Niobium,Nb,solid,208
+Niobium(V) oxide,Nb2O5,solid,-10
+Nitric acid,HNO3,liquid,-19.9
+Nitric oxide,NO,solid-90K,19.8
+Nitric oxide,NO,liquid-118K,114.2
+Nitric oxide,NO,gas,1461
+Nitrogen,N2,gas,-12.0
+Nitrogen dioxide,NO2,gas-408K,150
+Nitrogen tetroxide,N2O4,gas,-23.0
+Nitrogen trioxide,N2O3,gas,-16
+Nitrous oxide,N2O,gas,-18.9
+Osmium,Os,solid,11
+Oxygen,O2,solid-54K,10200
+Oxygen,O2,liquid-90K,7699
+Oxygen,O2,gas,3415
+Ozone,O3,liquid,6.7
+Palladium,Pd,solid,540
+Palladium(II) chloride,PdCl2,solid,-38
+Phosphine,PH3,gas,-26.2
+Phosphonic acid,H3PO3,aq.soln.,-42.5
+Phosphoric acid,H3PO4,aq.soln.,-43.8
+Phosphorus (white),P,solid,-26.66
+Phosphorus (red),P,solid,-20.77
+Phosphorus(III) chloride,PCl3,liquid,-63.4
+Platinum,Pt,solid,193
+Platinum(II) chloride,PtCl2,solid,-54
+Platinum(III) chloride,PtCl3,solid,-66.7
+Platinum(IV) chloride,PtCl4,solid,-93
+Platinum(IV) fluoride,PtF4,solid,445
+Plutonium,Pu,solid,525
+Plutonium(IV) fluoride,PuF4,solid,1760
+Plutonium(VI) fluoride,PuF6,solid,173
+Plutonium(IV) oxide,PuO2,solid,730
+Potassium,K,solid,20.8
+Potassium bromate,KBrO3,solid,-52.6
+Potassium bromide,KBr,solid,-49.1
+Potassium carbonate,K2CO3,solid,-59
+Potassium chlorate,KClO3,solid,-42.8
+Potassium chloride,KCl,solid,-38.8
+Potassium chromate,K2CrO4,solid,-3.9
+Potassium cyanide,KCN,solid,-37
+Potassium ferricyanide,K3Fe(CN)6,solid,2290
+Potassium ferrocyanide trihydrate,K4Fe(CN)6·3H2O,solid,-172.3
+Potassium fluoride,KF,solid,-23.6
+Potassium hydrogen sulfate,KHSO4,solid,-49.8
+Potassium hydroxide,KOH,aq.soln.,-22
+Potassium iodate,KIO3,solid,-63.1
+Potassium iodide,KI,solid,-63.8
+Potassium nitrate,KNO3,solid,-33.7
+Potassium nitrite,KNO2,solid,-23.3
+Potassium permanganate,KMnO4,solid,20
+Potassium sulfate,K2SO4,solid,-67
+Potassium sulfide,K2S,solid,-60
+Potassium superoxide,KO2,solid,3230
+Potassium thiocyanate,KSCN,solid,-48
+Praseodymium,Pr,α-form,5530
+Praseodymium(III) chloride,PrCl3,solid,44.5
+Praseodymium(III) oxide,Pr2O3,solid,8994
+Praseodymium(III) sulfide,Pr2S3,solid,10770
+Protactinium,Pa,solid,277
+Rhenium,Re,solid,67
+Rhenium(V) chloride,ReCl5,solid,1225
+Rhenium(IV) oxide,ReO2,solid,44
+Rhenium(VI) oxide,ReO3,solid,16
+Rhenium(VII) oxide,Re2O7,solid,-16
+Rhenium(IV) sulfide,ReS2,solid,38
+Rhodium,Rh,solid,102
+Rhodium(III) chloride,RhCl3,solid,-7.5
+Rhodium(III) oxide,Rh2O3,solid,104
+Rubidium,Rb,solid,17
+Rubidium bromide,RbBr,solid,-56.4
+Rubidium carbonate,Rb2CO3,solid,-75.4
+Rubidium chloride,RbCl,solid,-46
+Rubidium fluoride,RbF,solid,-31.9
+Rubidium iodide,RbI,solid,-72.2
+Rubidium nitrate,RbNO3,solid,-41
+Rubidium sulfate,Rb2SO4,solid,-88.4
+Rubidium superoxide,RbO2,solid,1527
+Ruthenium,Ru,solid,39
+Ruthenium(III) chloride,RuCl3,solid,1998
+Ruthenium(IV) oxide,RuO2,solid,162
+Samarium Sm,α,form,1278
+Samarium(II) bromide,SmBr2,solid,5337
+Samarium(III) bromide,SmBr3,solid,972
+Samarium(III) oxide,Sm2O3,solid,1988
+Samarium(III) sulfate octahydrate,Sm2(SO4)3·8H2O,solid,1710
+Samarium(III) sulfide,Sm2S3,solid,3300
+Scandium,Sc,α-form,295.2
+Selenium (gray),Se,solid,-25
+Selenium bromide,Se2Br2,liquid,-113
+Selenium chloride,Se2Cl2,liquid,-94.8
+Selenium dioxide,SeO2,solid,-27.2
+Selenium hexafluoride,SeF6,gas,-51
+Silane,SiH4,gas,-20.4
+Silicon,Si,solid,-3.12
+Silicon carbide (hexagonal),SiC,solid,-12.8
+Silicon dioxide (α-quartz),SiO2,solid,-29.6
+Silver,Ag,solid,-19.5
+Silver(I) bromide,AgBr,solid,-61
+Silver(I) carbonate,Ag2CO3,solid,-80.90
+Silver(I) chloride,AgCl,solid,-49
+Silver(I) chromate,Ag2CrO4,solid,-40
+Silver(I) cyanide,AgCN,solid,-43.2
+Silver(I) fluoride,AgF,solid,-36.5
+Silver(I) iodide,AgI,solid,-80
+Silver(I) nitrate,AgNO3,solid,-45.7
+Silver(I) nitrite,AgNO2,solid,-42
+Silver(I) oxide,Ag2O,solid,-134
+Silver(II) oxide,AgO,solid,-19.6
+Silver(I) phosphate,Ag3PO4,solid,-120
+Silver(I) sulfate,Ag2SO4,solid,-92.90
+Silver(I) thiocyanate,AgSCN,solid,-61.8
+Sodium,Na,solid,16
+Sodium acetate,NaC2H3O2,solid,-37.6
+Sodium bromate,NaBrO3,solid,-44.2
+Sodium bromide,NaBr,solid,-41
+Sodium carbonate,Na2CO3,solid,-41
+Sodium chlorate,NaClO3,solid,-34.7
+Sodium chloride,NaCl,solid,-30.2
+Sodium dichromate,Na2Cr2O7,solid,55
+Sodium fluoride,NaF,solid,-15.6
+Sodium hydrogen phosphate,Na2HPO4,solid,-56.6
+Sodium hydroxide,NaOH,aq.soln.,-15.8
+Sodium iodate,NaIO3,solid,-53
+Sodium iodide,NaI,solid,-57
+Sodium nitrate,NaNO3,solid,-25.6
+Sodium nitrite,NaNO2,solid,-14.5
+Sodium oxide,Na2O,solid,-19.8
+Sodium peroxide,Na2O2,solid,-28.10
+Sodium sulfate,Na2SO4,solid,-52
+Sodium sulfate decahydrate,Na2SO4·10H2O,solid,-184
+Sodium sulfide,Na2S,solid,-39
+Sodium tetraborate,Na2B4O7,solid,-85
+Stibine,SbH3,gas,-34.6
+Strontium,Sr,solid,92
+Strontium bromide,SrBr2,solid,-86.6
+Strontium bromide hexahydrate,SrBr2·6H2O,solid,-160
+Strontium carbonate,SrCO3,solid,-47
+Strontium chlorate,Sr(ClO3)2,solid,-73
+Strontium chloride,SrCl2,solid,-61.5
+Strontium chloride hexahydrate,SrCl2·6H2O,solid,-145
+Strontium chromate,SrCrO4,solid,-5.1
+Strontium fluoride,SrF2,solid,-37.2
+Strontium hydroxide,Sr(OH)2,solid,-40
+Strontium iodate,Sr(IO3)2,solid,-108
+Strontium iodide,SrI2,solid,-112
+Strontium nitrate,Sr(NO3)2,solid,-57.2
+Strontium oxide,SrO,solid,-35
+Strontium peroxide,SrO2,solid,-32.3
+Strontium sulfate,SrSO4,solid,-57.9
+Sulfur (rhombic),S,solid,-15.5
+Sulfur (monoclinic),S,solid,-14.9
+Sulfur chloride [SSCl2],S2Cl2,liquid,-62.2
+Sulfur dichloride,SCl2,liquid,-49.4
+Sulfur dioxide,SO2,gas,-18.2
+Sulfur hexafluoride,SF6,gas,-44
+Sulfuric acid,H2SO4,liquid,-39
+Sulfur trioxide (α-form),SO3,liquid,-28.54
+Tantalum,Ta,solid,154
+Tantalum(V) chloride,TaCl5,solid,140
+Tantalum(V) oxide,Ta2O5,solid,-32
+Technetium,Tc,solid,115
+Tellurium,Te,solid,-38
+Tellurium dibromide,TeBr2,solid,-106
+Tellurium dichloride,TeCl2,solid,-94
+Tellurium hexafluoride,TeF6,gas,-66
+Terbium,Tb,α-form,170000
+Terbium(III) oxide,Tb2O3,solid,78340
+Tetrabromosilane,SiBr4,liquid,-126
+Tetrachlorosilane,SiCl4,liquid,-87.5
+Tetraethylsilane,(C2H5)4Si,liquid,-120.2
+Tetramethylsilane,(CH3)4Si,liquid,-74.80
+Thallium,Tl,solid,-50
+Thallium(I) bromate,TlBrO3,solid,-75.9
+Thallium(I) bromide,TlBr,solid,-63.9
+Thallium(I) carbonate,Tl2CO3,solid,-101.6
+Thallium(I) chlorate,TlClO3,solid,-65.5
+Thallium(I) chloride,TlCl,solid,-57.8
+Thallium(I) chromate,Tl2CrO4,solid,-39.3
+Thallium(I) cyanide,TlCN,solid,-49
+Thallium(I) fluoride,TlF,solid,-44.4
+Thallium(I) iodate,TlIO3,solid,-86.8
+Thallium(I) iodide,TlI,solid,-82.2
+Thallium(I) nitrate,TlNO3,solid,-56.5
+Thallium(I) nitrite,TlNO2,solid,-50.8
+Thallium(I) sulfate,Tl2SO4,solid,-112.6
+Thallium(I) sulfide,Tl2S,solid,-88.8
+Thionyl chloride,SOCl2,liquid,-44.3
+Thorium,Th,solid,97
+Thorium(IV) oxide,ThO2,solid,-16
+Thulium,Tm,solid,24700
+Thulium(III) oxide,Tm2O3,solid,51444
+Tin(IV) bromide,SnBr4,solid,-149
+Tin(II) chloride,SnCl2,solid,-69
+Tin(IV) chloride,SnCl4,liquid,-115
+Tin(II) chloride dihydrate,SnCl2·2H2O,solid,-91.4
+Tin (gray),Sn,solid,-37.4
+Tin(II) oxide,SnO,solid,-19
+Tin(IV) oxide,SnO2,solid,-41
+Titanium,Ti,solid,151
+Titanium(II) bromide,TiBr2,solid,720
+Titanium(III) bromide,TiBr3,solid,660
+Titanium(II) chloride,TiCl2,solid,484
+Titanium(III) chloride,TiCl3,solid,1110
+Titanium(IV) chloride,TiCl4,solid,-54
+Titanium(III) fluoride,TiF3,solid,1300
+Titanium(II) iodide,TiI2,solid,1790
+Titanium(III) oxide,Ti2O3,solid,132
+Titanium(IV) oxide (rutile),TiO2,solid,5.9
+Titanium(II) sulfide,TiS,solid,432
+Tungsten,W,solid,53
+Tungsten(V) bromide,WBr5,solid,270
+Tungsten carbide,WC,solid,10
+Tungsten(II) chloride,WCl2,solid,-25
+Tungsten(V) chloride,WCl5,solid,387
+Tungsten(VI) chloride,WCl6,solid,-71
+Tungsten(VI) fluoride,WF6,gas,-53
+Tungsten(IV) oxide,WO2,solid,57
+Tungsten(VI) oxide,WO3,solid,-15.8
+Tungsten(IV) sulfide,WS2,solid,5850
+Uranium,U,solid,409
+Uranium(III) bromide,UBr3,solid,4740
+Uranium(IV) bromide,UBr4,solid,3530
+Uranium(III) chloride,UCl3,solid,3460
+Uranium(IV) chloride,UCl4,solid,3680
+Uranium(IV) fluoride,UF4,solid,3530
+Uranium(VI) fluoride,UF6,solid,43
+Uranium(III) hydride,UH3,solid,6244
+Uranium(III) iodide,UI3,solid,4460
+Uranium(IV) oxide,UO2,solid,2360
+Uranium(VI) oxide,UO3,solid,128
+Vanadium,V,solid,285
+Vanadium(II) bromide,VBr2,solid,3230
+Vanadium(III) bromide,VBr3,solid,2910
+Vanadium(II) chloride,VCl2,solid,2410
+Vanadium(III) chloride,VCl3,solid,3030
+Vanadium(IV) chloride,VCl4,liquid,1215
+Vanadium(III) fluoride,VF3,solid,2757
+Vanadium(III) oxide,V2O3,solid,1976
+Vanadium(IV) oxide,VO2,solid,99
+Vanadium(V) oxide,V2O5,solid,128
+Vanadium(III) sulfide,V2S3,solid,1560
+Water,H2O,solid-273K,-12.63
+Water,H2O,liquid-293K,-12.96
+Water,H2O,liquid-373K,-13.09
+Water,H2O,gas-373K,-13.1
+Xenon,Xe,gas,-45.5
+Ytterbium,Yb,β-form,67
+Yttrium,Y,α-form,187.7
+Yttrium oxide,Y2O3,solid,44.4
+Yttrium sulfide,Y2S3,solid,100
+Zinc,Zn,solid,-9.15
+Zinc carbonate,ZnCO3,solid,-34
+Zinc chloride,ZnCl2,solid,-55.33
+Zinc cyanide,Zn(CN)2,solid,-46
+Zinc fluoride,ZnF2,solid,-34.3
+Zinc hydroxide,Zn(OH)2,solid,-67
+Zinc iodide,ZnI2,solid,-108
+Zinc oxide,ZnO,solid,-27.2
+Zinc phosphate,Zn3(PO4)2,solid,-141
+Zinc sulfate,ZnSO4,solid,-47.8
+Zinc sulfate heptahydrate,ZnSO4·7H2O,solid,-138
+Zinc sulfate monohydrate,ZnSO4·H2O,solid,-63
+Zinc sulfide (sphalerite),ZnS,solid,-25
+Zirconium,Zr,solid,120
+Zirconium carbide,ZrC,solid,-26
+Zirconium(IV) nitrate pentahydrate,Zr(NO3)4·5H2O,solid,-77
+Zirconium(IV) oxide,ZrO2,solid,-13.8

@@ -1,0 +1,776 @@
+Ac Actinium 5.17 905
+Ag Silver 7.57624 1016
+AgCl Silver(I) chloride (≤ 10.08) ≤ 1065
+AgF Silver(I) fluoride (11.0 ± 0.3) 1071
+Al Aluminum 5.98577 905
+AlBr Aluminum monobromide (9.3) 913
+AlBr3 Aluminum tribromide (10.4) 593
+AlCl Aluminum monochloride 9.4 855
+AlCl3 Aluminum trichloride (12.01) 573
+AlF Aluminum monofluoride 9.73 ± 0.01 673
+AlF3 Aluminum trifluoride ≤ 15.45 ≤ 282
+AlI Aluminum monoiodide 9.3 ± 0.3 965
+AlI3 Aluminum triiodide (9.1) 673
+Am Americium 5.9738 ± 0.0002 860
+Ar Argon 15.75962 1521
+As Arsenic 9.8152 1250
+AsCl3 Arsenic(III) chloride (10.55 ± 0.025) 754
+AsF3 Arsenic(III) fluoride (12.84 ± 0.05) 452
+AsH3 Arsine (9.89) 1021
+Au Gold 9.22567 1254
+B Boron 8.29803 1363
+BBr3 Boron tribromide (10.51) 809
+BCl3 Boron trichloride 11.60 ± 0.02 718
+BF Fluoroborane 11.12 ± 0.01 957
+Difluoroborane (9.4) 317
+BF3 Boron trifluoride 15.7 ± 0.3 365
+BH Boron monohydride (9.77) 1385
+BH3 Borane 12.026 ± 0.024 1261
+BI3 Boron triiodide (9.25 ± 0.03) 964
+BO2 Boron dioxide (13.5 ± 0.3) 1001
+B2H6 Diborane 11.38 ± 0.05 1134
+B2O3 Boron oxide 13.5 ± 0.15 460
+B4H10 Tetraborane 10.76 ± 0.04 1105
+B5H9 Pentaborane(9) 9.90 ± 0.04 1028
+B6H10 Hexaborane (9.0) 965
+Ba Barium 5.21170 683
+BaO Barium oxide 6.91 ± 0.06 543
+Be Beryllium 9.32263 1224
+BeO Beryllium oxide (10.1 ± 0.4) 1111
+Bi Bismuth 7.2855 908
+BiCl3 Bismuth trichloride (10.4) 73
+
+Bk Berkelium 6.23 911
+Br Bromine (atomic) 11.81381 1252
+BrCl Bromine chloride 11.01 1079
+BrF Bromine fluoride 11.86 1086
+BrF5 Bromine pentafluoride 13.172 ± 0.002 840
+BrH Hydrogen bromide 11.66 ± 0.03 1087
+BrH3Si Bromosilane 10.6 943
+BrI Iodine bromide 9.790 ± 0.004 986
+BrK Potassium bromide 7.85 ± 0.1 578
+BrLi Lithium bromide (8.7) 685
+BrNO Nitrosyl bromide 10.17 ± 0.03 1065
+BrNa Sodium bromide 8.31 ± 0.1 660
+BrO Bromine monoxide 10.46 ± 0.02 1135
+BrRb Rubidium bromide 7.94 ± 0.03 583
+BrTl Thallium(I) bromide 9.14 ± 0.02 844
+Br2 Bromine 10.516 ± 0.005 1046
+Br2Hg Mercury(II) bromide 10.560 ± 0.003 935
+Br2Sn Tin(II) bromide 9.0 839
+Br3Ga Gallium(III) bromide 10.40 711
+Br3P Phosphorus(III) bromide 9.7 798
+Br4Hf Hafnium(IV) bromide (10.9) 366
+Br4Sn Tin(IV) bromide 10.6 709
+Br4Ti Titanium(IV) bromide 10.3 375
+Br4Zr Zirconium(IV) bromide (10.7) 388
+Ca Calcium 6.11316 768
+CaCl Calcium monochloride 5.86 ± 0.07 462
+CaO Calcium oxide 6.66 ± 0.18 668
+Cd Cadmium 8.99367 980
+Ce Cerium 5.5387 957
+Cf Californium 6.30 805
+Cl Chlorine (atomic) 12.96764 1373
+ClCs Cesium chloride (7.84 ± 0.05) 510
+ClF Chlorine fluoride 12.66 ± 0.01 1171
+ClFO3 Perchloryl fluoride (12.945 ± 0.005) 1224
+ClF2 Chlorine difluoride (12.77 ± 0.05) 1128
+ClF3 Chlorine trifluoride (12.65 ± 0.05) 1057
+ClF5S Sulfur chloride pentafluoride (12.335 ± 0.005) 144
+ClH Hydrogen chloride 12.749 ± 0.009 1137
+ClHO Hypochlorous acid (11.12 ± 0.01) 993
+ClH3Si Chlorosilane 11.4 899
+ClI Iodine chloride 10.088 ± 0.01 991
+ClIn Indium(I) chloride (9.51) 842
+ClK Potassium chloride (8.0 ± 0.4) 557
+ClLi Lithium chloride 9.57 727
+ClNO Nitrosyl chloride 10.87 ± 0.01 1099
+ClNO2 Nitryl chloride (11.84) 1155
+ClNa Sodium chloride 8.92 ± 0.06 681
+ClO Chlorine monoxide 10.95 1159
+ClO2 Chlorine dioxide 10.33 ± 0.02 1093
+ClRb Rubidium chloride (8.50 ± 0.03) 590
+ClTl Thallium(I) chloride 9.70 ± 0.03 869
+Cl2 Chlorine 11.480 ± 0.005 1108
+Cl2CrO2 Chromyl chloride 11.6 580
+Cl2Ge Germanium(II) chloride (10.20 ± 0.05) 813
+Cl2H2Si Dichlorosilane 11.4 765
+Cl2Hg Mercury(II) chloride 11.380 ± 0.003 952
+Cl2O Chlorine oxide 10.94 1135
+Cl2OS Thionyl chloride 10.96 844
+Cl2O2S Sulfuryl chloride 12.05 807
+Cl2Pb Lead(II) chloride (10.2) 791
+
+Cl2S Sulfur dichloride 9.45 ± 0.03 895
+Cl2Si Dichlorosilylene (10.93 ± 0.10) 887
+Cl2Sn Tin(II) chloride (10.0) 760
+Cl3Ga Gallium(III) chloride 11.52 664
+Cl3HSi Trichlorosilane (11.7) 648
+Cl3N Nitrogen trichloride (10.12 ± 0.1) 1244
+Cl3OP Phosphorus(V) oxychloride 11.36 ± 0.02 540
+Cl3OV Vanadyl trichloride (11.6) 425
+Cl3P Phosphorus(III) chloride 9.91 668
+Cl3PS Phosphorus(V) sulfide trichloride 9.71 ± 0.03 573
+Cl3Sb Antimony(III) chloride (≤ 10.7) s719
+Cl4Ge Germanium(IV) chloride 11.68 ± 0.05 629
+Cl4Hf Hafnium(IV) chloride (11.7) 246
+Cl4Si Tetrachlorosilane 11.79 ± 0.01 527
+Cl4Sn Tin(IV) chloride 11.7 ± 0.2 656
+Cl4Ti Titanium(IV) chloride (11.5) 349
+Cl4V Vanadium(IV) chloride (9.2) 361
+Cl4Zr Zirconium(IV) chloride (11.2) 210
+Cl5Mo Molybdenum(V) chloride (8.7) 392
+Cl5Nb Niobium(V) chloride (10.97) 356
+Cl5P Phosphorus(V) chloride (10.2) 608
+Cl5Ta Tantalum(V) chloride (11.08) 303
+Cl6W Tungsten(VI) chloride (9.5) 348
+Cm Curium 6.02 966
+Co Cobalt 7.8810 1187
+Cr Chromium 6.76664 1050
+Cs Cesium 3.89390 452
+CsF Cesium fluoride (8.80 ± 0.10) 489
+CsNa Cesium sodium (4.05 ± 0.04) 535
+Cu Copper 7.72638 1084
+CuF Copper(I) fluoride 10.15 ± 0.02 984
+Dy Dysprosium 5.9389 862
+Er Erbium 6.1078 907
+Es Einsteinium 6.42 753
+Eu Europium 5.6704 723
+F Fluorine (atomic) 17.42282 1761
+FGa Gallium monofluoride (9.6 ± 0.5) 700
+FH Hydrogen fluoride 16.044 ± 0.003 1276
+FHO Hypofluorous acid 12.71 ± 0.01 1130
+FH3Si Fluorosilane 11.7 752
+FI Iodine fluoride 10.54 ± 0.01 922
+FIn Indium monofluoride (9.6 ± 0.5) 740
+FNO Nitrosyl fluoride 12.63 ± 0.03 1152
+FNO2 Nitryl fluoride (13.09) 1154
+FNS Thionitrosyl fluoride (NSF) 11.51 ± 0.04 1090
+FO Fluorine monoxide 12.78 ± 0.03 1342
+FO2 Fluorine superoxide (FOO) (12.6 ± 0.2) 1228
+FS Sulfur fluoride 10.09 986
+FTl Thallium(I) fluoride 10.52 835
+F2 Fluorine 15.697 ± 0.003 1515
+F2Ge Germanium(II) fluoride (≤ 11.65) 551
+F2HN Difluoramine (11.53 ± 0.08) 1046
+F2H2Si Difluorosilane (12.2) 386
+F2Mg Magnesium fluoride (13.6 ± 0.3) 588
+F2N Difluoroamidogen 11.628 ± 0.01 1155
+F2N2 trans-Difluorodiazine (12.8) 1315
+F2O Fluorine monoxide 13.11 ± 0.01 1290
+F2OS Thionyl fluoride 12.25 688
+F2O2S Sulfuryl fluoride 13.04 ± 0.01 501
+F2Pb Lead(II) fluoride (11.5) 679
+
+F2S Sulfur difluoride (10.08) 676
+F2Si Difluorosilylene 10.78 ± 0.05 450
+F2Sn Tin(II) fluoride (11.1) 586
+F2Xe Xenon difluoride 12.35 ± 0.01 1083
+F3HSi Trifluorosilane (14.0) 150
+F3N Nitrogen trifluoride 13.00 ± 0.02 1125
+F3NO Trifluoramine oxide 13.31 ± 0.06 1121
+F3OP Phosphorus(V) oxyfluoride 12.76 ± 0.01 –24
+F3P Phosphorus(III) fluoride 11.60 ± 0.05 161
+F3PS Phosphorus(V) sulfide trifluoride ≤ 11.05 ± 0.035 ≤ 58
+F3Si Trifluorosilyl (9.99) – 32
+F4Ge Germanium(IV) fluoride (15.5) 307
+F4N2 Tetrafluorohydrazine 11.94 ± 0.03 1119
+F4S Sulfur tetrafluoride 12.0 ± 0.3 399
+F4Si Tetrafluorosilane 15.24 ± 0.14 –144
+F4Xe Xenon tetrafluoride 12.65 ± 0.1 1016
+F5I Iodine pentafluoride 12.943 ± 0.005 408
+F5P Phosphorus(V) fluoride (15.1) –137
+F5S Sulfur pentafluoride 9.60 ± 0.05 10
+F6Mo Molybdenum(VI) fluoride (14.5 ± 0.1) –159
+F6S Sulfur hexafluoride 15.32 ± 0.02 258
+F6U Uranium(VI) fluoride 14.00 ± 0.10 –796
+Fe Iron 7.9024 1177
+Fm Fermium 6.50 627
+Ga Gallium 5.99930 851
+GaI3 Gallium(III) iodide 9.40 765
+Gd Gadolinium 6.1500 991
+Ge Germanium 7.900 1139
+GeH4 Germane ≤ 10.53 ≤ 1108
+GeI4 Germanium(IV) iodide (9.42) 850
+GeO Germanium(II) oxide 11.25 ± 0.01 1044
+GeS Germanium(II) sulfide (9.98) 1055
+H Hydrogen (atomic) 13.59844 1530
+HI Hydrogen iodide 10.386 ± 0.001 1028
+HLi Lithium hydride 7.7 882
+HN Imidogen ≤ 13.49 ± 0.01 1678
+HNO Nitrosyl hydride (10.1) 1075
+HNO2 Nitrous acid ≤ 11.3 ≤ 1011
+HNO3 Nitric acid 11.95 ± 0.01 1019
+HN3 Hydrazoic acid 10.72 ± 0.025 1328
+HO Hydroxyl 13.0170 ± 0.0002 1294
+HO2 Hydroperoxy 11.35 ± 0.01 1106
+HS Mercapto 10.4219 ± 0.0004 1145
+H2 Hydrogen 15.42593 ± 0.00005 1488
+H2N Amidogen 11.14 ± 0.01 1264
+H2O Water 12.6206 ± 0.0020 976
+H2O2 Hydrogen peroxide 10.58 ± 0.04 885
+H2S Hydrogen sulfide 10.457 ± 0.012 989
+H2Se Hydrogen selenide 9.892 ± 0.005 984
+H2Si Silylene 8.244 ± 0.025 1084
+H3N Ammonia 10.070 ± 0.020 925
+H3NO Hydroxylamine (10.00) 923
+H3P Phosphine 9.869 ± 0.002 958
+H3Sb Stibine 9.54 ± 0.03 1067
+H4N2 Hydrazine 8.1 ± 0.15 877
+H4Si Silane 11.00 ± 0.02 1095
+H4Sn Stannane (10.75) 1200
+H6Si2 Disilane 9.74 ± 0.02 1019
+H8Si3 Trisilane (9.2) 1009
+He Helium 24.58741 2372
+
+Hf Hafnium 6.82507 ± 0.00004 1278
+Hg Mercury 10.43750 1069
+HgI2 Mercury(II) iodide 9.5088 ± 0.0022 900
+Ho Holmium 6.0216 882
+I Iodine (atomic) 10.45126 1115
+IK Potassium iodide (7.21 ± 0.3) 570
+ILi Lithium iodide (7.5) 633
+INa Sodium iodide 7.64 ± 0.02 659
+ITl Thallium(I) iodide 8.47 ± 0.02 826
+I2 Iodine 9.3074 ± 0.0002 960
+I4Ti Titanium(IV) iodide (9.1) 602
+I4Zr Zirconium(IV) iodide (9.3) 500
+In Indium 5.78636 802
+Ir Iridium 9.1 1543
+K Potassium 4.34066 508
+KLi Lithium potassium 4.57 ± 0.04 512
+KNa Potassium sodium 4.41636 ± 0.00017 561
+K2 Dipotassium 4.0637 ± 0.0002 519
+Kr Krypton 13.99961 1351
+La Lanthanum 5.5770 969
+Li Lithium 5.39172 680
+LiNa Lithium sodium 5.05 ± 0.04 571
+LiO Lithium monoxide (8.44) 894
+LiRb Lithium rubidium 4.3 ± 0.1 486
+Li2 Dilithium 5.1127 ± 0.0003 709
+Lu Lutetium 5.42585 950
+Md Mendelevium 6.58 635
+Mg Magnesium 7.64624 885
+MgO Magnesium oxide (8.76 ± 0.22) 901
+Mn Manganese 7.43402 998
+Mo Molybdenum 7.09243 1343
+N Nitrogen (atomic) 14.53414 1875
+NO Nitric oxide 9.26438 ± 0.00005 985
+NO2 Nitrogen dioxide 9.586 ± 0.002 958
+NP Phosphorus nitride 11.84 ± 0.04 1247
+NS Nitrogen sulfide 8.87 ± 0.01 1119
+N2 Nitrogen 15.5808 1503
+N2O Nitrous oxide 12.886 1325
+N2O4 Nitrogen tetroxide (10.8) 1050
+N2O5 Nitrogen pentoxide (11.9) 1161
+Na Sodium 5.13908 603
+NaRb Rubidium sodium 4.32 ± 0.04 480
+Na2 Disodium 4.894 ± 0.003 614
+Nb Niobium 6.75885 1384
+Nd Neodymium 5.5250 859
+Ne Neon 21.56454 2081
+Ni Nickel 7.6398 1167
+No Nobelium 6.65 642
+Np Neptunium 6.2657 ± 0.0003 1069
+O Oxygen (atomic) 13.61806 1563
+OPb Lead(II) oxide 9.08 ± 0.10 939
+OS Sulfur monoxide 10.294 ± 0.004 998
+OS2 Sulfur oxide (SSO) 10.584 ± 0.005 971
+OSi Silicon monoxide 11.49 ± 0.20 1008
+OSn Tin(II) oxide 9.60 ± 0.02 944
+OSr Strontium oxide 6.6 ± 0.2 623
+O2 Oxygen 12.0697 ± 0.0002 1165
+O2S Sulfur dioxide 12.349 ± 0.001 894
+O2Th Thorium(IV) oxide (8.7 ± 0.15) 342
+O2Ti Titanium(IV) oxide (9.54 ± 0.1) 623
+
+O2U Uranium(IV) oxide (5.4 ± 0.1) 57
+O3 Ozone 12.43 1342
+O3S Sulfur trioxide 12.82 ± 0.03 841
+O3U Uranium(VI) oxide (10.5 ± 0.5) 214
+O4Os Osmium(VIII) oxide (12.32) 850
+O4Ru Ruthenium(VIII) oxide 12.15 ± 0.03 988
+O7Re2 Rhenium(VII) oxide (12.7 ± 0.2) 125
+Os Osmium 8.7 1630
+P Phosphorus 10.48669 1328
+P2 Diphosphorus 10.53 1160
+Pa Protactinium 5.89 1133
+Pb Lead 7.41666 911
+PbS Lead(II) sulfide (8.5 ± 0.5) 954
+Pd Palladium 8.3367 1181
+Pm Promethium 5.55 536
+Pr Praseodymium 5.464 883
+Pt Platinum 9.0 1433
+Pu Plutonium 6.025 926
+Ra Radium 5.27892 668
+Rb Rubidium 4.17713 484
+Re Rhenium 7.88 1530
+Rh Rhodium 7.45890 1276
+Rn Radon 10.74850 1037
+Ru Ruthenium 7.36050 1355
+S Sulfur 10.36001 1277
+SSn Tin(II) sulfide (8.8) 966
+S2 Disulfur 9.356 ± 0.002 1031
+Sb Antimony 8.64 1096
+Sc Scandium 6.56144 1010
+Se Selenium 9.75238 1168
+Si Silicon 8.15169 1238
+Sm Samarium 5.6437 751
+Sn Tin 7.34381 1011
+Sr Strontium 5.69484 713
+Ta Tantalum 7.89 1544
+Tb Terbium 5.8639 955
+Tc Technetium 7.28 1380
+Te Tellurium 9.0096 1066
+Th Thorium 6.308 ± 0.003 1207
+Ti Titanium 6.8282 1127
+Tl Thallium 6.10829 771
+Tm Thulium 6.18431 827
+U Uranium 6.19405 1129
+V Vanadium 6.746 ± 0.002 1166
+W Tungsten 7.98 1621
+Xe Xenon 12.12987 1170
+Y Yttrium 6.217 1022
+Yb Ytterbium 6.25416 754
+Zn Zinc 9.39405 1037
+Zr Zirconium 6.63390 1251
+
+Substances containing carbon
+
+C Carbon 11.26030 1803
+CBrClF2 Bromochlorodifluoromethane (11.21) 642
+CBrCl3 Bromotrichloromethane (10.6) 980
+CBrF3 Bromotrifluoromethane (11.40) 451
+CBr2F2 Dibromodifluoromethane 11.03 ± 0.04 683
+CBr4 Tetrabromomethane (10.31 ± 0.02) 1079
+CCl Chloromethylidyne (8.9 ± 0.2) 1244
+CClF3 Chlorotrifluoromethane 12.6 ± 0.2 505
+CClN Cyanogen chloride 12.34 ± 0.01 1329
+CCl2 Dichloromethylene (9.27) 1058
+CCl2F2 Dichlorodifluoromethane 12.05 ± 0.24 685
+CCl2O Carbonyl chloride (11.5) 888
+CCl3F Trichlorofluoromethane 11.77 ± 0.02 868
+CCl4 Tetrachloromethane 11.47 ± 0.01 1010
+CF Fluoromethylidyne 9.11 ± 0.01 1134
+CFN Cyanogen fluoride 13.34 ± 0.02 1325
+CF2 Difluoromethylene 11.44 ± 0.03 899
+CF2O Carbonyl fluoride 13.035 ± 0.030 617
+CF3 Trifluoromethyl 8.7 ± 0.2 379
+CF3I Trifluoroiodomethane 10.23 397
+CH Methylidyne 10.64 ± 0.01 1622
+CHBrCl2 Bromodichloromethane 10.6 973
+CHBr2Cl Chlorodibromomethane 10.59 ± 0.01 1030
+CHBr3 Tribromomethane 10.48 ± 0.02 1035
+CHCl Chloromethylene 9.84 1247
+CHClF2 Chlorodifluoromethane (12.2) 693
+CHCl2F Dichlorofluoromethane (11.5) 829
+CHCl3 Trichloromethane 11.37 ± 0.02 992
+CHF Fluoromethylene 10.06 ± 0.05 1121
+CHF3 Trifluoromethane (13.86) 643
+CHI3 Triiodomethane 9.25 ± 0.02 1010
+CHN Hydrogen cyanide 13.60 ± 0.01 1447
+CHN Hydrogen isocyanide (12.5 ± 0.1) 1407
+CHNO Isocyanic acid 11.595 ± 0.005 1016
+CHNO Fulminic acid (10.83) 1263
+CHO Oxomethyl (HCO) (8.55) 826
+CH2 Methylene 10.396 ± 0.003 1392
+CH2BrCl Bromochloromethane 10.77 ± 0.01 1085
+CH2Br2 Dibromomethane (10.50 ± 0.02) 1013
+CH2ClF Chlorofluoromethane 11.71 ± 0.01 870
+CH2Cl2 Dichloromethane 11.32 ± .01 996
+CH2F2 Difluoromethane 12.71 774
+CH2I2 Diiodomethane 9.46 ± 0.02 1030
+CH2N2 Diazomethane 8.999 ± 0.001 1098
+CH2N2 Cyanamide (10.4) 1137
+CH2O Formaldehyde 10.88 ± 0.01 941
+CH2O2 Formic acid 11.33 ± 0.01 715
+CH3 Methyl 9.843 ± 0.002 1095
+CH3BO Borane carbonyl 11.14 ± 0.02 962
+CH3Br Bromomethane 10.541 ± 0.003 979
+CH3Cl Chloromethane 11.22 ± 0.01 1001
+CH3Cl3Si Methyltrichlorosilane (11.36 ± 0.03) 548
+CH3F Fluoromethane 12.47 ± 0.02 956
+CH3I Iodomethane 9.538 936
+CH3NO Formamide 10.16 ± 0.06 796
+CH3NO2 Nitromethane 11.08 ± 0.07 994
+CH3N3 Methyl azide 9.81 ± 0.02 1227
+CH3O Methoxy (10.72) 1050
+CH4 Methane 12.61 ± 0.01 1143
+CH4N2O Urea 9.7 690
+CH4O Methanol 10.85 ± 0.01 845
+CH4S Methanethiol 9.44 ± 0.005 888
+CH5N Methylamine (8.80) 826
+CH6N2 Methylhydrazine 7.7 ± 0.15 835
+CH6Si Methylsilane (10.7) 1003
+CN Cyanide 13.5984 1748
+CNO Cyanate 11.76 ± 0.01 1290
+CO Carbon monoxide 14.014 ± 0.0003 1242
+
+COS Carbon oxysulfide 11.18 ± 0.01 936
+COSe Carbon oxyselenide 10.36 ± 0.01 929
+CO2 Carbon dioxide 13.773 ± 0.002 935
+CS Carbon sulfide 11.33 ± 0.01 1361
+CS2 Carbon disulfide 10.0685 ± 0.0020 1089
+C2 Dicarbon (11.4 ± 0.3) 2000
+C2Br2F4 1,2-Dibromotetrafluoroethane (11.1) 280
+C2ClF3 Chlorotrifluoroethylene 9.81 ± 0.03 373
+C2ClF5 Chloropentafluoroethane (12.6) 99
+C2Cl2 Dichloroacetylene 9.9 1165
+C2Cl2F4 1,2-Dichlorotetrafluoroethane 12.2 252
+C2Cl3F3 1,1,1-Trichlorotrifluoroethane 11.5 386
+C2Cl3F3 1,1,2-Trichlorotrifluoroethane 11.99 ± 0.02 429
+C2Cl4 Tetrachloroethylene 9.326 ± 0.001 887
+C2Cl4F2 1,1,2,2-Tetrachloro-1,2-difluoroethane (11.3) 563
+C2Cl4O Trichloroacetyl chloride (11.0) 827
+C2Cl6 Hexachloroethane (11.1) 920
+C2F3N Trifluoroacetonitrile 13.93 ± 0.07 845
+C2F4 Tetrafluoroethylene 10.12 ± 0.02 315
+C2F6 Hexafluoroethane (13.6) -30
+C2H Ethynyl (11.61 ± 0.07) 1685
+C2HBr Bromoacetylene 10.31 ± 0.02 1242
+C2HBrClF3 2-Bromo-2-chloro-1,1,1-trifluoroethane (11.0) 363
+C2HCl Chloroacetylene 10.58 ± 0.02 1276
+C2HClF2 1-Chloro-2,2-difluoroethylene 9.80 ± 0.04 628
+C2HCl3 Trichloroethylene 9.46 ± 0.02 894
+C2HCl3O Dichloroacetyl chloride (10.9) 809
+C2HCl5 Pentachloroethane (11.0) 919
+C2HF Fluoroacetylene 11.26 1195
+C2HF3 Trifluoroethylene 10.14 489
+C2HF3O2 Trifluoroacetic acid 11.46 75
+C2H2 Acetylene 11.400 ± 0.002 1328
+C2H2Cl2 1,1-Dichloroethylene 9.81 ± 0.04 949
+C2H2Cl2 cis-1,2-Dichloroethylene 9.66 ± 0.01 936
+C2H2Cl2 trans-1,2-Dichloroethylene 9.64 ± 0.02 934
+C2H2Cl2O Chloroacetyl chloride (≤ 10.3) 815
+C2H2Cl4 1,1,1,2-Tetrachloroethane (11.1) 920
+C2H2Cl4 1,1,2,2-Tetrachloroethane (≤ 11.62) ≤ 971
+C2H2F2 1,1-Difluoroethylene 10.29 ± 0.01 650
+C2H2F2 cis-1,2-Difluoroethylene 10.23 ± 0.02 690
+C2H2O Ketene 9.617 ± 0.003 880
+C2H2O2 Glyoxal 10.2 773
+C2H2S2 Thiirene 8.61 892
+C2H3Br Bromoethylene 9.83 ± 0.02 1028
+C2H3Cl Chloroethylene 9.99 ± 0.02 985
+C2H3ClF2 1-Chloro-1,1-difluoroethane (11.98) 626
+C2H3ClO Acetyl chloride 10.82 ± 0.04 801
+C2H3ClO Chloroacetaldehyde (10.48) 815
+C2H3ClO2 Chloroacetic acid (10.7) 597
+C2H3Cl3 1,1,1-Trichloroethane (11.0) 917
+C2H3Cl3 1,1,2-Trichloroethane (11.0) 911
+C2H3F Fluoroethylene 10.36 ± 0.01 861
+C2H3FO Acetyl fluoride (11.5) 667
+C2H3F3 1,1,1-Trifluoroethane 13.3 ± 0.5 536
+C2H3N Acetonitrile 12.20 ± 0.01 1253
+C2H3NO Methylisocyanate (10.67) 900
+C2H4 Ethylene 10.5138 ± 0.0006 1067
+C2H4Br2 1,2-Dibromoethane 10.35 ± 0.04 961
+C2H4Cl2 1,1-Dichloroethane 11.04 ± 0.02 935
+C2H4Cl2 1,2-Dichloroethane 11.04 ± 0.02 931
+
+C2H4F2 1,1-Difluoroethane (11.87) 643
+C2H4O Acetaldehyde 10.229 ± 0.0007 821
+C2H4O Ethylene oxide 10.56 ± 0.01 966
+C2H4O2 Acetic acid 10.65 ± 0.02 595
+C2H4O2 Methyl formate 10.835 ± 0.005 690
+C2H5Br Bromoethane 10.29 ± 0.01 931
+C2H5Cl Chloroethane 10.98 ± 0.02 947
+C2H5ClO 2-Chloroethanol (10.5) 756
+C2H5F Fluoroethane (11.78) 873
+C2H5I Iodoethane 9.3492 ± 0.0006 893
+C2H5N Ethyleneimine (9.5 ± 0.3) 1044
+C2H5NO Acetamide 9.65 ± 0.03 693
+C2H5NO N-Methylformamide 9.83 ± 0.04 760
+C2H5NO2 Nitroethane 10.88 ± 0.05 948
+C2H6 Ethane 11.56 ± 0.02 1031
+C2H6Cl2Si Dichlorodimethylsilane (10.7) 576
+C2H6O Ethanol 10.43 ± 0.05 772
+C2H6O Dimethyl ether 10.025 ± 0.025 783
+C2H6OS Dimethyl sulfoxide 9.10 ± 0.03 727
+C2H6O2 Ethylene glycol 10.16 593
+C2H6S Ethanethiol 9.31 ± 0.03 851
+C2H6S Dimethyl sulfide 8.69 ± 0.02 801
+C2H6S2 Dimethyl disulfide (7.4 ± 0.3) 690
+C2H7N Ethylamine 8.86 ± 0.02 808
+C2H7N Dimethylamine 8.24 ± 0.08 777
+C2H7NO Ethanolamine 8.96 664
+C2H8N2 1,2-Ethanediamine (8.6) 812
+C2H8N2 1,1-Dimethylhydrazine 7.29 ± 0.05 787
+C2N2 Cyanogen 13.37 ± 0.01 1597
+C3F6 Perfluoropropene 10.60 ± 0.03 –103
+C3F6O Perfluoroacetone (11.57 ± 0.13) –282
+C3F8 Perfluoropropane (13.38) –491
+C3HN Cyanoacetylene 11.64 ± 0.01 1475
+C3H2O 2-Propynal (10.7 ± 0.1) 1145
+C3H3F3 3,3,3-Trifluoropropene (10.9) 437
+C3H3N 2-Propenenitrile 10.91 ± 0.01 1237
+C3H3NO Oxazole (9.9) 940
+C3H3NO Isoxazole (9.93) 1038
+C3H4 Allene 9.692 ± 0.004 1126
+C3H4 Propyne 10.37 ± 0.01 1187
+C3H4 Cyclopropene 9.67 ± 0.01 1209
+C3H4N2 Imidazole (8.81) 997
+C3H4O Propargyl alcohol 10.49 ± 0.02 1060
+C3H4O Acrolein 10.103 ± 0.006 900
+C3H4O Cyclopropanone (9.1 ± 0.1) 895
+C3H4O2 Propenoic acid 10.60 701
+C3H4O2 2-Oxetanone (9.70 ± 0.01) 653
+C3H5Br 3-Bromopropene (9.96) 1008
+C3H5Cl 3-Chloropropene 10.04 ± 0.01 965
+C3H5ClO Epichlorohydrin (10.64) 919
+C3H5ClO2 Methyl chloroacetate (10.3) 575
+C3H5F 3-Fluoropropene (10.11) 821
+C3H5N Propanenitrile 11.84 ± 0.02 1194
+C3H5NO Acrylamide (9.5) 720
+C3H6 Propene 9.73 ± 0.02 959
+C3H6 Cyclopropane 9.86 1005
+C3H6Br2 1,2-Dibromopropane (10.1) 903
+C3H6Br2 1,3-Dibromopropane (≤ 10.2) ≤ 919
+C3H6Cl2 1,2-Dichloropropane 10.8 ± 0.1 886
+C3H6Cl2 1,3-Dichloropropane 10.89 ± 0.04 892
+
+C3H6O Allyl alcohol 9.67 ± 0.05 808
+C3H6O Methyl vinyl ether 8.95 ± 0.01 763
+C3H6O Propanal 9.96 ± 0.01 772
+C3H6O Acetone 9.703 ± 0.006 719
+C3H6O Methyloxirane (10.22) 892
+C3H6O Oxetane 9.65 ± 0.01 851
+C3H6O2 Propanoic acid 10.525 ± 0.003 568
+C3H6O2 Ethyl formate 10.61 ± 0.01 639
+C3H6O2 Methyl acetate 10.25 ± 0.02 579
+C3H6O2 1,3-Dioxolane (9.9) 658
+C3H6O3 1,3,5-Trioxane (10.3) 528
+C3H7Br 1-Bromopropane 10.18 ± 0.01 898
+C3H7Br 2-Bromopropane 10.10 ± 0.03 877
+C3H7Cl 1-Chloropropane 10.81 ± 0.01 911
+C3H7Cl 2-Chloropropane 10.79 ± 0.02 896
+C3H7F 1-Fluoropropane (11.3) 806
+C3H7F 2-Fluoropropane (11.08) 776
+C3H7I 1-Iodopropane 9.25 ± 0.01 860
+C3H7I 2-Iodopropane 9.19 ± 0.02 845
+C3H7N Allylamine (8.76) 891
+C3H7N Cyclopropylamine (8.8) 926
+C3H7N Propyleneimine (9.0) 960
+C3H7NO N,N-Dimethylformamide (9.12) 688
+C3H7NO2 1-Nitropropane (10.81) 919
+C3H7NO2 2-Nitropropane (10.71) 894
+C3H8 Propane 10.95 ± 0.05 952
+C3H8O 1-Propanol 10.18 ± 0.06 727
+C3H8O 2-Propanol 10.17 ± 0.02 709
+C3H8O Ethyl methyl ether 9.72 ± 0.07 722
+C3H8O2 Dimethoxymethane 9.7 588
+C3H8S 1-Propanethiol 9.20 ± 0.01 819
+C3H8S 2-Propanethiol 9.145 ± 0.005 806
+C3H8S Ethyl methyl sulfide (8.55) 765
+C3H9BO3 Trimethyl borate (10.0) 65
+C3H9ClSi Trimethylchlorosilane (10.15) 624
+C3H9N Propylamine (8.78) 777
+C3H9N Isopropylamine (8.72) 758
+C3H9N Trimethylamine 7.82 ± 0.06 731
+C3H9NO 3-Amino-1-propanol (9.0) 651
+C4H2O3 Maleic anhydride (10.8) 645
+C4H4 1-Buten-3-yne 9.58 ± 0.02 1230
+C4H4N2 Succinonitrile (12.1 ± 0.25) 1377
+C4H4N2 Pyrimidine 9.23 1087
+C4H4N2 Pyridazine 8.67 ± 0.03 1112
+C4H4O Furan 8.883 ± 0.003 822
+C4H4O2 Diketene (9.6 ± 0.02) 736
+C4H4O3 Succinic anhydride (10.6) 500
+C4H4O4 Fumaric acid (10.7) 355
+C4H4S Thiophene 8.86 ± 0.02 970
+C4H5N Methylacrylonitrile 10.34 1127
+C4H5N Pyrrole 8.207 ± 0.005 900
+C4H5N Cyclopropanecarbonitrile (10.25) 1173
+C4H6 1,2-Butadiene (9.03) 1034
+C4H6 1,3-Butadiene 9.082 ± 0.004 986
+C4H6 1-Butyne 10.19 ± 0.02 1148
+C4H6 2-Butyne 9.59 ± 0.03 1071
+C4H6 Cyclobutene 9.43 ± 0.02 1067
+C4H6O Divinyl ether (8.7) 827
+C4H6O trans-2-Butenal 9.73 ± 0.01 835
+C4H6O 2-Methylpropenal (9.92) 834
+
+C4H6O Cyclobutanone (9.35) 815
+C4H6O2 cis-Crotonic acid (10.08) 625
+C4H6O2 trans-Crotonic acid (9.9) 604
+C4H6O2 Methacrylic acid (10.15) 611
+C4H6O2 Vinyl acetate 9.19 ± 0.05 572
+C4H6O2 Methyl acrylate (9.9) 641
+C4H6O3 Acetic anhydride (10.0) 398
+C4H6O4 Dimethyl oxalate (10.0) 287
+C4H6S 2,5-Dihydrothiophene (8.4) 898
+C4H7N Butanenitrile (11.2) 1110
+C4H7N 2-Methylpropanenitrile (11.3) 1115
+C4H7NO 2-Pyrrolidone (9.2) 674
+C4H8 1-Butene 9.55 ± 0.06 921
+C4H8 cis-2-Butene 9.11 ± 0.01 871
+C4H8 trans-2-Butene 9.10 ± 0.01 866
+C4H8 Isobutene 9.239 ± 0.003 875
+C4H8 Cyclobutane (9.82 ± 0.05) 976
+C4H8 Methylcyclopropane (9.46) 936
+C4H8Br2 1,4-Dibromobutane (10.15) 879
+C4H8O Ethyl vinyl ether (8.98) 709
+C4H8O 1,2-Epoxybutane (≤ 10.15) 862
+C4H8O Butanal 9.84 ± 0.02 742
+C4H8O Isobutanal 9.71 ± 0.01 721
+C4H8O 2-Butanone 9.52 ± 0.04 678
+C4H8O Tetrahydrofuran 9.38 ± 0.05 721
+C4H8O2 Butanoic acid 10.17 ± 0.05 509
+C4H8O2 2-Methylpropanoic acid 10.33 ± 0.03 516
+C4H8O2 Propyl formate 10.52 ± 0.02 555
+C4H8O2 Ethyl acetate 10.01 ± 0.05 522
+C4H8O2 Methyl propanoate 10.15 ± 0.03 548
+C4H8O2 1,3-Dioxane 9.8 607
+C4H8O2 1,4-Dioxane 9.19 ± 0.01 571
+C4H8O2S Sulfolane (9.8) 577
+C4H8S Tetrahydrothiophene 8.38 774
+C4H9Br 1-Bromobutane (10.12) 869
+C4H9Br 2-Bromobutane 10.01 ± 0.02 845
+C4H9Br 1-Bromo-2-methylpropane 10.09 ± 0.02 861
+C4H9Br 2-Bromo-2-methylpropane 9.92 ± 0.03 823
+C4H9Cl 1-Chlorobutane 10.67 ± 0.03 875
+C4H9Cl 2-Chlorobutane 10.53 857
+C4H9Cl 1-Chloro-2-methylpropane 10.73 ± 0.07 877
+C4H9Cl 2-Chloro-2-methylpropane (10.61) 842
+C4H9I 1-Iodobutane 9.23 ± 0.01 840
+C4H9I 2-Iodobutane 9.10 ± 0.02 815
+C4H9I 1-Iodo-2-methylpropane 9.19 ± 0.01 824
+C4H9I 2-Iodo-2-methylpropane (9.02) 798
+C4H9N Pyrrolidine (8.0) 769
+C4H9NO N,N-Dimethylacetamide 8.81 ± 0.03 616
+C4H9NO Morpholine (8.2) 841
+C4H10 Butane 10.53 ± 0.10 890
+C4H10 Isobutane (10.57) 886
+C4H10O 1-Butanol 9.99 ± 0.05 689
+C4H10O 2-Butanol 9.88 ± 0.03 658
+C4H10O 2-Methyl-1-propanol 10.02 ± 0.04 683
+C4H10O 2-Methyl-2-propanol 9.90 ± 0.02 642
+C4H10O Diethyl ether 9.51 ± 0.03 666
+C4H10O Methyl propyl ether 9.41 ± 0.07 670
+C4H10O Isopropyl methyl ether 9.45 ± 0.04 661
+C4H10O2 Ethylene glycol monoethyl ether (9.6) 529
+C4H10O2 Ethylene glycol dimethyl ether (9.3) 558
+
+C4H10S 1-Butanethiol 9.14 ± 0.01 794
+C4H10S 2-Butanethiol (9.10) 781
+C4H10S 2-Methyl-1-propanethiol (9.12) 783
+C4H10S 2-Methyl-2-propanethiol (9.03) 762
+C4H10S Diethyl sulfide (8.43) 730
+C4H10S Methyl propyl sulfide (8.8) 767
+C4H10S Isopropyl methyl sulfide (8.7) 749
+C4H10S2 Diethyl disulfide (8.27) 724
+C4H11N Butylamine 8.7 ± 0.1 748
+C4H11N sec-Butylamine 8.46 ± 0.1 711
+C4H11N tert-Butylamine 8.46 ± 0.1 695
+C4H11N Isobutylamine 8.50 ± 0.1 721
+C4H11N Diethylamine 7.85 ± 0.1 684
+C4H12Si Tetramethylsilane 9.80 ± 0.04 713
+C4H12Sn Tetramethylstannane 8.89 ± 0.05 837
+C4NiO4 Nickel carbonyl 8.27 ± 0.04 200
+C5H4O2 Furfural 9.22 ± 0.01 739
+C5H5N Pyridine 9.25 1031
+C5H6 1-Penten-3-yne 9.00 ± 0.01 1119
+C5H6 cis-3-Penten-1-yne 9.14 ± 0.04 1137
+C5H6 trans-3-Penten-1-yne 9.05 ± 0.01 1128
+C5H6 2-Methyl-1-buten-3-yne 9.25 ± 0.02 1152
+C5H6 1,3-Cyclopentadiene 8.55 ± 0.02 955
+C5H6O 2-Methylfuran 8.38 ± 0.02 729
+C5H6O 3-Methylfuran (8.64) 763
+C5H6S 2-Methylthiophene (8.14) 867
+C5H6S 3-Methylthiophene (8.40) 893
+C5H8 cis-1,3-Pentadiene 8.63 ± 0.03 914
+C5H8 trans-1,3-Pentadiene 8.59 ± 0.02 905
+C5H8 1,4-Pentadiene 9.60 ± 0.02 1032
+C5H8 2-Methyl-1,3-butadiene 8.84 ± 0.01 928
+C5H8 1-Pentyne 10.10 ± 0.01 1119
+C5H8 Cyclopentene 9.01 ± 0.01 905
+C5H8 Spiropentane (9.26) 1078
+C5H8O Cyclopropyl methyl ketone (≤ 9.46) 796
+C5H8O Cyclopentanone 9.26 ± 0.01 701
+C5H8O 3,4-Dihydro-2H-pyran 8.35 ± 0.01 681
+C5H8O2 Ethyl acrylate (≤ 10.3) 617
+C5H8O2 Methyl methacrylate (9.7) 589
+C5H8O2 2,4-Pentanedione 8.85 ± 0.01 469
+C5H9NO N-Methyl-2-pyrrolidone (≤ 9.17) ≤ 676
+C5H10 1-Pentene 9.51 ± 0.01 896
+C5H10 cis-2-Pentene 9.01 ± 0.03 843
+C5H10 trans-2-Pentene 9.04 ± 0.01 841
+C5H10 2-Methyl-1-butene 9.12 ± 0.01 844
+C5H10 3-Methyl-1-butene 9.52 ± 0.01 891
+C5H10 2-Methyl-2-butene 8.69 ± 0.01 796
+C5H10 Cyclopentane (10.33 ± 0.15) 918
+C5H10O 2,2-Dimethylpropanal 9.51 ± 0.01 675
+C5H10O Cyclopentanol (9.72) 695
+C5H10O Pentanal 9.74 ± 0.04 709
+C5H10O 2-Pentanone 9.38 ± 0.01 646
+C5H10O 3-Pentanone 9.31 ± 0.01 640
+C5H10O 3-Methyl-2-butanone 9.30 ± 0.01 635
+C5H10O Tetrahydropyran 9.25 ± 0.01 670
+C5H10O2 Pentanoic acid (≤ 10.53) ≤ 527
+C5H10O2 3-Methylbutanoic acid (≤ 10.51) ≤ 499
+C5H10O2 Butyl formate 10.52 ± 0.02 584
+C5H10O2 Propyl acetate (≤ 9.92) 501
+C5H10O2 Isopropyl acetate 9.99 ± 0.03 482
+
+C5H10O2 Ethyl propanoate (10.00) 500
+C5H10O2 Methyl butanoate (10.07) 520
+C5H10S Thiacyclohexane (8.2) 728
+C5H11Br 1-Bromopentane 10.10 ± 0.01 846
+C5H11I 1-Iodopentane 9.20 ± 0.01 817
+C5H11N Piperidine 8.03 ± 0.11 726
+C5H11N N-Methylpyrrolidine ≤ 8.41 ± 0.02 ≤ 809
+C5H12 Pentane 10.28 ± 0.10 845
+C5H12 Isopentane 10.32 ± 0.05 843
+C5H12 Neopentane (≤ 10.2) ≤ 818
+C5H12O 1-Pentanol (10.00) 668
+C5H12O 2-Pentanol (9.78) 630
+C5H12O 3-Pentanol 9.78 628
+C5H12O 2-Methyl-1-butanol (9.86) 649
+C5H12O 2-Methyl-2-butanol (9.8) 615
+C5H12O 3-Methyl-2-butanol (9.88 ± 0.13) 637
+C5H12O Butyl methyl ether (9.4 ± 0.1) 648
+C5H12O Methyl tert-butyl ether (9.24) 608
+C5H12O Ethyl propyl ether (9.45) 640
+C5H12S tert-Butyl methyl sulfide (8.38) 687
+C5H12S Ethyl propyl sulfide (8.50) 716
+C5H12S Ethyl isopropyl sulfide (8.35) 689
+C6BrF5 Bromopentafluorobenzene (9.67) 222
+C6ClF5 Chloropentafluorobenzene (9.72) 126
+C6Cl6 Hexachlorobenzene (8.98) 822
+C6F6 Hexafluorobenzene 9.89 ± 0.04 8
+C6F12 Perfluorocyclohexane (13.2) –1095
+C6HF5 Pentafluorobenzene (9.63) 122
+C6HF5O Pentafluorophenol (9.20) –71
+C6H2F4 1,2,3,4-Tetrafluorobenzene (9.53) 284
+C6H2F4 1,2,3,5-Tetrafluorobenzene (9.53) 263
+C6H2F4 1,2,4,5-Tetrafluorobenzene (9.35) 254
+C6H3Cl3 1,2,4-Trichlorobenzene (9.04) 880
+C6H3Cl3 1,3,5-Trichlorobenzene 9.32 ± 0.02 899
+C6H4ClNO2 1-Chloro-3-nitrobenzene (9.92 ± 0.1) 995
+C6H4ClNO2 1-Chloro-4-nitrobenzene (9.96 ± 0.1) 999
+C6H4Cl2 o-Dichlorobenzene 9.06 ± 0.02 907
+C6H4Cl2 m-Dichlorobenzene 9.10 ± 0.02 906
+C6H4Cl2 p-Dichlorobenzene 8.92 ± 0.02 885
+C6H4FNO2 1-Fluoro-4-nitrobenzene (9.90) 826
+C6H4F2 o-Difluorobenzene 9.29 ± 0.01 602
+C6H4F2 m-Difluorobenzene 9.33 ± 0.01 591
+C6H4F2 p-Difluorobenzene 9.1589 ± 0.0003 577
+C6H4O2 p-Benzoquinone 10.01 ± 0.06 844
+C6H5Br Bromobenzene 9.00 ± 0.02 971
+C6H5Cl Chlorobenzene 9.07 ± 0.02 930
+C6H5ClO m-Chlorophenol 8.655 ± 0.001 680
+C6H5ClO p-Chlorophenol (≤ 8.69) ≤ 692
+C6H5F Fluorobenzene 9.20 ± 0.01 772
+C6H5I Iodobenzene 8.685 1003
+C6H5NO2 Nitrobenzene 9.86 ± 0.02 1019
+C6H5NO3 o-Nitrophenol (9.1) 782
+C6H5NO3 m-Nitrophenol (9.0) 755
+C6H5NO3 p-Nitrophenol (9.1) 761
+C6H6 Benzene 9.24378 ± 0.00007 975
+C6H6 Fulvene (8.36) 1031
+C6H6ClN o-Chloroaniline (8.50) 883
+C6H6ClN m-Chloroaniline (8.09) 835
+C6H6ClN p-Chloroaniline (≤ 8.18) ≤ 844
+C6H6N2O2 o-Nitroaniline (8.27) 861
+
+
+
