@@ -1,0 +1,69 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      1955,         61]
+NotebookOptionsPosition[      1629,         47]
+NotebookOutlinePosition[      2002,         63]
+CellTagsIndexPosition[      1959,         60]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"loadAd", "=", 
+   RowBox[{"<|", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"\"\<AB\>\"", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"\"\<data.xlsm\>\"", ",", "\"\<AB\>\"", ",", 
+        RowBox[{"Join", "[", 
+         RowBox[{
+          RowBox[{"{", "1", "}"}], ",", 
+          RowBox[{"Range", "[", 
+           RowBox[{"7", ",", "13"}], "]"}]}], "]"}]}], "}"}]}], 
+     "\[IndentingNewLine]", ",", "\[IndentingNewLine]", 
+     RowBox[{"\"\<rAd\>\"", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"\"\<atradi.xlsx\>\"", ",", "\"\<efen +tol\>\"", ",", 
+        RowBox[{"Range", "[", 
+         RowBox[{"6", ",", "32"}], "]"}]}], "}"}]}]}], "\[IndentingNewLine]", 
+    "|>"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.784809179109662*^9, 3.7848091801456947`*^9}, {
+  3.784809255816975*^9, 3.7848093878863516`*^9}, {3.784809424520832*^9, 
+  3.7848094743687787`*^9}, {3.7848099043657618`*^9, 3.784809992911048*^9}, {
+  3.785215664375052*^9, 
+  3.7852156741339474`*^9}},ExpressionUUID->"925f9e95-b24e-4dd6-9f1d-\
+ce3b40c95cb8"]
+},
+WindowSize->{775, 872},
+WindowMargins->{{Automatic, 104}, {53, Automatic}},
+Magnification:>1.3 Inherited,
+FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (March 6, 2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 1067, 25, 138, "Input",ExpressionUUID->"925f9e95-b24e-4dd6-9f1d-ce3b40c95cb8"]
+}
+]
+*)
+

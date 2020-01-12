@@ -1,0 +1,426 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     16582,        418]
+NotebookOptionsPosition[     15148,        384]
+NotebookOutlinePosition[     15515,        400]
+CellTagsIndexPosition[     15472,        397]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"un", "=", "931.49410242"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"mp", "=", "938.2720813"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"mn", "=", "939.5654133"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"me", "=", "0.5109989461"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"nm", "=", "5.050783699*^-6"}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"NC", "[", "t_", "]"}], ":=", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"StringSplit", "[", 
+     RowBox[{"t", ",", "\"\<]\>\""}], "]"}], "[", 
+    RowBox[{"[", "2", "]"}], "]"}], "<>", 
+   RowBox[{"StringTrim", "[", 
+    RowBox[{
+     RowBox[{"StringSplit", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"StringSplit", "[", 
+         RowBox[{"t", ",", "\"\<]\>\""}], "]"}], "[", 
+        RowBox[{"[", "1", "]"}], "]"}], ",", "\"\<,\>\""}], "]"}], "[", 
+     RowBox[{"[", "2", "]"}], "]"}], "]"}]}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"GV", "[", "t_", "]"}], ":=", 
+  RowBox[{"ToExpression", "[", 
+   RowBox[{
+    RowBox[{"StringSplit", "[", "t", "]"}], "[", 
+    RowBox[{"[", "1", "]"}], "]"}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"IQ", "[", "x_", "]"}], ":=", 
+   RowBox[{"If", "[", 
+    RowBox[{
+     RowBox[{"x", "\[Equal]", 
+      RowBox[{"Round", "[", "x", "]"}]}], ",", 
+     RowBox[{"Return", "[", 
+      RowBox[{"IntegerPart", "[", "x", "]"}], "]"}], ",", 
+     RowBox[{"Return", "[", "x", "]"}]}], "]"}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"TABk", "=", 
+    RowBox[{"{", "}"}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Do", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Do", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"AppendTo", "[", 
+      RowBox[{"TABk", ",", 
+       RowBox[{"{", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"NC", "[", 
+          RowBox[{"IsotopeData", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"z", ",", "a"}], "}"}], ",", "\"\<Symbol\>\""}], "]"}], 
+          "]"}], ",", "\[IndentingNewLine]", 
+         RowBox[{"IsotopeData", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"z", ",", "a"}], "}"}], ",", "\"\<Name\>\""}], "]"}], ",",
+          "\[IndentingNewLine]", 
+         RowBox[{"IsotopeData", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"z", ",", "a"}], "}"}], ",", "\"\<AtomicNumber\>\""}], 
+          "]"}], ",", "\[IndentingNewLine]", 
+         RowBox[{"IsotopeData", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"z", ",", "a"}], "}"}], ",", "\"\<NeutronNumber\>\""}], 
+          "]"}], ",", "\[IndentingNewLine]", 
+         RowBox[{"IsotopeData", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"z", ",", "a"}], "}"}], ",", "\"\<MassNumber\>\""}], 
+          "]"}], ",", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"IsotopeData", "[", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{"z", ",", "a"}], "}"}], ",", "\"\<AtomicMass\>\""}], 
+            "]"}], "[", 
+           RowBox[{"[", "1", "]"}], "]"}], "*", "un"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{
+           RowBox[{
+            RowBox[{"IsotopeData", "[", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{"z", ",", "a"}], "}"}], ",", "\"\<AtomicMass\>\""}], 
+             "]"}], "[", 
+            RowBox[{"[", "1", "]"}], "]"}], "*", "un"}], "-", 
+          RowBox[{"z", "*", "0.5109989461"}]}], ",", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"z", "*", "mp"}], "+", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"a", "-", "z"}], ")"}], "*", "mn"}]}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"IsotopeData", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"z", ",", "a"}], "}"}], ",", "\"\<BindingEnergy\>\""}], 
+           "]"}], "[", 
+          RowBox[{"[", "1", "]"}], "]"}], ",", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"IsotopeData", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"z", ",", "a"}], "}"}], ",", "\"\<MassExcess\>\""}], 
+           "]"}], "[", 
+          RowBox[{"[", "1", "]"}], "]"}], ",", "\[IndentingNewLine]", 
+         RowBox[{"InputForm", "[", 
+          RowBox[{"IsotopeData", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"z", ",", "a"}], "}"}], ",", "\"\<Spin\>\""}], "]"}], 
+          "]"}], ",", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"IsotopeData", "[", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{"z", ",", "a"}], "}"}], ",", "\"\<MagneticMoment\>\""}],
+             "]"}], "[", 
+           RowBox[{"[", "1", "]"}], "]"}], "*", "nm"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"IsotopeData", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"z", ",", "a"}], "}"}], ",", "\"\<MassNumber\>\""}], 
+          "]"}], ",", "\[IndentingNewLine]", 
+         RowBox[{"IsotopeData", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"z", ",", "a"}], "}"}], ",", "\"\<MassNumber\>\""}], 
+          "]"}], ",", "\[IndentingNewLine]", 
+         RowBox[{"IsotopeData", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"z", ",", "a"}], "}"}], ",", "\"\<MassNumber\>\""}], 
+          "]"}], ",", "\[IndentingNewLine]", 
+         RowBox[{"IsotopeData", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"z", ",", "a"}], "}"}], ",", "\"\<MassNumber\>\""}], 
+          "]"}], ",", "\[IndentingNewLine]", 
+         RowBox[{"IsotopeData", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"z", ",", "a"}], "}"}], ",", "\"\<MassNumber\>\""}], 
+          "]"}], ",", "\[IndentingNewLine]", 
+         RowBox[{"IsotopeData", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"z", ",", "a"}], "}"}], ",", "\"\<MassNumber\>\""}], 
+          "]"}]}], "\[IndentingNewLine]", "\[IndentingNewLine]", "}"}]}], 
+      "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]", ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"a", ",", 
+       RowBox[{"IsotopeData", "[", 
+        RowBox[{"z", ",", "\"\<MassNumber\>\""}], "]"}]}], "}"}]}], 
+    "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]", ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{"z", ",", "0", ",", "118"}], "}"}]}], "\[IndentingNewLine]", 
+  "]"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.7811615192214355`*^9, 3.781161558292615*^9}, {
+   3.781161670974674*^9, 3.7811616712870007`*^9}, {3.781161710602202*^9, 
+   3.7811617256677284`*^9}, {3.781161835113383*^9, 3.781161881559206*^9}, {
+   3.7811621333769474`*^9, 3.7811621434756556`*^9}, {3.781162198091569*^9, 
+   3.7811622347227755`*^9}, {3.781162340730759*^9, 3.7811623479102087`*^9}, {
+   3.78116237930811*^9, 3.781162394674243*^9}, {3.7811624654810224`*^9, 
+   3.781162636112105*^9}, {3.781163055784054*^9, 3.7811630608270426`*^9}, {
+   3.781163126955888*^9, 3.7811631725984974`*^9}, {3.7811632342104173`*^9, 
+   3.781163243312583*^9}, {3.781164402301406*^9, 3.7811644531909914`*^9}, 
+   3.781164507283779*^9, {3.781164538927664*^9, 3.7811645520236235`*^9}, {
+   3.7811645837686157`*^9, 3.781164599613933*^9}, {3.781164631008936*^9, 
+   3.7811646422495236`*^9}, 3.7811647928286705`*^9, {3.781164832852454*^9, 
+   3.7811648516511507`*^9}, {3.781164901797055*^9, 3.781165206868415*^9}, {
+   3.78116530728802*^9, 3.781165366158353*^9}, {3.78116539982545*^9, 
+   3.7811654040203*^9}, {3.7811654364225063`*^9, 3.7811654427869973`*^9}, {
+   3.7811655150148487`*^9, 3.7811656490288076`*^9}, {3.781165695533223*^9, 
+   3.7811657284722376`*^9}, 3.7811659361405096`*^9, {3.781166005145611*^9, 
+   3.7811660475410504`*^9}, {3.78116625232415*^9, 3.781166275063966*^9}, {
+   3.781166454237939*^9, 3.781166521876652*^9}, {3.7811665632902613`*^9, 
+   3.7811665870529175`*^9}, {3.781167003563599*^9, 
+   3.781167092422496*^9}},ExpressionUUID->"32991165-3941-4a03-979e-\
+697b0301f888"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["\[IndentingNewLine]"], "Input",
+ CellChangeTimes->{{3.781162692921127*^9, 3.781162717539736*^9}, {
+  3.781162764765421*^9, 3.7811627683150992`*^9}, {3.7811631983658266`*^9, 
+  3.7811631987338142`*^9}, {3.781163265131049*^9, 3.781163284337734*^9}, {
+  3.781163341234603*^9, 3.781163399964366*^9}, {3.7811634473384333`*^9, 
+  3.7811634776451654`*^9}, {3.781163522934469*^9, 3.781163572652859*^9}, {
+  3.7811636254270935`*^9, 3.78116368823458*^9}, {3.7811637317529078`*^9, 
+  3.7811638859764338`*^9}, {3.781163950584462*^9, 3.7811640071670604`*^9}, {
+  3.781164082046712*^9, 3.7811641109040556`*^9}, {3.7811642693937044`*^9, 
+  3.7811643127114587`*^9}, {3.7811643575869694`*^9, 
+  3.781164399628112*^9}},ExpressionUUID->"4abcb08d-d8f4-4922-90a5-\
+141bb8b6b584"],
+
+Cell[BoxData["\<\"He2\"\>"], "Output",
+ CellChangeTimes->{{3.7811638772929354`*^9, 3.7811638866049805`*^9}, {
+  3.781163965286924*^9, 3.78116400763356*^9}},
+ CellLabel->
+  "Out[1256]=",ExpressionUUID->"17ea1729-b476-409f-bff5-8b2430023716"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["t"], "Input",
+ CellChangeTimes->{3.7811638975829887`*^9},
+ CellLabel->
+  "In[1248]:=",ExpressionUUID->"eeb7faa9-167c-4577-8483-da778dff08b5"],
+
+Cell[BoxData["\<\"Superscript[, 2]He\"\>"], "Output",
+ CellChangeTimes->{3.781163897945117*^9},
+ CellLabel->
+  "Out[1248]=",ExpressionUUID->"d12e860a-46e1-45ed-bb7d-09e7cc8d2ed3"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"StringSplit", "[", 
+  RowBox[{
+   RowBox[{"{", "\"\<dsf sda\>\"", "}"}], ",", 
+   RowBox[{"{", "\"\<dsfsf sada\>\"", "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7811641672436533`*^9, 3.7811642204746647`*^9}},
+ CellLabel->
+  "In[1259]:=",ExpressionUUID->"cadbf427-5cab-4b5e-b21f-7d8c5e1d1971"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", "\<\"dsf sda\"\>", "}"}], "}"}]], "Output",
+ CellChangeTimes->{3.7811642211509995`*^9},
+ CellLabel->
+  "Out[1259]=",ExpressionUUID->"e9f47cdb-4c4b-45cb-8dfa-4fa73d576e76"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"IsotopeData", "[", 
+  RowBox[{"1", ",", "\"\<BranchingRatios\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.7811646769052854`*^9, 3.781164693594905*^9}, {
+   3.781165249144777*^9, 3.7811652522006516`*^9}, 3.7811653120811405`*^9, 
+   3.781165490981839*^9, {3.781165768628749*^9, 3.7811658388850937`*^9}, 
+   3.781166098632515*^9, 3.781166142806281*^9, {3.7811663225629196`*^9, 
+   3.781166332173561*^9}, {3.7811664918402696`*^9, 3.781166502223898*^9}, {
+   3.7811666174103756`*^9, 3.781166632814603*^9}, {3.781166924894146*^9, 
+   3.781166988635663*^9}, {3.7811671419544697`*^9, 3.7811671726027718`*^9}, 
+   3.7811672242614703`*^9},
+ CellLabel->
+  "In[1287]:=",ExpressionUUID->"4064c869-cc21-417d-ad1f-e756cedee4cd"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", "}"}], ",", 
+   RowBox[{"{", "}"}], ",", 
+   RowBox[{"{", "1.`3.", "}"}], ",", 
+   RowBox[{"{", "1.`3.", "}"}], ",", 
+   RowBox[{"{", "1.`3.", "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"Missing", "[", "\<\"Unknown\"\>", "]"}], ",", 
+     RowBox[{"Missing", "[", "\<\"Unknown\"\>", "]"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"Missing", "[", "\<\"Unknown\"\>", "]"}], "}"}]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{
+  3.7811665026250315`*^9, {3.7811666184264183`*^9, 3.7811666337837696`*^9}, {
+   3.7811669278182373`*^9, 3.781166988970454*^9}, {3.7811671448717284`*^9, 
+   3.7811671736666393`*^9}, 3.7811672247309036`*^9},
+ CellLabel->
+  "Out[1287]=",ExpressionUUID->"8810ef3b-33c9-4e85-936a-6a3b4e1ea26d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"IsotopeData", "[", 
+  RowBox[{"1", ",", "\"\<DaughterNuclides\>\""}], "]"}]], "Input",
+ CellChangeTimes->{3.78116729841791*^9},
+ CellLabel->
+  "In[1289]:=",ExpressionUUID->"7dcf3457-4fb2-4f64-b4bf-3ce722245217"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   InterpretationBox[
+    DynamicModuleBox[{EntityFramework`Formatting`Private`open = False}, 
+     TemplateBox[{
+      TemplateBox[{"\"isotopes\""}, "ImplicitEntityBase"],InterpretationBox[
+        TagBox[
+         GridBox[{{""}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+          DefaultBaseStyle -> "GeneralizedEntityInfoGrid", 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"], 
+        Column[{}, DefaultBaseStyle -> "GeneralizedEntityInfoGrid"]],Dynamic[
+       EntityFramework`Formatting`Private`open],
+       "\"Entity[\\\"Isotope\\\", {}]\""},
+      "ImplicitEntityToggle"]],
+    Entity["Isotope", {}],
+    SelectWithContents->True], ",", 
+   InterpretationBox[
+    DynamicModuleBox[{EntityFramework`Formatting`Private`open = False}, 
+     TemplateBox[{
+      TemplateBox[{"\"isotopes\""}, "ImplicitEntityBase"],InterpretationBox[
+        TagBox[
+         GridBox[{{""}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+          DefaultBaseStyle -> "GeneralizedEntityInfoGrid", 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Column"], 
+        Column[{}, DefaultBaseStyle -> "GeneralizedEntityInfoGrid"]],Dynamic[
+       EntityFramework`Formatting`Private`open],
+       "\"Entity[\\\"Isotope\\\", {}]\""},
+      "ImplicitEntityToggle"]],
+    Entity["Isotope", {}],
+    SelectWithContents->True], ",", 
+   RowBox[{"Entity", "[", 
+    RowBox[{"\<\"Isotope\"\>", ",", 
+     RowBox[{"{", "\<\"Helium3\"\>", "}"}]}], "]"}], ",", 
+   RowBox[{"Entity", "[", 
+    RowBox[{"\<\"Isotope\"\>", ",", 
+     RowBox[{"{", "\<\"Hydrogen3\"\>", "}"}]}], "]"}], ",", 
+   RowBox[{"Entity", "[", 
+    RowBox[{"\<\"Isotope\"\>", ",", 
+     RowBox[{"{", "\<\"Hydrogen3\"\>", "}"}]}], "]"}], ",", 
+   RowBox[{"Entity", "[", 
+    RowBox[{"\<\"Isotope\"\>", ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Hydrogen5\"\>", ",", "\<\"Hydrogen3\"\>"}], "}"}]}], "]"}],
+    ",", 
+   RowBox[{"Entity", "[", 
+    RowBox[{"\<\"Isotope\"\>", ",", 
+     RowBox[{"{", "\<\"Hydrogen5\"\>", "}"}]}], "]"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.781167328222951*^9, 3.781167330284294*^9}},
+ CellLabel->
+  "Out[1289]=",ExpressionUUID->"51d6e207-a993-4d37-aee3-128b22a6ad27"]
+}, Open  ]]
+},
+WindowSize->{1920, 997},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+WindowStatusArea->None,
+FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (March 6, 2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 8448, 205, 884, "Input",ExpressionUUID->"32991165-3941-4a03-979e-697b0301f888"],
+Cell[CellGroupData[{
+Cell[9031, 229, 772, 11, 48, "Input",ExpressionUUID->"4abcb08d-d8f4-4922-90a5-141bb8b6b584"],
+Cell[9806, 242, 240, 4, 32, "Output",ExpressionUUID->"17ea1729-b476-409f-bff5-8b2430023716"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10083, 251, 155, 3, 28, "Input",ExpressionUUID->"eeb7faa9-167c-4577-8483-da778dff08b5"],
+Cell[10241, 256, 179, 3, 32, "Output",ExpressionUUID->"d12e860a-46e1-45ed-bb7d-09e7cc8d2ed3"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10457, 264, 320, 7, 28, "Input",ExpressionUUID->"cadbf427-5cab-4b5e-b21f-7d8c5e1d1971"],
+Cell[10780, 273, 215, 5, 32, "Output",ExpressionUUID->"e9f47cdb-4c4b-45cb-8dfa-4fa73d576e76"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11032, 283, 739, 12, 28, "Input",ExpressionUUID->"4064c869-cc21-417d-ad1f-e756cedee4cd"],
+Cell[11774, 297, 784, 20, 32, "Output",ExpressionUUID->"8810ef3b-33c9-4e85-936a-6a3b4e1ea26d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12595, 322, 235, 5, 28, "Input",ExpressionUUID->"7dcf3457-4fb2-4f64-b4bf-3ce722245217"],
+Cell[12833, 329, 2299, 52, 45, "Output",ExpressionUUID->"51d6e207-a993-4d37-aee3-128b22a6ad27"]
+}, Open  ]]
+}
+]
+*)
+

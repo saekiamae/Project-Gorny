@@ -1,0 +1,336 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     12599,        328]
+NotebookOptionsPosition[     10718,        295]
+NotebookOutlinePosition[     11061,        310]
+CellTagsIndexPosition[     11018,        307]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"EN", "=", 
+   RowBox[{"-", "939.57"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"EB", "=", 
+   RowBox[{"-", "923.40"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Ef", "=", 
+   RowBox[{"EN", "-", "EB"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"e2", "=", "0.00000000000014396"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"EQ", "=", 
+   RowBox[{"Hold", "[", 
+    RowBox[{"Ef", "\[Equal]", 
+     RowBox[{
+      FractionBox[
+       RowBox[{"-", "e2"}], "L"], "-", 
+      RowBox[{
+       FractionBox["1", "4"], 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", "1"}], "+", 
+         RowBox[{"3", 
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{"Cos", "[", "\[Theta]", "]"}], ")"}], "2"]}]}], ")"}], 
+       "*", 
+       FractionBox["e2", "L"]}]}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[Theta]", "=", 
+   RowBox[{"10", "\[Degree]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{"ReleaseHold", "[", "EQ", "]"}], ",", "L"}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[Theta]", "=", 
+   RowBox[{"30", "\[Degree]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{"ReleaseHold", "[", "EQ", "]"}], ",", "L"}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[Theta]", "=", 
+   RowBox[{"45", "\[Degree]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{"ReleaseHold", "[", "EQ", "]"}], ",", "L"}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[Theta]", "=", 
+   RowBox[{"54", "\[Degree]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{"ReleaseHold", "[", "EQ", "]"}], ",", "L"}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[Theta]", "=", 
+   RowBox[{"60", "\[Degree]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{"ReleaseHold", "[", "EQ", "]"}], ",", "L"}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[Theta]", "=", 
+   RowBox[{"75", "\[Degree]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{"ReleaseHold", "[", "EQ", "]"}], ",", "L"}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[Theta]", "=", 
+   RowBox[{"89", "\[Degree]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{"ReleaseHold", "[", "EQ", "]"}], ",", "L"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.771935675018007*^9, 3.771935786463639*^9}, 
+   3.7719358323767014`*^9, {3.7719362441417017`*^9, 3.771936415471779*^9}, {
+   3.7719364738551736`*^9, 3.7719364952569485`*^9}, {3.771936578853343*^9, 
+   3.7719367033315372`*^9}, {3.772606147988531*^9, 3.7726061481756353`*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"7b335e6c-62d2-486a-ae23-688becf1eb78"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Solve","ratnz",
+   "\"Solve was unable to solve the system with inexact coefficients. The \
+answer was obtained by solving a corresponding exact system and numericizing \
+the result.\"",2,8,1,16956562821380910696,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.7719364165248976`*^9, {3.771936478064662*^9, 3.771936496539381*^9}, 
+   3.771936581351903*^9, 3.7719367071037536`*^9, 3.772606149750634*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"ceffe7a6-b1c8-42f4-a16f-8ad371e7c891"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{"L", "\[Rule]", "1.3153018313736999`*^-14"}], "}"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{
+  3.7719364165268326`*^9, {3.7719364780851583`*^9, 3.771936496558902*^9}, 
+   3.771936581373372*^9, 3.771936707124279*^9, 3.7726061498068914`*^9},
+ CellLabel->"Out[8]=",ExpressionUUID->"7987e31f-0df9-4cf4-92c2-ef76de3c8bb4"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Solve","ratnz",
+   "\"Solve was unable to solve the system with inexact coefficients. The \
+answer was obtained by solving a corresponding exact system and numericizing \
+the result.\"",2,10,2,16956562821380910696,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.7719364165248976`*^9, {3.771936478064662*^9, 3.771936496539381*^9}, 
+   3.771936581351903*^9, 3.7719367071037536`*^9, 3.772606149818198*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"9d285f40-3a61-4116-991e-07e3db426134"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{"L", "\[Rule]", "1.1685064935064934`*^-14"}], "}"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{
+  3.7719364165268326`*^9, {3.7719364780851583`*^9, 3.771936496558902*^9}, 
+   3.771936581373372*^9, 3.771936707124279*^9, 3.772606149868148*^9},
+ CellLabel->"Out[10]=",ExpressionUUID->"9970d3bb-2403-4011-b09b-cd910b95eebc"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Solve","ratnz",
+   "\"Solve was unable to solve the system with inexact coefficients. The \
+answer was obtained by solving a corresponding exact system and numericizing \
+the result.\"",2,12,3,16956562821380910696,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.7719364165248976`*^9, {3.771936478064662*^9, 3.771936496539381*^9}, 
+   3.771936581351903*^9, 3.7719367071037536`*^9, 3.7726061498790045`*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"4d2976a0-044c-4aea-91f3-0200c855f0cb"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{"L", "\[Rule]", "1.0015769944341372`*^-14"}], "}"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{
+  3.7719364165268326`*^9, {3.7719364780851583`*^9, 3.771936496558902*^9}, 
+   3.771936581373372*^9, 3.771936707124279*^9, 3.7726061499474583`*^9},
+ CellLabel->"Out[12]=",ExpressionUUID->"8907b538-ab88-4945-8a4e-65772d709ba2"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Solve","ratnz",
+   "\"Solve was unable to solve the system with inexact coefficients. The \
+answer was obtained by solving a corresponding exact system and numericizing \
+the result.\"",2,14,4,16956562821380910696,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.7719364165248976`*^9, {3.771936478064662*^9, 3.771936496539381*^9}, 
+   3.771936581351903*^9, 3.7719367071037536`*^9, 3.772606149959076*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"100fb74c-2b33-427c-9fa9-d0c4225aa8e8"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{"L", "\[Rule]", "8.984088902824273`*^-15"}], "}"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{
+  3.7719364165268326`*^9, {3.7719364780851583`*^9, 3.771936496558902*^9}, 
+   3.771936581373372*^9, 3.771936707124279*^9, 3.772606150002837*^9},
+ CellLabel->"Out[14]=",ExpressionUUID->"de36aa99-403a-4402-b9c8-93907aaf94df"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Solve","ratnz",
+   "\"Solve was unable to solve the system with inexact coefficients. The \
+answer was obtained by solving a corresponding exact system and numericizing \
+the result.\"",2,16,5,16956562821380910696,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.7719364165248976`*^9, {3.771936478064662*^9, 3.771936496539381*^9}, 
+   3.771936581351903*^9, 3.7719367071037536`*^9, 3.7726061500107155`*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"de8bf623-d798-460d-bfc0-7693b3d07076"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{"L", "\[Rule]", "8.34647495361781`*^-15"}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.7719364165268326`*^9, {3.7719364780851583`*^9, 3.771936496558902*^9}, 
+   3.771936581373372*^9, 3.771936707124279*^9, 3.7726061500328116`*^9},
+ CellLabel->"Out[16]=",ExpressionUUID->"2d777eeb-971b-4d2c-9d2c-10f1e85810cd"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Solve","ratnz",
+   "\"Solve was unable to solve the system with inexact coefficients. The \
+answer was obtained by solving a corresponding exact system and numericizing \
+the result.\"",2,18,6,16956562821380910696,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.7719364165248976`*^9, {3.771936478064662*^9, 3.771936496539381*^9}, 
+   3.771936581351903*^9, 3.7719367071037536`*^9, 3.7726061500379257`*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"db4ca7c1-65c2-4160-9b76-3471a8c1b8d7"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{"L", "\[Rule]", "7.124466207587947`*^-15"}], "}"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{
+  3.7719364165268326`*^9, {3.7719364780851583`*^9, 3.771936496558902*^9}, 
+   3.771936581373372*^9, 3.771936707124279*^9, 3.7726061500516944`*^9},
+ CellLabel->"Out[18]=",ExpressionUUID->"e1425a0f-0d6d-4c5e-ad3c-05b94272cf44"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Solve","ratnz",
+   "\"Solve was unable to solve the system with inexact coefficients. The \
+answer was obtained by solving a corresponding exact system and numericizing \
+the result.\"",2,20,7,16956562821380910696,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.7719364165248976`*^9, {3.771936478064662*^9, 3.771936496539381*^9}, 
+   3.771936581351903*^9, 3.7719367071037536`*^9, 3.772606150066869*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"491f7bb0-db4b-4953-ab80-9d88d2cf1af7"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{"L", "\[Rule]", "6.679213741705264`*^-15"}], "}"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{
+  3.7719364165268326`*^9, {3.7719364780851583`*^9, 3.771936496558902*^9}, 
+   3.771936581373372*^9, 3.771936707124279*^9, 3.7726061500850525`*^9},
+ CellLabel->"Out[20]=",ExpressionUUID->"3d0f9973-4d03-4f4b-8af8-d5b565c67feb"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"N", "[", 
+  RowBox[{
+   SqrtBox["2"], "-", 
+   FractionBox["5", "3"], "-", 
+   FractionBox["4", 
+    SqrtBox["3"]]}], "]"}]], "Input",
+ CellChangeTimes->{{3.772608266106958*^9, 3.7726082897501526`*^9}},
+ CellLabel->"In[22]:=",ExpressionUUID->"38b730bc-9b86-4797-af66-88090cfef91c"],
+
+Cell[BoxData[
+ RowBox[{"-", "2.561854181052075`"}]], "Output",
+ CellChangeTimes->{{3.7726082830350533`*^9, 3.772608290700104*^9}},
+ CellLabel->"Out[22]=",ExpressionUUID->"9a826b16-35cc-4c02-9436-7a3468575002"]
+}, Open  ]]
+},
+WindowSize->{775, 872},
+WindowMargins->{{213, Automatic}, {Automatic, 14}},
+FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (March 6, 2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 2954, 85, 416, "Input",ExpressionUUID->"7b335e6c-62d2-486a-ae23-688becf1eb78"],
+Cell[3537, 109, 564, 12, 39, "Message",ExpressionUUID->"ceffe7a6-b1c8-42f4-a16f-8ad371e7c891"],
+Cell[4104, 123, 374, 8, 36, "Output",ExpressionUUID->"7987e31f-0df9-4cf4-92c2-ef76de3c8bb4"],
+Cell[4481, 133, 565, 12, 39, "Message",ExpressionUUID->"9d285f40-3a61-4116-991e-07e3db426134"],
+Cell[5049, 147, 373, 8, 36, "Output",ExpressionUUID->"9970d3bb-2403-4011-b09b-cd910b95eebc"],
+Cell[5425, 157, 567, 12, 39, "Message",ExpressionUUID->"4d2976a0-044c-4aea-91f3-0200c855f0cb"],
+Cell[5995, 171, 375, 8, 36, "Output",ExpressionUUID->"8907b538-ab88-4945-8a4e-65772d709ba2"],
+Cell[6373, 181, 565, 12, 39, "Message",ExpressionUUID->"100fb74c-2b33-427c-9fa9-d0c4225aa8e8"],
+Cell[6941, 195, 372, 8, 36, "Output",ExpressionUUID->"de36aa99-403a-4402-b9c8-93907aaf94df"],
+Cell[7316, 205, 567, 12, 39, "Message",ExpressionUUID->"de8bf623-d798-460d-bfc0-7693b3d07076"],
+Cell[7886, 219, 370, 7, 36, "Output",ExpressionUUID->"2d777eeb-971b-4d2c-9d2c-10f1e85810cd"],
+Cell[8259, 228, 567, 12, 39, "Message",ExpressionUUID->"db4ca7c1-65c2-4160-9b76-3471a8c1b8d7"],
+Cell[8829, 242, 374, 8, 36, "Output",ExpressionUUID->"e1425a0f-0d6d-4c5e-ad3c-05b94272cf44"],
+Cell[9206, 252, 565, 12, 39, "Message",ExpressionUUID->"491f7bb0-db4b-4953-ab80-9d88d2cf1af7"],
+Cell[9774, 266, 374, 8, 36, "Output",ExpressionUUID->"3d0f9973-4d03-4f4b-8af8-d5b565c67feb"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10185, 279, 305, 8, 60, "Input",ExpressionUUID->"38b730bc-9b86-4797-af66-88090cfef91c"],
+Cell[10493, 289, 209, 3, 32, "Output",ExpressionUUID->"9a826b16-35cc-4c02-9436-7a3468575002"]
+}, Open  ]]
+}
+]
+*)
+
