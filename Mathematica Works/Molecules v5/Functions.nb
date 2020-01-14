@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     27139,        800]
-NotebookOptionsPosition[     26840,        787]
-NotebookOutlinePosition[     27183,        802]
-CellTagsIndexPosition[     27140,        799]
+NotebookDataLength[     27669,        814]
+NotebookOptionsPosition[     27369,        801]
+NotebookOutlinePosition[     27713,        816]
+CellTagsIndexPosition[     27670,        813]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -662,7 +662,19 @@ Cell[BoxData[{
         RowBox[{"[", "5", "]"}], "]"}], ",", "\"\< \>\"", ",", "res", ",", 
        "\"\< \>\"", ",", "sum"}], "]"}], ";", 
      RowBox[{"Return", "[", 
-      FractionBox["res", "sum"], "]"}]}], ")"}]}], "\[IndentingNewLine]", 
+      FractionBox["res", "sum"], "]"}]}], ")"}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"If", "[", 
+    RowBox[{
+     RowBox[{"NewMode", "\[Equal]", "0"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"gclrcmd", "=", "\"\<SetColour(\>\""}], ";"}], 
+     "\[IndentingNewLine]", ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"gclrcmd", "=", "\"\<SetColor(\>\""}], ";"}]}], 
+    "\[IndentingNewLine]", "]"}], ";"}], 
   "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"GeoPrint", "[", 
@@ -689,7 +701,7 @@ Cell[BoxData[{
          RowBox[{"1", ",", "3"}], "]"}], "]"}], "*", "10"}], ",", 
       "\"\<})\>\""}], "]"}], 
     RowBox[{"Print", "[", 
-     RowBox[{"\"\<SetColour(\>\"", ",", 
+     RowBox[{"gclrcmd", ",", 
       RowBox[{"x", "[", 
        RowBox[{"[", "5", "]"}], "]"}], ",", "\"\<,\>\"", ",", "col", ",", 
       "\"\<)\>\""}], "]"}]}], ")"}]}], "\[IndentingNewLine]", 
@@ -704,8 +716,8 @@ Cell[BoxData[{
       ",", "\"\<)\>\""}], "]"}], 
     RowBox[{"Print", "[", 
      RowBox[{
-     "\"\<SetColour(\>\"", ",", "name", ",", "\"\<,\>\"", ",", "col", ",", 
-      "\"\<)\>\""}], "]"}]}], ")"}]}], "\[IndentingNewLine]", 
+     "gclrcmd", ",", "name", ",", "\"\<,\>\"", ",", "col", ",", "\"\<)\>\""}],
+      "]"}]}], ")"}]}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{
    RowBox[{"GeoLPrint", "[", 
@@ -720,7 +732,7 @@ Cell[BoxData[{
        ",", "\"\<)\>\""}], "]"}], 
      RowBox[{"Print", "[", 
       RowBox[{
-      "\"\<SetColour(\>\"", ",", "name", ",", "\"\<,\>\"", ",", "col", ",", 
+      "gclrcmd", ",", "name", ",", "\"\<,\>\"", ",", "col", ",", 
        "\"\<)\>\""}], "]"}], 
      RowBox[{"Print", "[", 
       RowBox[{
@@ -782,11 +794,13 @@ Cell[BoxData[{
    3.784809838089864*^9}, 3.784810752387339*^9, {3.784810952259107*^9, 
    3.784811065894656*^9}, {3.7848124261178493`*^9, 3.7848124288098783`*^9}, {
    3.7852160821559277`*^9, 3.78521612438194*^9}, {3.785218284165902*^9, 
-   3.785218303655775*^9}},ExpressionUUID->"5f088378-fe54-448c-8beb-\
+   3.785218303655775*^9}, {3.7879855001271257`*^9, 3.7879855549697876`*^9}, {
+   3.787985591198206*^9, 3.7879856626546707`*^9}, {3.787985944361144*^9, 
+   3.7879859601908364`*^9}},ExpressionUUID->"5f088378-fe54-448c-8beb-\
 4f3d71f8213d"]
 },
 WindowSize->{1086, 872},
-WindowMargins->{{6, Automatic}, {-84, Automatic}},
+WindowMargins->{{347, Automatic}, {80, Automatic}},
 FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (March 6, 2018)",
 StyleDefinitions->"Default.nb"
 ]
@@ -801,7 +815,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 26278, 765, 2791, "Input",ExpressionUUID->"5f088378-fe54-448c-8beb-4f3d71f8213d"]
+Cell[558, 20, 26807, 779, 2886, "Input",ExpressionUUID->"5f088378-fe54-448c-8beb-4f3d71f8213d"]
 }
 ]
 *)
