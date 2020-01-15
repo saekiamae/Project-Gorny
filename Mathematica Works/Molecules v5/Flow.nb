@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     80420,       1189]
-NotebookOptionsPosition[     80089,       1175]
-NotebookOutlinePosition[     80463,       1191]
-CellTagsIndexPosition[     80420,       1188]
+NotebookDataLength[     81294,       1209]
+NotebookOptionsPosition[     80963,       1195]
+NotebookOutlinePosition[     81337,       1211]
+CellTagsIndexPosition[     81294,       1208]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -76,8 +76,25 @@ Cell[BoxData[{
        "EO", ",", "ED", ",", 
        RowBox[{
         RowBox[{"IQ", "[", "P", "]"}], "*", 
-        SuperscriptBox["10", "18"]}], ",", "ya", ",", "k", 
-       "\[IndentingNewLine]", 
+        SuperscriptBox["10", "18"]}], ",", "ya", ",", "k", ",", 
+       RowBox[{"coef", "[", 
+        RowBox[{"[", 
+         RowBox[{"1", ",", "1"}], "]"}], "]"}], ",", 
+       RowBox[{"coef", "[", 
+        RowBox[{"[", 
+         RowBox[{"2", ",", "1"}], "]"}], "]"}], ",", 
+       RowBox[{"coef", "[", 
+        RowBox[{"[", 
+         RowBox[{"1", ",", "2"}], "]"}], "]"}], ",", 
+       RowBox[{"coef", "[", 
+        RowBox[{"[", 
+         RowBox[{"2", ",", "2"}], "]"}], "]"}], ",", 
+       RowBox[{"coef", "[", 
+        RowBox[{"[", 
+         RowBox[{"1", ",", "3"}], "]"}], "]"}], ",", 
+       RowBox[{"coef", "[", 
+        RowBox[{"[", 
+         RowBox[{"2", ",", "3"}], "]"}], "]"}], "\[IndentingNewLine]", 
        RowBox[{"(*", 
         RowBox[{",", "\[IndentingNewLine]", 
          RowBox[{"A1", "[", 
@@ -160,8 +177,9 @@ Cell[BoxData[{
        "\"\<V\>\"", ",", "\"\<L[A]\>\"", ",", "\"\<mA\>\"", ",", "\"\<mB\>\"",
         ",", "\"\<\!\(\*SubscriptBox[\(E\), \(A\)]\)[eV]\>\"", ",", 
        "\"\<\!\(\*SubscriptBox[\(E\), \(B\)]\)[eV]\>\"", ",", "\"\<D[eV]\>\"",
-        ",", "\"\<P[D]\>\"", ",", "\"\<r\>\"", ",", "\"\<k\>\"", 
-       "\[IndentingNewLine]", 
+        ",", "\"\<P[D]\>\"", ",", "\"\<r\>\"", ",", "\"\<k\>\"", ",", 
+       "\"\<fA\>\"", ",", "\"\<fB\>\"", ",", "\"\<gA\>\"", ",", "\"\<gB\>\"", 
+       ",", "\"\<hA\>\"", ",", "\"\<hB\>\"", "\[IndentingNewLine]", 
        RowBox[{"(*", 
         RowBox[{
         ",", "\[IndentingNewLine]", "\"\<A1X\>\"", ",", "\"\<A1Y\>\"", ",", 
@@ -1169,8 +1187,10 @@ SuperscriptBox[\(cm\), \(4\)]]\)]\>\"", ",", "\"\<\[Omega]A\>\"", ",",
    3.785845398310058*^9}, {3.7858480190062675`*^9, 3.7858480215903554`*^9}, {
    3.7858480586053705`*^9, 3.7858480999996977`*^9}, {3.78780990435433*^9, 
    3.787809905932086*^9}, 3.7878111786087437`*^9, {3.7878118991179757`*^9, 
-   3.7878119078971643`*^9}, {3.787816416964203*^9, 
-   3.787816433792182*^9}},ExpressionUUID->"9efd49e5-64f4-44ff-a3b5-\
+   3.7878119078971643`*^9}, {3.787816416964203*^9, 3.787816433792182*^9}, {
+   3.7880739460331097`*^9, 3.7880739827860365`*^9}, {3.7880768545400577`*^9, 
+   3.7880769075333295`*^9}, 
+   3.788077041338476*^9},ExpressionUUID->"9efd49e5-64f4-44ff-a3b5-\
 5b97ee196ba7"]
 },
 WindowSize->{775, 872},
@@ -1190,7 +1210,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 79527, 1153, 1310, "Input",ExpressionUUID->"9efd49e5-64f4-44ff-a3b5-5b97ee196ba7"]
+Cell[558, 20, 80401, 1173, 1358, "Input",ExpressionUUID->"9efd49e5-64f4-44ff-a3b5-5b97ee196ba7"]
 }
 ]
 *)
