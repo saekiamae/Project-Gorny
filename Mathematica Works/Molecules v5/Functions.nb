@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     27669,        814]
-NotebookOptionsPosition[     27369,        801]
-NotebookOutlinePosition[     27713,        816]
-CellTagsIndexPosition[     27670,        813]
+NotebookDataLength[     27930,        822]
+NotebookOptionsPosition[     27630,        809]
+NotebookOutlinePosition[     27974,        824]
+CellTagsIndexPosition[     27931,        821]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -424,14 +424,21 @@ Cell[BoxData[{
   RowBox[{"QM", "[", "x_", "]"}], ":=", 
   RowBox[{"QuantityMagnitude", "[", "x", "]"}]}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{
-   RowBox[{"QV", "[", "x_", "]"}], ":=", 
-   RowBox[{"Check", "[", 
+  RowBox[{"QV", "[", "x_", "]"}], ":=", 
+  RowBox[{"Check", "[", 
+   RowBox[{
     RowBox[{
-     RowBox[{
-      RowBox[{"QN", "[", 
-       RowBox[{"Simplify", "[", "x", "]"}], "]"}], ";", "False"}], ",", 
-     "True"}], "]"}]}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+     RowBox[{"QN", "[", 
+      RowBox[{"Simplify", "[", "x", "]"}], "]"}], ";", "False"}], ",", 
+    "True"}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"LR", "[", 
+    RowBox[{"l_", ",", "n_", ",", "e_"}], "]"}], ":=", 
+   RowBox[{"ReplacePart", "[", 
+    RowBox[{"l", ",", 
+     RowBox[{"n", "\[Rule]", "e"}]}], "]"}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{
    RowBox[{"MultiDel", "[", 
@@ -796,7 +803,8 @@ Cell[BoxData[{
    3.7852160821559277`*^9, 3.78521612438194*^9}, {3.785218284165902*^9, 
    3.785218303655775*^9}, {3.7879855001271257`*^9, 3.7879855549697876`*^9}, {
    3.787985591198206*^9, 3.7879856626546707`*^9}, {3.787985944361144*^9, 
-   3.7879859601908364`*^9}},ExpressionUUID->"5f088378-fe54-448c-8beb-\
+   3.7879859601908364`*^9}, {3.788065532672071*^9, 
+   3.788065642758297*^9}},ExpressionUUID->"5f088378-fe54-448c-8beb-\
 4f3d71f8213d"]
 },
 WindowSize->{1086, 872},
@@ -815,7 +823,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 26807, 779, 2886, "Input",ExpressionUUID->"5f088378-fe54-448c-8beb-4f3d71f8213d"]
+Cell[558, 20, 27068, 787, 2905, "Input",ExpressionUUID->"5f088378-fe54-448c-8beb-4f3d71f8213d"]
 }
 ]
 *)

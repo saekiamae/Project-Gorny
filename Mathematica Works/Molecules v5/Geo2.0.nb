@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     11495,        253]
-NotebookOptionsPosition[     11194,        240]
-NotebookOutlinePosition[     11539,        255]
-CellTagsIndexPosition[     11496,        252]
+NotebookDataLength[     12018,        264]
+NotebookOptionsPosition[     11718,        251]
+NotebookOutlinePosition[     12062,        266]
+CellTagsIndexPosition[     12019,        263]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -36,7 +36,7 @@ Cell[BoxData[
          RowBox[{
           RowBox[{"-", "1"}], "<", "xa", "<", "1"}], ",", 
          "\[IndentingNewLine]", 
-         RowBox[{"0", "<", "ya", "<", "0.75"}], ",", "\[IndentingNewLine]", 
+         RowBox[{"0.15", "<", "ya", "<", "0.75"}], ",", "\[IndentingNewLine]", 
          RowBox[{"0", "<", "k", "<", "10"}]}], "\[IndentingNewLine]", "}"}], 
        "\[IndentingNewLine]", ",", "\[IndentingNewLine]", 
        RowBox[{"{", "\[IndentingNewLine]", 
@@ -45,6 +45,14 @@ Cell[BoxData[
           RowBox[{"-", "1"}], "<", "xa", "<", "1"}], ",", 
          "\[IndentingNewLine]", 
          RowBox[{"0.75", "<", "ya", "<", "1.5"}], ",", "\[IndentingNewLine]", 
+         RowBox[{"0", "<", "k", "<", "10"}]}], "\[IndentingNewLine]", "}"}], 
+       "\[IndentingNewLine]", ",", "\[IndentingNewLine]", 
+       RowBox[{"{", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "1"}], "<", "xa", "<", "1"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"0", "<", "ya", "<", "0.15"}], ",", "\[IndentingNewLine]", 
          RowBox[{"0", "<", "k", "<", "10"}]}], "\[IndentingNewLine]", "}"}], 
        "\[IndentingNewLine]", ",", "\[IndentingNewLine]", 
        RowBox[{"{", "\[IndentingNewLine]", 
@@ -168,13 +176,14 @@ Cell[BoxData[
      RowBox[{"ix", "[", 
       RowBox[{"[", "1", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
     "\[IndentingNewLine]", 
-    RowBox[{"pq", "=", 
-     RowBox[{"i1q", "=", 
-      RowBox[{"i2q", "=", 
-       RowBox[{"dq", "=", 
-        RowBox[{"Join", "[", 
-         RowBox[{"KER", ",", "ix"}], "]"}]}]}]}]}]}], "\[IndentingNewLine]", 
-   ")"}]}]], "Input",
+    RowBox[{"mq", "=", 
+     RowBox[{"pq", "=", 
+      RowBox[{"i1q", "=", 
+       RowBox[{"i2q", "=", 
+        RowBox[{"dq", "=", 
+         RowBox[{"Join", "[", 
+          RowBox[{"KER", ",", "ix"}], "]"}]}]}]}]}]}]}], 
+   "\[IndentingNewLine]", ")"}]}]], "Input",
  CellChangeTimes->{{3.7858455945463743`*^9, 3.7858456249849734`*^9}, 
    3.7858459504236603`*^9, {3.785846054449542*^9, 3.7858460552105026`*^9}, 
    3.785846218237547*^9, {3.785846827972937*^9, 3.7858468621605186`*^9}, {
@@ -235,11 +244,13 @@ Cell[BoxData[
    3.7878168788422785`*^9, 3.787816879068673*^9}, {3.7879865955011826`*^9, 
    3.787986605853532*^9}, {3.787986761934795*^9, 3.78798683306231*^9}, {
    3.7879877404256706`*^9, 3.78798774555523*^9}, {3.7879879114499297`*^9, 
-   3.7879879366422586`*^9}},ExpressionUUID->"382477af-70a4-4ec5-bbfb-\
+   3.7879879366422586`*^9}, {3.7880097563707647`*^9, 3.788009792054341*^9}, {
+   3.7880664950639563`*^9, 
+   3.788066496164015*^9}},ExpressionUUID->"382477af-70a4-4ec5-bbfb-\
 35d9ce9dbfaf"]
 },
 WindowSize->{1143, 854},
-WindowMargins->{{Automatic, -131}, {Automatic, 60}},
+WindowMargins->{{Automatic, 228}, {16, Automatic}},
 FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (March 6, 2018)",
 StyleDefinitions->"Default.nb"
 ]
@@ -254,7 +265,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 10632, 218, 1236, "Input",ExpressionUUID->"382477af-70a4-4ec5-bbfb-35d9ce9dbfaf"]
+Cell[558, 20, 11156, 229, 1350, "Input",ExpressionUUID->"382477af-70a4-4ec5-bbfb-35d9ce9dbfaf"]
 }
 ]
 *)
