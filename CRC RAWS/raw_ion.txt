@@ -772,5 +772,273 @@ C6H6ClN m-Chloroaniline (8.09) 835
 C6H6ClN p-Chloroaniline (≤ 8.18) ≤ 844
 C6H6N2O2 o-Nitroaniline (8.27) 861
 
+C6H6N2O2 m-Nitroaniline (8.31) 865
+C6H6N2O2 p-Nitroaniline (8.34) 859
+C6H6O Phenol 8.49 ± 0.02 723
+C6H6O2 p-Hydroquinone 7.94 ± 0.01 503
+C6H6S Benzenethiol (8.32) 915
+C6H7N Aniline 7.720 ± 0.002 832
+C6H7N 2-Methylpyridine (9.02) 970
+C6H7N 3-Methylpyridine (9.04) 979
+C6H7N 4-Methylpyridine (9.04) 976
+C6H8N2 o-Phenylenediamine (7.2) 787
+C6H8N2 m-Phenylenediamine (7.14) 777
+C6H8N2 p-Phenylenediamine (6.87 ± 0.05) 759
+C6H10 1,5-Hexadiene 9.27 ± 0.05 978
+C6H10 1-Hexyne 10.03 ± 0.05 1089
+C6H10 3,3-Dimethyl-1-butyne 9.90 ± 0.04 1060
+C6H10 Cyclohexene 8.945 ± 0.01 859
+C6H10O Cyclohexanone 9.14 ± 0.01 656
+C6H10O Mesityl oxide 9.10 ± 0.01 694
+C6H10O4 Diethyl oxalate (9.8) 205
+C6H11NO Caprolactam (9.07 ± 0.02) 629
+C6H12 1-Hexene 9.44 ± 0.04 869
+C6H12 cis-2-Hexene (8.97 ± 0.01) 818
+C6H12 trans-2-Hexene (8.97 ± 0.01) 814
+C6H12 2-Methyl-1-pentene (9.08 ± 0.01) 817
+C6H12 4-Methyl-1-pentene 9.45 ± 0.01 862
+C6H12 2-Methyl-2-pentene (8.58) 761
+C6H12 4-Methyl-cis-2-pentene 8.98 ± 0.01 809
+C6H12 4-Methyl-trans-2-pentene (8.97 ± 0.01) 804
+C6H12 2-Ethyl-1-butene (9.06 ± 0.02) 818
+C6H12 2,3-Dimethyl-1-butene (9.07 ± 0.01) 812
+C6H12 2,3-Dimethyl-2-butene 8.27 ± 0.01 729
+C6H12 Cyclohexane 9.86 ± 0.03 828
+C6H12 Methylcyclopentane (9.85) 845
+C6H12O Hexanal 9.72 ± 0.05 691
+C6H12O 2-Hexanone 9.3 ± 0.1 626
+C6H12O 3-Hexanone 9.12 ± 0.02 600
+C6H12O 3-Methyl-2-pentanone 9.21 ± 0.01 600
+C6H12O 4-Methyl-2-pentanone 9.30 ± 0.01 609
+C6H12O 2-Methyl-3-pentanone 9.10 ± 0.01 592
+C6H12O 3,3-Dimethyl-2-butanone 9.12 ± 0.02 589
+C6H12O Cyclohexanol (9.75) 651
+C6H12O2 Hexanoic acid ≤ 10.12 ≤ 463
+C6H12O2 Butyl acetate (9.92 ± .05) 471
+C6H12O2 sec-Butyl acetate 9.90 453
+C6H12O2 Methyl 2,2-dimethylpropanoate (9.90 ± 0.04) 466
+C6H13I 1-Iodohexane 9.179 794
+C6H13N Cyclohexylamine (8.86) 750
+C6H14 Hexane 10.13 810
+C6H14 2-Methylpentane (10.12) 802
+C6H14 3-Methylpentane (10.08) 801
+C6H14 2,2-Dimethylbutane (10.06) 787
+C6H14 2,3-Dimethylbutane (10.02) 791
+C6H14O 1-Hexanol (9.89) 639
+C6H14O 2-Hexanol (9.80 ± 0.03) 611
+C6H14O 3-Hexanol (9.63 ± 0.03) 599
+C6H14O Dipropyl ether (9.27) 602
+C6H14O Diisopropyl ether 9.20 ± 0.05 569
+C6H14O Butyl ethyl ether (9.36) 610
+C6H14O Methyl pentyl ether (≤ 9.67) ≤ 657
+C6H14O2 1,1-Diethoxyethane (9.2) 434
+
+C6H14O3 Diethylene glycol dimethyl ether ≤ 9.8 ≤ 448
+C6H14S Dipropyl sulfide 8.30 ± 0.02 676
+C6H14S Diisopropyl sulfide (8.2 ± 0.2) 649
+C6H15N Hexylamine (8.63 ± 0.05) 699
+C6H15N Dipropylamine (7.84 ± 0.02) 641
+C6H15N Diisopropylamine (7.73 ± 0.03) 602
+C6H15N Triethylamine (7.50 ± 0.02) 631
+C6H15NO3 Triethanolamine (7.9) 206
+C7H3F5 2,3,4,5,6-Pentafluorotoluene (9.4) 64
+C7H5ClO Benzoyl chloride (9.53) 815
+C7H5Cl3 (Trichloromethyl)benzene (≤ 9.60) ≤ 914
+C7H5F3 (Trifluoromethyl)benzene 9.685 ± 0.005 335
+C7H5N Benzonitrile 9.70 ± 0.01 1154
+C7H6O Benzaldehyde 9.49 ± 0.02 878
+C7H6O2 Benzoic acid (9.3) 604
+C7H7Br p-Bromotoluene 8.67 ± 0.02 908
+C7H7Cl o-Chlorotoluene (8.7 ± 0.1) 856
+C7H7Cl m-Chlorotoluene (8.83) 869
+C7H7Cl p-Chlorotoluene (8.69) 855
+C7H7Cl (Chloromethyl)benzene 9.10 ± 0.02 897
+C7H7F o-Fluorotoluene 8.91 ± 0.01 709
+C7H7F m-Fluorotoluene 8.91 ± 0.01 709
+C7H7F p-Fluorotoluene 8.79 ± 0.01 701
+C7H7NO Benzamide (9.25) 792
+C7H7NO2 o-Nitrotoluene 9.24 946
+C7H7NO2 m-Nitrotoluene 9.45 ± 0.1 941
+C7H7NO2 p-Nitrotoluene 9.46 ± 0.05 942
+C7H8 Toluene 8.8276 ± 0.0006 901
+C7H8O o-Cresol (8.24) 670
+C7H8O m-Cresol 8.29 ± 0.07 668
+C7H8O p-Cresol (8.3) 675
+C7H8O Benzyl alcohol (8.3) 701
+C7H8O Anisole 8.22 ± 0.03 725
+C7H9N Benzylamine (8.64) 917
+C7H9N o-Methylaniline (7.44 ± 0.02) 772
+C7H9N m-Methylaniline (7.50 ± 0.02) 778
+C7H9N p-Methylaniline (7.24 ± 0.02) 753
+C7H9N N-Methylaniline 7.34 ± 0.04 792
+C7H9N 2,3-Dimethylpyridine (8.85 ± 0.02) 922
+C7H9N 2,4-Dimethylpyridine (8.85 ± 0.03) 918
+C7H9N 2,5-Dimethylpyridine (≤ 8.80 ± 0.05) ≤ 916
+C7H9N 2,6-Dimethylpyridine 8.86 ± 0.03 913
+C7H9N 3,4-Dimethylpyridine (≤ 9.15) ≤ 953
+C7H9N 3,5-Dimethylpyridine (≤ 9.25) ≤ 965
+C7H10O Dicyclopropyl ketone (9.1) 1041
+C7H14 1-Heptene 9.34 ± 0.10 839
+C7H14 trans-3-Heptene (8.92) 790
+C7H14 Cycloheptane 9.97 844
+C7H14 Methylcyclohexane 9.64 775
+C7H14 cis-1,2-Dimethylcyclopentane (9.92 ± 0.05) 828
+C7H14 trans-1,2-Dimethylcyclopentane 9.7 ± 0.2 799
+C7H14O 1-Heptanal (9.65) 668
+C7H14O 2-Heptanone 9.28 ± 0.10 594
+C7H14O 3-Heptanone 9.18 ± 0.08 589
+C7H14O 4-Heptanone 9.10 ± 0.06 577
+C7H14O 5-Methyl-2-hexanone (9.28) 586
+C7H14O 2,4-Dimethyl-3-pentanone 8.95 ± 0.01 552
+C7H14O 1-Methylcyclohexanol (9.8 ± 0.2) 586
+C7H16 Heptane 9.93 ± 0.10 771
+C7H16O 1-Heptanol (9.84) 614
+
+C7H16O 2-Heptanol (9.70) 580
+C7H16O 3-Heptanol (9.68) 578
+C7H16O 4-Heptanol (9.61) 572
+C7H16O Ethyl pentyl ether (≤ 9.49) ≤ 602
+C8H4O3 Phthalic anhydride (10.1) 603
+C8H6O4 Isophthalic acid (9.98) 268
+C8H6O4 Terephthalic acid (9.86) 232
+C8H7N 2-Methylbenzonitrile (≤ 9.38) 1085
+C8H7N 3-Methylbenzonitrile (≤ 9.34) 1085
+C8H7N 4-Methylbenzonitrile 9.32 ± 0.02 1083
+C8H7N Indole 7.7602 ± 0.0006 908
+C8H8 Styrene 8.464 ± 0.001 964
+C8H8O p-Tolualdehyde (9.33) 825
+C8H8O Acetophenone 9.29 ± 0.03 810
+C8H8O2 o-Toluic acid (9.1) 558
+C8H8O2 m-Toluic acid (9.43) 579
+C8H8O2 p-Toluic acid (9.23) 560
+C8H8O2 Benzeneacetic acid (8.26) 479
+C8H8O2 Methyl benzoate 9.32 ± 0.03 611
+C8H10 Ethylbenzene 8.77 ± 0.01 876
+C8H10 o-Xylene 8.56 ± 0.01 844
+C8H10 m-Xylene 8.56 ± 0.01 843
+C8H10 p-Xylene 8.44 ± 0.01 832
+C8H10O p-Ethylphenol (7.84) 613
+C8H10O 2,3-Xylenol (8.26) 640
+C8H10O 2,4-Xylenol (8.0) 609
+C8H10O 2,6-Xylenol (8.05) 615
+C8H10O 3,4-Xylenol (8.09) 624
+C8H10O Phenetole (8.13) 683
+C8H11N 2,4,6-Trimethylpyridine (≤ 8.9) ≤ 880
+C8H11N N-Ethylaniline (≤ 7.67) ≤ 794
+C8H11N N,N-Dimethylaniline 7.12 ± 0.02 787
+C8H14 1-Octyne (9.95 ± 0.02) 1040
+C8H14 2-Octyne 9.31 ± 0.01 961
+C8H14 3-Octyne 9.22 ± 0.01 952
+C8H14 4-Octyne 9.20 ± 0.01 946
+C8H16 1-Octene 9.43 ± 0.01 829
+C8H16 Cyclooctane 9.75 ± 0.05 816
+C8H16 Ethylcyclohexane (9.54) 748
+C8H16 1,1-Dimethylcyclohexane (9.42) 728
+C8H16 cis-1,2-Dimethylcyclohexane (<9.78) 772
+C8H16 trans-1,2-Dimethylcyclohexane 9.41 728
+C8H16 cis-1,3-Dimethylcyclohexane (<9.98) 778
+C8H16 trans-1,3-Dimethylcyclohexane 9.53 743
+C8H16 cis-1,4-Dimethylcyclohexane (<9.93) 782
+C8H16 trans-1,4-Dimethylcyclohexane (9.56) 738
+C8H16 Propylcyclopentane (9.34) 753
+C8H16O 2,2,4-Trimethyl-3-pentanone (8.80) 511
+C8H18 Octane 9.80 ± 0.10 737
+C8H18 2-Methylheptane (9.84) 734
+C8H18 2,2,4-Trimethylpentane (9.86) 713
+C8H18 2,2,3,3-Tetramethylbutane 9.8 720
+C8H18O Dibutyl ether (9.28) s 560
+C8H18O Di-sec-butyl ether (9.11) 511
+C8H18O Di-tert-butyl ether 8.88 ± 0.07 493
+C8H18S Dibutyl sulfide (8.2) 624
+C8H18S Di-tert-butyl sulfide (8.0) 583
+C8H18S Diisobutyl sulfide (8.34) 625
+C8H19N Dibutylamine (7.69) 586
+C8H19N Diisobutylamine (7.8) 574
+
+C8H20Si Tetraethylsilane (8.9) 595
+C9H7N Quinoline 8.62 ± 0.01 1041
+C9H7N Isoquinoline 8.53 ± 0.03 1032
+C9H8 Indene 8.14 ± 0.01 949
+C9H10 o-Methylstyrene (8.20) 908
+C9H10 m-Methylstyrene (8.15) 899
+C9H10 p-Methylstyrene (8.1) 895
+C9H10 Cyclopropylbenzene (8.35) 956
+C9H10 Indan (8.3) 864
+C9H10O2 Ethyl benzoate (8.9) 537
+C9H12 Propylbenzene 8.713 ± 0.010 848
+C9H12 Isopropylbenzene 8.73 ± 0.01 847
+C9H12 1,2,3-Trimethylbenzene 8.42 ± 0.02 803
+C9H12 1,2,4-Trimethylbenzene 8.27 ± 0.01 784
+C9H12 1,3,5-Trimethylbenzene 8.41 ± 0.01 796
+C9H13N N,N-Dimethyl-o-toluidine 7.40 ± 0.02 814
+C9H14O Isophorone (≤ 9.07) ≤ 670
+C9H18 Butylcyclopentane (9.95) 793
+C9H18 Propylcyclohexane (9.46) 720
+C9H18 Isopropylcyclohexane (9.33) 704
+C9H18O 2-Nonanone (9.16) 545
+C9H18O 5-Nonanone (9.07) 530
+C9H18O 2,6-Dimethyl-4-heptanone 9.01 ± 0.06 512
+C9H20 Nonane 9.71 ± 0.10 709
+C10F8 Perfluoronaphthalene 8.85 – 368
+C10H7Br 1-Bromonaphthalene 8.08 ± 0.03 955
+C10H7Cl 1-Chloronaphthalene (8.13) 906
+C10H8 Naphthalene 8.1442 ± 0.0009 936
+C10H8 Azulene 7.38 ± 0.05 1001
+C10H8O 1-Naphthol 7.76 ± 0.03 719
+C10H8O 2-Naphthol 7.87 ± 0.06 729
+C10H10O4 Dimethyl phthalate (9.64 ± 0.07) 277
+C10H12 1,2,3,4-Tetrahydronaphthalene 8.46 ± 0.02 841
+C10H14 Butylbenzene 8.69 ± 0.02 826
+C10H14 sec-Butylbenzene 8.68 ± 0.02 820
+C10H14 tert-Butylbenzene 8.68 ± 0.05 816
+C10H14 Isobutylbenzene 8.69 ± 0.02 817
+C10H14 p-Cymene (8.29) 771
+C10H14 o-Diethylbenzene (≤ 8.51) ≤ 804
+C10H14 m-Diethylbenzene (8.49) 798
+C10H14 p-Diethylbenzene (8.40) 790
+C10H14 1,2,4,5-Tetramethylbenzene 8.04 ± 0.02 730
+C10H14O p-tert-Butylphenol (7.8) 552
+C10H16 α-Pinene (8.07) 808
+C10H16O Camphor (8.76) 577
+C10H18 cis-Decahydronaphthalene 9.36 ± 0.04 734
+C10H18 trans-Decahydronaphthalene 9.34 ± 0.04 720
+C10H20 1-Decene 9.42 ± 0.05 786
+C10H20 Butylcyclohexane (9.41) 695
+C10H22 Decane (9.65) 682
+C11H10 1-Methylnaphthalene 7.97 ± 0.03 882
+C11H10 2-Methylnaphthalene 7.91 ± 0.08 877
+C11H16 p-tert-Butyltoluene (8.12) 730
+C11H24 Undecane (9.56) 650
+C11H24 2-Methyldecane (9.7) 658
+C12H8 Acenaphthylene (8.22) 1053
+C12H9N Carbazole (7.57) 961
+C12H10 Acenaphthene 7.75 ± 0.07 903
+C12H10 Biphenyl 8.23 ± 0.10 977
+C12H10N2O trans-Azoxybenzene (8.1) 1123
+
+C12H10O Diphenyl ether (8.09) 766
+C12H11N Diphenylamine 7.16 ± 0.04 908
+C12H18 5,7-Dodecadiyne (8.67) 1079
+C12H18 Hexamethylbenzene 7.85 ± 0.01 670
+C12H22 Cyclohexylcyclohexane (9.41) 690
+C12H27N Tributylamine (7.4) 492
+C13H10 9H-Fluorene 7.91 ± 0.02 952
+C13H10O Benzophenone 9.08 ± 0.05 926
+C13H12 Diphenylmethane (8.55) 963
+C14H10 Anthracene 7.439 ± 0.006 948
+C14H10 Phenanthrene 7.8914 ± 0.0006 966
+C14H10 Diphenylacetylene 7.94 ± 0.03 1168
+C14H12 cis-Stilbene (7.80) 1005
+C14H12 trans-Stilbene 7.656 ± 0.001 973
+C14H14 1,2-Diphenylethane 8.9 ± 0.1 1002
+C16H10 Fluoranthene 7.9 ± 0.1 1052
+C16H10 Pyrene 7.4256 ± 0.0006 935
+C18H12 Chrysene 7.60 ± 0.01 1017
+C18H14 o-Terphenyl (7.99) 1056
+C18H14 m-Terphenyl (8.01) 1057
+C18H14 p-Terphenyl 7.80 ± 0.03 1037
+C20H12 Perylene 6.960 ± 0.001 981
+C24H12 Coronene 7.29 ± 0.01 1026
+
 
 
