@@ -112,7 +112,7 @@ def prep(filename,idx):
             el.append(str(x[1]))
             lst.append(el)
     return lst
-                
+
 def main():
     global elng
     elng=dict()
@@ -122,6 +122,19 @@ def main():
             elng[j[0]]=float(j[1])
     elng['D']=elng['H']
     elng['T']=elng['H']
+    nistion=dict()
+    nistdip=dict()
+    with open("Dipoles.csv",encoding="utf-8") as f:
+        for i in f:
+            j=i.split(',')
+            nistdip[prs(j[2])[0]]=float(j[3])
+    with open("Ionisation.csv",encoding="utf-8") as f:
+        for i in f:
+            j=i.split(',')
+            if j[3]!='':
+                nistion[prs(j[2])[0]]=float(j[3])
+            else:
+                nistion[prs(j[2])[0]]=float(j[4])
     dip=prep("raw_dip.csv",1)
     dis=prep("raw_dis.csv",0)
     ion=prep("raw_ion.csv",0)
@@ -202,6 +215,10 @@ def main():
             mlist.append([form,name,i[-1],eion,mdip,msu,msus,edis])
         mlist.sort(key=lambda row: row[0:])
         for r in mlist:
+            if r[3]=="" and r[0] in nistion.keys():
+                r[3]=str(nistion[r[0]])
+            if r[4]=="" and r[0] in nistdip.keys():
+                r[3]=str(nistdip[r[0]])
             if 1<int(r[2])<4:
                 for el in r[:-1]:
                     final.write(el+",")
