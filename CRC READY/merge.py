@@ -2,78 +2,73 @@ import numpy as np
 
 def deParse(st):
     bfr=False
-    abf=''
-    nbf=''
-    dpf=0
-    outl=list()
-    outn=list()
-    outd=list()
     dep=0
+    out=list()
+    v=dict()
+    for i in range(5):
+        out.append(list())
+       
+    def clear():
+        v['a']=''
+        v['n']=''
+        v['d']=0
+        v['m']=1
+
+    def apply():
+        if v['n']!='':
+            num=int(v['n'])
+        else:
+            num=1
+        out[0].append(v['a'])
+        out[1].append(num)
+        out[2].append(v['d'])
+        out[3].append(v['m'])
+        out[4].append(val(v['a'],v['m'],v['d']))
+
+    clear()
+    
     for c in st:
         if c.isupper():
             if bfr and dep<1:
-                if nbf!='':
-                    num=int(nbf)
-                else:
-                    num=1
-                outl.append(abf)
-                outn.append(num)
-                outd.append(dpf)
-                nbf=''
-                abf=''
-                dpf=0
-            abf+=c
+                apply()
+                clear()
+            v['a']+=c
             bfr=True
         elif c.islower():
-            abf+=c
+            v['a']+=c
         elif c.isdigit():
             if dep<1:
-                nbf+=c
+                v['n']+=c
             else:
-                abf+=c
+                v['a']+=c
         elif c=='(':
             if bfr and dep<1:
-                if nbf!='':
-                    num=int(nbf)
-                else:
-                    num=1
-                outl.append(abf)
-                outn.append(num)
-                outd.append(dpf)
-                nbf=''
-                abf=''
-                dpf=0
+                apply()
+                clear()
             bfr=True
             dep+=1
         elif c==')':
-            dpf=dep
+            v['d']=dep
             dep-=1
-            abf=reParse(deParse(abf))
+            x=reParse(deParse(v['a']))
+            v['a']=x[0]
+            v['m']=x[1]
+            
         elif c=='·':
             if bfr and dep<1:
-                if nbf!='':
-                    num=int(nbf)
-                else:
-                    num=1
-                outl.append(abf)
-                outn.append(num)
-                outd.append(dep)
-                nbf=''
-                abf=''
+                clear()
+                apply()
             dep=2
-            dpf=2
-    if nbf!='':
-        num=int(nbf)
-    else:
-        num=1
-    outl.append(abf)
-    outn.append(num)
-    outd.append(dpf)
-    return [outl,outn,outd]
-
-def reParse(out):
-    out=list(zip(*out))
-    out.sort(key=lambda row: row[0:])
+            v['d']=2
+    apply()
+    return out
+    
+def reParse(outr):
+    out=list(zip(*outr))       
+    numout=0
+    for i,j in zip(outr[1],outr[3]):
+        numout+=i*j
+    out.sort(key=lambda row: row[4:])
     st=''
     for i in out:
         if i[2]==1:
@@ -84,109 +79,131 @@ def reParse(out):
             st+='·'+i[0]
         if i[1]!=1 and i[2]!=2:
             st+=str(i[1])
-    return st
+    return [st,numout]
+
+def val(a,m,d):
+    if m==1 and d!=2:
+        try:
+            return elng[a]
+        except KeyError as e:
+            print(e)
+            return 100
+    elif d==2:
+        return 1000
+    else:
+        return 5
 
 def prs(st):
     return reParse(deParse(st))
 
 def eV(x):
-    return str(float(x)*0.010364)
+    return str(float(x)*-1*0.010364)
+
+def cl(matrix, i):
+    return [row[i] for row in matrix]
+
+def prep(filename,idx):
+    lst=list()
+    with open(filename,encoding="utf-8") as f:
+        for i in f:
+            el=i.strip().split(',')
+            x=prs(el[idx])
+            el[idx]=x[0]
+            el.append(str(x[1]))
+            lst.append(el)
+    return lst
                 
-def main():            
-    with open("raw_dip.csv",encoding="utf-8") as f:
-        dip=list()
+def main():
+    global elng
+    elng=dict()
+    with open("Electronegativity.csv",encoding="utf-8") as f:
         for i in f:
-            el=i.strip().split(',')
-            el[1]=prs(el[1])
-            dip.append(el) 
-    with open("raw_dis.csv",encoding="utf-8") as f:
-        dis=list()
-        for i in f:
-            el=i.strip().split(',')
-            el[0]=prs(el[0])
-            dis.append(el)
-    with open("raw_ion.csv",encoding="utf-8") as f:
-        ion=list()
-        for i in f:
-            el=i.strip().split(',')
-            el[0]=prs(el[0])
-            ion.append(el)
-                
-    with open("raw_magn.csv",encoding="utf-8") as f:
-        magn=list()
-        for i in f:
-            el=i.strip().split(',')
-            el[1]=prs(el[1])
-            magn.append(el)
+            j=i.split(',')
+            elng[j[0]]=float(j[1])
+    elng['D']=elng['H']
+    elng['T']=elng['H']
+    dip=prep("raw_dip.csv",1)
+    dis=prep("raw_dis.csv",0)
+    ion=prep("raw_ion.csv",0)
+    magn=prep("raw_magn.csv",1)
     with open("final.csv",encoding="utf-8",mode="w") as final:
         mlist=list()
-        for io in ion:
-            form=io[0]
-            name=io[1]
-            eion=eV(io[2])
-            try:
-                idx=dis[:][0].index(io[0])
+        for i in ion:
+            form=i[0]
+            name=i[1]
+            eion=eV(i[2])
+            try:                
+                idx=cl(dis,0).index(i[0])
                 edis=eV(dis[idx][1])
                 del dis[idx]
             except ValueError:
                 edis=""
             try:
-                idx=dip[:][1].index(io[0])
+                idx=cl(dip,1).index(i[0])
                 mdip=dip[idx][2]
                 del dip[idx]
             except ValueError:
                 mdip=""
             try:
-                idx=magn[:][1].index(io[0])
+                idx=cl(magn,1).index(i[0])
                 msus=magn[idx][3]
+                msu=magn[idx][2]
                 del magn[idx]
             except ValueError:
                 msus=""
-            mlist.append([form,name,eion,edis,mdip,msus])
-        for di in dis:
-            form=di[0]
+                msu=""
+            mlist.append([form,name,i[-1],eion,mdip,msu,msus,edis])
+        for i in dis:
+            form=i[0]
             name=""
             eion=""
-            edis=eV(di[1])
+            edis=eV(i[1])
             try:
-                idx=dip[:][1].index(io[0])
+                idx=cl(dip,1).index(i[0])
                 name=dip[idx][0]
                 mdip=dip[idx][2]
                 del dip[idx]
             except ValueError:
                 mdip=""
             try:
-                idx=magn[:][1].index(io[0])
-                name=dip[idx][0]
+                idx=cl(magn,1).index(i[0])
+                name=magn[idx][0]
                 msus=magn[idx][3]
+                msu=magn[idx][2]
                 del magn[idx]
             except ValueError:
                 msus=""
-            mlist.append([form,name,eion,edis,mdip,msus])
-        for dp in dip:
-            form=dp[1]
-            name=dp[0]
+                msu=""
+            mlist.append([form,name,i[-1],eion,mdip,msu,msus,edis])
+        for i in dip:
+            form=i[1]
+            name=i[0]
             eion=""
             edis=""
-            mdip=dp[2]
+            mdip=i[2]
             try:
-                idx=magn[:][1].index(io[1])
+                idx=cl(magn,1).index(i[1])
+                name=magn[idx][0]
                 msus=magn[idx][3]
+                msu=magn[idx][2]
                 del magn[idx]
             except ValueError:
                 msus=""
-            mlist.append([form,name,eion,edis,mdip,msus])
-        for m in magn:
-            form=m[1]
-            name=m[0]
+                msu=""
+            mlist.append([form,name,i[-1],eion,mdip,msu,msus,edis])
+        for i in magn:
+            form=i[1]
+            name=i[0]
             eion=""
             edis=""
             mdip=""
-            msus=m[3]
-            mlist.append([form,name,eion,edis,mdip,msus])
+            msus=i[3]
+            msu=i[2]
+            mlist.append([form,name,i[-1],eion,mdip,msu,msus,edis])
         mlist.sort(key=lambda row: row[0:])
         for r in mlist:
-            for el in r[:-1]:
-                final.write(el+",")
-            final.write(r[-1]+"\n")
+            if 1<int(r[2])<4:
+                for el in r[:-1]:
+                    final.write(el+",")
+                final.write(r[-1]+"\n")
 main()

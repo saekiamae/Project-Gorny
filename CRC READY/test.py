@@ -1,7 +1,4 @@
-import periodictable
-from elements import periodic_table
+import chemdata
 
-print(periodictable)
-hydrogen = element('hydrogen')
-print(hydrogen)
 
+chemdata.get_spectra_dict()
