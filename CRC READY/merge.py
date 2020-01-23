@@ -1,4 +1,4 @@
-import numpy as np
+from collections import deque
 
 def deParse(st):
     bfr=False
@@ -102,16 +102,41 @@ def eV(x):
 def cl(matrix, i):
     return [row[i] for row in matrix]
 
-def prep(filename,idx):
-    lst=list()
+def prep(filename,idx,nn=False):
     with open(filename,encoding="utf-8") as f:
+        out=dict()
         for i in f:
             el=i.strip().split(',')
             x=prs(el[idx])
-            el[idx]=x[0]
-            el.append(str(x[1]))
-            lst.append(el)
-    return lst
+            if nn:
+                name=''
+                out[x[0]]=[name,x[1]]+el[1:]
+            else:
+                name=el[not idx]
+                out[x[0]]=[name,x[1]]+el[2:]
+        return out
+
+def getPr(m,d,lidx,en=False):
+    for i in d.keys():
+        lidd=deque(lidx)
+        for j in d[i][2:]:
+            try:
+                m[i]
+            except KeyError:
+                m[i]=rawLn()
+                m[i][0:2]=d[i][0:2]
+            if en:
+                j=eV(j)
+            m[i][lidd.popleft()]=j
+    return m
+
+rawchar='X'
+
+def rawLn():
+    x=list()
+    for i in range(50):
+        x.append(rawchar)
+    return x
 
 def main():
     global elng
@@ -122,12 +147,30 @@ def main():
             elng[j[0]]=float(j[1])
     elng['D']=elng['H']
     elng['T']=elng['H']
+
+
+    dip=prep("raw_dip.csv",1)
+    dis=prep("raw_dis.csv",0,True)
+    ion=prep("raw_ion.csv",0)
+    magn=prep("raw_magn.csv",1)
+  
+    mdict=dict()
+    ionk=[10]
+    dipk=[20]
+    magnk=[49,21]
+    disk=[30]
+    lenk=[31]
+    vark=[4,5]
+    mdict['idx']=sorted([0,1]+ionk+dipk+magnk+disk+lenk+vark)
+    mdict=getPr(mdict,ion,ionk,True)
+    mdict=getPr(mdict,dip,dipk)
+    mdict=getPr(mdict,magn,magnk)
+    mdict=getPr(mdict,dis,disk,True)
+
+
     nistion=dict()
     nistdip=dict()
-    with open("Dipoles.csv",encoding="utf-8") as f:
-        for i in f:
-            j=i.split(',')
-            nistdip[prs(j[2])[0]]=float(j[3])
+    
     with open("Ionisation.csv",encoding="utf-8") as f:
         for i in f:
             j=i.split(',')
@@ -135,92 +178,74 @@ def main():
                 nistion[prs(j[2])[0]]=float(j[3])
             else:
                 nistion[prs(j[2])[0]]=float(j[4])
-    dip=prep("raw_dip.csv",1)
-    dis=prep("raw_dis.csv",0)
-    ion=prep("raw_ion.csv",0)
-    magn=prep("raw_magn.csv",1)
+        
+    for i in nistion.keys():
+        try:
+            if mdict[i][ionk[0]]==rawchar:
+                mdict[i][ionk[0]]=nistion[i]
+        except KeyError:
+            pass
+    
+    with open("Dipoles.csv",encoding="utf-8") as f:
+        for i in f:
+            j=i.split(',')
+            nistdip[prs(j[2])[0]]=float(j[3])
+
+    for i in nistdip.keys():
+        try:
+            if mdict[i][dipk[0]]==rawchar:
+                mdict[i][dipk[0]]=nistdip[i]
+        except KeyError:
+            pass
+
+
+    ab=dict()
+
+    with open("AB.csv",encoding="utf-8") as f:
+        for i in f:
+            j=i.strip().split(',')
+            if j[0]!='':
+                ab[prs(j[0])[0]]=j[1:]
+                name=prs(j[0])[0]
+            else:
+                ab[name]=j[1:]
+                
+    
+    for i in ab.keys():
+        try:
+            mdict[i]
+        except KeyError:
+            mdict[i]=rawLn()
+            mdict[i][0:2]=['',2]
+        if mdict[i][ionk[0]]==rawchar:
+            mdict[i][ionk[0]]=ab[i][14]
+        if mdict[i][dipk[0]]==rawchar:
+            mdict[i][dipk[0]]=ab[i][9]
+        if mdict[i][disk[0]]==rawchar:
+            mdict[i][disk[0]]=ab[i][8]
+        if mdict[i][lenk[0]]==rawchar:
+            mdict[i][lenk[0]]=ab[i][7]
+        if mdict[i][vark[0]]==rawchar:
+            mdict[i][vark[0]]=ab[i][5]
+        if mdict[i][vark[1]]==rawchar:
+            mdict[i][vark[1]]=ab[i][6]       
+             
     with open("final.csv",encoding="utf-8",mode="w") as final:
-        mlist=list()
-        for i in ion:
-            form=i[0]
-            name=i[1]
-            eion=eV(i[2])
-            try:                
-                idx=cl(dis,0).index(i[0])
-                edis=eV(dis[idx][1])
-                del dis[idx]
-            except ValueError:
-                edis=""
-            try:
-                idx=cl(dip,1).index(i[0])
-                mdip=dip[idx][2]
-                del dip[idx]
-            except ValueError:
-                mdip=""
-            try:
-                idx=cl(magn,1).index(i[0])
-                msus=magn[idx][3]
-                msu=magn[idx][2]
-                del magn[idx]
-            except ValueError:
-                msus=""
-                msu=""
-            mlist.append([form,name,i[-1],eion,mdip,msu,msus,edis])
-        for i in dis:
-            form=i[0]
-            name=""
-            eion=""
-            edis=eV(i[1])
-            try:
-                idx=cl(dip,1).index(i[0])
-                name=dip[idx][0]
-                mdip=dip[idx][2]
-                del dip[idx]
-            except ValueError:
-                mdip=""
-            try:
-                idx=cl(magn,1).index(i[0])
-                name=magn[idx][0]
-                msus=magn[idx][3]
-                msu=magn[idx][2]
-                del magn[idx]
-            except ValueError:
-                msus=""
-                msu=""
-            mlist.append([form,name,i[-1],eion,mdip,msu,msus,edis])
-        for i in dip:
-            form=i[1]
-            name=i[0]
-            eion=""
-            edis=""
-            mdip=i[2]
-            try:
-                idx=cl(magn,1).index(i[1])
-                name=magn[idx][0]
-                msus=magn[idx][3]
-                msu=magn[idx][2]
-                del magn[idx]
-            except ValueError:
-                msus=""
-                msu=""
-            mlist.append([form,name,i[-1],eion,mdip,msu,msus,edis])
-        for i in magn:
-            form=i[1]
-            name=i[0]
-            eion=""
-            edis=""
-            mdip=""
-            msus=i[3]
-            msu=i[2]
-            mlist.append([form,name,i[-1],eion,mdip,msu,msus,edis])
-        mlist.sort(key=lambda row: row[0:])
-        for r in mlist:
-            if r[3]=="" and r[0] in nistion.keys():
-                r[3]=str(nistion[r[0]])
-            if r[4]=="" and r[0] in nistdip.keys():
-                r[3]=str(nistdip[r[0]])
-            if 1<int(r[2])<4:
-                for el in r[:-1]:
-                    final.write(el+",")
-                final.write(r[-1]+"\n")
+        for key in sorted(mdict.keys()):
+            val=mdict[key]
+            if key!='idx':
+                st=key
+                it=0
+                mis=0
+                for el in val:
+                    if el!=rawchar or it in mdict['idx']:
+                        st+=","+str(el)
+                    if it in ionk or it in disk or it in dipk:
+                        if el==rawchar:
+                            mis+=1
+                    if it in magnk and el==rawchar:
+                        mis=1000
+                    it+=1
+                if 1<int(val[1])<3 and mis<2:
+                    final.write(st+"\n")
 main()
