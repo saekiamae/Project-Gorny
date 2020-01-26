@@ -161,7 +161,9 @@ def main():
     disk=[30]
     lenk=[31]
     vark=[4,5]
-    mdict['idx']=sorted([0,1]+ionk+dipk+magnk+disk+lenk+vark)
+    freqk=[23]
+    
+    mdict['idx']=sorted([0,1]+ionk+dipk+magnk+disk+lenk+vark+freqk)
     mdict=getPr(mdict,ion,ionk,True)
     mdict=getPr(mdict,dip,dipk)
     mdict=getPr(mdict,magn,magnk)
@@ -175,9 +177,9 @@ def main():
         for i in f:
             j=i.split(',')
             if j[3]!='':
-                nistion[prs(j[2])[0]]=float(j[3])
+                nistion[prs(j[2])[0]]=-float(j[3])
             else:
-                nistion[prs(j[2])[0]]=float(j[4])
+                nistion[prs(j[2])[0]]=-float(j[4])
         
     for i in nistion.keys():
         try:
@@ -210,7 +212,6 @@ def main():
             else:
                 ab[name]=j[1:]
                 
-    
     for i in ab.keys():
         try:
             mdict[i]
@@ -229,7 +230,47 @@ def main():
             mdict[i][vark[0]]=ab[i][5]
         if mdict[i][vark[1]]==rawchar:
             mdict[i][vark[1]]=ab[i][6]       
-             
+
+
+    freq=dict()
+    with open("freq.csv",encoding="utf-8") as f:
+        for i in f:
+            j=i.strip().split(',')
+            if int(j[1])==0:
+                form=prs(j[2])[0]
+                try:
+                    freq[form]
+                except KeyError:
+                    if j[5]!='':
+                        freq[form]=j[5]
+                        
+    for i in freq.keys():
+        try:
+            if mdict[i][freqk[0]]==rawchar:
+                mdict[i][freqk[0]]=freq[i]
+        except KeyError:
+            pass
+
+
+    freq2=dict()
+    with open("raw_freq.csv",encoding="utf-8") as f:
+        for i in f:
+            j=i.strip().split(',')
+            form=prs(j[0])[0]
+            try:
+                freq2[form]
+            except KeyError:
+                freq2[form]=j[1]
+                    
+                        
+    for i in freq2.keys():
+        try:
+            if mdict[i][freqk[0]]==rawchar:
+                mdict[i][freqk[0]]=freq[i]
+        except KeyError:
+            pass
+        
+        
     with open("final.csv",encoding="utf-8",mode="w") as final:
         for key in sorted(mdict.keys()):
             val=mdict[key]
@@ -240,11 +281,12 @@ def main():
                 for el in val:
                     if el!=rawchar or it in mdict['idx']:
                         st+=","+str(el)
-                    if it in ionk or it in disk or it in dipk:
+                    if it in ionk or it in disk or it in dipk or it in magnk:
                         if el==rawchar:
-                            mis+=1
-                    if it in magnk and el==rawchar:
-                        mis=1000
+                            if it in magnk:
+                                mis+=0.5
+                            else:
+                                mis+=1
                     it+=1
                 if 1<int(val[1])<3 and mis<2:
                     final.write(st+"\n")

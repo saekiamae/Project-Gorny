@@ -207,6 +207,9 @@ Holmium oxide,Ho2O3,solid,88100
 Hydrazine,N2H4,liquid,-201
 Hydrogen,H2,liquid-20.3K,-5.44
 Hydrogen,H2,gas,-3.99
+Deuterium,D2,gas,-3.99
+Tritium,T2,gas,-3.99
+HD,HD,gas,-3.99
 Hydrogen chloride,HCl,liquid,-22.6
 Hydrogen chloride,HCl,aq.soln.,-22
 Hydrogen fluoride,HF,liquid,-8.6

@@ -1,53 +1,111 @@
-AgBr,Silver(I) bromide,2,X,X,X,5.62,-61,-2.9050292,X,solid
-AgCl,Silver(I) chloride,2,X,X,-11.03766,6.08,-49,-2.8925924000000003,X,solid
-AgF,Silver(I) fluoride,2,X,X,-11.099844,6.22,-36.5,-3.6989115999999997,X,solid
-AgI,Silver(I) iodide,2,X,X,X,4.55,-80,-2.425176,X,solid
-BaO,Barium oxide,2,2,2,-5.627652,7.954,-29.1,-5.824568,1.940,solid
-BeO,Beryllium oxide,2,2,2,-11.514404,1.40,-11.9,-4.529068,1.331,solid
-Br2,Bromine,2,1,1,-10.840744,0.0,-73.5,-2.009154676,2.281,gas
-CO,Carbon monoxide,2,2,4,-12.872088,0.1098,-9.8,-11.15819332,1.128,gas
-CaO,Calcium oxide,2,X,X,-6.923152,X,-15.0,-3.9725212,X,solid
-Cl2,Chlorine,2,1,1,-11.483312,0.0,-40.4,-2.516907764,1.988,liquid
-CsCl,Cesium chloride,2,X,X,-5.28564,10.387,-56.7,-4.6192348,X,solid
-CsF,Cesium fluoride,2,1,1,-5.067996,7.884,-44.5,-5.3592244,2.345,solid
-CuCl,Copper(I) chloride,2,X,X,10.7,X,-40,-3.9155192000000003,X,solid
-CuO,Copper(II) oxide,2,X,X,X,4.5,238,-3.0407976,X,solid
-GeO,Germanium(II) oxide,2,X,X,-10.820016,3.2823,-28.8,-6.81433,X,solid
-GeS,Germanium(II) sulfide,2,X,X,-10.93402,2,-40.9,-5.534376,X,solid
-H2,Hydrogen,2,1,1,-15.421632,0.0,-3.99,-4.5164228836,0.741,gas
-HCl,Hydrogen chloride,2,1,1,-11.783868,1.1086,-22,-4.470625404,1.274,aq.soln.
-HF,Hydrogen fluoride,2,1,1,-13.224464,1.826178,-9.3,-5.904163519999999,0.917,aq.soln.
-HI,Hydrogen iodide,2,1,1,-10.654192,0.448,-50.2,-3.09116664,1.609,aq.soln.
-I2,Iodine,2,1,1,-9.94944,0.0,-90,-1.577919,2.667,solid
-ICl,Iodine chloride,2,1,1,-10.270724,1.24,-54.6,-2.1899132,2.321,liquid
-InCl,Indium(I) chloride,2,X,X,-8.726488,3.79,-30,-4.518704,X,solid
-KBr,Potassium bromide,2,1,1,-5.990392,10.628,-49.1,-3.9289924000000003,2.821,solid
-KCl,Potassium chloride,2,1,1,-5.772748,10.269,-38.8,-4.487612,2.667,solid
-KF,Potassium fluoride,2,1,1,-5.07,8.585,-23.6,-5.0700688,2.172,solid
-KI,Potassium iodide,2,1,1,-5.90748,10.8,-63.8,-3.34239,3.048,solid
-LiBr,Lithium bromide,2,X,X,-7.09934,7.268,-34.3,-4.3404432,X,solid
-LiCl,Lithium chloride,2,1,1,-7.534628,7.12887,-24.3,-4.860716,2.021,solid
-LiF,Lithium fluoride,2,1,1,11.3,6.3274,-10.1,-5.980028,1.564,solid
-LiH,Lithium hydride,2,1,1,-9.141048,5.884,-4.6,-2.467036196,1.595,solid
-LiI,Lithium iodide,2,1,1,-6.560412,7.428,-50,-3.5776528,2.392,solid
-MgO,Magnesium oxide,2,X,X,-9.337964,6.2,-10.2,-3.7123847999999997,X,solid
-N2,Nitrogen,2,3,3,-15.577092,0.0,-12.0,-9.79263268,1.098,gas
-NO,Nitric oxide,2,2,2,-10.20854,0.15872,1461,-6.5352274800000005,1.151,gas
-NaBr,Sodium bromide,2,1,1,-6.84024,9.1183,-41,-3.7631684,2.502,solid
-NaCl,Sodium chloride,2,1,1,-7.057884,9.00117,-30.2,-4.2710044,2.361,solid
-NaF,Sodium fluoride,2,1,1,-10.50,8.156,-15.6,-4.9467372,1.926,solid
-NaI,Sodium iodide,2,1,1,-6.829876,9.236,-57,-3.1527287999999998,2.712,solid
-O2,Oxygen,2,2,2,-12.07406,0.0,3415,-5.1660187120000005,1.207,gas
-PbO,Lead(II) oxide,2,X,X,-9.731796,4.64,-42,-3.9631936,X,solid
-PbS,Lead(II) sulfide,2,X,X,-9.887256,3.59,-83.6,-4.124872,X,solid
-RbBr,Rubidium bromide,2,X,X,-6.042212,10.9,-56.4,-3.9455747999999997,X,solid
-RbCl,Rubidium chloride,2,X,X,-6.1147599999999995,10.51,-46,-4.4316464,X,solid
-RbF,Rubidium fluoride,2,X,X,X,8.5465,-31.9,-5.119816,X,solid
-RbI,Rubidium iodide,2,X,X,X,11.5,-72.2,-3.3040432,X,solid
-SiC,Silicon carbide (hexagonal),2,X,X,9.2,X,-12.8,-4.632708,X,solid
-SnO,Tin(II) oxide,2,X,X,-9.783616,4.32,-19,-5.472192,X,solid
-SrO,Strontium oxide,2,X,X,-6.456772,8.9,-35,-4.4181732,X,solid
-TlBr,Thallium(I) bromide,2,X,X,-8.747216,4.49,-63.9,-3.430484,X,solid
-TlCl,Thallium(I) chloride,2,1,1,-9.006316,4.54299,-57.8,-3.8636992,2.485,solid
-TlF,Thallium(I) fluoride,2,X,X,-8.65394,4.2282,-44.4,-4.549796,X,solid
-TlI,Thallium(I) iodide,2,X,X,-8.560664,4.61,-82.2,-2.95374,X,solid
+AgBr,Silver(I) bromide,2,X,X,X,5.62,-61,X,-2.9050292,X,solid
+AgCl,Silver(I) chloride,2,X,X,-11.03766,6.08,-49,X,-2.8925924000000003,X,solid
+AgF,Silver(I) fluoride,2,X,X,-11.099844,6.22,-36.5,X,-3.6989115999999997,X,solid
+AgI,Silver(I) iodide,2,X,X,X,4.55,-80,X,-2.425176,X,solid
+Al2,,2,X,X,-5.4,0.0,X,284,-2.7392052000000002,X,X
+AlF,Aluminum monofluoride,2,X,X,-6.974972,1.53,X,793,-6.9957,X,X
+BF,Fluoroborane,2,X,X,-9.918348,0.5,X,1379,-7.586448,X,X
+BH,Boron monohydride,2,1,1,-14.35414,1.27,X,2269,-3.5776528,1.232,X
+BN,,2,3,3,-12.70,2.00,X,1490,-3.9165555999999997,1.281,X
+BaO,Barium oxide,2,2,2,-5.627652,7.954,-29.1,X,-5.824568,1.940,solid
+Be2,,2,2,2,-7.42,0.0,X,X,-0.611476,2.460,X
+BeO,Beryllium oxide,2,2,2,-11.514404,1.40,-11.9,1435,-4.529068,1.331,solid
+Br2,Bromine,2,1,1,-10.840744,0.0,-73.5,323,-2.009154676,2.281,gas
+BrCl,Bromine chloride,2,1,1,-11.182756,0.519,X,441,-2.27303248,2.138,X
+BrF,Bromine fluoride,2,1,1,-11.255304,1.422,X,662,-2.90192,1.755,X
+BrO,Bromine monoxide,2,X,X,-11.76314,1.76,X,716,-2.4624864,X,X
+C2,Dicarbon,2,2,2,-20.728,0.0,X,1827,-6.27053092,1.307,X
+CF,Fluoromethylidyne,2,X,X,-11.752776,0.645,X,1286,-5.3250231999999995,X,X
+CN,Cyanide,2,3,3,-18.116272,1.45,X,2042,-7.765848839999999,1.172,X
+CO,Carbon monoxide,2,2,4,-12.872088,0.1098,-9.8,2143,-11.15819332,1.128,gas
+CS,Carbon sulfide,2,2,4,-14.105404,1.958,X,1272,-7.3926412,1.535,X
+CSe,Carbon monoselenide,2,X,X,-10.8,1.99,X,1026,-6.1189056,X,X
+CaCl,Calcium monochloride,2,X,X,-4.788168,3.6,X,X,-4.238876,X,X
+CaO,Calcium oxide,2,X,X,-6.923152,X,-15.0,723,-3.9725212,X,solid
+Cl2,Chlorine,2,1,1,-11.483312,0.0,-40.4,554,-2.516907764,1.988,liquid
+ClF,Chlorine fluoride,2,1,1,-12.136244,0.888061,X,773,-2.7032421199999996,1.628,X
+ClO,Chlorine monoxide,2,X,X,-12.011875999999999,1.297,X,843,-2.7720590800000005,X,X
+Cs2,,2,1,1,-3.82,0.00,X,X,-0.455176516,4.580,X
+CsCl,Cesium chloride,2,X,X,-5.28564,10.387,-56.7,X,-4.6192348,X,solid
+CsF,Cesium fluoride,2,1,1,-5.067996,7.884,-44.5,X,-5.3592244,2.345,solid
+CsNa,Cesium sodium,2,X,X,-5.54474,4.75,X,X,-0.6550048,X,X
+CuCl,Copper(I) chloride,2,X,X,-10.7,X,-40,414,-3.9155192000000003,X,solid
+CuF,Copper(I) fluoride,2,X,X,-10.198176,5.77,X,615,-4.290696,X,X
+CuO,Copper(II) oxide,2,X,X,X,4.5,238,X,-3.0407976,X,solid
+D2,Deuterium,2,1,1,-15.47,0.0,-3.99,2994,-4.5945653708,0.742,gas
+DS,,2,X,X,-10.42,0.76,X,X,-3.63382568,X,X
+F2,Fluorine,2,1,1,-15.701459999999999,0.0,X,894,-1.6444558799999998,1.412,X
+GaF,Gallium monofluoride,2,X,X,-7.2548,2.45,X,616,-6.052576,X,X
+GeO,Germanium(II) oxide,2,X,X,-10.820016,3.2823,-28.8,977,-6.81433,X,solid
+GeS,Germanium(II) sulfide,2,X,X,-10.93402,2,-40.9,576,-5.534376,X,solid
+H2,Hydrogen,2,1,1,-15.421632,0.0,-3.99,4161,-4.5164228836,0.741,gas
+HBr,Hydrogen bromide,2,1,1,-11.265668,0.8272,X,2559,-3.79488224,1.415,X
+HC,Methylidyne,2,1,1,-16.810408,1.46,X,2733,-3.5104940800000004,1.120,X
+HCl,Hydrogen chloride,2,1,1,-11.783868,1.1086,-22,2886,-4.470625404,1.274,aq.soln.
+HD,HD,2,1,1,-15.44,0.00,-3.99,3632,-4.55,0.741,gas
+HF,Hydrogen fluoride,2,1,1,-13.224464,1.826178,-9.3,3961,-5.904163519999999,0.917,aq.soln.
+HI,Hydrogen iodide,2,1,1,-10.654192,0.448,-50.2,2230,-3.09116664,1.609,aq.soln.
+HN,Imidogen,2,1,1,-17.390792,1.39,X,3126,-3.7186032,1.045,X
+HO,Hydroxyl,2,1,1,-13.411016,1.655,X,3570,-4.45382536,0.971,X
+HS,Mercapto,2,1,1,-11.86678,0.758,X,2599,-3.6643994799999997,1.341,X
+HSe,,2,X,X,-9.85,0.49,X,X,-3.23875,X,X
+He2,,2,1,1,-22.22,0.00,X,X,-0.039476476,1.081,X
+I2,Iodine,2,1,1,-9.94944,0.0,-90,213,-1.577919,2.667,solid
+IBr,Iodine bromide,2,1,1,-10.218904,0.726,X,267,-1.8561923999999999,2.485,X
+ICl,Iodine chloride,2,1,1,-10.270724,1.24,-54.6,381,-2.1899132,2.321,liquid
+IF,Iodine fluoride,2,X,X,-9.555608,1.948,X,604,-2.813826,X,X
+InCl,Indium(I) chloride,2,X,X,-8.726488,3.79,-30,X,-4.518704,X,solid
+InF,Indium monofluoride,2,X,X,-7.66936,3.4,X,X,-5.347824,X,X
+K2,Dipotassium,2,1,1,-5.378916,0.00,X,91,-0.59033344,3.923,X
+KBr,Potassium bromide,2,1,1,-5.990392,10.628,-49.1,211,-3.9289924000000003,2.821,solid
+KCl,Potassium chloride,2,1,1,-5.772748,10.269,-38.8,278,-4.487612,2.667,solid
+KF,Potassium fluoride,2,1,1,-5.07,8.585,-23.6,423,-5.0700688,2.172,solid
+KI,Potassium iodide,2,1,1,-5.90748,10.8,-63.8,X,-3.34239,3.048,solid
+KLi,Lithium potassium,2,X,X,-5.306368,3.45,X,X,-0.849848,X,X
+KNa,Potassium sodium,2,X,X,-5.814204,2.693,X,X,-0.683961816,X,X
+Li2,Dilithium,2,1,1,-7.348076,0.0,X,346,-1.08822,2.673,X
+LiBr,Lithium bromide,2,X,X,-7.09934,7.268,-34.3,556,-4.3404432,X,solid
+LiCl,Lithium chloride,2,1,1,-7.534628,7.12887,-24.3,634,-4.860716,2.021,solid
+LiF,Lithium fluoride,2,1,1,-11.3,6.3274,-10.1,896,-5.980028,1.564,solid
+LiH,Lithium hydride,2,1,1,-9.141048,5.884,-4.6,1360,-2.467036196,1.595,solid
+LiI,Lithium iodide,2,1,1,-6.560412,7.428,-50,X,-3.5776528,2.392,solid
+LiO,Lithium monoxide,2,X,X,-9.265416,6.84,X,799,-3.528942,X,X
+MgO,Magnesium oxide,2,X,X,-9.337964,6.2,-10.2,775,-3.7123847999999997,X,solid
+N2,Nitrogen,2,3,3,-15.577092,0.0,-12.0,2330,-9.79263268,1.098,gas
+NO,Nitric oxide,2,2,2,-10.20854,0.15872,1461,1876,-6.5352274800000005,1.151,gas
+Na2,Disodium,2,1,1,-6.363496,0.0,X,158,-0.77527902,3.078,X
+NaBr,Sodium bromide,2,1,1,-6.84024,9.1183,-41,299,-3.7631684,2.502,solid
+NaCl,Sodium chloride,2,1,1,-7.057884,9.00117,-30.2,361,-4.2710044,2.361,solid
+NaF,Sodium fluoride,2,1,1,-10.50,8.156,-15.6,529,-4.9467372,1.926,solid
+NaI,Sodium iodide,2,1,1,-6.829876,9.236,-57,X,-3.1527287999999998,2.712,solid
+NaLi,Lithium sodium,2,X,X,-5.917844,0.463,X,256,-0.903543884,X,X
+O2,Oxygen,2,2,2,-12.07406,0.0,3415,1556,-5.1660187120000005,1.207,gas
+OF,Fluorine monoxide,2,X,X,-13.908488,0.0043,X,1033,-2.28008,X,X
+P2,Diphosphorus,2,X,X,-12.02224,0.0,X,775,-5.0690324,X,X
+PN,Phosphorus nitride,2,3,3,-12.923907999999999,2.747,X,1323,-6.3956244,1.491,X
+PO,Phosphorus monoxide,2,X,X,-8.39,1.88,X,1220,-6.104396,X,X
+PbO,Lead(II) oxide,2,X,X,-9.731796,4.64,-42,X,-3.9631936,X,solid
+PbS,Lead(II) sulfide,2,X,X,-9.887256,3.59,-83.6,X,-4.124872,X,solid
+Rb2,,2,1,1,-3.95,0.00,X,X,-0.506778872,4.200,X
+RbBr,Rubidium bromide,2,X,X,-6.042212,10.9,-56.4,X,-3.9455747999999997,X,solid
+RbCl,Rubidium chloride,2,X,X,-6.1147599999999995,10.51,-46,X,-4.4316464,X,solid
+RbF,Rubidium fluoride,2,X,X,X,8.5465,-31.9,X,-5.119816,X,solid
+RbI,Rubidium iodide,2,X,X,X,11.5,-72.2,X,-3.3040432,X,solid
+RbNa,Rubidium sodium,2,X,X,-4.97472,3.1,X,X,-0.662124868,X,X
+S2,Disulfur,2,2,2,-10.685284,0.0,X,720,-4.45683092,1.889,X
+SF,Sulfur fluoride,2,X,X,-10.218904,0.794,X,829,-3.560034,X,X
+SN,Nitrogen sulfide,2,X,X,-11.597316,1.81,X,1204,-4.839988,X,X
+SO,Sulfur monoxide,2,X,X,-10.343272,1.55,X,1138,-5.3675156,X,X
+Si2,,2,X,X,-7.9,0.0,X,507,-3.21284,X,X
+SiC,Silicon carbide (hexagonal),2,X,X,-9.2,X,-12.8,953,-4.632708,X,solid
+SiO,Silicon monoxide,2,X,X,-10.446912,3.0982,X,1230,-8.2870544,X,X
+SiS,Silicon monosulfide,2,X,X,-10.53,1.73,X,744,-6.394588,X,X
+SnO,Tin(II) oxide,2,X,X,-9.783616,4.32,-19,X,-5.472192,X,solid
+SnS,Tin(II) sulfide,2,X,X,-10.011624,3.18,X,X,-4.839988,X,X
+SrO,Strontium oxide,2,X,X,-6.456772,8.9,-35,X,-4.4181732,X,solid
+T2,Tritium,2,1,1,-15.49,0.00,-3.99,X,-4.629287880000001,0.742,gas
+TiO,Titanium(II) oxide,2,X,X,-6.82,2.96,X,1000,-6.907606,X,X
+TlBr,Thallium(I) bromide,2,X,X,-8.747216,4.49,-63.9,X,-3.430484,X,solid
+TlCl,Thallium(I) chloride,2,1,1,-9.006316,4.54299,-57.8,X,-3.8636992,2.485,solid
+TlF,Thallium(I) fluoride,2,X,X,-8.65394,4.2282,-44.4,X,-4.549796,X,solid
+TlI,Thallium(I) iodide,2,X,X,-8.560664,4.61,-82.2,X,-2.95374,X,solid
