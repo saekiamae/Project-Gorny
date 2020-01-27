@@ -201,6 +201,18 @@ def main():
             pass
 
 
+    with open("raw_len.csv",encoding="utf-8") as f:
+        for i in f:
+            j=i.strip().split(',')
+            form=prs(j[0][0])
+            geo=dict()
+            geo['str']=j[1]
+            for n in range(2,len(j),2):
+                geo[j[n]]=j[n+1]
+            if mdict[form][lenk[0]]==rawchar:
+                mdict[form][lenk[0]]=geo
+        
+    
     ab=dict()
 
     with open("AB.csv",encoding="utf-8") as f:

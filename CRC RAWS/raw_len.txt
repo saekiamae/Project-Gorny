@@ -1,0 +1,517 @@
+AgBr Ag—Br (re) 2.3931 MW
+AgCl Ag—Cl (re) 2.2808 MW
+AgF Ag—F (re) 1.9832 MW
+AgH Ag—H (re) 1.617 UV
+AgI Ag—I (re) 2.5446 MW
+AgLi Ag—Li 2.41 UV
+AgO Ag—O (re) 2.0030 UV
+AgOH bent Ag—O 2.016 O—H 0.952 ∠HOAg 108.3a MW
+AlBr Al—Br (re) 2.295 UV
+AlBr3 D3h Al—Br 2.221 ED
+AlCa Al—Ca 3.148 UV
+AlCl Al—Cl (re) 2.1301 MW
+AlCl3 D3h Al—Cl 2.063 ED
+AlCo Al—Co 2.283 UV
+AlCu Al—Cu 2.339 UV
+AlF Al—F (re) 1.6544 MW
+AlF3 D3h Al—F 1.633 ED
+AlH Al—H (re) 1.6482 UV
+AlI Al—I (re) 2.5371 MW
+AlI3 D3h Al—I 2.461 ED
+AlK Al—K 3.88 UV
+AlMn Al—Mn 2.638 UV
+AlNi Al—Ni 2.321 UV
+AlO Al—O (re) 1.6176 UV
+AlS Al—S (re) 2.029 UV
+AlV Al—V 2.620 UV
+AlZn Al—Zn 2.696 UV
+Al2 Al—Al (re) 2.701 UV
+AsBr3 C3v As—Br 2.324 ∠BrAsBr 99.6 ED
+AsCl3 C3v As—Cl 2.165 ∠ClAsCl 98.6 ED, MW
+AsF3 C3v As—F 1.710 ∠FAsF 95.9 ED, MW
+AsH As—H (re) 1.5232 UV
+AsH3 C3v As—H (re) 1.511 ∠HAsH (θe) 92.1 MW, IR
+AsI3 C3v As—I 2.557 ∠IAsI 100.2 ED
+AsN As—N (re) 1.6184 UV
+AsO As—O (re) 1.6236 UV
+AsP As—P (re) 1.99954 MW
+As2 As—As (re) 2.1026 UV
+AuH Au—H (re) 1.5237 UV
+Au2 Au—Au (re) 2.4719 UV
+BBr B—Br (re) 1.888 UV
+BBr3 D3h B—Br 1.893 ED
+BCl B—Cl (re) 1.7153 UV
+BClF2 C2v B—Cl (rs) 1.728 B—F 1.315 ∠FBF 118.1 MW
+BCl3 D3h B—Cl 1.742 ED
+BF B—F (re) 1.2626 UV
+BF2H B—H 1.189 B—F 1.311 ∠FBF 118.3 MW
+BF3 D3h B—F 1.313 ED, IR
+BH B—H (re) 1.2325 UV
+BH2NH2 planar B—N 1.391 B—H 1.195 N—H 1.004 ∠HBH 122.2 ∠HNH 114.2 MW
+BH3 planar B—H 1.1900 IR
+BH3PH3 staggered form B—P 1.937 B—H 1.212 P—H 1.399 ∠PBH 103.6 ∠BPH 116.9 ∠HBH 114.6 ∠HPH 101.3 MW
+BI3 D3h B—I 2.118 ED
+BN B—N (re) 1.281 UV
+BO B—O (re) 1.2045 EPR
+BO2 linear B—O 1.265 UV
+BS B—S 1.6091 UV
+B2 B—B (re) 1.590 UV
+B3H3O3 B—O 1.376 ∠BOB 120 ∠OBO 120 ED
+B3H6N3 C2 B—N 1.435 B—H 1.26 N—H 1.05 ∠BNB 121 ∠NBN 118 ED
+BaBr Ba—Br (re) 2.8445 UV
+BaBr2 Ba—Br 2.912 ∠BrBaBr 137.0 ED
+BaCl Ba—Cl (re) 2.6828 UV
+BaF Ba—F (re) 2.163 UV
+BaH Ba—H (re) 2.2318 UV
+BaI Ba—I (re) 3.0848 UV
+BaI2 Ba—I 3.150 ∠IBaI 137.6 ED
+BaO Ba—O (re) 1.9397 MW
+BaOH linear Ba—O 2.200 O—H 0.927 UV
+BaS Ba—S (re) 2.5074 MBE
+BeCl2 linear Be—Cl (re) 1.791 ED,IR
+BeF Be—F (re) 1.3609 UV
+BeF2 linear Be—F (re) 1.3730 IR
+BeH Be—H (re) 1.3431 UV
+BeH2 linear Be—H (re) 1.3264 IR
+BeO Be—O (re) 1.3308 UV
+BeS Be—S (re) 1.7415 UV
+BiBr Bi—Br (re) 2.6095 MW
+BiBr3 C3v Bi—Br 2.577 ∠BrBiBr 98.6 ED
+BiCl Bi—Cl (re) 2.4716 MW
+BiCl3 C3v Bi—Cl 2.424 ∠ClBiCl 97.5 ED
+BiF Bi—F (re) 2.0516 MW
+BiF3 C3v Bi—F 1.987 ∠FBiF 96.1 ED
+BiH Bi—H (re) 1.805 UV
+BiI Bi—I (re) 2.8005 MW
+BiI3 C3v Bi—I 2.807 ∠IBiI 99.5 ED
+BiO Bi—O (re) 1.934 UV
+BiP Bi—P (re) 2.29345 IR
+Bi2 Bi—Bi (re) 2.6596 UV
+BrCl Br—Cl (re) 2.1361 MW
+BrF Br—F (re) 1.7590 MW
+BrF5 C4v Br—F– (Br—Fax) (av.) 1.753 (Br—Feq) 0.069 ∠FaxBrFeq 85.1 ED, MW
+BrO Br—O (re) 1.7172 MW
+BrO2 C2v Br—O (re) 1.644 ∠OBrO (θe) 114.3 MW
+Br2 Br—Br (re) 2.2811 R
+CaBr2 linear Ca—Br 2.62 ED
+CaCl Ca—Cl (re) 2.43676 UV
+CaCl2 linear Ca—Cl 2.483 ED
+CaF Ca—F (re) 1.967 UV
+CaH Ca—H (re) 2.002 UV
+CaI Ca—I (re) 2.8286 UV
+CaI2 linear Ca—I 2.840 ED
+CaO Ca—O (re) 1.8221 UV
+CaOH linear Ca—O 1.985 O—H 0.921 UV
+CaS Ca—S (re) 2.3178 UV
+CdH Cd—H (re) 1.781 EPR
+CdH2 linear Cd—H 1.6792 IR
+CdBr2 linear Cd—Br 2.394 ED
+CdCl2 linear Cd—Cl 2.284 ED
+CdI2 linear Cd—I 2.582 ED
+CeF4 Td Ce—F 2.036 ED
+CeI3 quasiplanar Ce—I 2.948 ED
+ClBS linear B—Cl 1.681 B—S 1.606 MW
+ClF Cl—F (re) 1.6283 MW
+ClO Cl—O (re) 1.5696 MW, UV
+ClO2 C2v Cl—O 1.470 ∠OClO 117.38 MW
+Cl2 Cl—Cl (re) 1.9878 UV
+Cl2O C2v Cl—O 1.6959 ∠ClOCl 110.89 MW
+CoBr2 linear Co—Br 2.241 ED
+CoCl2 linear Co—Cl 2.113 ED
+CoF2 linear Co—F 1.754 Co—F (re) 1.738 ED
+CoF3 D3h Co—F 1.732 ED
+CoH Co—H (re) 1.542 UV
+CrF2 linear Cr—F 1.795 ED
+CrF3 D3h Cr—F 1.732 ED
+CrF4 Td Cr—F 1.706 ED
+CrH Cr—H (re) 1.656 UV
+CrO Cr—O (re) 1.615 UV
+CsBr Cs—Br (re) 3.0723 MW
+CsCl Cs—Cl (re) 2.9063 MW
+CsF Cs—F (re) 2.3454 MW
+CsH Cs—H (re) 2.4938 UV
+CsI Cs—I (re) 3.3152 MW
+CsO Cs—O (re) 2.3007 MW
+Cs2 Cs—Cs (re) 4.47 UV
+CuBr Cu—Br (re) 2.1734 MW
+CuCl Cu—Cl (re) 2.0512 MW
+CuF Cu—F (re) 1.7449 MW
+CuF2 linear Cu—F 1.713 ED
+CuH Cu—H (re) 1.4626 UV
+CuI Cu—I (re) 2.3383 MW
+CuLi Cu—Li 2.26 UV
+CuO Cu—O (re) 1.7244 UV
+CuOH bent Cu—O (rs) 1.769 O—H 0.952 ∠HOCu (θs) 110.24 MW
+CuS Cu—S 2.051 UV
+Cu2 Cu—Cu (re) 2.2197 UV
+DyBr3 quasiplanar Dy—Br 2.609 ED
+DyCl3 quasiplanar Dy—Cl 2.461 ED
+F2 F—F (re) 1.4119 RW
+FeBr2 linear Fe—Br 2.294 ED
+FeCl2 linear Fe—Cl 2.132 UV,ED
+FeF2 linear Fe—F 1.769 Fe—F (re) 1.755 ED
+FeF3 D3h Fe—F 1.763 ED
+FeH Fe—H 1.620 IR
+FeO Fe—O 1.444 UV
+FeS Fe—S 2.017 MW
+GaBr Ga—Br (re) 2.3525 MW
+GaBr3 D3h Ga—Br 2.249 ED
+GaCl Ga—Cl (re) 2.2017 MW
+GaCl3 D3h Ga—Cl 2.110 ED
+GaF Ga—F (re) 1.7744 MW
+GaF3 D3h Ga—F 1.725 ED
+GaH Ga—H (re) 1.663 UV
+GaI Ga—I (re) 2.5747 MW
+GaI3 D3h Ga—I 2.458 ED
+GaO Ga—O 1.744 UV
+GdBr3 C3v Gd—Br 2.641 ED
+GdCl3 C3v Gd—Cl 2.488 ED
+GdF3 C3v Gd—F 2.053 ED
+GdI3 C3v Gd—I 2.840 ∠IGdI 108 ED
+GeBrH3 C3v Ge—H 1.526 Ge—Br 2.299 ∠HGeH 106.2 MW, IR
+GeBr2 Ge—Br (re) 2.359 ∠BrGeBr 101.0 ED
+GeBr4 Td Ge—Br 2.272 ED
+GeClH3 C3v Ge—H 1.537 Ge—Cl 2.150 ∠HGeH 111.0 IR, MW
+GeCl2 Ge—Cl (re) 2.186 ∠ClGeCl 100.3 ED
+GeCl4 Td Ge—Cl 2.113 ED
+GeFH3 C3v Ge—H 1.522 Ge—F 1.732 ∠HGeH 113.0 MW, IR
+GeF2 Ge—F (re) 1.7321 ∠FGeF (θe) 97.15 MW
+GeH Ge—H (re) 1.5880 UV
+GeHI Ge—I 2.525 Ge—H 1.593 ∠HGeI 93.5 UV
+GeH4 Td Ge—H 1.5251 IR, R
+GeI2 Ge—I 2.540 ∠IGeI 102.1 ED
+GeI4 Td Ge—I 2.515 ED
+GeO Ge—O (re) 1.6246 MW
+GeS Ge—S (re) 2.0121 MW
+GeSe Ge—Se (re) 2.1346 MW
+GeTe Ge—Te (re) 2.3402 MW
+Ge2H6 Ge—Ge 2.403 Ge—H 1.541 ∠HGeH 106.4 ∠GeGeH 112.5 ED
+HBr H—Br (re) 1.4145 MW
+HCl H—Cl (re) 1.2746 MW
+HClO ClOH (bent) Cl—O 1.690 O—H 0.975 ∠HOCl 102.5 MW, IR
+HF H—F (re) 0.9169 MW
+HFO FOH (bent) F—O 1.442 O—H 0.96 ∠HOF 97.2 MW
+HI H—I (re) 1.6090 MW
+HIO IOH (bent) I—O 1.9941 O—H 0.967 ∠HOI 103.9 MW
+HNO bent N—O 1.212 N—H 1.063 ∠HNO 108.6 UV
+HPO P—O 1.4843 P—H 1.473 ∠HPO 104.57 MW
+H2 H—H (re) 0.74144 UV
+H2O C2v O—H (re) 0.9575 ∠HOH (θe) 104.51 MW, IR
+H2O2 C2 O—O 1.475 ∠OOH 94.8 dihedral angle 119.8 IR
+H2S C2v H—S (re) 1.3356 ∠HSH (θe) 92.12 MW, IR
+HfBr4 Td Hf—Br 2.450 ED
+HfCl4 Td Hf—Cl 2.316 ED
+HfF Hf—F 1.8596 UV
+HfF4 Td Hf—F 1.909 ED
+HfI4 Td Hf—I 2.662 ED
+HgBr2 linear Hg—Br 2.384 ED
+HgCl2 linear Hg—Cl 2.252 ED
+HgH Hg—H (re) 1.7404 UV
+HgI2 linear Hg—I 2.568 ED
+HoCl3 Ho—Cl 2.462 ED
+HoF3 Ho—F 2.007 ED
+HoO Ho—O 1.797 UV
+IBr I—Br (re) 2.4691 MW
+ICl I—Cl (re) 2.3210 MW
+IF I—F (re) 1.9098 UV
+IF5 C4v I—F (av.) 1.860 (I—Feq) – (I—Fax) 0.03 ∠FaxIFeq 82.1 ED, MW
+IO I—O (re) 1.8676 MW
+I2 I—I (re) 2.6663 R
+InBr In—Br (re) 2.5432 MW
+InCl In—Cl (re) 2.4012 MW
+InCl3 In—Cl 2.291 ED
+InF In—F (re) 1.9854 MW
+InH In—H (re) 1.8376 UV
+InI In—I (re) 2.7537 MW
+IrF6 Oh Ir—F 1.831 ED
+KBH4 Ha(BH3)K (C3v) B—H (BH3) 1.272 B—Ha 1.233 K—B 2.656 MW
+KBr K—Br (re) 2.8208 MW
+KCl K—Cl (re) 2.6667 MW
+KF K—F (re) 2.1716 MW
+KH K—H (re) 2.244 UV
+KI K—I (re) 3.0478 MW
+K2 K—K (re) 3.9051 UV
+KrF2 linear Kr—F 1.89 ED
+LaBr La—Br (re) 2.65208 MW
+LaBr3 C3v La—Br 2.742 ED
+LaCl La—Cl (re) 2.49804 MW
+LaCl3 C3v La—Cl 2.589 ED
+LaF La—F (re) 2.02338 MW
+LaI La—I (re) 2.87885 MW
+LaO La—O (re) 1.82591 UV
+LiBH4 Ha(BH3)Li (C3v) B—H (H3) 1.257 B—Ha 1.218 Li—B 1.939 MW
+LiBr Li—Br (re) 2.1704 MW
+LiCl Li—Cl (re) 2.0207 MW
+LiF Li—F (re) 1.5639 MW
+LiH Li—H (re) 1.5949 MW
+LiI Li—I (re) 2.3919 MW
+LiO Li—O (re) 1.68822 UV
+LiOH linear Li—O (re) 1.5776 O—H (re) 0.949 MW
+Li2 Li—Li (re) 2.6729 UV
+Li2O linear Li—O 1.606 UV
+LuBr3 C3v Lu—Br 2.557 ED
+LuCl3 C3v Lu—Cl 2.417 ∠ClLuCl 112 ED
+LuI3 C3v Lu—I 2.768 ED
+MgBr Mg—Br (re) 2.34742 MW
+MgCl Mg—Cl (re) 2.1964 UV
+MgCl2 linear Mg—Cl 2.179 ED
+MgF Mg—F (re) 1.7500 UV
+MgF2 linear Mg—F 1.771 ED
+MgH Mg—H (re) 1.7297 UV
+MgO Mg—O (re) 1.749 UV
+MgOH linear Mg—O 1.770 O—H 0.912 UV
+Mg2 Mg—Mg (re) 3.891 UV
+MnBr2 linear Mn—Br 2.344 ED
+MnCl2 linear Mn—Cl 2.202 ED
+MnF2 linear Mn—F 1.811 Mn—F (re) 1.797 ED
+MnH Mn—H (re) 1.7308 UV
+MnI2 linear Mn—I 2.538 ED
+MoCl4O C4v Mo—Cl 2.279 Mo—O 1.658 ∠ClMoCl 87.2 ED
+MoF4 Mo—F 1.851 ED
+MoF6 Oh Mo—F 1.821 ED
+NBr N—Br (re) 1.79 UV
+NCl N—Cl (re) 1.6107 UV
+NClH2 N—H 1.017 N—Cl 1.748 ∠HNCl 103.7 ∠HNH 107 MW, IR
+NCl3 N—Cl 1.759 ∠ClNCl 107.1 ED
+NF N—F (re) 1.3170 UV
+NF2 N—F 1.3528 ∠FNF 103.18 MW
+NH2 N—H 1.024 ∠HNH 103.3 UV
+NH2NO2 N—N 1.427 N—H 1.005 MW
+NH3 C3v N—H (re) 1.012 ∠HNH (θe) 106.7 IR
+NH4Cl H3N····HCl (C3v) N—Cl 3.136 MW
+NH N—H (re) 1.0362 LMR
+NO N—O (re) 1.1506 IR
+NOCl N—O 1.14 N—Cl 1.975 ∠ONCl 113 MW
+NOF N—O 1.136 N—F 1.512 ∠FNO 110.1 MW
+NO2 N—O 1.193 ∠ONO 134.1 MW
+NO2Cl C2v N—O 1.202 N—Cl 1.840 ∠ONO 130.6 MW
+NO2F C2v N—O 1.1798 N—F 1.467 ∠ONO 136 MW
+NS N—S (re) 1.4940 IR
+N2 N—N (re) 1.0977 UV
+N2O N—N (re) 1.1284 N—O (re) 1.1841 MW, IR
+NaBH4 Ha(BH3)Na (C3v) B—H (BH3) 1.278 B—Ha 1.238 Na—B 2.308 MW
+NaBr Na—Br (re) 2.5020 MW
+NaCl Na—Cl (re) 2.3609 MW
+NaF Na—F (re) 1.9260 MW
+NaH Na—H (re) 1.8873 UV
+NaI Na—I (re) 2.7115 MW
+NaO Na—O (re) 2.05155 UV
+Na2 Na—Na (re) 3.0789 UV
+NbCl4 Td Nb—Cl 2.279 ED
+NbCl5 D3h Nb—Clax 2.307 Nb—Cleq 2.276 ED
+NbO Nb—O (re) 1.691 UV
+NdI3 C3v Nd—I 2.879 ED
+NiBr Ni—Br 2.1963 UV
+NiBr2 linear Ni—Br 2.201 ED
+NiCl2 linear Ni—Cl 2.076 ED
+NiF2 linear Ni—F 1.729 Ni—F (re) 1.715 ED
+NiH Ni—H (re) 1.476 UV
+NiI Ni—I 2.348 UV
+NpF6 Oh Np—F 1.982 ED
+OF O—F (re) 1.3579 LMR
+OF2 C2v O—F (re) 1.4053 ∠FOF (θe) 103.07 MW
+OH O—H (re) 0.96966 UV
+O(SiH3)2 Si—H 1.486 Si—O 1.634 ∠SiOSi 144.1 ED
+O2 O—O (re) 1.2074 MW
+O3 C2v O—O (re) 1.2716 ∠OOO (θe) 117.47 MW
+OsF6 Oh Os—F 1.832 ED
+OsO4 Td Os—O 1.712 ED
+PBr3 C3v P—Br 2.220 ∠BrPBr 101.0 ED
+PCl P—Cl (re) 2.01461 UV
+PCl3 C3v P—Cl 2.039 ∠ClPCl 100.27 ED
+PF P—F (re) 1.5896 UV
+PF3 C3v P—F 1.570 ∠FPF 97.8 ED, MW
+PF5 D3h P—Feq 1.534 P—Fax 1.577 ED
+PH P—H (re) 1.4223 LMR
+PH2 P—H 1.418 ∠HPH 91.70 UV
+PH3 c3v P—H 1.4200 ∠HPH 93.345 MW
+PN N—P (re) 1.49087 MW
+PO O—P (re) 1.4759 UV
+POCl3 C3v P—O 1.449 P—Cl 1.993 ∠ClPCl 103.3 ED
+POF3 C3v P—O 1.436 P—F 1.524 ∠FPF 101.3 ED, MW
+P2 P—P (re) 1.8931 UV
+P2F4 trans conformer P—F 1.587 P—P 2.281 ∠FPF 99.1 ∠PPF 95.4 P2F4
+P4 Td P—P 2.21 ED
+P4O6 Td P—O 1.638 ∠POP 126.4 ED
+PbBr2 bent Pb—Br (re) 2.598 ED
+PbCl2 bent Pb—Cl (re) 2.444 ED
+PbCl4 Td Pb—Cl 2.369 ED
+PbF Pb—F (re) 2.0575 UV
+PbF2 bent Pb—F (re) 2.041 ED
+PbH Pb—H (re) 1.839 UV
+PbI2 bent Pb—I (re) 2.807 ED
+PbO Pb—O (re) 1.9218 MW
+PbS Pb—S (re) 2.2869 MW
+PbSe Pb—Se (re) 2.4022 MW
+PbTe Pb—Te (re) 2.5950 MW
+PrCl3 C3v Pr—Cl 2.554 ED
+PrF3 C3v Pr—F 2.091 ED
+PrI3 C3v Pr—I 2.901 ∠IPrI 113 ED
+PtC Pt—C (re) 1.6767 UV
+PtH Pt—H (re) 1.52852 UV
+PtN Pt—N (re) 1.682 MW
+PtO Pt—O (re) 1.7273 UV
+PtS Pt—S (re) 2.03983 MW
+PtSi Pt—Si (re) 2.0612 MW
+PuF6 Oh Pu—F 1.972 ED
+RbBr Rb—Br (re) 2.9447 MW
+RbCl Rb—Cl (re) 2.7869 MW
+RbF Rb—F (re) 2.2703 MW
+RbH Rb—H (re) 2.367 UV
+RbI Rb—I (re) 3.1768 MW
+RbO Rb—O (re) 2.25420 UV
+ReClO3 C3v Re—O 1.702 Re—Cl 2.229 ∠ClReO 109.4 MW
+ReClO4 C4v Re—O 1.663 Re—Cl 2.270 ∠ClReO 105.5 ED
+ReCl5 D3h Re—Cleq 2.238 Re—Clax 2.263 ED
+ReF6 Oh Re—F 1.832 ED
+ReF7 pseudorotation Re—F 1.835 ED
+RhB Rh—B 1.691 UV
+RhC Rh—C 1.614 UV
+RhS Rh—S 2.059 UV
+RuO4 Td Ru—O 1.706 ED
+SCl2 C2v S—Cl 2.006 ∠ClSCl 103.0 ED
+SF S—F (re) 1.6006 MW
+SF2 S—F 1.5921 ∠FSF 98.20 MW
+SF6 Oh S—F 1.561 ED
+SH S—H (re) 1.34066 UV
+SO S—O (re) 1.4811 MW
+SOCl2 S—O 1.44 S—Cl 2.072 ∠ClSCl 97.2 ∠OSCl 108.0 MW
+SOF2 S—O 1.420 S—F 1.583 ∠FSF 92.2 ∠OSF 106.2 ED
+SO2 S—O (re) 1.4308 ∠OSO (θe) 119.329 MW
+SO2Cl2 C2v S—Cl 2.011 S—O 1.404 ∠ClSCl 100.0 ∠OSO 123.5 ED
+SO2F2 C2v S—F 1.530 S—O 1.397 ∠FSF 97 ∠OSO 123 ED
+SO3 D3h S—O 1.4198 IR
+S(SiH3)2 Si—S 2.136 Si—H 1.494 ∠SiSSi 97.4 ED
+S2 S—S (re) 1.8892
+S2O2 planar cis form S—S 2.025 S—O 1.458 ∠OSS 112.8 MW
+SbBr3 C3v Sb—Br 2.490 ∠BrSbBr 98.2 ED
+SbCl3 C3v Sb—Cl 2.334 ∠ClSbCl 97.1 ED
+SbCl5 D3h Sb—Cleq 2.277 Sb—Clax 2.338 ED
+SbF Sb—F (re) 1.918 UV
+SbF3 C3v Sb—F 1.880 ∠FSbF 94.9 ED
+SbH Sb—H 1.723 UV
+SbH3 C3v Sb—H 1.704 ∠HSbH 91.6 MW
+SbI3 C3v Sb—I 2.721 ∠ISbI 99.0 ED
+SbO Sb—O (re) 1.826 UV
+SbP Sb—P (re) 2.20544 MW
+ScCl3 D3h Sc—Cl 2.291 ED
+ScF Sc—F (re) 1.788 UV
+ScF3 D3h Sc—F 1.847 ED
+SeF Se—F 1.742 MW
+SeF6 Oh Se—F 1.69 ED
+SeH Se—H (re) 1.48 UV
+SeO Se—O (re) 1.6393 MW
+SeOF2 Se—O 1.576 Se—F 1.730 ∠OSeF 104.82 ∠FSeF 92.22 MW
+SeO2 Se—O (re) 1.6076 ∠OSeO (θe) 113.83 MW
+SeO3 D3h Se—O 1.69 ED
+Se2 Se—Se (re) 2.1660 UV
+Se6 six-membered ring with chair conformation Se—Se 2.34 ∠SeSeSe 102 ED
+ SiBrF3 C3v Si—F 1.559 Si—Br 2.156 ∠FSiBr 108.5 MW
+SiBrH3 C3v Si—Br 2.210 Si—H 1.486 ∠HSiBr 107.8 MW
+SiCl Si—Cl (re) 2.058 UV
+SiClH3 C3v Si—Cl 2.049 Si—H 1.486 ∠HSiCl 107.9 MW
+SiCl4 T4 Si—Cl 2.019 ED
+SiF Si—F 1.6008 UV
+SiFH3 C3v Si—F 1.593 Si—H 1.486 ∠HSiH 110.63 MW, IR
+SiF2 Si—F (re) 1.590 ∠FSiF (θe) 100.8 MW
+SiF3H C3v Si—H ((re) 1.4468 Si—F (re) 1.5624 ∠HSiF (θe) 110.64 MW
+SiF4 Td Si—F 1.553 ED
+SiH Si—H (re) 1.5201 UV
+SiH3I C3v Si—I 2.437 Si—H 1.486 ∠HSH 107.8 MW
+SiH4 Td Si—H 1.4798 IR
+SiN Si—N (re) 1.572 UV
+SiO Si—O (re) 1.5097 MW
+SiS Si—S (re) 1.9293 MW
+SiSe Si—Se (re) 2.0583 MW
+Si2 Si—Si (re) 2.246 UV
+Si2Cl6 Si—Si 2.32 Si—Cl 2.009 ∠ClSiCl 109.7 ED
+Si2F6 Si—Si 2.317 Si—F 1.564 ∠FSiF 108.6 ED
+Si2H6 Si—Si 2.331 Si—H 1.492 ∠SiSiH 110.3 ∠HSiH 108.6 ED
+SnBr2 Sn—Br (re) 2.501 ∠BrSnBr 100.0 ED
+SnCl Sn—Cl (re) 2.361 UV
+SnCl2 Sn—Cl (re) 2.335 ∠ClSnCl 99.1 ED
+SnCl4 Td Sn—Cl 2.281 ED
+SnF Sn—F (re) 1.944 UV
+SnH Sn—H (re) 1.7815 UV
+SnH4 Td Sn—H 1.711 R, IR
+SnI2 Sn—I (re) 2.688 ED
+SnO Sn—O (re) 1.8325 MW,UV
+SnS Sn—S (re) 2.2090 MW
+SnSe Sn—Se (re) 2.3256 MW
+SnTe Sn—Te (re) 2.5228 MW
+SrBr Sr—Br (re) 2.7352 UV
+SrBr2 quasilinear Sr—Br 2.783 ED
+SrCl2 Sr—Cl 2.630 ∠ClSrCl 155 ED
+SrF Sr—F (re) 2.0754 UV
+SrH Sr—H (re) 2.1456 UV
+SrI Sr—I (re) 2.9436 UV
+SrI2 linear Sr—I 3.01 ED
+SrO Sr—O (re) 1.9198 MW
+SrOH Sr—O 2.111 O—H 0.922 UV
+SrS Sr—S (re) 2.4405 UV
+TaBr5 D3h Ta—Breq 2.412 Ta—Brax 2.473 ED
+TaCl5 D3h Ta—Cleq 2.268 Ta—Clax 2.315 ED
+TaO Ta—O (re) 1.6875 UV
+TbCl3 C3v Tb—Cl 2.476 ED
+TeF6 Oh Te—F 1.815 ED
+TeH Te—H 1.74 UV
+TeO Te—O (re) 1.825 UV
+Te2 Te—Te (re) 2.5574 UV
+ThCl4 Td Th—Cl 2.567 ED
+ThF4 Td Th—F 2.124 ED
+ThO Th—O (re) 1.84032 UV
+TiBr4 Td Ti—Br 2.339 ED
+TiCl3 D3h Ti—Cl 2.208 ED
+TiCl4 Td Ti—Cl 2.170 ED
+TiF Ti—F 1.8342 MW
+TiF4 Td Ti—F 1.756 ED
+TiI3 D3h Ti—I 2.568 ED
+TiI4 Td Ti—I 2.546 ED
+TiO Ti—O (re) 1.620 UV
+TiS Ti—S (re) 2.0825 UV
+TlBr Tl—Br (re) 2.6182 MW
+TlCl Tl—Cl (re) 2.4848 MW
+TlF Tl—F (re) 2.0844 MW
+TlH Tl—H (re) 1.870 UV
+TlI Tl—I (re) 2.8137 MW
+UCl4 Td U—Cl 2.506 ED
+UCl6 Oh U—F 2.46 ED
+UF4 Td U—F 2.059 ED
+UF6 Oh U—F 2.000 ED
+UI3 C3v U—I 2.88 ED
+VCl3O C3v V—O 1.570 V—Cl 2.142 ∠ClVCl 111.3 ED, MW
+VBr4 Td (Jahn-Teller effect) V—Br 2.276 ED
+VCl4 Td (Jahn-Teller effect) V—Cl 2.138 ED
+VF3 D3h V—F 1.751 ED
+VF5 V—Feq 1.709 V—Fax 1.736 ED
+VMo V—Mo 1.876 UV
+VO V—O (re) 1.5893 UV
+WCl5 D3h W—Cleq 2.243 W—Clax 2.293 ED
+WCl6 Oh W—Cl 2.290 ED
+WF4O C4v W—O 1.666 W—F 1.847 ∠FWF 86.2 ED
+WF6 Oh W—F 1.833 ED
+XeF2 linear Xe—F 1.977 IR
+XeF4 D4h Xe—F 1.94 ED
+XeF6 Oh Xe—F 1.890 ED
+XeO4 Td Xe—O 1.736 ED
+YCl Y—Cl 2.385 UV
+YCl3 Y—Cl 2.437 ED
+YF Y—F (re) 1.9257 UV
+YI3 Y—I 2.817 ED
+YO Y—O (re) 1.790 UV
+YbBr Yb—Br (re) 2.6454 UV
+YbH Yb—H (re) 2.0526 UV
+ZnBr2 linear Zn—Br 2.204 ED
+ZnCl2 linear Zn—Cl 2.072 ED
+ZnF Zn—F (re) 1.7677 MW
+ZnF2 linear Zn—F 1.742 Zn—F (re) 1.729 ED
+ZnH Zn—H (re) 1.5949 UV
+ZnI2 linear Zn—I 2.401 ED
+ZrBr4 Td Zr—Br 2.465 ED
+ZrCl4 Td Zr—Cl 2.328 ED
+ZrF4 Td Zr—F 1.902 ED
+ZrI4 Td Zr—I 2.660 ED
+ZrO Zr—O (re) 1.7116 UV
+RbOH linear; large amplitude bending mode Rb—O 2.301 O—H 0.957 MW
+KOH linear; large amplitude bending mode K—O 2.212 O—H 0.91 MW
+CsOH linear; large amplitude bending mode Cs—O (re) 2.395 O—H (re) 0.97 MW
