@@ -204,14 +204,26 @@ def main():
     with open("raw_len.csv",encoding="utf-8") as f:
         for i in f:
             j=i.strip().split(',')
-            form=prs(j[0][0])
+            form=prs(j[0])[0]
             geo=dict()
             geo['str']=j[1]
             for n in range(2,len(j),2):
                 geo[j[n]]=j[n+1]
-            if mdict[form][lenk[0]]==rawchar:
-                mdict[form][lenk[0]]=geo
-        
+            try:
+                if mdict[form][lenk[0]]==rawchar:
+                    mdict[form][lenk[0]]='"'+str(geo)+'"'
+            except KeyError:
+                pass
+
+    with open("addlen.csv",encoding="utf-8") as f:
+        for i in f:
+            j=i.strip().split(',')
+            form=prs(j[0])[0]
+            try:
+                if mdict[form][lenk[0]]==rawchar:
+                    mdict[form][lenk[0]]=str(j[1])
+            except KeyError:
+                pass
     
     ab=dict()
 
@@ -293,13 +305,15 @@ def main():
                 for el in val:
                     if el!=rawchar or it in mdict['idx']:
                         st+=","+str(el)
-                    if it in ionk or it in disk or it in dipk or it in magnk:
+                    if it in ionk or it in disk or it in dipk or it in magnk or it in lenk:
                         if el==rawchar:
                             if it in magnk:
                                 mis+=0.5
+                            elif it in lenk:
+                                mis+=1000
                             else:
                                 mis+=1
                     it+=1
-                if 1<int(val[1])<3 and mis<2:
+                if 1<int(val[1])<3 and mis<1:
                     final.write(st+"\n")
 main()

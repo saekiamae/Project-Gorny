@@ -5,7 +5,7 @@ AgH,,Ag—H,1.617
 AgI,,Ag—I,2.5446
 AgLi,,Ag—Li,2.41
 AgO,,Ag—O,2.0030
-AgOH,bent,Ag—O,2.016,O—H,0.952,∠HOAg
+AgOH,bent,Ag—O,2.016,O—H,0.952,∠HOAg,108.3
 AlBr,,Al—Br,2.295
 AlBr3,D3h,Al—Br,2.221
 AlCa,,Al—Ca,3.148
@@ -89,7 +89,7 @@ BiP,,Bi—P,2.29345
 Bi2,,Bi—Bi,2.6596
 BrCl,,Br—Cl,2.1361
 BrF,,Br—F,1.7590
-BrF5,C4v,Br—F–,(Br—Fax),1.753,(Br—Feq),0.069,∠FaxBrFeq,85.1
+BrF5,C4v,Br—F–(Br—Fax),1.753,(Br—Feq),0.069,∠FaxBrFeq,85.1
 BrO,,Br—O,1.7172
 BrO2,C2v,Br—O,1.644,∠OBrO,114.3
 Br2,,Br—Br,2.2811
@@ -197,7 +197,7 @@ HNO,bent,N—O,1.212,N—H,1.063,∠HNO,108.6
 HPO,,P—O,1.4843,P—H,1.473,∠HPO,104.57
 H2,,H—H,0.74144
 H2O,C2v,O—H,0.9575,∠HOH,104.51
-H2O2,C2,O—O,1.475,∠OOH,94.8,119.8
+H2O2,C2,O—O,1.475,∠OOH,94.8
 H2S,C2v,H—S,1.3356,∠HSH,92.12
 HfBr4,Td,Hf—Br,2.450
 HfCl4,Td,Hf—Cl,2.316
@@ -214,7 +214,6 @@ HoO,,Ho—O,1.797
 IBr,,I—Br,2.4691
 ICl,,I—Cl,2.3210
 IF,,I—F,1.9098
-IF5,C4v,I—F,1.860,(I—Feq),(I—Fax),0.03,∠FaxIFeq,82.1
 IO,,I—O,1.8676
 I2,,I—I,2.6663
 InBr,,In—Br,2.5432
