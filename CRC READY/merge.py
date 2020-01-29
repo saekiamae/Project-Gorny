@@ -160,7 +160,7 @@ def main():
     magnk=[49,21]
     disk=[30]
     lenk=[31]
-    vark=[4,5]
+    vark=[4]
     freqk=[23]
     
     mdict['idx']=sorted([0,1]+ionk+dipk+magnk+disk+lenk+vark+freqk)
@@ -206,7 +206,10 @@ def main():
             j=i.strip().split(',')
             form=prs(j[0])[0]
             geo=dict()
-            geo['str']=j[1]
+            if j[1]!="":
+                geo['str']=j[1]
+            else:
+                geo['str']="N"
             for n in range(2,len(j),2):
                 geo[j[n]]=j[n+1]
             try:
@@ -251,9 +254,7 @@ def main():
         if mdict[i][lenk[0]]==rawchar:
             mdict[i][lenk[0]]=ab[i][7]
         if mdict[i][vark[0]]==rawchar:
-            mdict[i][vark[0]]=ab[i][5]
-        if mdict[i][vark[1]]==rawchar:
-            mdict[i][vark[1]]=ab[i][6]       
+            mdict[i][vark[0]]='"'+str([ab[i][5],ab[i][6]])+'"'
 
 
     freq=dict()
