@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     81294,       1209]
-NotebookOptionsPosition[     80963,       1195]
-NotebookOutlinePosition[     81337,       1211]
-CellTagsIndexPosition[     81294,       1208]
+NotebookDataLength[     81193,       1204]
+NotebookOptionsPosition[     80862,       1190]
+NotebookOutlinePosition[     81236,       1206]
+CellTagsIndexPosition[     81193,       1203]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -29,25 +29,19 @@ Cell[BoxData[{
      "\[IndentingNewLine]", 
      RowBox[{"RUN", "[", "\"\<FlowDefinition.nb\>\"", "]"}], ";", 
      "\[IndentingNewLine]", 
-     RowBox[{"RUN", "[", "\"\<Geo2.0.nb\>\"", "]"}], ";", 
-     "\[IndentingNewLine]", 
+     RowBox[{"RUN", "[", "\"\<Geo3.nb\>\"", "]"}], ";", "\[IndentingNewLine]", 
      RowBox[{"RUN", "[", "\"\<LoadData.nb\>\"", "]"}], ";"}], 
     "\[IndentingNewLine]", "]"}], ";"}], 
   "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{"dataT", "=", 
-   RowBox[{"LoadEx", "[", 
-    RowBox[{
-     RowBox[{"loadAd", "[", "tabType", "]"}], ",", 
-     RowBox[{"Range", "@@", "rows"}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
- RowBox[{
   RowBox[{
-   RowBox[{"rT", "=", 
-    RowBox[{"LoadEx", "[", 
-     RowBox[{
-      RowBox[{"loadAd", "[", "\"\<rAd\>\"", "]"}], ",", 
-      RowBox[{"Range", "[", 
-       RowBox[{"102", ",", "193"}], "]"}]}], "]"}]}], ";"}], 
+   RowBox[{"dataT", "=", 
+    RowBox[{"Import", "[", "exname", "]"}]}], ";"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{"dataT", "=", 
+     RowBox[{"Filter", "[", 
+      RowBox[{"dataT", ",", "frules"}], "]"}]}], ";"}], "*)"}], 
   "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"cT", "=", 
@@ -59,7 +53,6 @@ Cell[BoxData[{
         RowBox[{"ClearVars", "[", "]"}], ";", "\[IndentingNewLine]", 
         RowBox[{"GetVars", "[", "n", "]"}], ";", "\[IndentingNewLine]", 
         RowBox[{"SetGeometry", "[", "]"}], ";", "\[IndentingNewLine]", 
-        RowBox[{"PrepareCalculations", "[", "]"}], ";", "\[IndentingNewLine]", 
         RowBox[{"SetMagnetism", "[", "]"}], ";", "\[IndentingNewLine]", 
         RowBox[{"Calculate", "[", "]"}], ";", "\[IndentingNewLine]", 
         RowBox[{"If", "[", 
@@ -1189,8 +1182,10 @@ SuperscriptBox[\(cm\), \(4\)]]\)]\>\"", ",", "\"\<\[Omega]A\>\"", ",",
    3.787809905932086*^9}, 3.7878111786087437`*^9, {3.7878118991179757`*^9, 
    3.7878119078971643`*^9}, {3.787816416964203*^9, 3.787816433792182*^9}, {
    3.7880739460331097`*^9, 3.7880739827860365`*^9}, {3.7880768545400577`*^9, 
-   3.7880769075333295`*^9}, 
-   3.788077041338476*^9},ExpressionUUID->"9efd49e5-64f4-44ff-a3b5-\
+   3.7880769075333295`*^9}, 3.788077041338476*^9, {3.789547782877248*^9, 
+   3.7895477958768845`*^9}, {3.789547857163906*^9, 3.7895478644862986`*^9}, {
+   3.7895479668054895`*^9, 
+   3.7895480472994013`*^9}},ExpressionUUID->"9efd49e5-64f4-44ff-a3b5-\
 5b97ee196ba7"]
 },
 WindowSize->{775, 872},
@@ -1210,7 +1205,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 80401, 1173, 1358, "Input",ExpressionUUID->"9efd49e5-64f4-44ff-a3b5-5b97ee196ba7"]
+Cell[558, 20, 80300, 1168, 1334, "Input",ExpressionUUID->"9efd49e5-64f4-44ff-a3b5-5b97ee196ba7"]
 }
 ]
 *)

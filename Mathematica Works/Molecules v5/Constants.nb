@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      1808,         62]
-NotebookOptionsPosition[      1513,         49]
-NotebookOutlinePosition[      1856,         64]
-CellTagsIndexPosition[      1813,         61]
+NotebookDataLength[      2031,         67]
+NotebookOptionsPosition[      1735,         54]
+NotebookOutlinePosition[      2078,         69]
+CellTagsIndexPosition[      2035,         66]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -42,13 +42,18 @@ Cell[BoxData[{
  RowBox[{
   RowBox[{"un", "=", "931494102.42"}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{"an", "=", "1*^-8"}], ";"}]}], "Input",
- CellChangeTimes->{{3.7848132416450233`*^9, 
-  3.78481324881701*^9}},ExpressionUUID->"ce4bca52-fb6b-4692-a450-\
+  RowBox[{"an", "=", "1*^-8"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"rawchar", "=", "\"\<X\>\""}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"exname", "=", "\"\<final.csv\>\""}], ";"}]}], "Input",
+ CellChangeTimes->{{3.7848132416450233`*^9, 3.78481324881701*^9}, {
+  3.789547871356561*^9, 
+  3.7895479027455873`*^9}},ExpressionUUID->"ce4bca52-fb6b-4692-a450-\
 a8444f373dbd"]
 },
 WindowSize->{775, 872},
-WindowMargins->{{564, Automatic}, {Automatic, 54}},
+WindowMargins->{{Automatic, 48}, {-38, Automatic}},
 FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (March 6, 2018)",
 StyleDefinitions->"Default.nb"
 ]
@@ -63,7 +68,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 951, 27, 162, "Input",ExpressionUUID->"ce4bca52-fb6b-4692-a450-a8444f373dbd"]
+Cell[558, 20, 1173, 32, 200, "Input",ExpressionUUID->"ce4bca52-fb6b-4692-a450-a8444f373dbd"]
 }
 ]
 *)
