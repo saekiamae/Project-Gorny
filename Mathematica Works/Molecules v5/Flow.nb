@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     81193,       1204]
-NotebookOptionsPosition[     80862,       1190]
-NotebookOutlinePosition[     81236,       1206]
-CellTagsIndexPosition[     81193,       1203]
+NotebookDataLength[     81571,       1213]
+NotebookOptionsPosition[     81240,       1199]
+NotebookOutlinePosition[     81614,       1215]
+CellTagsIndexPosition[     81571,       1212]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -29,8 +29,7 @@ Cell[BoxData[{
      "\[IndentingNewLine]", 
      RowBox[{"RUN", "[", "\"\<FlowDefinition.nb\>\"", "]"}], ";", 
      "\[IndentingNewLine]", 
-     RowBox[{"RUN", "[", "\"\<Geo3.nb\>\"", "]"}], ";", "\[IndentingNewLine]", 
-     RowBox[{"RUN", "[", "\"\<LoadData.nb\>\"", "]"}], ";"}], 
+     RowBox[{"RUN", "[", "\"\<Geo3.nb\>\"", "]"}], ";"}], 
     "\[IndentingNewLine]", "]"}], ";"}], 
   "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
  RowBox[{
@@ -54,6 +53,10 @@ Cell[BoxData[{
         RowBox[{"GetVars", "[", "n", "]"}], ";", "\[IndentingNewLine]", 
         RowBox[{"SetGeometry", "[", "]"}], ";", "\[IndentingNewLine]", 
         RowBox[{"SetMagnetism", "[", "]"}], ";", "\[IndentingNewLine]", 
+        RowBox[{"Print", "[", 
+         RowBox[{"\"\<RT:\>\"", ",", 
+          RowBox[{"Simplify", "[", "EQ", "]"}]}], "]"}], ";", 
+        "\[IndentingNewLine]", 
         RowBox[{"Calculate", "[", "]"}], ";", "\[IndentingNewLine]", 
         RowBox[{"If", "[", 
          RowBox[{
@@ -158,7 +161,10 @@ Cell[BoxData[{
         RowBox[{"[", "1", "]"}], "]"}]}], "\[IndentingNewLine]", 
       "\[IndentingNewLine]", "}"}], ",", 
      RowBox[{"{", 
-      RowBox[{"n", ",", "dataT"}], "}"}]}], "]"}]}], 
+      RowBox[{"n", ",", 
+       RowBox[{"{", 
+        RowBox[{"dataT", "[", 
+         RowBox[{"[", "1", "]"}], "]"}], "}"}]}], "}"}]}], "]"}]}], 
   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"NamedTable", "=", 
@@ -1184,8 +1190,11 @@ SuperscriptBox[\(cm\), \(4\)]]\)]\>\"", ",", "\"\<\[Omega]A\>\"", ",",
    3.7880739460331097`*^9, 3.7880739827860365`*^9}, {3.7880768545400577`*^9, 
    3.7880769075333295`*^9}, 3.788077041338476*^9, {3.789547782877248*^9, 
    3.7895477958768845`*^9}, {3.789547857163906*^9, 3.7895478644862986`*^9}, {
-   3.7895479668054895`*^9, 
-   3.7895480472994013`*^9}},ExpressionUUID->"9efd49e5-64f4-44ff-a3b5-\
+   3.7895479668054895`*^9, 3.7895480472994013`*^9}, {3.789734438706153*^9, 
+   3.7897344390113373`*^9}, {3.7897352298453503`*^9, 
+   3.7897352421724825`*^9}, {3.7897382604860086`*^9, 
+   3.7897382700569053`*^9}, {3.789738301815077*^9, 
+   3.789738305672839*^9}},ExpressionUUID->"9efd49e5-64f4-44ff-a3b5-\
 5b97ee196ba7"]
 },
 WindowSize->{775, 872},
@@ -1205,7 +1214,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 80300, 1168, 1334, "Input",ExpressionUUID->"9efd49e5-64f4-44ff-a3b5-5b97ee196ba7"]
+Cell[558, 20, 80678, 1177, 1334, "Input",ExpressionUUID->"9efd49e5-64f4-44ff-a3b5-5b97ee196ba7"]
 }
 ]
 *)

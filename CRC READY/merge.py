@@ -227,6 +227,16 @@ def main():
                     mdict[form][lenk[0]]=str(j[1])
             except KeyError:
                 pass
+
+    with open("addvar.csv",encoding="utf-8") as f:
+        for i in f:
+            j=i.strip().split(',')
+            form=prs(j[0])[0]
+            try:
+                if mdict[form][vark[0]]==rawchar:
+                    mdict[form][vark[0]]='"'+str([j[1],j[2]])+'"'
+            except KeyError:
+                pass
     
     ab=dict()
 

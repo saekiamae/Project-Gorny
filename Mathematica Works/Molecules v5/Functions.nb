@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     29297,        858]
-NotebookOptionsPosition[     28997,        845]
-NotebookOutlinePosition[     29341,        860]
-CellTagsIndexPosition[     29298,        857]
+NotebookDataLength[     29704,        865]
+NotebookOptionsPosition[     29404,        852]
+NotebookOutlinePosition[     29748,        867]
+CellTagsIndexPosition[     29705,        864]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -191,7 +191,8 @@ Cell[BoxData[{
       RowBox[{
        RowBox[{"\"\<[\>\"", "\[Rule]", "\"\<{\>\""}], ",", 
        RowBox[{"\"\<]\>\"", "\[Rule]", "\"\<}\>\""}], ",", 
-       RowBox[{"\"\<'\>\"", "\[Rule]", "\"\<\>\""}]}], "}"}]}], "]"}], 
+       RowBox[{"\"\<'\>\"", "\[Rule]", "\"\<\>\""}], ",", 
+       RowBox[{"\"\< \>\"", "\[Rule]", "\"\<\>\""}]}], "}"}]}], "]"}], 
    "]"}]}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"PyD", "[", "s_", "]"}], ":=", 
@@ -430,6 +431,9 @@ Cell[BoxData[{
  RowBox[{
   RowBox[{"QG", "[", "x_", "]"}], ":=", 
   RowBox[{"Symbol", "[", "x", "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"QE", "[", "x_", "]"}], ":=", 
+  RowBox[{"ToExpression", "[", "x", "]"}]}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"QS", "[", 
    RowBox[{"sym_", ",", "val_"}], "]"}], ":=", 
@@ -839,8 +843,11 @@ Cell[BoxData[{
    3.787985591198206*^9, 3.7879856626546707`*^9}, {3.787985944361144*^9, 
    3.7879859601908364`*^9}, {3.788065532672071*^9, 3.788065642758297*^9}, {
    3.788677865197882*^9, 3.78867791812154*^9}, {3.788677954809925*^9, 
-   3.7886779819895535`*^9}, {3.789548257764469*^9, 
-   3.789548258029763*^9}},ExpressionUUID->"5f088378-fe54-448c-8beb-\
+   3.7886779819895535`*^9}, {3.789548257764469*^9, 3.789548258029763*^9}, {
+   3.7897361171903453`*^9, 3.7897361255998497`*^9}, {3.7897362228140354`*^9, 
+   3.789736235248772*^9}, 3.7897363658237457`*^9, {3.7897364824719086`*^9, 
+   3.789736483950954*^9}, {3.789737838300851*^9, 
+   3.789737848739938*^9}},ExpressionUUID->"5f088378-fe54-448c-8beb-\
 4f3d71f8213d"]
 },
 WindowSize->{1086, 872},
@@ -859,7 +866,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 28435, 823, 2962, "Input",ExpressionUUID->"5f088378-fe54-448c-8beb-4f3d71f8213d"]
+Cell[558, 20, 28842, 830, 2981, "Input",ExpressionUUID->"5f088378-fe54-448c-8beb-4f3d71f8213d"]
 }
 ]
 *)
