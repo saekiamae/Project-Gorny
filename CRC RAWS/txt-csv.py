@@ -9,17 +9,14 @@ with open("./"+name+".txt",encoding="utf-8") as r:
                 nw=deque()
                 nw.append(words[0])
                 med=words[1]
-                for i in words[2:-1]:
+                for i in words[2:-3]:
                     if i[0]=='(' or i[0]=="≤" or (len(i)>1 and i[1]=='.') or (len (i)>2 and i[2]=='.'):
                         break
                     med+=" "+i
                 nw.append(med)
-                if words[-1][0].isdigit():
-                    nw.append(words[-1])
-                else:
-                    nw.append(words[-1][1:])
+                nw.append(words[-2])
                 nline="";
                 for i in list(nw)[0:-1]:
                     nline+=i+","
-                nline+=nw[-1]
+                nline+=nw[-1]+"\n"
                 w.write(nline)

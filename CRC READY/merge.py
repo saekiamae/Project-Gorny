@@ -164,7 +164,7 @@ def main():
     freqk=[23]
     
     mdict['idx']=sorted([0,1]+ionk+dipk+magnk+disk+lenk+vark+freqk)
-    mdict=getPr(mdict,ion,ionk,True)
+    mdict=getPr(mdict,ion,ionk)
     mdict=getPr(mdict,dip,dipk)
     mdict=getPr(mdict,magn,magnk)
     mdict=getPr(mdict,dis,disk,True)
