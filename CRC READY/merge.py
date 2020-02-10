@@ -116,7 +116,7 @@ def prep(filename,idx,nn=False):
                 out[x[0]]=[name,x[1]]+el[2:]
         return out
 
-def getPr(m,d,lidx,en=False):
+def getPr(m,d,lidx,en=False,neg=False):
     for i in d.keys():
         lidd=deque(lidx)
         for j in d[i][2:]:
@@ -127,6 +127,8 @@ def getPr(m,d,lidx,en=False):
                 m[i][0:2]=d[i][0:2]
             if en:
                 j=eV(j)
+            if neg:
+               j=-float(j)
             m[i][lidd.popleft()]=j
     return m
 
@@ -164,7 +166,7 @@ def main():
     freqk=[23]
     
     mdict['idx']=sorted([0,1]+ionk+dipk+magnk+disk+lenk+vark+freqk)
-    mdict=getPr(mdict,ion,ionk)
+    mdict=getPr(mdict,ion,ionk,neg=True)
     mdict=getPr(mdict,dip,dipk)
     mdict=getPr(mdict,magn,magnk)
     mdict=getPr(mdict,dis,disk,True)
