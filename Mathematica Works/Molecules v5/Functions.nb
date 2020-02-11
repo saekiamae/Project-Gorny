@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     29704,        865]
-NotebookOptionsPosition[     29404,        852]
-NotebookOutlinePosition[     29748,        867]
-CellTagsIndexPosition[     29705,        864]
+NotebookDataLength[     32019,        920]
+NotebookOptionsPosition[     31622,        906]
+NotebookOutlinePosition[     31966,        921]
+CellTagsIndexPosition[     31923,        918]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -848,7 +848,61 @@ Cell[BoxData[{
    3.789736235248772*^9}, 3.7897363658237457`*^9, {3.7897364824719086`*^9, 
    3.789736483950954*^9}, {3.789737838300851*^9, 
    3.789737848739938*^9}},ExpressionUUID->"5f088378-fe54-448c-8beb-\
-4f3d71f8213d"]
+4f3d71f8213d"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Filter", "[", 
+   RowBox[{"t_", ",", "rules_"}], "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"new", ",", "acc"}], "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"new", "=", 
+      RowBox[{"{", "}"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Do", "[", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"acc", "=", "True"}], ";", "\[IndentingNewLine]", 
+        RowBox[{"Do", "[", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"If", "[", 
+            RowBox[{
+             RowBox[{"!", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{
+                 RowBox[{"i", "[", 
+                  RowBox[{"[", 
+                   RowBox[{"j", "[", 
+                    RowBox[{"[", "0", "]"}], "]"}], "]"}], "]"}], "<", 
+                 RowBox[{"j", "[", 
+                  RowBox[{"[", "1", "]"}], "]"}]}], "||", 
+                RowBox[{
+                 RowBox[{"i", "[", 
+                  RowBox[{"[", 
+                   RowBox[{"j", "[", 
+                    RowBox[{"[", "0", "]"}], "]"}], "]"}], "]"}], ">", 
+                 RowBox[{"j", "[", 
+                  RowBox[{"[", "2", "]"}], "]"}]}]}], ")"}]}], ",", 
+             RowBox[{"acc", "=", "False"}]}], "]"}], ";"}], 
+          "\[IndentingNewLine]", ",", "\[IndentingNewLine]", 
+          RowBox[{"{", 
+           RowBox[{"j", ",", "rules"}], "}"}]}], "\[IndentingNewLine]", "]"}],
+         ";"}], "\[IndentingNewLine]", ",", "\[IndentingNewLine]", 
+       RowBox[{"{", 
+        RowBox[{"i", ",", "t"}], "}"}]}], "\[IndentingNewLine]", "]"}], 
+     ";"}]}], "\[IndentingNewLine]", "]"}]}]], "Input",
+ CellChangeTimes->{{3.790398801290435*^9, 3.7903988174731655`*^9}, {
+  3.7903988678824577`*^9, 3.7903988871758623`*^9}, {3.7903989285103593`*^9, 
+  3.790398965651934*^9}, {3.790398997562566*^9, 3.790399109745798*^9}, {
+  3.7903991625286407`*^9, 3.7903991791411953`*^9}, {3.790399414583968*^9, 
+  3.7903995128271046`*^9}, {3.7903995451097703`*^9, 3.790399549203789*^9}, {
+  3.790399584155719*^9, 
+  3.7903995897118263`*^9}},ExpressionUUID->"9db6b824-c849-4564-b6bf-\
+a6c9f29c4b81"]
 },
 WindowSize->{1086, 872},
 WindowMargins->{{347, Automatic}, {80, Automatic}},
@@ -866,7 +920,8 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 28842, 830, 2981, "Input",ExpressionUUID->"5f088378-fe54-448c-8beb-4f3d71f8213d"]
+Cell[558, 20, 28842, 830, 2981, "Input",ExpressionUUID->"5f088378-fe54-448c-8beb-4f3d71f8213d"],
+Cell[29403, 852, 2215, 52, 257, "Input",ExpressionUUID->"9db6b824-c849-4564-b6bf-a6c9f29c4b81"]
 }
 ]
 *)

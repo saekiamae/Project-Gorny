@@ -318,15 +318,15 @@ def main():
                 for el in val:
                     if el!=rawchar or it in mdict['idx']:
                         st+=","+str(el)
-                    if it in ionk or it in disk or it in dipk or it in magnk or it in lenk:
+                    """if it in ionk or it in disk or it in dipk or it in magnk or it in lenk:
                         if el==rawchar:
                             if it in magnk:
                                 mis+=0.5
                             elif it in lenk:
                                 mis+=1000
                             else:
-                                mis+=1
+                                mis+=1"""
                     it+=1
-                if 1<int(val[1])<3 and mis<1:
+                if mis<1:
                     final.write(st+"\n")
 main()
