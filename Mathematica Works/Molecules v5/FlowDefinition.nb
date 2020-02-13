@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     27385,        681]
-NotebookOptionsPosition[     27055,        667]
-NotebookOutlinePosition[     27429,        683]
-CellTagsIndexPosition[     27386,        680]
+NotebookDataLength[     28591,        705]
+NotebookOptionsPosition[     28261,        691]
+NotebookOutlinePosition[     28635,        707]
+CellTagsIndexPosition[     28592,        704]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -33,6 +33,21 @@ Cell[BoxData[{
      "\[IndentingNewLine]", 
      RowBox[{"Clear", "[", 
       RowBox[{"A", ",", "B"}], "]"}], ";"}], "\[IndentingNewLine]", ")"}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"APrint", "[", "x__", "]"}], ":=", 
+   RowBox[{"outp", "=", 
+    RowBox[{"StringJoin", "[", 
+     RowBox[{"outp", ",", 
+      RowBox[{"Table", "[", 
+       RowBox[{
+        RowBox[{"ToString", "[", 
+         RowBox[{"InputForm", "[", "i", "]"}], "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"i", ",", 
+          RowBox[{"List", "[", "x", "]"}]}], "}"}]}], "]"}], ",", 
+      "\"\<\\n\>\""}], "]"}]}]}], 
   "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"GetVars", "[", "n_", "]"}], ":=", 
@@ -55,7 +70,7 @@ Cell[BoxData[{
     RowBox[{"Print", "[", 
      RowBox[{"\"\<Working on: \>\"", ",", "name"}], "]"}], ";", 
     "\[IndentingNewLine]", 
-    RowBox[{"Print", "[", "\"\<Getting info..\>\"", "]"}], ";", 
+    RowBox[{"APrint", "[", "\"\<Getting info..\>\"", "]"}], ";", 
     "\[IndentingNewLine]", 
     RowBox[{"av", "=", 
      RowBox[{"If", "[", 
@@ -156,7 +171,7 @@ Cell[BoxData[{
    RowBox[{"SetMagnetism", "[", "]"}], ":=", 
    RowBox[{"(", "\[IndentingNewLine]", 
     RowBox[{
-     RowBox[{"Print", "[", "\"\<Getting coefficients..\>\"", "]"}], ";", 
+     RowBox[{"APrint", "[", "\"\<Getting coefficients..\>\"", "]"}], ";", 
      "\[IndentingNewLine]", 
      RowBox[{"e2temp", "=", "e2"}], ";", "\[IndentingNewLine]", 
      RowBox[{"LDtemp", "=", "LD"}], ";", "\[IndentingNewLine]", 
@@ -343,7 +358,7 @@ Cell[BoxData[{
    RowBox[{"Calculate", "[", "]"}], ":=", 
    RowBox[{"(", "\[IndentingNewLine]", 
     RowBox[{
-     RowBox[{"Print", "[", "\"\<Calculating..\>\"", "]"}], ";", 
+     RowBox[{"APrint", "[", "\"\<Calculating..\>\"", "]"}], ";", 
      "\[IndentingNewLine]", 
      RowBox[{"SOL", "=", 
       RowBox[{"{", 
@@ -360,7 +375,7 @@ Cell[BoxData[{
         RowBox[{"Clear", "@@", 
          RowBox[{"rlx", "[", 
           RowBox[{"[", "1", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
-        RowBox[{"Print", "[", 
+        RowBox[{"APrint", "[", 
          RowBox[{"\"\<Pending rules: \>\"", ",", "i"}], "]"}], ";", 
         "\[IndentingNewLine]", 
         RowBox[{"While", "[", 
@@ -371,22 +386,23 @@ Cell[BoxData[{
              RowBox[{"[", "1", "]"}], "]"}], ">", "minerr"}], "&&", 
            RowBox[{"iter", "<", "tries"}]}], ",", "\[IndentingNewLine]", 
           RowBox[{
-           RowBox[{"SOL", "=", 
-            RowBox[{"FindMinimum", "[", 
-             RowBox[{
-              RowBox[{"{", 
-               RowBox[{"EQ", ",", 
+           RowBox[{"Quiet", "[", 
+            RowBox[{"SOL", "=", 
+             RowBox[{"FindMinimum", "[", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{"EQ", ",", 
+                 RowBox[{"rlx", "[", 
+                  RowBox[{"[", "2", "]"}], "]"}]}], "}"}], ",", 
+               RowBox[{"QR", "[", 
                 RowBox[{"rlx", "[", 
-                 RowBox[{"[", "2", "]"}], "]"}]}], "}"}], ",", 
-              RowBox[{"QR", "[", 
-               RowBox[{"rlx", "[", 
-                RowBox[{"[", "3", "]"}], "]"}], "]"}], ",", 
-              RowBox[{"MaxIterations", "\[Rule]", "5000"}], ",", 
-              RowBox[{"AccuracyGoal", "\[Rule]", "10"}]}], "]"}]}], ";", 
-           "\[IndentingNewLine]", 
+                 RowBox[{"[", "3", "]"}], "]"}], "]"}], ",", 
+               RowBox[{"MaxIterations", "\[Rule]", "5000"}], ",", 
+               RowBox[{"AccuracyGoal", "\[Rule]", "10"}]}], "]"}]}], "]"}], 
+           ";", "\[IndentingNewLine]", 
            RowBox[{"If", "[", 
             RowBox[{"prntclc", ",", 
-             RowBox[{"Print", "[", 
+             RowBox[{"APrint", "[", 
               RowBox[{"\"\<SOLC: \>\"", ",", "SOL"}], "]"}]}], "]"}], ";", 
            "\[IndentingNewLine]", 
            RowBox[{"Do", "[", 
@@ -454,12 +470,12 @@ Cell[BoxData[{
    RowBox[{"ApplyResults", "[", "]"}], ":=", 
    RowBox[{"(", "\[IndentingNewLine]", 
     RowBox[{
-     RowBox[{"Print", "[", "\"\<Applying Results..\>\"", "]"}], ";", 
+     RowBox[{"APrint", "[", "\"\<Applying Results..\>\"", "]"}], ";", 
      "\[IndentingNewLine]", 
      RowBox[{"Clear", "@@", 
       RowBox[{"rlx", "[", 
        RowBox[{"[", "1", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
-     RowBox[{"Print", "[", 
+     RowBox[{"APrint", "[", 
       RowBox[{"\"\<Solval: \>\"", ",", 
        RowBox[{"SOL", "=", "SOLB"}]}], "]"}], ";", "\[IndentingNewLine]", 
      "\[IndentingNewLine]", 
@@ -476,7 +492,7 @@ Cell[BoxData[{
          RowBox[{"rlx", "[", 
           RowBox[{"[", "1", "]"}], "]"}]}], "}"}]}], "]"}], ";", 
      "\[IndentingNewLine]", "\[IndentingNewLine]", 
-     RowBox[{"Print", "[", 
+     RowBox[{"APrint", "[", 
       RowBox[{"\"\<Acc:\>\"", ",", "AQLIST"}], "]"}], ";"}], 
     "\[IndentingNewLine]", ")"}]}], 
   "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
@@ -484,7 +500,7 @@ Cell[BoxData[{
   RowBox[{"PrintGeo", "[", "]"}], ":=", 
   RowBox[{"(", "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"Print", "[", "\"\<-----Geogebra output:-----\>\"", "]"}], ";", 
+    RowBox[{"APrint", "[", "\"\<-----Geogebra output:-----\>\"", "]"}], ";", 
     "\[IndentingNewLine]", "\[IndentingNewLine]", 
     RowBox[{"GPPrint", "[", 
      RowBox[{"\"\<Red\>\"", ",", "KER"}], "]"}], ";", "\[IndentingNewLine]", 
@@ -661,8 +677,16 @@ Cell[BoxData[{
    3.7902353093854885`*^9}, {3.7902374668223968`*^9, 3.790237468443043*^9}, {
    3.790237656428301*^9, 3.7902376725466185`*^9}, {3.790238219600829*^9, 
    3.7902382199708157`*^9}, {3.7902390846577463`*^9, 3.790239140192999*^9}, {
-   3.790240079397195*^9, 
-   3.7902400915995903`*^9}},ExpressionUUID->"ad78d8e7-3118-4dbb-a100-\
+   3.790240079397195*^9, 3.7902400915995903`*^9}, {3.7905742364996924`*^9, 
+   3.790574251106636*^9}, {3.7905745161915655`*^9, 3.790574609967236*^9}, {
+   3.79057472469662*^9, 3.790574727889077*^9}, {3.790574805168687*^9, 
+   3.7905748547161813`*^9}, {3.79057489891197*^9, 3.790574958269238*^9}, {
+   3.7905749925302057`*^9, 3.7905750181467023`*^9}, {3.790576229850666*^9, 
+   3.7905762300431213`*^9}, 3.7905764434554615`*^9, {3.7905769660430264`*^9, 
+   3.790576992423501*^9}, {3.790577342306394*^9, 3.790577367020281*^9}, {
+   3.790577726077265*^9, 3.7905777324532146`*^9}, {3.790578752478568*^9, 
+   3.7905787742972217`*^9}, {3.7905791206778727`*^9, 3.7905791728647723`*^9}, 
+   3.790579263326013*^9},ExpressionUUID->"ad78d8e7-3118-4dbb-a100-\
 d764b1c9bd1b"]
 },
 WindowSize->{974, 872},
@@ -682,7 +706,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 26493, 645, 3549, "Input",ExpressionUUID->"ad78d8e7-3118-4dbb-a100-d764b1c9bd1b"]
+Cell[558, 20, 27699, 669, 3621, "Input",ExpressionUUID->"ad78d8e7-3118-4dbb-a100-d764b1c9bd1b"]
 }
 ]
 *)
