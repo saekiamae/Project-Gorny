@@ -68,7 +68,19 @@ def reParse(outr):
     numout=0
     for i,j in zip(outr[1],outr[3]):
         numout+=i*j
+    
+    buff=dict()
+    for i in out:
+        try:
+            buff[i[0]][0]+=i[1]
+        except KeyError:
+            buff[i[0]]=[i[1],i[2:]]
+    out=list()
+    for i in buff.keys():
+        out.append([i,buff[i][0]]+list(buff[i][1]))
+    
     out.sort(key=lambda row: row[4:])
+        
     st=''
     for i in out:
         if i[2]==1:
@@ -230,6 +242,21 @@ def main():
             except KeyError:
                 pass
 
+    with open("diss2.csv",encoding="utf-8") as f:
+        for i in f:
+            j=i.strip().split(',')
+            form=prs(j[0])[0]
+            try:
+                if mdict[form][disk[0]]==rawchar:
+                    mdict[form][disk[0]]=dict({str(j[0]):str(j[1])})
+                else:
+                    try:
+                        mdict[form][disk[0]][str(j[0])]=str(j[1])
+                    except TypeError:
+                        pass
+            except KeyError:
+                pass
+
     with open("addvar.csv",encoding="utf-8") as f:
         for i in f:
             j=i.strip().split(',')
@@ -327,6 +354,6 @@ def main():
                             else:
                                 mis+=1
                     it+=1
-                if int(val[1])==2 and mis<1:
+                if int(val[1])==3 and mis<2:
                     final.write(st+"\n")
 main()
