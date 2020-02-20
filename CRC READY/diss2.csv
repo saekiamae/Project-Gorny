@@ -43,10 +43,9 @@ As&H,272
 As&N,582
 As&O,481
 As&P,534
-As&S,
 As&Se,96
 As&Tl,198
-At&At,(115.9)
+At&At,	115.9
 Ba&Br,370
 Ba&Cl,444
 Ba&F,487
@@ -567,8 +566,6 @@ Hg&I,38
 Hg&K,8.24
 Hg&Na,6.7
 Hg&S,213
-Hg&Se,
-Hg&Te,
 Mo&I,372
 Mo&O,607
 MoO&O,678
@@ -888,3 +885,23 @@ Zr&F,623
 Zr&N,565
 Zr&O,760
 Zr&S,575
+H&OH,-5.17
+H&SH,-4.20
+O&CO,-5.45
+O&SO,-5.65
+S&CS,-4.12
+H&NH,-3.91
+O&O2,-1.13
+Cl&OCl,-1.52
+F&OF,-1.70
+F&SF,-3.36
+F&NF,-3.30
+H&BH,-4.00
+O&CS,-6.51
+S&OC,-3.16
+O&CSe,-6.60
+Se&CO,-2.69
+H&NO,-2.12
+O&NH,-4.98
+H&CN,-5.62
+N&CH,-9.71

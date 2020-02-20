@@ -114,61 +114,77 @@ def eV(x):
 def cl(matrix, i):
     return [row[i] for row in matrix]
 
-def prep(filename,idx,nn=False):
+
+def load(filename,keys,idxname=0,validx=1,name=False,en=False,neg=False,nist=False,mod=False,adrx=[],freqcheck=False):
     with open(filename,encoding="utf-8") as f:
-        out=dict()
         for i in f:
+            molecule=dict()
             el=i.strip().split(',')
             x=prs(el[idx])
-            if nn:
-                name=''
-                out[x[0]]=[name,x[1]]+el[1:]
-            else:
-                name=el[not idx]
-                out[x[0]]=[name,x[1]]+el[2:]
-        return out
+            key=x[0]
+            vals=el[validx:]
+            skip=False
+            
+            if nist:
+                if el[3]!='':
+                    vals=[j[3]]
+                else:
+                    vals=[j[4]]
 
-def getPr(m,d,lidx,en=False,neg=False):
-    for i in d.keys():
-        lidd=deque(lidx)
-        for j in d[i][2:]:
-            try:
-                m[i]
-            except KeyError:
-                m[i]=rawLn()
-                m[i][0:2]=d[i][0:2]
-            if en:
-                j=eV(j)
-            if neg:
-               j=-float(j)
-            m[i][lidd.popleft()]=j
-    return m
+            if adrx:
+                vals=list()
+                for u in adrx:
+                    vals.append(el[u])
 
-rawchar='X'
+            if freqcheck:
+                if float(el[1])!=0:
+                    skip=True
+                    
+            molecule['atcnt']=x[1]
+            
+            if name:
+                molecule['name']=el[not idx]
+               
+            it=0
 
-def rawLn():
-    x=list()
-    for i in range(50):
-        x.append(rawchar)
-    return x
+            if not skip:
+                for i in keys:
+                    if vals[it]!='':
+                        try:
+                            mdict[key]
+                        except KeyError:
+                            mdict[key]=molecule
+                        if i=="X":
+                            lkey=key
+                        else:
+                            lkey=i
+                        try:
+                            mdict[key][lkey]
+                        except KeyError:
+                            if en:
+                                mdict[key][lkey]=eV(vals[it])
+                            elif neg:
+                                mdict[key][lkey]=-float(vals[it])
+                    it+=1
+                if mod:                
+                    for n in range(2,len(el),2):
+                        mdict[key][el[n]]=el[n+1]
+                if mods:                
+                    for n in range(1,len(el)):
+                        mdict[key][el[n]]=el[n+1]
 
 def main():
-    global elng
+    global elng,mdict
     elng=dict()
+    mdict=dict()
+    
     with open("Electronegativity.csv",encoding="utf-8") as f:
         for i in f:
             j=i.split(',')
             elng[j[0]]=float(j[1])
     elng['D']=elng['H']
     elng['T']=elng['H']
-
-
-    dip=prep("raw_dip.csv",1)
-    dis=prep("raw_dis.csv",0,True)
-    ion=prep("raw_ion.csv",0)
-    magn=prep("raw_magn.csv",1)
-  
-    mdict=dict()
+    
     ionk=[10]
     dipk=[20]
     magnk=[49,21]
@@ -176,164 +192,37 @@ def main():
     lenk=[31]
     vark=[4]
     freqk=[23]
-    
-    mdict['idx']=sorted([0,1]+ionk+dipk+magnk+disk+lenk+vark+freqk)
-    mdict=getPr(mdict,ion,ionk,neg=True)
-    mdict=getPr(mdict,dip,dipk)
-    mdict=getPr(mdict,magn,magnk)
-    mdict=getPr(mdict,dis,disk,True)
 
+    load("raw_dip.csv",['dip'],nameidx=1,validx=2,name=True)
+    load("raw_dis.csv",['dis'],en=True)
+    load("raw_ion.csv",['ion'],neg=True,validx=2,name=True)
+    load("raw_magn.csv",['state','magn'],nameidx=1,validx=2,name=True)
+    load("Ionisation.csv",['ion'],nameidx=2,neg=True,nist=True)
+    load("Dipoles.csv",['dip'],nameidx=2,nist=True)
+    load("raw_len.csv",['str'],mod=True)
+    load("addlen.csv",['simlen'])
+    load("diss2.csv",["X"],en=True)
 
-    nistion=dict()
-    nistdip=dict()
-    
-    with open("Ionisation.csv",encoding="utf-8") as f:
-        for i in f:
-            j=i.split(',')
-            if j[3]!='':
-                nistion[prs(j[2])[0]]=-float(j[3])
-            else:
-                nistion[prs(j[2])[0]]=-float(j[4])
-        
-    for i in nistion.keys():
-        try:
-            if mdict[i][ionk[0]]==rawchar:
-                mdict[i][ionk[0]]=nistion[i]
-        except KeyError:
-            pass
-    
-    with open("Dipoles.csv",encoding="utf-8") as f:
-        for i in f:
-            j=i.split(',')
-            nistdip[prs(j[2])[0]]=float(j[3])
-
-    for i in nistdip.keys():
-        try:
-            if mdict[i][dipk[0]]==rawchar:
-                mdict[i][dipk[0]]=nistdip[i]
-        except KeyError:
-            pass
-
-
-    with open("raw_len.csv",encoding="utf-8") as f:
+    with open("var2.csv",encoding="utf-8") as f:
         for i in f:
             j=i.strip().split(',')
             form=prs(j[0])[0]
-            geo=dict()
-            if j[1]!="":
-                geo['str']=j[1]
-            else:
-                geo['str']="N"
-            for n in range(2,len(j),2):
-                geo[j[n]]=j[n+1]
+            var=j[1:3]
             try:
-                if mdict[form][lenk[0]]==rawchar:
-                    mdict[form][lenk[0]]='"'+str(geo)+'"'
-            except KeyError:
-                pass
-
-    with open("addlen.csv",encoding="utf-8") as f:
-        for i in f:
-            j=i.strip().split(',')
-            form=prs(j[0])[0]
-            try:
-                if mdict[form][lenk[0]]==rawchar:
-                    mdict[form][lenk[0]]=str(j[1])
-            except KeyError:
-                pass
-
-    with open("diss2.csv",encoding="utf-8") as f:
-        for i in f:
-            j=i.strip().split(',')
-            form=prs(j[0])[0]
-            try:
-                if mdict[form][disk[0]]==rawchar:
-                    mdict[form][disk[0]]=dict({str(j[0]):str(j[1])})
+                if mdict[form][vark[0]]==rawchar:
+                    mdict[form][vark[0]]=dict({str(j[0]):str(var)})
                 else:
                     try:
-                        mdict[form][disk[0]][str(j[0])]=str(j[1])
+                        mdict[form][disk[0]][str(j[0])]=str(var)
                     except TypeError:
                         pass
             except KeyError:
                 pass
 
-    with open("addvar.csv",encoding="utf-8") as f:
-        for i in f:
-            j=i.strip().split(',')
-            form=prs(j[0])[0]
-            try:
-                if mdict[form][vark[0]]==rawchar:
-                    mdict[form][vark[0]]='"'+str([j[1],j[2]])+'"'
-            except KeyError:
-                pass
-    
-    ab=dict()
-
-    with open("AB.csv",encoding="utf-8") as f:
-        for i in f:
-            j=i.strip().split(',')
-            if j[0]!='':
-                ab[prs(j[0])[0]]=j[1:]
-                name=prs(j[0])[0]
-            else:
-                ab[name]=j[1:]
-                
-    for i in ab.keys():
-        try:
-            mdict[i]
-        except KeyError:
-            mdict[i]=rawLn()
-            mdict[i][0:2]=['',2]
-        if mdict[i][ionk[0]]==rawchar:
-            mdict[i][ionk[0]]=ab[i][14]
-        if mdict[i][dipk[0]]==rawchar:
-            mdict[i][dipk[0]]=ab[i][9]
-        if mdict[i][disk[0]]==rawchar:
-            mdict[i][disk[0]]=ab[i][8]
-        if mdict[i][lenk[0]]==rawchar:
-            mdict[i][lenk[0]]=ab[i][7]
-        if mdict[i][vark[0]]==rawchar:
-            mdict[i][vark[0]]='"'+str([ab[i][5],ab[i][6]])+'"'
-
-
-    freq=dict()
-    with open("freq.csv",encoding="utf-8") as f:
-        for i in f:
-            j=i.strip().split(',')
-            if int(j[1])==0:
-                form=prs(j[2])[0]
-                try:
-                    freq[form]
-                except KeyError:
-                    if j[5]!='':
-                        freq[form]=j[5]
-                        
-    for i in freq.keys():
-        try:
-            if mdict[i][freqk[0]]==rawchar:
-                mdict[i][freqk[0]]=freq[i]
-        except KeyError:
-            pass
-
-
-    freq2=dict()
-    with open("raw_freq.csv",encoding="utf-8") as f:
-        for i in f:
-            j=i.strip().split(',')
-            form=prs(j[0])[0]
-            try:
-                freq2[form]
-            except KeyError:
-                freq2[form]=j[1]
-                    
-                        
-    for i in freq2.keys():
-        try:
-            if mdict[i][freqk[0]]==rawchar:
-                mdict[i][freqk[0]]=freq[i]
-        except KeyError:
-            pass
-        
+    load("addvar.csv",['leftv','rightv'])
+    load("AB.csv",['leftv','rightv','simlen','dis','dip','ion'],adrx=[6,7,8,9,10,15])
+    load("freq.csv",['freq'],nameidx=2,validx=5,freqcheck=True)
+    load("raw_freq.csv",['freq'])       
         
     with open("final.csv",encoding="utf-8",mode="w") as final:
         for key in sorted(mdict.keys()):
