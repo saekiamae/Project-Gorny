@@ -1,4 +1,5 @@
 from collections import deque
+import json
 
 def deParse(st):
     bfr=False
@@ -115,21 +116,21 @@ def cl(matrix, i):
     return [row[i] for row in matrix]
 
 
-def load(filename,keys,idxname=0,validx=1,name=False,en=False,neg=False,nist=False,mod=False,adrx=[],freqcheck=False):
+def load(filename,keys,nameidx=0,validx=1,name=False,en=False,neg=False,nist=False,mod=False,mods=False,adrx=[],freqcheck=False,var2=False,src=""):
     with open(filename,encoding="utf-8") as f:
         for i in f:
             molecule=dict()
             el=i.strip().split(',')
-            x=prs(el[idx])
+            x=prs(el[nameidx])
             key=x[0]
             vals=el[validx:]
             skip=False
             
             if nist:
                 if el[3]!='':
-                    vals=[j[3]]
+                    vals=[el[3]]
                 else:
-                    vals=[j[4]]
+                    vals=[el[4]]
 
             if adrx:
                 vals=list()
@@ -143,7 +144,7 @@ def load(filename,keys,idxname=0,validx=1,name=False,en=False,neg=False,nist=Fal
             molecule['atcnt']=x[1]
             
             if name:
-                molecule['name']=el[not idx]
+                molecule['name']=el[not nameidx]
                
             it=0
 
@@ -155,7 +156,7 @@ def load(filename,keys,idxname=0,validx=1,name=False,en=False,neg=False,nist=Fal
                         except KeyError:
                             mdict[key]=molecule
                         if i=="X":
-                            lkey=key
+                            lkey=el[nameidx]
                         else:
                             lkey=i
                         try:
@@ -165,6 +166,12 @@ def load(filename,keys,idxname=0,validx=1,name=False,en=False,neg=False,nist=Fal
                                 mdict[key][lkey]=eV(vals[it])
                             elif neg:
                                 mdict[key][lkey]=-float(vals[it])
+                            elif var2:
+                                mdict[key][lkey]="{"+str(vals[it])+","+str(vals[it+1])+"}"
+                                break
+                            else:
+                                mdict[key][lkey]=vals[it]
+                            mdict[key][lkey+"_src"]=src
                     it+=1
                 if mod:                
                     for n in range(2,len(el),2):
@@ -185,64 +192,21 @@ def main():
     elng['D']=elng['H']
     elng['T']=elng['H']
     
-    ionk=[10]
-    dipk=[20]
-    magnk=[49,21]
-    disk=[30]
-    lenk=[31]
-    vark=[4]
-    freqk=[23]
-
-    load("raw_dip.csv",['dip'],nameidx=1,validx=2,name=True)
-    load("raw_dis.csv",['dis'],en=True)
-    load("raw_ion.csv",['ion'],neg=True,validx=2,name=True)
-    load("raw_magn.csv",['state','magn'],nameidx=1,validx=2,name=True)
-    load("Ionisation.csv",['ion'],nameidx=2,neg=True,nist=True)
-    load("Dipoles.csv",['dip'],nameidx=2,nist=True)
-    load("raw_len.csv",['str'],mod=True)
-    load("addlen.csv",['simlen'])
-    load("diss2.csv",["X"],en=True)
-
-    with open("var2.csv",encoding="utf-8") as f:
-        for i in f:
-            j=i.strip().split(',')
-            form=prs(j[0])[0]
-            var=j[1:3]
-            try:
-                if mdict[form][vark[0]]==rawchar:
-                    mdict[form][vark[0]]=dict({str(j[0]):str(var)})
-                else:
-                    try:
-                        mdict[form][disk[0]][str(j[0])]=str(var)
-                    except TypeError:
-                        pass
-            except KeyError:
-                pass
-
-    load("addvar.csv",['leftv','rightv'])
-    load("AB.csv",['leftv','rightv','simlen','dis','dip','ion'],adrx=[6,7,8,9,10,15])
-    load("freq.csv",['freq'],nameidx=2,validx=5,freqcheck=True)
-    load("raw_freq.csv",['freq'])       
+    load("raw_dip.csv",['dip'],nameidx=1,validx=2,name=True,src="CRC")
+    load("raw_dis.csv",['dis'],en=True,src="CRC")
+    load("raw_ion.csv",['ion'],neg=True,validx=2,name=True,src="CRC")
+    load("raw_magn.csv",['state','magn'],nameidx=1,validx=2,name=True,src="CRC")
+    load("Ionisation.csv",['ion'],nameidx=2,neg=True,nist=True,src="NIST")
+    load("Dipoles.csv",['dip'],nameidx=2,nist=True,src="NIST")
+    load("raw_len.csv",['str'],mod=True,src="CRC")
+    load("addlen.csv",['simlen'],src="NIST")
+    load("diss2.csv",["X"],en=True,src="LANGE")
+    load("var2.csv",["X"],var2=True,src="NIST")
+    load("addvar.csv",['leftv','rightv'],src="NIST")
+    load("AB.csv",['leftv','rightv','simlen','dis','dip','ion'],adrx=[6,7,8,9,10,15],src="ADR")
+    load("freq.csv",['freq'],nameidx=2,validx=5,freqcheck=True,src="NIST")
+    load("raw_freq.csv",['freq'],src="CRC")
         
-    with open("final.csv",encoding="utf-8",mode="w") as final:
-        for key in sorted(mdict.keys()):
-            val=mdict[key]
-            if key!='idx':
-                st=key
-                it=0
-                mis=0
-                for el in val:
-                    if el!=rawchar or it in mdict['idx']:
-                        st+=","+str(el)
-                    if it in ionk or it in disk or it in dipk or it in magnk or it in lenk:
-                        if el==rawchar:
-                            if it in magnk:
-                                mis+=0.5
-                            elif it in lenk:
-                                mis+=1000
-                            else:
-                                mis+=1
-                    it+=1
-                if int(val[1])==3 and mis<2:
-                    final.write(st+"\n")
+    with open("../Molecules v5/data.json",encoding="utf-8",mode="w") as final:
+        final.write(json.dumps(mdict))
 main()
