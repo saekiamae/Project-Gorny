@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     83038,       1238]
-NotebookOptionsPosition[     82707,       1224]
-NotebookOutlinePosition[     83081,       1240]
-CellTagsIndexPosition[     83038,       1237]
+NotebookDataLength[     83837,       1257]
+NotebookOptionsPosition[     83506,       1243]
+NotebookOutlinePosition[     83880,       1259]
+CellTagsIndexPosition[     83837,       1256]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -36,24 +36,35 @@ Cell[BoxData[{
    RowBox[{"RUN", "[", "\"\<Geo3.nb\>\"", "]"}], ";"}], 
   "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{
-   RowBox[{"data", "=", 
-    RowBox[{"Import", "[", "\"\<data.json\>\"", "]"}]}], ";"}], 
-  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+  RowBox[{"data", "=", 
+   RowBox[{"Import", "[", "\"\<data.json\>\"", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"cT", "=", 
+   RowBox[{"{", "}"}]}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"If", "[", 
    RowBox[{"parallel", ",", "Parallelize", ",", "Identity"}], "]"}], "[", 
   "\[IndentingNewLine]", 
-  RowBox[{
-   RowBox[{"cT", "=", 
-    RowBox[{"Table", "[", 
-     RowBox[{
+  RowBox[{"Do", "[", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"trow", "=", 
       RowBox[{"{", "\[IndentingNewLine]", 
        RowBox[{
         RowBox[{
          RowBox[{"outp", "=", "\"\<\>\""}], ";", "\[IndentingNewLine]", 
          RowBox[{"ClearVars", "[", "]"}], ";", "\[IndentingNewLine]", 
-         RowBox[{"GetVars", "[", "n", "]"}], ";", "\[IndentingNewLine]", 
+         RowBox[{"If", "[", 
+          RowBox[{
+           RowBox[{"!", 
+            RowBox[{"GetVars", "[", "n", "]"}]}], ",", "\[IndentingNewLine]", 
+           RowBox[{
+            RowBox[{"Print", "[", 
+             RowBox[{"\"\<Failed to generate structure for \>\"", "<>", "n"}],
+              "]"}], ";", "\[IndentingNewLine]", 
+            RowBox[{"Continue", "[", "]"}]}]}], "\[IndentingNewLine]", "]"}], 
+         ";", "\[IndentingNewLine]", 
          RowBox[{"SetGeometry", "[", "]"}], ";", "\[IndentingNewLine]", 
          RowBox[{"SetMagnetism", "[", "]"}], ";", "\[IndentingNewLine]", 
          RowBox[{"Calculate", "[", "]"}], ";", "\[IndentingNewLine]", 
@@ -167,65 +178,70 @@ Cell[BoxData[{
         "\[IndentingNewLine]", 
         RowBox[{"{", 
          RowBox[{"outp", ",", "EQ", ",", "AQLIST"}], "}"}]}], 
-       "\[IndentingNewLine]", "\[IndentingNewLine]", "}"}], ",", 
-      RowBox[{"{", 
-       RowBox[{"n", ",", 
-        RowBox[{"FilterData", "[", 
-         RowBox[{"data", ",", "frules"}], "]"}]}], "}"}]}], "]"}]}], ";", 
-   "\[IndentingNewLine]", 
-   RowBox[{"NamedTable", "=", 
-    RowBox[{"Prepend", "[", 
-     RowBox[{
-      RowBox[{"cT", "[", 
-       RowBox[{"[", 
-        RowBox[{"All", ",", 
-         RowBox[{"1", ";;", 
-          RowBox[{"-", "2"}]}]}], "]"}], "]"}], ",", 
-      RowBox[{"{", "\[IndentingNewLine]", 
-       RowBox[{
-       "\"\<Molecule\>\"", "\[IndentingNewLine]", ",", "\[IndentingNewLine]", 
-        "\"\<V\>\"", ",", "\"\<L[A]\>\"", ",", 
-        "\"\<\!\(\*SubscriptBox[\(E\), \(I\)]\)[eV]\>\"", ",", 
-        "\"\<\!\(\*SubscriptBox[\(E\), \(D\)]\)[eV]\>\"", ",", "\"\<P[D]\>\"",
-         ",", "\"\<x[L/2]\>\"", ",", "\"\<y[L/2]\>\"", ",", 
-        "\"\<\[Kappa]\>\"", "\[IndentingNewLine]", 
-        RowBox[{"(*", 
-         RowBox[{
-         ",", "\[IndentingNewLine]", "\"\<A1X\>\"", ",", "\"\<A1Y\>\"", ",", 
-          "\"\<A1Z\>\"", ",", "\"\<A2X\>\"", ",", "\"\<A2Y\>\"", ",", 
-          "\"\<A2Z\>\"", ",", "\"\<A3X\>\"", ",", "\"\<A3Y\>\"", ",", 
-          "\"\<A3Z\>\"", ",", "\"\<B1X\>\"", ",", "\"\<B1Y\>\"", ",", 
-          "\"\<B1Z\>\"", ",", "\"\<B2X\>\"", ",", "\"\<B2Y\>\"", ",", 
-          "\"\<B2Z\>\"", ",", "\"\<B3X\>\"", ",", "\"\<B3Y\>\"", ",", 
-          "\"\<B3Z\>\""}], "*)"}], "\[IndentingNewLine]", 
-        RowBox[{"(*", 
-         RowBox[{
-         ",", "\[IndentingNewLine]", "\"\<j\>\"", ",", 
-          "\"\<\!\(\*SubscriptBox[\(f\), \(A\)]\)[\!\(\*FractionBox[\(eV\), \
+       "\[IndentingNewLine]", "}"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"AppendTo", "[", 
+      RowBox[{"cT", ",", "trow"}], "]"}], ";"}], "\[IndentingNewLine]", ",", 
+    "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{"n", ",", 
+      RowBox[{"FilterData", "[", 
+       RowBox[{"data", ",", "frules"}], "]"}]}], "}"}]}], 
+   "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]", 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"NamedTable", "=", 
+   RowBox[{"Prepend", "[", 
+    RowBox[{
+     RowBox[{"cT", "[", 
+      RowBox[{"[", 
+       RowBox[{"All", ",", 
+        RowBox[{"1", ";;", 
+         RowBox[{"-", "2"}]}]}], "]"}], "]"}], ",", 
+     RowBox[{"{", "\[IndentingNewLine]", 
+      RowBox[{
+      "\"\<Molecule\>\"", "\[IndentingNewLine]", ",", "\[IndentingNewLine]", 
+       "\"\<V\>\"", ",", "\"\<L[A]\>\"", ",", 
+       "\"\<\!\(\*SubscriptBox[\(E\), \(I\)]\)[eV]\>\"", ",", 
+       "\"\<\!\(\*SubscriptBox[\(E\), \(D\)]\)[eV]\>\"", ",", "\"\<P[D]\>\"", 
+       ",", "\"\<x[L/2]\>\"", ",", "\"\<y[L/2]\>\"", ",", "\"\<\[Kappa]\>\"", 
+       "\[IndentingNewLine]", 
+       RowBox[{"(*", 
+        RowBox[{
+        ",", "\[IndentingNewLine]", "\"\<A1X\>\"", ",", "\"\<A1Y\>\"", ",", 
+         "\"\<A1Z\>\"", ",", "\"\<A2X\>\"", ",", "\"\<A2Y\>\"", ",", 
+         "\"\<A2Z\>\"", ",", "\"\<A3X\>\"", ",", "\"\<A3Y\>\"", ",", 
+         "\"\<A3Z\>\"", ",", "\"\<B1X\>\"", ",", "\"\<B1Y\>\"", ",", 
+         "\"\<B1Z\>\"", ",", "\"\<B2X\>\"", ",", "\"\<B2Y\>\"", ",", 
+         "\"\<B2Z\>\"", ",", "\"\<B3X\>\"", ",", "\"\<B3Y\>\"", ",", 
+         "\"\<B3Z\>\""}], "*)"}], "\[IndentingNewLine]", 
+       RowBox[{"(*", 
+        RowBox[{
+        ",", "\[IndentingNewLine]", "\"\<j\>\"", ",", 
+         "\"\<\!\(\*SubscriptBox[\(f\), \(A\)]\)[\!\(\*FractionBox[\(eV\), \
 SuperscriptBox[\(cm\), \(2\)]]\)]\>\"", ",", 
-          "\"\<\!\(\*SubscriptBox[\(f\), \(B\)]\)[\!\(\*FractionBox[\(eV\), \
+         "\"\<\!\(\*SubscriptBox[\(f\), \(B\)]\)[\!\(\*FractionBox[\(eV\), \
 SuperscriptBox[\(cm\), \(2\)]]\)]\>\"", ",", 
-          
-          "\"\<\!\(\*SubscriptBox[\(g\), \(A\)]\)[\!\(\*FractionBox[\(eV\), \
+         "\"\<\!\(\*SubscriptBox[\(g\), \(A\)]\)[\!\(\*FractionBox[\(eV\), \
 SuperscriptBox[\(cm\), \(3\)]]\)]\>\"", ",", 
-          "\"\<\!\(\*SubscriptBox[\(g\), \(B\)]\)[\!\(\*FractionBox[\(eV\), \
+         "\"\<\!\(\*SubscriptBox[\(g\), \(B\)]\)[\!\(\*FractionBox[\(eV\), \
 SuperscriptBox[\(cm\), \(3\)]]\)]\>\"", ",", 
-          "\"\<\!\(\*SubscriptBox[\(h\), \(A\)]\)[\!\(\*FractionBox[\(eV\), \
+         "\"\<\!\(\*SubscriptBox[\(h\), \(A\)]\)[\!\(\*FractionBox[\(eV\), \
 SuperscriptBox[\(cm\), \(4\)]]\)]\>\"", ",", 
-          "\"\<\!\(\*SubscriptBox[\(h\), \(B\)]\)[\!\(\*FractionBox[\(eV\), \
+         "\"\<\!\(\*SubscriptBox[\(h\), \(B\)]\)[\!\(\*FractionBox[\(eV\), \
 SuperscriptBox[\(cm\), \(4\)]]\)]\>\"", ",", "\"\<\[Omega]A\>\"", ",", 
-          "\"\<\[Omega]B\>\"", ",", 
-          "\"\<\!\(\*SubscriptBox[\(\[Micro]\), \(A\)]\)\>\"", ",", 
-          "\"\<\!\(\*SubscriptBox[\(\[Micro]\), \(B\)]\)\>\"", ",", 
-          "\"\<\[CapitalDelta]\[Micro]\>\""}], "*)"}], "\[IndentingNewLine]", 
-        ",", "\[IndentingNewLine]", "\"\<Err\>\""}], "\[IndentingNewLine]", 
-       "}"}]}], "]"}]}], ";", "\[IndentingNewLine]", 
-   RowBox[{"Export", "[", 
-    RowBox[{"\"\<Result.xls\>\"", ",", "NamedTable"}], "]"}], ";", 
-   "\[IndentingNewLine]", 
-   RowBox[{"Grid", "[", 
-    RowBox[{"NamedTable", ",", 
-     RowBox[{"Frame", "\[Rule]", "All"}]}], "]"}]}]}]}], "Input",
+         "\"\<\[Omega]B\>\"", ",", 
+         "\"\<\!\(\*SubscriptBox[\(\[Micro]\), \(A\)]\)\>\"", ",", 
+         "\"\<\!\(\*SubscriptBox[\(\[Micro]\), \(B\)]\)\>\"", ",", 
+         "\"\<\[CapitalDelta]\[Micro]\>\""}], "*)"}], "\[IndentingNewLine]", 
+       ",", "\[IndentingNewLine]", "\"\<Err\>\""}], "\[IndentingNewLine]", 
+      "}"}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Export", "[", 
+   RowBox[{"\"\<Result.xls\>\"", ",", "NamedTable"}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Grid", "[", 
+  RowBox[{"NamedTable", ",", 
+   RowBox[{"Frame", "\[Rule]", "All"}]}], "]"}]}], "Input",
  CellChangeTimes->{{3.7708719440559177`*^9, 3.7708719902660723`*^9}, {
    3.7708720992706804`*^9, 3.770872233979789*^9}, {3.77087271189485*^9, 
    3.770872768324478*^9}, {3.770872806084525*^9, 3.7708728244832387`*^9}, {
@@ -1219,7 +1235,10 @@ SuperscriptBox[\(cm\), \(4\)]]\)]\>\"", ",", "\"\<\[Omega]A\>\"", ",",
    3.7905788714539113`*^9, 3.790578875633734*^9}, {3.790579464653022*^9, 
    3.79057952177826*^9}, {3.7918719652856503`*^9, 3.7918719690804806`*^9}, {
    3.7918720137480464`*^9, 3.7918720479605193`*^9}, {3.791872109803613*^9, 
-   3.791872112589164*^9}},ExpressionUUID->"9efd49e5-64f4-44ff-a3b5-\
+   3.791872112589164*^9}, {3.7920454157492876`*^9, 3.7920456008772855`*^9}, {
+   3.792045635696185*^9, 3.792045638467774*^9}, {3.7920483403106365`*^9, 
+   3.7920484481971664`*^9}, {3.7920486373407516`*^9, 
+   3.7920487073894525`*^9}},ExpressionUUID->"9efd49e5-64f4-44ff-a3b5-\
 5b97ee196ba7"]
 },
 WindowSize->{775, 872},
@@ -1239,7 +1258,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 82145, 1202, 1349, "Input",ExpressionUUID->"9efd49e5-64f4-44ff-a3b5-5b97ee196ba7"]
+Cell[558, 20, 82944, 1221, 1548, "Input",ExpressionUUID->"9efd49e5-64f4-44ff-a3b5-5b97ee196ba7"]
 }
 ]
 *)
