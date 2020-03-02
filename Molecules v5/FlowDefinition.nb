@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     47585,       1105]
-NotebookOptionsPosition[     47160,       1090]
-NotebookOutlinePosition[     47533,       1106]
-CellTagsIndexPosition[     47490,       1103]
+NotebookDataLength[     47810,       1112]
+NotebookOptionsPosition[     47385,       1097]
+NotebookOutlinePosition[     47758,       1113]
+CellTagsIndexPosition[     47715,       1110]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -81,8 +81,10 @@ Cell[BoxData[{
     RowBox[{"ei", "=", 
      RowBox[{"\"\<ion\>\"", "/.", "dt"}]}], ";", "\[IndentingNewLine]", 
     RowBox[{"dm", "=", 
-     RowBox[{"\"\<dip\>\"", "/.", 
-      RowBox[{"dt", "*", "deb"}]}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"\"\<dip\>\"", "/.", "dt"}], ")"}], "*", "deb"}]}], ";", 
+    "\[IndentingNewLine]", 
     RowBox[{"ms", "=", 
      RowBox[{"\"\<magn\>\"", "/.", "dt"}]}], ";", "\[IndentingNewLine]", 
     RowBox[{"freq", "=", 
@@ -107,9 +109,10 @@ Cell[BoxData[{
     "\[IndentingNewLine]", 
     RowBox[{"If", "[", 
      RowBox[{
-      RowBox[{"\"\<leftv\>\"", "/.", 
-       RowBox[{"dt", "\[NotEqual]", "\"\<leftv\>\""}]}], ",", 
-      "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"\"\<leftv\>\"", "/.", "dt"}], ")"}], "\[NotEqual]", 
+       "\"\<leftv\>\""}], ",", "\[IndentingNewLine]", 
       RowBox[{
        RowBox[{"Bupd", "[", 
         RowBox[{
@@ -126,9 +129,10 @@ Cell[BoxData[{
      "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
     RowBox[{"If", "[", 
      RowBox[{
-      RowBox[{"\"\<simlen\>\"", "/.", 
-       RowBox[{"dt", "\[NotEqual]", "\"\<simlen\>\""}]}], ",", 
-      "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"\"\<simlen\>\"", "/.", "dt"}], ")"}], "\[NotEqual]", 
+       "\"\<simlen\>\""}], ",", "\[IndentingNewLine]", 
       RowBox[{
        RowBox[{"Bupd", "[", 
         RowBox[{
@@ -142,9 +146,10 @@ Cell[BoxData[{
      "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
     RowBox[{"If", "[", 
      RowBox[{
-      RowBox[{"\"\<dis\>\"", "/.", 
-       RowBox[{"dt", "\[NotEqual]", "\"\<dis\>\""}]}], ",", 
-      "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"\"\<dis\>\"", "/.", "dt"}], ")"}], "\[NotEqual]", 
+       "\"\<dis\>\""}], ",", "\[IndentingNewLine]", 
       RowBox[{
        RowBox[{"Bupd", "[", 
         RowBox[{
@@ -1080,7 +1085,9 @@ Cell[BoxData[{
    3.7920486024271326`*^9}, {3.7920488568659*^9, 3.792049144832706*^9}, {
    3.7920503561049304`*^9, 3.7920503579101048`*^9}, {3.792050400235957*^9, 
    3.7920505734487867`*^9}, {3.792050621557153*^9, 3.792050659389026*^9}, 
-   3.7920509966751785`*^9},ExpressionUUID->"ad78d8e7-3118-4dbb-a100-\
+   3.7920509966751785`*^9, {3.792164565147579*^9, 3.7921645687618113`*^9}, {
+   3.7921646779292345`*^9, 
+   3.7921646935677*^9}},ExpressionUUID->"ad78d8e7-3118-4dbb-a100-\
 d764b1c9bd1b"],
 
 Cell[BoxData[""], "Input",
@@ -1105,8 +1112,8 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 46443, 1063, 6333, "Input",ExpressionUUID->"ad78d8e7-3118-4dbb-a100-d764b1c9bd1b"],
-Cell[47004, 1085, 152, 3, 35, "Input",ExpressionUUID->"19af803d-44d6-4d51-9836-be83fd7c039e"]
+Cell[558, 20, 46668, 1070, 6333, "Input",ExpressionUUID->"ad78d8e7-3118-4dbb-a100-d764b1c9bd1b"],
+Cell[47229, 1092, 152, 3, 35, "Input",ExpressionUUID->"19af803d-44d6-4d51-9836-be83fd7c039e"]
 }
 ]
 *)

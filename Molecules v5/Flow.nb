@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     83837,       1257]
-NotebookOptionsPosition[     83506,       1243]
-NotebookOutlinePosition[     83880,       1259]
-CellTagsIndexPosition[     83837,       1256]
+NotebookDataLength[     84095,       1263]
+NotebookOptionsPosition[     83764,       1249]
+NotebookOutlinePosition[     84138,       1265]
+CellTagsIndexPosition[     84095,       1262]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -33,7 +33,7 @@ Cell[BoxData[{
   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{
-   RowBox[{"RUN", "[", "\"\<Geo3.nb\>\"", "]"}], ";"}], 
+   RowBox[{"RUN", "[", "\"\<Geo5.nb\>\"", "]"}], ";"}], 
   "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"data", "=", 
@@ -184,8 +184,12 @@ Cell[BoxData[{
     "\[IndentingNewLine]", 
     RowBox[{"{", 
      RowBox[{"n", ",", 
-      RowBox[{"FilterData", "[", 
-       RowBox[{"data", ",", "frules"}], "]"}]}], "}"}]}], 
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Length", "[", "exact", "]"}], ">", "0"}], ",", "exact", ",", 
+        RowBox[{"FilterData", "[", 
+         RowBox[{"data", ",", "frules"}], "]"}]}], "]"}]}], "}"}]}], 
    "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]", 
   "]"}], "\[IndentingNewLine]", 
  RowBox[{
@@ -1238,7 +1242,9 @@ SuperscriptBox[\(cm\), \(4\)]]\)]\>\"", ",", "\"\<\[Omega]A\>\"", ",",
    3.791872112589164*^9}, {3.7920454157492876`*^9, 3.7920456008772855`*^9}, {
    3.792045635696185*^9, 3.792045638467774*^9}, {3.7920483403106365`*^9, 
    3.7920484481971664`*^9}, {3.7920486373407516`*^9, 
-   3.7920487073894525`*^9}},ExpressionUUID->"9efd49e5-64f4-44ff-a3b5-\
+   3.7920487073894525`*^9}, {3.7921644389056163`*^9, 
+   3.7921644571045647`*^9}, {3.7921648095638824`*^9, 
+   3.792164809818609*^9}},ExpressionUUID->"9efd49e5-64f4-44ff-a3b5-\
 5b97ee196ba7"]
 },
 WindowSize->{775, 872},
@@ -1258,7 +1264,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 82944, 1221, 1548, "Input",ExpressionUUID->"9efd49e5-64f4-44ff-a3b5-5b97ee196ba7"]
+Cell[558, 20, 83202, 1227, 1548, "Input",ExpressionUUID->"9efd49e5-64f4-44ff-a3b5-5b97ee196ba7"]
 }
 ]
 *)
