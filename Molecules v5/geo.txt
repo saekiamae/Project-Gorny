@@ -1,0 +1,18 @@
+H1=Point({0.,0.,0.})
+SetColor(H1,Red)
+H1e1=Point({1. (0. + 1. xa),1. (0. + 1. ya),0.})
+SetColor(H1e1,Black)
+H2=Point({0.9575,0.,0.})
+SetColor(H2,Red)
+H2e1=Point({0.9575 + RotationTransform[{{0.9575, 0., 0.}, {0., 0., 0.}}][{xa, \
+ya, 0.}],RotationTransform[{{0.9575, 0., 0.}, {0., 0., 0.}}][{xa, ya, \
+0.}],RotationTransform[{{0.9575, 0., 0.}, {0., 0., 0.}}][{xa, ya, 0.}]})
+SetColor(H2e1,Black)
+O1=Point({0.9575,0.,0.})
+SetColor(O1,Red)
+O1e1=Point({1. (0. + 1. xa),1. (0. - 1. ya),0.})
+SetColor(O1e1,Black)
+O1e2=Point({0.9575 + RotationTransform[{{0.9575, 0., 0.}, {0., 0., 0.}}][{xa, \
+-1. ya, 0.}],RotationTransform[{{0.9575, 0., 0.}, {0., 0., 0.}}][{xa, -1. ya, \
+0.}],RotationTransform[{{0.9575, 0., 0.}, {0., 0., 0.}}][{xa, -1. ya, 0.}]})
+SetColor(O1e2,Black)
