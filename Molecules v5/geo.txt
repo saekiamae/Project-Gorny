@@ -1,18 +1,22 @@
-H1=Point({0.,0.,0.})
-SetColor(H1,Red)
-H1e1=Point({1. (0. + 1. xa),1. (0. + 1. ya),0.})
-SetColor(H1e1,Black)
-H2=Point({0.9575,0.,0.})
-SetColor(H2,Red)
-H2e1=Point({0.9575 + RotationTransform[{{0.9575, 0., 0.}, {0., 0., 0.}}][{xa, \
-ya, 0.}],RotationTransform[{{0.9575, 0., 0.}, {0., 0., 0.}}][{xa, ya, \
-0.}],RotationTransform[{{0.9575, 0., 0.}, {0., 0., 0.}}][{xa, ya, 0.}]})
-SetColor(H2e1,Black)
-O1=Point({0.9575,0.,0.})
+N1=Point({0.,0.,0.})
+SetColor(N1,Red)
+N1e1=Point({1. (0. + 1. rax),1. (0. + 1. ya[1.]),0.})
+SetColor(N1e1,Black)
+N1e2=Point({1. (0. - 0.34366 rax),1. (0. + 1. ya[2.]),1. (0. - 0.939094 \
+rax)})
+SetColor(N1e2,Black)
+N1e3=Point({1. (0. - 0.34366 rax),1. (0. - 1. ya[2.]),1. (0. - 0.939094 \
+rax)})
+SetColor(N1e3,Black)
+O1=Point({-0.519613,0.,-1.41991})
 SetColor(O1,Red)
-O1e1=Point({1. (0. + 1. xa),1. (0. - 1. ya),0.})
+O1e1=Point({1. (0. - 0.34366 rax + 0.939094 ya[2.]),0.,1. (0. - 0.939094 rax \
+- 0.34366 ya[2.])})
 SetColor(O1e1,Black)
-O1e2=Point({0.9575 + RotationTransform[{{0.9575, 0., 0.}, {0., 0., 0.}}][{xa, \
--1. ya, 0.}],RotationTransform[{{0.9575, 0., 0.}, {0., 0., 0.}}][{xa, -1. ya, \
-0.}],RotationTransform[{{0.9575, 0., 0.}, {0., 0., 0.}}][{xa, -1. ya, 0.}]})
+O1e2=Point({1. (0. - 0.34366 rax - 0.939094 ya[2.]),0.,1. (0. - 0.939094 rax \
++ 0.34366 ya[2.])})
 SetColor(O1e2,Black)
+F1=Point({1.512,0.,0.})
+SetColor(F1,Red)
+F1e1=Point({1. (0. + 1. rax),1. (0. - 1. ya[1.]),0.})
+SetColor(F1e1,Black)

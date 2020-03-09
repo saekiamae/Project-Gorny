@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     53546,       1233]
-NotebookOptionsPosition[     53118,       1218]
-NotebookOutlinePosition[     53494,       1234]
-CellTagsIndexPosition[     53451,       1231]
+NotebookDataLength[     56007,       1283]
+NotebookOptionsPosition[     55579,       1268]
+NotebookOutlinePosition[     55955,       1284]
+CellTagsIndexPosition[     55912,       1281]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -212,45 +212,92 @@ Cell[BoxData[{
          RowBox[{
           RowBox[{"atoms", "=", 
            RowBox[{"GetEls", "[", "i", "]"}]}], ";", "\[IndentingNewLine]", 
+          RowBox[{"buff", "=", 
+           RowBox[{"{", "}"}]}], ";", "\[IndentingNewLine]", 
+          RowBox[{"as", "=", 
+           RowBox[{"bs", "=", 
+            RowBox[{"cs", "=", "False"}]}]}], ";", "\[IndentingNewLine]", 
           RowBox[{"Do", "[", "\[IndentingNewLine]", 
            RowBox[{
             RowBox[{
              RowBox[{"If", "[", 
               RowBox[{
                RowBox[{
-                RowBox[{"j", "[", 
-                 RowBox[{"[", "2", "]"}], "]"}], "\[Equal]", 
-                RowBox[{"atoms", "[", 
-                 RowBox[{"[", "1", "]"}], "]"}]}], ",", "\[IndentingNewLine]", 
-               RowBox[{"atoma", "=", 
-                RowBox[{"j", "[", 
-                 RowBox[{"[", "1", "]"}], "]"}]}]}], "\[IndentingNewLine]", 
+                RowBox[{
+                 RowBox[{"j", "[", 
+                  RowBox[{"[", "2", "]"}], "]"}], "\[Equal]", 
+                 RowBox[{"atoms", "[", 
+                  RowBox[{"[", "1", "]"}], "]"}]}], "&&", 
+                RowBox[{"!", 
+                 RowBox[{"MemberQ", "[", 
+                  RowBox[{"buff", ",", 
+                   RowBox[{"j", "[", 
+                    RowBox[{"[", "1", "]"}], "]"}]}], "]"}]}], "&&", 
+                RowBox[{"!", "as"}]}], ",", "\[IndentingNewLine]", 
+               RowBox[{
+                RowBox[{"atoma", "=", 
+                 RowBox[{"j", "[", 
+                  RowBox[{"[", "1", "]"}], "]"}]}], ";", 
+                "\[IndentingNewLine]", 
+                RowBox[{"AppendTo", "[", 
+                 RowBox[{"buff", ",", 
+                  RowBox[{"j", "[", 
+                   RowBox[{"[", "1", "]"}], "]"}]}], "]"}], ";", 
+                "\[IndentingNewLine]", 
+                RowBox[{"as", "=", "True"}], ";"}]}], "\[IndentingNewLine]", 
               "]"}], ";", "\[IndentingNewLine]", 
              RowBox[{"If", "[", 
               RowBox[{
                RowBox[{
-                RowBox[{"j", "[", 
-                 RowBox[{"[", "2", "]"}], "]"}], "\[Equal]", 
-                RowBox[{"atoms", "[", 
-                 RowBox[{"[", "2", "]"}], "]"}]}], ",", "\[IndentingNewLine]", 
+                RowBox[{
+                 RowBox[{"j", "[", 
+                  RowBox[{"[", "2", "]"}], "]"}], "\[Equal]", 
+                 RowBox[{"atoms", "[", 
+                  RowBox[{"[", "2", "]"}], "]"}]}], "&&", 
+                RowBox[{"!", 
+                 RowBox[{"MemberQ", "[", 
+                  RowBox[{"buff", ",", 
+                   RowBox[{"j", "[", 
+                    RowBox[{"[", "1", "]"}], "]"}]}], "]"}]}], "&&", 
+                RowBox[{"!", "bs"}]}], ",", "\[IndentingNewLine]", 
                RowBox[{
                 RowBox[{"atomb", "=", 
                  RowBox[{"j", "[", 
-                  RowBox[{"[", "1", "]"}], "]"}]}], ";"}]}], 
-              "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+                  RowBox[{"[", "1", "]"}], "]"}]}], ";", 
+                "\[IndentingNewLine]", 
+                RowBox[{"AppendTo", "[", 
+                 RowBox[{"buff", ",", 
+                  RowBox[{"j", "[", 
+                   RowBox[{"[", "1", "]"}], "]"}]}], "]"}], ";", 
+                "\[IndentingNewLine]", 
+                RowBox[{"bs", "=", "True"}], ";"}]}], "\[IndentingNewLine]", 
+              "]"}], ";", "\[IndentingNewLine]", 
              RowBox[{"If", "[", 
               RowBox[{
                RowBox[{
-                RowBox[{"j", "[", 
-                 RowBox[{"[", "2", "]"}], "]"}], "\[Equal]", 
-                RowBox[{"atoms", "[", 
-                 RowBox[{"[", "3", "]"}], "]"}]}], ",", "\[IndentingNewLine]", 
+                RowBox[{
+                 RowBox[{"j", "[", 
+                  RowBox[{"[", "2", "]"}], "]"}], "\[Equal]", 
+                 RowBox[{"atoms", "[", 
+                  RowBox[{"[", "3", "]"}], "]"}]}], "&&", 
+                RowBox[{"!", 
+                 RowBox[{"MemberQ", "[", 
+                  RowBox[{"buff", ",", 
+                   RowBox[{"j", "[", 
+                    RowBox[{"[", "1", "]"}], "]"}]}], "]"}]}], "&&", 
+                RowBox[{"!", "cs"}]}], ",", "\[IndentingNewLine]", 
                RowBox[{
                 RowBox[{"atomc", "=", 
                  RowBox[{"j", "[", 
-                  RowBox[{"[", "1", "]"}], "]"}]}], ";"}]}], 
-              "\[IndentingNewLine]", "]"}], ";"}], "\[IndentingNewLine]", ",",
-             "\[IndentingNewLine]", 
+                  RowBox[{"[", "1", "]"}], "]"}]}], ";", 
+                "\[IndentingNewLine]", 
+                RowBox[{"AppendTo", "[", 
+                 RowBox[{"buff", ",", 
+                  RowBox[{"j", "[", 
+                   RowBox[{"[", "1", "]"}], "]"}]}], "]"}], ";", 
+                "\[IndentingNewLine]", 
+                RowBox[{"cs", "=", "True"}], ";"}]}], "\[IndentingNewLine]", 
+              "]"}], ";"}], "\[IndentingNewLine]", ",", "\[IndentingNewLine]", 
             RowBox[{"{", 
              RowBox[{"j", ",", "elsx"}], "}"}]}], "\[IndentingNewLine]", 
            "]"}], ";", "\[IndentingNewLine]", 
@@ -259,8 +306,8 @@ Cell[BoxData[{
             RowBox[{"!", 
              RowBox[{"KeyExistsQ", "[", 
               RowBox[{
-               RowBox[{"bonds", "[", "atomb", "]"}], "[", "\"\<ang\>\"", 
-               "]"}], "]"}]}], ",", "\[IndentingNewLine]", 
+               RowBox[{"bonds", "[", "atomb", "]"}], ",", "\"\<ang\>\""}], 
+              "]"}]}], ",", "\[IndentingNewLine]", 
             RowBox[{
              RowBox[{
               RowBox[{"bonds", "[", "atomb", "]"}], "[", "\"\<ang\>\"", "]"}],
@@ -801,9 +848,7 @@ Cell[BoxData[{
         RowBox[{"rlx", "=", 
          RowBox[{"ParseRules", "[", "i", "]"}]}], ";", "\[IndentingNewLine]", 
         RowBox[{"iter", "=", "0"}], ";", "\[IndentingNewLine]", 
-        RowBox[{"Clear", "@@", 
-         RowBox[{"rlx", "[", 
-          RowBox[{"[", "1", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+        RowBox[{"ClearVars", "[", "]"}], ";", "\[IndentingNewLine]", 
         RowBox[{"APrint", "[", 
          RowBox[{"\"\<Pending rules: \>\"", ",", "i"}], "]"}], ";", 
         "\[IndentingNewLine]", 
@@ -854,9 +899,7 @@ Cell[BoxData[{
             "*)"}], "\[IndentingNewLine]", 
            RowBox[{"iter", "=", 
             RowBox[{"iter", "+", "1"}]}], ";", "\[IndentingNewLine]", 
-           RowBox[{"Clear", "@@", 
-            RowBox[{"rlx", "[", 
-             RowBox[{"[", "1", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+           RowBox[{"ClearVars", "[", "]"}], ";", "\[IndentingNewLine]", 
            RowBox[{"(*", 
             RowBox[{
              RowBox[{"If", "[", 
@@ -1209,7 +1252,14 @@ Cell[BoxData[{
    3.792502484053982*^9, 3.792502489980136*^9}, {3.79250653183694*^9, 
    3.792506545820549*^9}, {3.792506909956273*^9, 3.7925069128375683`*^9}, {
    3.7925070692107124`*^9, 3.7925070697542596`*^9}, {3.792508388645525*^9, 
-   3.7925084072717214`*^9}},ExpressionUUID->"ad78d8e7-3118-4dbb-a100-\
+   3.7925084072717214`*^9}, {3.792759922721974*^9, 3.7927599304496164`*^9}, {
+   3.792762389093109*^9, 3.792762401047923*^9}, {3.792762453303957*^9, 
+   3.792762475892892*^9}, {3.7927626775080547`*^9, 3.792762788862714*^9}, {
+   3.792763040542535*^9, 3.792763084837102*^9}, {3.7927631532429266`*^9, 
+   3.7927632269465675`*^9}, 3.7927633642637463`*^9, {3.792763416613693*^9, 
+   3.792763425115009*^9}, {3.792763459623909*^9, 3.792763469569934*^9}, {
+   3.792763521032072*^9, 3.792763538128272*^9}, {3.7927635819032564`*^9, 
+   3.792763606771756*^9}},ExpressionUUID->"ad78d8e7-3118-4dbb-a100-\
 d764b1c9bd1b"],
 
 Cell[BoxData[""], "Input",
@@ -1233,8 +1283,8 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 52383, 1192, 6405, "Input",ExpressionUUID->"ad78d8e7-3118-4dbb-a100-d764b1c9bd1b"],
-Cell[52944, 1214, 170, 2, 35, "Input",ExpressionUUID->"19af803d-44d6-4d51-9836-be83fd7c039e"]
+Cell[558, 20, 54844, 1242, 6597, "Input",ExpressionUUID->"ad78d8e7-3118-4dbb-a100-d764b1c9bd1b"],
+Cell[55405, 1264, 170, 2, 35, "Input",ExpressionUUID->"19af803d-44d6-4d51-9836-be83fd7c039e"]
 }
 ]
 *)

@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     84769,       1275]
-NotebookOptionsPosition[     84438,       1261]
-NotebookOutlinePosition[     84812,       1277]
-CellTagsIndexPosition[     84769,       1274]
+NotebookDataLength[     84858,       1277]
+NotebookOptionsPosition[     84527,       1263]
+NotebookOutlinePosition[     84901,       1279]
+CellTagsIndexPosition[     84858,       1276]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -182,8 +182,9 @@ Cell[BoxData[{
           RowBox[{"\[CapitalDelta]\[Micro]", "*", 
            SuperscriptBox["10", "18"]}]}], "*)"}], "\[IndentingNewLine]", ",",
          "\[IndentingNewLine]", 
-        RowBox[{"Mean", "[", "AQLIST", "]"}], "\[IndentingNewLine]", ",", 
-        "\[IndentingNewLine]", 
+        RowBox[{"Abs", "[", 
+         RowBox[{"Mean", "[", "AQLIST", "]"}], "]"}], "\[IndentingNewLine]", 
+        ",", "\[IndentingNewLine]", 
         RowBox[{"{", 
          RowBox[{"outp", ",", "EQ", ",", "AQLIST"}], "}"}]}], 
        "\[IndentingNewLine]", "}"}]}], ";", "\[IndentingNewLine]", 
@@ -1255,8 +1256,9 @@ SuperscriptBox[\(cm\), \(4\)]]\)]\>\"", ",", "\"\<\[Omega]A\>\"", ",",
    3.792214872111001*^9, 3.792214874260254*^9}, 3.792216302241771*^9, 
    3.7922203810996327`*^9, 3.792220446843231*^9, {3.792224289989561*^9, 
    3.792224413209119*^9}, {3.7922257481311483`*^9, 3.7922258141994896`*^9}, {
-   3.79222595221303*^9, 3.7922259536312413`*^9}, 
-   3.792309547501093*^9},ExpressionUUID->"9efd49e5-64f4-44ff-a3b5-\
+   3.79222595221303*^9, 3.7922259536312413`*^9}, 3.792309547501093*^9, {
+   3.7927608269277735`*^9, 
+   3.792760831375535*^9}},ExpressionUUID->"9efd49e5-64f4-44ff-a3b5-\
 5b97ee196ba7"]
 },
 WindowSize->{864, 872},
@@ -1276,7 +1278,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 83876, 1239, 1466, "Input",ExpressionUUID->"9efd49e5-64f4-44ff-a3b5-5b97ee196ba7"]
+Cell[558, 20, 83965, 1241, 1466, "Input",ExpressionUUID->"9efd49e5-64f4-44ff-a3b5-5b97ee196ba7"]
 }
 ]
 *)
