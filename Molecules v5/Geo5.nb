@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     39335,        801]
-NotebookOptionsPosition[     39034,        788]
-NotebookOutlinePosition[     39379,        803]
-CellTagsIndexPosition[     39336,        800]
+NotebookDataLength[     40042,        817]
+NotebookOptionsPosition[     39741,        804]
+NotebookOutlinePosition[     40086,        819]
+CellTagsIndexPosition[     40043,        816]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -41,7 +41,7 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{
         "len", ",", "dv", ",", "lv", ",", "xx", ",", "xl", ",", "xr", ",", 
-         "Tf", ",", "pos", ",", "ra", ",", "rb"}], "}"}], ",", 
+         "Tf", ",", "pos", ",", "ra", ",", "x"}], "}"}], ",", 
        "\[IndentingNewLine]", 
        RowBox[{
         RowBox[{"len", "=", 
@@ -92,28 +92,39 @@ Cell[BoxData[
          RowBox[{
           RowBox[{"bonds", "[", "obj", "]"}], "[", "\"\<ra\>\"", "]"}]}], ";",
          "\[IndentingNewLine]", "\[IndentingNewLine]", 
-        RowBox[{"rb", "=", 
+        RowBox[{"x", "=", 
          RowBox[{"ya", "[", 
           RowBox[{"varcnt", "+=", "1"}], "]"}]}], ";", "\[IndentingNewLine]", 
         RowBox[{"AppendTo", "[", 
          RowBox[{"rulesy", ",", 
           RowBox[{
            RowBox[{"ya", "[", "varcnt", "]"}], "\[Rule]", 
-           RowBox[{
+           RowBox[{"Cos", "[", 
             RowBox[{"{", 
              RowBox[{
               RowBox[{"{", 
-               RowBox[{"0.33", ",", "0.75"}], "}"}], ",", 
+               RowBox[{
+                RowBox[{"50", "\[Degree]"}], ",", 
+                RowBox[{"30", "\[Degree]"}]}], "}"}], ",", 
               RowBox[{"{", 
-               RowBox[{"0.75", ",", "1.25"}], "}"}], ",", 
+               RowBox[{
+                RowBox[{"30", "\[Degree]"}], ",", 
+                RowBox[{"10", "\[Degree]"}]}], "}"}], ",", 
               RowBox[{"{", 
-               RowBox[{"0.001", ",", "0.33"}], "}"}], ",", 
+               RowBox[{
+                RowBox[{"80", "\[Degree]"}], ",", 
+                RowBox[{"50", "\[Degree]"}]}], "}"}], ",", 
               RowBox[{"{", 
-               RowBox[{"1.25", ",", "2.5"}], "}"}]}], "}"}], "len"}]}]}], 
+               RowBox[{
+                RowBox[{"10", "\[Degree]"}], ",", 
+                RowBox[{"0.1", "\[Degree]"}]}], "}"}]}], "}"}], "]"}]}]}], 
          "]"}], ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
         RowBox[{"xx", "=", 
          RowBox[{"{", 
-          RowBox[{"ra", ",", "rb", ",", "0"}], "}"}]}], ";", 
+          RowBox[{
+           RowBox[{"ra", "*", "x"}], ",", 
+           RowBox[{"ra", "*", 
+            RowBox[{"Rv", "[", "x", "]"}]}], ",", "0"}], "}"}]}], ";", 
         "\[IndentingNewLine]", "\[IndentingNewLine]", 
         RowBox[{"xl", "=", 
          RowBox[{"Which", "[", "\[IndentingNewLine]", 
@@ -450,7 +461,9 @@ Cell[BoxData[
       RowBox[{
        RowBox[{"0", "<", "\[Kappa]", "<", "0.75"}], ",", 
        "\[IndentingNewLine]", 
-       RowBox[{"0.75", "<", "\[Kappa]", "<", "10"}]}], "\[IndentingNewLine]", 
+       RowBox[{"0.75", "<", "\[Kappa]", "<", "2.5"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"2.5", "<", "\[Kappa]", "<", "12"}]}], "\[IndentingNewLine]", 
       "}"}]}], ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
     RowBox[{"yrules", "=", 
      RowBox[{"Table", "[", 
@@ -783,7 +796,10 @@ Cell[BoxData[
    3.7925092897996597`*^9, 3.7925092914472876`*^9}, {3.792509414448225*^9, 
    3.792509420683585*^9}, {3.792509468691081*^9, 3.7925095018125277`*^9}, {
    3.792761722687784*^9, 3.792761735958226*^9}, {3.792763934990946*^9, 
-   3.7927639553169165`*^9}},ExpressionUUID->"382477af-70a4-4ec5-bbfb-\
+   3.7927639553169165`*^9}, {3.79290588277052*^9, 3.792905900014495*^9}, {
+   3.792905931571577*^9, 3.7929061090374403`*^9}, {3.792906168657714*^9, 
+   3.7929061986869726`*^9}, {3.792906484886882*^9, 
+   3.7929065033462315`*^9}},ExpressionUUID->"382477af-70a4-4ec5-bbfb-\
 35d9ce9dbfaf"]
 },
 WindowSize->{1143, 854},
@@ -802,7 +818,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 38472, 766, 3129, "Input",ExpressionUUID->"382477af-70a4-4ec5-bbfb-35d9ce9dbfaf"]
+Cell[558, 20, 39179, 782, 3148, "Input",ExpressionUUID->"382477af-70a4-4ec5-bbfb-35d9ce9dbfaf"]
 }
 ]
 *)

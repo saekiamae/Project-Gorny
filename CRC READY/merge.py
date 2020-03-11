@@ -199,6 +199,7 @@ def main():
     load("Ionisation.csv",['ion'],nameidx=2,neg=True,nist=True,src="NIST")
     load("Dipoles.csv",['dip'],nameidx=2,nist=True,src="NIST")
     load("raw_len.csv",['str'],mod=True,src="CRC")
+    load("addlen2.csv",['str'],mod=True,src="ADR")
     load("addlen.csv",['simlen'],src="NIST")
     load("diss2.csv",["X"],en=True,src="LANGE")
     load("var2.csv",["X"],var2=True,src="NIST")

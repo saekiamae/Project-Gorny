@@ -1,22 +1,36 @@
-N1=Point({0.,0.,0.})
-SetColor(N1,Red)
-N1e1=Point({1. (0. + 1. rax),1. (0. + 1. ya[1.]),0.})
-SetColor(N1e1,Black)
-N1e2=Point({1. (0. - 0.34366 rax),1. (0. + 1. ya[2.]),1. (0. - 0.939094 \
-rax)})
-SetColor(N1e2,Black)
-N1e3=Point({1. (0. - 0.34366 rax),1. (0. - 1. ya[2.]),1. (0. - 0.939094 \
-rax)})
-SetColor(N1e3,Black)
-O1=Point({-0.519613,0.,-1.41991})
+S1=Point({0.,0.,0.})
+SetColor(S1,Red)
+S1e1=Point({1. (0. + 1. rax ya[1.]),                                   2
+1. (0. + 1. rax Sqrt[1. - 1. ya[1.] ]),0.})
+SetColor(S1e1,Black)
+S1e2=Point({1. (0. + 1. rax ya[1.]),                                   2
+1. (0. - 1. rax Sqrt[1. - 1. ya[1.] ]),0.})
+SetColor(S1e2,Black)
+S1e3=Point({1. (0. - 0.489824 rax ya[3.]),                                   \
+2
+1. (0. + 1. rax Sqrt[1. - 1. ya[3.] ]),1. (0. - 0.871821 rax ya[3.])})
+SetColor(S1e3,Black)
+S1e4=Point({1. (0. - 0.489824 rax ya[3.]),                                   \
+2
+1. (0. - 1. rax Sqrt[1. - 1. ya[3.] ]),1. (0. - 0.871821 rax ya[3.])})
+SetColor(S1e4,Black)
+O1=Point({1.432,0.,0.})
 SetColor(O1,Red)
-O1e1=Point({1. (0. - 0.34366 rax + 0.939094 ya[2.]),0.,1. (0. - 0.939094 rax \
-- 0.34366 ya[2.])})
+O1e1=Point({1. (0. + 1. rax ya[1.]),0.,                                   2
+1. (0. + 1. rax Sqrt[1. - 1. ya[1.] ])})
 SetColor(O1e1,Black)
-O1e2=Point({1. (0. - 0.34366 rax - 0.939094 ya[2.]),0.,1. (0. - 0.939094 rax \
-+ 0.34366 ya[2.])})
+O1e2=Point({1. (0. + 1. rax ya[1.]),0.,                                   2
+1. (0. - 1. rax Sqrt[1. - 1. ya[1.] ])})
 SetColor(O1e2,Black)
-F1=Point({1.512,0.,0.})
-SetColor(F1,Red)
-F1e1=Point({1. (0. + 1. rax),1. (0. - 1. ya[1.]),0.})
-SetColor(F1e1,Black)
+O2=Point({-0.701428,0.,-1.24845})
+SetColor(O2,Red)
+O2e1=Point({                                                               2
+1. (0. - 0.489824 rax ya[3.] + 0.871821 rax Sqrt[1. - 1. ya[3.] ]),0.,        \
+                                                       2
+1. (0. - 0.871821 rax ya[3.] - 0.489824 rax Sqrt[1. - 1. ya[3.] ])})
+SetColor(O2e1,Black)
+O2e2=Point({                                                               2
+1. (0. - 0.489824 rax ya[3.] - 0.871821 rax Sqrt[1. - 1. ya[3.] ]),0.,        \
+                                                       2
+1. (0. - 0.871821 rax ya[3.] + 0.489824 rax Sqrt[1. - 1. ya[3.] ])})
+SetColor(O2e2,Black)

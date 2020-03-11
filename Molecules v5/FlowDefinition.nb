@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     56007,       1283]
-NotebookOptionsPosition[     55579,       1268]
-NotebookOutlinePosition[     55955,       1284]
-CellTagsIndexPosition[     55912,       1281]
+NotebookDataLength[     28828,        593]
+NotebookOptionsPosition[     28499,        579]
+NotebookOutlinePosition[     28872,        595]
+CellTagsIndexPosition[     28829,        592]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -29,619 +29,23 @@ Cell[BoxData[{
     "\[IndentingNewLine]", ")"}]}], 
   "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
  RowBox[{
+  RowBox[{"APrint", "[", "x__", "]"}], ":=", 
+  RowBox[{"outp", "=", 
+   RowBox[{"StringJoin", "[", 
+    RowBox[{"outp", ",", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"ToString", "[", 
+        RowBox[{"InputForm", "[", "i", "]"}], "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"i", ",", 
+         RowBox[{"List", "[", "x", "]"}]}], "}"}]}], "]"}], ",", 
+     "\"\<\\n\>\""}], "]"}]}]}], "\[IndentingNewLine]", 
+ RowBox[{
   RowBox[{
    RowBox[{"APrint", "[", "x__", "]"}], ":=", 
-   RowBox[{"outp", "=", 
-    RowBox[{"StringJoin", "[", 
-     RowBox[{"outp", ",", 
-      RowBox[{"Table", "[", 
-       RowBox[{
-        RowBox[{"ToString", "[", 
-         RowBox[{"InputForm", "[", "i", "]"}], "]"}], ",", 
-        RowBox[{"{", 
-         RowBox[{"i", ",", 
-          RowBox[{"List", "[", "x", "]"}]}], "}"}]}], "]"}], ",", 
-      "\"\<\\n\>\""}], "]"}]}]}], "\[IndentingNewLine]", 
-  RowBox[{"(*", 
-   RowBox[{
-    RowBox[{"APrint", "[", "x__", "]"}], ":=", 
-    RowBox[{"Print", "[", "x", "]"}]}], "*)"}], 
+   RowBox[{"Print", "[", "x", "]"}]}], 
   "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"GetVars", "[", "n_", "]"}], ":=", 
-  RowBox[{"(", "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{"name", "=", "n"}], ";", "\[IndentingNewLine]", 
-    RowBox[{"dt", "=", 
-     RowBox[{"n", "/.", "data"}]}], ";", "\[IndentingNewLine]", 
-    RowBox[{"els", "=", 
-     RowBox[{
-      RowBox[{
-       RowBox[{"GetEls", "[", "name", "]"}], "/.", 
-       RowBox[{"\"\<T\>\"", "\[Rule]", "\"\<H\>\""}]}], "/.", 
-      RowBox[{"\"\<D\>\"", "\[Rule]", "\"\<H\>\""}]}]}], ";", 
-    "\[IndentingNewLine]", 
-    RowBox[{"elsx", "=", 
-     RowBox[{
-      RowBox[{
-       RowBox[{"GetElsx", "[", "name", "]"}], "/.", 
-       RowBox[{"\"\<T\>\"", "\[Rule]", "\"\<H\>\""}]}], "/.", 
-      RowBox[{"\"\<D\>\"", "\[Rule]", "\"\<H\>\""}]}]}], ";", 
-    "\[IndentingNewLine]", 
-    RowBox[{"objs", "=", 
-     RowBox[{"elsx", "[", 
-      RowBox[{"[", 
-       RowBox[{"All", ",", "1"}], "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
-    RowBox[{"Sep", "[", "]"}], ";", "\[IndentingNewLine]", 
-    RowBox[{"Print", "[", 
-     RowBox[{"\"\<Working on: \>\"", ",", "name"}], "]"}], ";", 
-    "\[IndentingNewLine]", 
-    RowBox[{"APrint", "[", "\"\<Getting informations..\>\"", "]"}], ";", 
-    "\[IndentingNewLine]", "\[IndentingNewLine]", 
-    RowBox[{"molecule", "=", 
-     RowBox[{"<|", "\[IndentingNewLine]", 
-      RowBox[{
-       RowBox[{"\"\<atcnt\>\"", "\[Rule]", 
-        RowBox[{"QE", "[", 
-         RowBox[{"\"\<atcnt\>\"", "/.", "dt"}], "]"}]}], ",", 
-       "\[IndentingNewLine]", 
-       RowBox[{"\"\<ei\>\"", "\[Rule]", 
-        RowBox[{"QE", "[", 
-         RowBox[{"\"\<ion\>\"", "/.", "dt"}], "]"}]}], ",", 
-       "\[IndentingNewLine]", 
-       RowBox[{"\"\<dm\>\"", "\[Rule]", 
-        RowBox[{
-         RowBox[{"QE", "[", 
-          RowBox[{"\"\<dip\>\"", "/.", "dt"}], "]"}], "*", "deb"}]}], ",", 
-       "\[IndentingNewLine]", 
-       RowBox[{"\"\<ms\>\"", "\[Rule]", 
-        RowBox[{"QE", "[", 
-         RowBox[{"\"\<magn\>\"", "/.", "dt"}], "]"}]}], ",", 
-       "\[IndentingNewLine]", 
-       RowBox[{"\"\<freq\>\"", "\[Rule]", 
-        RowBox[{"QE", "[", 
-         RowBox[{"\"\<freq\>\"", "/.", "dt"}], "]"}]}]}], 
-      "\[IndentingNewLine]", "|>"}]}], ";", "\[IndentingNewLine]", 
-    "\[IndentingNewLine]", 
-    RowBox[{"Which", "[", " ", 
-     RowBox[{
-      RowBox[{
-       RowBox[{"molecule", "[", "\"\<ei\>\"", "]"}], "\[Equal]", "ion"}], ",", 
-      RowBox[{"Return", "[", 
-       RowBox[{"{", 
-        RowBox[{"False", ",", "\"\<Ionisation\>\""}], "}"}], "]"}], ",", 
-      RowBox[{
-       RowBox[{"molecule", "[", "\"\<dm\>\"", "]"}], "\[Equal]", "dip"}], ",", 
-      RowBox[{"Return", "[", 
-       RowBox[{"{", 
-        RowBox[{"False", ",", "\"\<Dipole Moment\>\""}], "}"}], "]"}]}], 
-     "]"}], ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
-    RowBox[{"bonds", "=", 
-     RowBox[{"Association", "[", "]"}]}], ";", "\[IndentingNewLine]", 
-    RowBox[{"Do", "[", "\[IndentingNewLine]", 
-     RowBox[{
-      RowBox[{
-       RowBox[{"AppendTo", "[", 
-        RowBox[{"bonds", ",", 
-         RowBox[{
-          RowBox[{"i", "[", 
-           RowBox[{"[", "1", "]"}], "]"}], "\[Rule]", 
-          RowBox[{"<|", 
-           RowBox[{
-            RowBox[{"\"\<elem\>\"", "\[Rule]", 
-             RowBox[{"i", "[", 
-              RowBox[{"[", "2", "]"}], "]"}]}], ",", 
-            RowBox[{"\"\<eles\>\"", "\[Rule]", 
-             RowBox[{"{", "}"}]}], ",", 
-            RowBox[{"\"\<crg\>\"", "\[Rule]", "0"}]}], "|>"}]}]}], "]"}], 
-       ";"}], "\[IndentingNewLine]", ",", "\[IndentingNewLine]", 
-      RowBox[{"{", 
-       RowBox[{"i", ",", "elsx"}], "}"}]}], "\[IndentingNewLine]", "]"}], ";",
-     "\[IndentingNewLine]", "\[IndentingNewLine]", 
-    RowBox[{"If", "[", 
-     RowBox[{
-      RowBox[{
-       RowBox[{"(", 
-        RowBox[{"\"\<leftv\>\"", "/.", "dt"}], ")"}], "\[NotEqual]", 
-       "\"\<leftv\>\""}], ",", "\[IndentingNewLine]", 
-      RowBox[{
-       RowBox[{"Bupd", "[", 
-        RowBox[{
-         RowBox[{"elsx", "[", 
-          RowBox[{"[", 
-           RowBox[{"1", ",", "1"}], "]"}], "]"}], ",", 
-         RowBox[{"elsx", "[", 
-          RowBox[{"[", 
-           RowBox[{"2", ",", "1"}], "]"}], "]"}], ",", "\"\<var\>\"", ",", 
-         RowBox[{"{", 
-          RowBox[{
-           RowBox[{"QE", "[", 
-            RowBox[{"\"\<leftv\>\"", "/.", "dt"}], "]"}], ",", 
-           RowBox[{"QE", "[", 
-            RowBox[{"\"\<rightv\>\"", "/.", "dt"}], "]"}]}], "}"}]}], "]"}], 
-       ";"}]}], "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
-    RowBox[{"If", "[", 
-     RowBox[{
-      RowBox[{
-       RowBox[{"(", 
-        RowBox[{"\"\<simlen\>\"", "/.", "dt"}], ")"}], "\[NotEqual]", 
-       "\"\<simlen\>\""}], ",", "\[IndentingNewLine]", 
-      RowBox[{
-       RowBox[{"Bupd", "[", 
-        RowBox[{
-         RowBox[{"elsx", "[", 
-          RowBox[{"[", 
-           RowBox[{"1", ",", "1"}], "]"}], "]"}], ",", 
-         RowBox[{"elsx", "[", 
-          RowBox[{"[", 
-           RowBox[{"2", ",", "1"}], "]"}], "]"}], ",", "\"\<len\>\"", ",", 
-         RowBox[{"QE", "[", 
-          RowBox[{"\"\<simlen\>\"", "/.", "dt"}], "]"}]}], "]"}], ";"}]}], 
-     "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
-    RowBox[{"If", "[", 
-     RowBox[{
-      RowBox[{
-       RowBox[{"(", 
-        RowBox[{"\"\<dis\>\"", "/.", "dt"}], ")"}], "\[NotEqual]", 
-       "\"\<dis\>\""}], ",", "\[IndentingNewLine]", 
-      RowBox[{
-       RowBox[{"Bupd", "[", 
-        RowBox[{
-         RowBox[{"elsx", "[", 
-          RowBox[{"[", 
-           RowBox[{"1", ",", "1"}], "]"}], "]"}], ",", 
-         RowBox[{"elsx", "[", 
-          RowBox[{"[", 
-           RowBox[{"2", ",", "1"}], "]"}], "]"}], ",", "\"\<dis\>\"", ",", 
-         RowBox[{"QE", "[", 
-          RowBox[{"\"\<dis\>\"", "/.", "dt"}], "]"}]}], "]"}], ";"}]}], 
-     "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
-    "\[IndentingNewLine]", 
-    RowBox[{"Do", "[", "\[IndentingNewLine]", 
-     RowBox[{
-      RowBox[{
-       RowBox[{"If", "[", 
-        RowBox[{
-         RowBox[{
-          RowBox[{"StringContainsQ", "[", 
-           RowBox[{"i", ",", "\"\<\[Angle]\>\""}], "]"}], "&&", 
-          RowBox[{"!", 
-           RowBox[{"StringContainsQ", "[", 
-            RowBox[{"i", ",", "\"\<src\>\""}], "]"}]}]}], ",", 
-         "\[IndentingNewLine]", 
-         RowBox[{
-          RowBox[{"atoms", "=", 
-           RowBox[{"GetEls", "[", "i", "]"}]}], ";", "\[IndentingNewLine]", 
-          RowBox[{"buff", "=", 
-           RowBox[{"{", "}"}]}], ";", "\[IndentingNewLine]", 
-          RowBox[{"as", "=", 
-           RowBox[{"bs", "=", 
-            RowBox[{"cs", "=", "False"}]}]}], ";", "\[IndentingNewLine]", 
-          RowBox[{"Do", "[", "\[IndentingNewLine]", 
-           RowBox[{
-            RowBox[{
-             RowBox[{"If", "[", 
-              RowBox[{
-               RowBox[{
-                RowBox[{
-                 RowBox[{"j", "[", 
-                  RowBox[{"[", "2", "]"}], "]"}], "\[Equal]", 
-                 RowBox[{"atoms", "[", 
-                  RowBox[{"[", "1", "]"}], "]"}]}], "&&", 
-                RowBox[{"!", 
-                 RowBox[{"MemberQ", "[", 
-                  RowBox[{"buff", ",", 
-                   RowBox[{"j", "[", 
-                    RowBox[{"[", "1", "]"}], "]"}]}], "]"}]}], "&&", 
-                RowBox[{"!", "as"}]}], ",", "\[IndentingNewLine]", 
-               RowBox[{
-                RowBox[{"atoma", "=", 
-                 RowBox[{"j", "[", 
-                  RowBox[{"[", "1", "]"}], "]"}]}], ";", 
-                "\[IndentingNewLine]", 
-                RowBox[{"AppendTo", "[", 
-                 RowBox[{"buff", ",", 
-                  RowBox[{"j", "[", 
-                   RowBox[{"[", "1", "]"}], "]"}]}], "]"}], ";", 
-                "\[IndentingNewLine]", 
-                RowBox[{"as", "=", "True"}], ";"}]}], "\[IndentingNewLine]", 
-              "]"}], ";", "\[IndentingNewLine]", 
-             RowBox[{"If", "[", 
-              RowBox[{
-               RowBox[{
-                RowBox[{
-                 RowBox[{"j", "[", 
-                  RowBox[{"[", "2", "]"}], "]"}], "\[Equal]", 
-                 RowBox[{"atoms", "[", 
-                  RowBox[{"[", "2", "]"}], "]"}]}], "&&", 
-                RowBox[{"!", 
-                 RowBox[{"MemberQ", "[", 
-                  RowBox[{"buff", ",", 
-                   RowBox[{"j", "[", 
-                    RowBox[{"[", "1", "]"}], "]"}]}], "]"}]}], "&&", 
-                RowBox[{"!", "bs"}]}], ",", "\[IndentingNewLine]", 
-               RowBox[{
-                RowBox[{"atomb", "=", 
-                 RowBox[{"j", "[", 
-                  RowBox[{"[", "1", "]"}], "]"}]}], ";", 
-                "\[IndentingNewLine]", 
-                RowBox[{"AppendTo", "[", 
-                 RowBox[{"buff", ",", 
-                  RowBox[{"j", "[", 
-                   RowBox[{"[", "1", "]"}], "]"}]}], "]"}], ";", 
-                "\[IndentingNewLine]", 
-                RowBox[{"bs", "=", "True"}], ";"}]}], "\[IndentingNewLine]", 
-              "]"}], ";", "\[IndentingNewLine]", 
-             RowBox[{"If", "[", 
-              RowBox[{
-               RowBox[{
-                RowBox[{
-                 RowBox[{"j", "[", 
-                  RowBox[{"[", "2", "]"}], "]"}], "\[Equal]", 
-                 RowBox[{"atoms", "[", 
-                  RowBox[{"[", "3", "]"}], "]"}]}], "&&", 
-                RowBox[{"!", 
-                 RowBox[{"MemberQ", "[", 
-                  RowBox[{"buff", ",", 
-                   RowBox[{"j", "[", 
-                    RowBox[{"[", "1", "]"}], "]"}]}], "]"}]}], "&&", 
-                RowBox[{"!", "cs"}]}], ",", "\[IndentingNewLine]", 
-               RowBox[{
-                RowBox[{"atomc", "=", 
-                 RowBox[{"j", "[", 
-                  RowBox[{"[", "1", "]"}], "]"}]}], ";", 
-                "\[IndentingNewLine]", 
-                RowBox[{"AppendTo", "[", 
-                 RowBox[{"buff", ",", 
-                  RowBox[{"j", "[", 
-                   RowBox[{"[", "1", "]"}], "]"}]}], "]"}], ";", 
-                "\[IndentingNewLine]", 
-                RowBox[{"cs", "=", "True"}], ";"}]}], "\[IndentingNewLine]", 
-              "]"}], ";"}], "\[IndentingNewLine]", ",", "\[IndentingNewLine]", 
-            RowBox[{"{", 
-             RowBox[{"j", ",", "elsx"}], "}"}]}], "\[IndentingNewLine]", 
-           "]"}], ";", "\[IndentingNewLine]", 
-          RowBox[{"If", "[", 
-           RowBox[{
-            RowBox[{"!", 
-             RowBox[{"KeyExistsQ", "[", 
-              RowBox[{
-               RowBox[{"bonds", "[", "atomb", "]"}], ",", "\"\<ang\>\""}], 
-              "]"}]}], ",", "\[IndentingNewLine]", 
-            RowBox[{
-             RowBox[{
-              RowBox[{"bonds", "[", "atomb", "]"}], "[", "\"\<ang\>\"", "]"}],
-              "=", 
-             RowBox[{"{", 
-              RowBox[{"{", 
-               RowBox[{"atoma", ",", "atomc", ",", 
-                RowBox[{"QE", "[", 
-                 RowBox[{"i", "/.", "dt"}], "]"}]}], "}"}], "}"}]}], ",", 
-            "\[IndentingNewLine]", 
-            RowBox[{"AppendTo", "[", 
-             RowBox[{
-              RowBox[{
-               RowBox[{"bonds", "[", "atomb", "]"}], "[", "\"\<ang\>\"", 
-               "]"}], ",", 
-              RowBox[{"{", 
-               RowBox[{"atoma", ",", "atomc", ",", 
-                RowBox[{"QE", "[", 
-                 RowBox[{"i", "/.", "dt"}], "]"}]}], "}"}]}], "]"}]}], 
-           "\[IndentingNewLine]", "]"}]}]}], "\[IndentingNewLine]", "]"}], 
-       ";", "\[IndentingNewLine]", 
-       RowBox[{"If", "[", 
-        RowBox[{
-         RowBox[{
-          RowBox[{"StringContainsQ", "[", 
-           RowBox[{"i", ",", "\"\<\[LongDash]\>\""}], "]"}], "&&", 
-          RowBox[{"!", 
-           RowBox[{"StringContainsQ", "[", 
-            RowBox[{"i", ",", "\"\<src\>\""}], "]"}]}]}], ",", 
-         "\[IndentingNewLine]", 
-         RowBox[{
-          RowBox[{"atoms", "=", 
-           RowBox[{"GetBond", "[", 
-            RowBox[{"i", ",", "\"\<\[LongDash]\>\""}], "]"}]}], ";", 
-          "\[IndentingNewLine]", 
-          RowBox[{"alist", "=", 
-           RowBox[{"blist", "=", 
-            RowBox[{"{", "}"}]}]}], ";", "\[IndentingNewLine]", 
-          RowBox[{"Do", "[", "\[IndentingNewLine]", 
-           RowBox[{
-            RowBox[{
-             RowBox[{"If", "[", 
-              RowBox[{
-               RowBox[{
-                RowBox[{"j", "[", 
-                 RowBox[{"[", "2", "]"}], "]"}], "\[Equal]", 
-                RowBox[{"atoms", "[", 
-                 RowBox[{"[", "1", "]"}], "]"}]}], ",", "\[IndentingNewLine]", 
-               RowBox[{
-                RowBox[{"AppendTo", "[", 
-                 RowBox[{"alist", ",", 
-                  RowBox[{"j", "[", 
-                   RowBox[{"[", "1", "]"}], "]"}]}], "]"}], ";"}]}], 
-              "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
-             RowBox[{"If", "[", 
-              RowBox[{
-               RowBox[{
-                RowBox[{"j", "[", 
-                 RowBox[{"[", "2", "]"}], "]"}], "\[Equal]", 
-                RowBox[{"atoms", "[", 
-                 RowBox[{"[", "2", "]"}], "]"}]}], ",", "\[IndentingNewLine]", 
-               RowBox[{
-                RowBox[{"AppendTo", "[", 
-                 RowBox[{"blist", ",", 
-                  RowBox[{"j", "[", 
-                   RowBox[{"[", "1", "]"}], "]"}]}], "]"}], ";"}]}], 
-              "\[IndentingNewLine]", "]"}], ";"}], "\[IndentingNewLine]", ",",
-             "\[IndentingNewLine]", 
-            RowBox[{"{", 
-             RowBox[{"j", ",", "elsx"}], "}"}]}], "\[IndentingNewLine]", 
-           "]"}], ";", "\[IndentingNewLine]", 
-          RowBox[{"Do", "[", "\[IndentingNewLine]", 
-           RowBox[{
-            RowBox[{
-             RowBox[{"Bupd", "[", 
-              RowBox[{
-               RowBox[{"k", "[", 
-                RowBox[{"[", "1", "]"}], "]"}], ",", 
-               RowBox[{"k", "[", 
-                RowBox[{"[", "2", "]"}], "]"}], ",", "\"\<len\>\"", ",", 
-               RowBox[{"QE", "[", 
-                RowBox[{"i", "/.", "dt"}], "]"}]}], "]"}], ";"}], 
-            "\[IndentingNewLine]", ",", "\[IndentingNewLine]", 
-            RowBox[{"{", 
-             RowBox[{"k", ",", 
-              RowBox[{"Tuples", "[", 
-               RowBox[{"{", 
-                RowBox[{"alist", ",", "blist"}], "}"}], "]"}]}], "}"}]}], 
-           "\[IndentingNewLine]", "]"}]}]}], "\[IndentingNewLine]", "]"}], 
-       ";", "\[IndentingNewLine]", 
-       RowBox[{"If", "[", 
-        RowBox[{
-         RowBox[{
-          RowBox[{"StringContainsQ", "[", 
-           RowBox[{"i", ",", "\"\<&\>\""}], "]"}], "&&", 
-          RowBox[{"!", 
-           RowBox[{"StringContainsQ", "[", 
-            RowBox[{"i", ",", "\"\<src\>\""}], "]"}]}]}], ",", 
-         "\[IndentingNewLine]", 
-         RowBox[{
-          RowBox[{"atoms", "=", 
-           RowBox[{"GetBond", "[", 
-            RowBox[{"i", ",", "\"\<&\>\""}], "]"}]}], ";", 
-          "\[IndentingNewLine]", 
-          RowBox[{"alist", "=", 
-           RowBox[{"blist", "=", 
-            RowBox[{"{", "}"}]}]}], ";", "\[IndentingNewLine]", 
-          RowBox[{"Do", "[", "\[IndentingNewLine]", 
-           RowBox[{
-            RowBox[{
-             RowBox[{"If", "[", 
-              RowBox[{
-               RowBox[{
-                RowBox[{"j", "[", 
-                 RowBox[{"[", "2", "]"}], "]"}], "\[Equal]", 
-                RowBox[{"atoms", "[", 
-                 RowBox[{"[", "1", "]"}], "]"}]}], ",", "\[IndentingNewLine]", 
-               RowBox[{
-                RowBox[{"AppendTo", "[", 
-                 RowBox[{"alist", ",", 
-                  RowBox[{"j", "[", 
-                   RowBox[{"[", "1", "]"}], "]"}]}], "]"}], ";"}]}], 
-              "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
-             RowBox[{"If", "[", 
-              RowBox[{
-               RowBox[{
-                RowBox[{"j", "[", 
-                 RowBox[{"[", "2", "]"}], "]"}], "\[Equal]", 
-                RowBox[{"atoms", "[", 
-                 RowBox[{"[", "2", "]"}], "]"}]}], ",", "\[IndentingNewLine]", 
-               RowBox[{
-                RowBox[{"AppendTo", "[", 
-                 RowBox[{"blist", ",", 
-                  RowBox[{"j", "[", 
-                   RowBox[{"[", "1", "]"}], "]"}]}], "]"}], ";"}]}], 
-              "\[IndentingNewLine]", "]"}], ";"}], "\[IndentingNewLine]", ",",
-             "\[IndentingNewLine]", 
-            RowBox[{"{", 
-             RowBox[{"j", ",", "elsx"}], "}"}]}], "\[IndentingNewLine]", 
-           "]"}], ";", "\[IndentingNewLine]", 
-          RowBox[{"Do", "[", "\[IndentingNewLine]", 
-           RowBox[{
-            RowBox[{
-             RowBox[{"Bupd", "[", 
-              RowBox[{
-               RowBox[{"k", "[", 
-                RowBox[{"[", "1", "]"}], "]"}], ",", 
-               RowBox[{"k", "[", 
-                RowBox[{"[", "2", "]"}], "]"}], ",", "\"\<dis\>\"", ",", 
-               RowBox[{"QE", "[", 
-                RowBox[{"i", "/.", "dt"}], "]"}]}], "]"}], ";"}], 
-            "\[IndentingNewLine]", ",", "\[IndentingNewLine]", 
-            RowBox[{"{", 
-             RowBox[{"k", ",", 
-              RowBox[{"Tuples", "[", 
-               RowBox[{"{", 
-                RowBox[{"alist", ",", "blist"}], "}"}], "]"}]}], "}"}]}], 
-           "\[IndentingNewLine]", "]"}]}]}], "\[IndentingNewLine]", "]"}], 
-       ";", "\[IndentingNewLine]", 
-       RowBox[{"If", "[", 
-        RowBox[{
-         RowBox[{
-          RowBox[{"StringContainsQ", "[", 
-           RowBox[{"i", ",", "\"\<#\>\""}], "]"}], "&&", 
-          RowBox[{"!", 
-           RowBox[{"StringContainsQ", "[", 
-            RowBox[{"i", ",", "\"\<src\>\""}], "]"}]}]}], ",", 
-         "\[IndentingNewLine]", 
-         RowBox[{
-          RowBox[{"atoms", "=", 
-           RowBox[{"GetBond", "[", 
-            RowBox[{"i", ",", "\"\<#\>\""}], "]"}]}], ";", 
-          "\[IndentingNewLine]", 
-          RowBox[{"alist", "=", 
-           RowBox[{"blist", "=", 
-            RowBox[{"{", "}"}]}]}], ";", "\[IndentingNewLine]", 
-          RowBox[{"Do", "[", "\[IndentingNewLine]", 
-           RowBox[{
-            RowBox[{
-             RowBox[{"If", "[", 
-              RowBox[{
-               RowBox[{
-                RowBox[{"j", "[", 
-                 RowBox[{"[", "2", "]"}], "]"}], "\[Equal]", 
-                RowBox[{"atoms", "[", 
-                 RowBox[{"[", "1", "]"}], "]"}]}], ",", "\[IndentingNewLine]", 
-               RowBox[{
-                RowBox[{"AppendTo", "[", 
-                 RowBox[{"alist", ",", 
-                  RowBox[{"j", "[", 
-                   RowBox[{"[", "1", "]"}], "]"}]}], "]"}], ";"}]}], 
-              "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
-             RowBox[{"If", "[", 
-              RowBox[{
-               RowBox[{
-                RowBox[{"j", "[", 
-                 RowBox[{"[", "2", "]"}], "]"}], "\[Equal]", 
-                RowBox[{"atoms", "[", 
-                 RowBox[{"[", "2", "]"}], "]"}]}], ",", "\[IndentingNewLine]", 
-               RowBox[{
-                RowBox[{"AppendTo", "[", 
-                 RowBox[{"blist", ",", 
-                  RowBox[{"j", "[", 
-                   RowBox[{"[", "1", "]"}], "]"}]}], "]"}], ";"}]}], 
-              "\[IndentingNewLine]", "]"}], ";"}], "\[IndentingNewLine]", ",",
-             "\[IndentingNewLine]", 
-            RowBox[{"{", 
-             RowBox[{"j", ",", "elsx"}], "}"}]}], "\[IndentingNewLine]", 
-           "]"}], ";", "\[IndentingNewLine]", 
-          RowBox[{"Do", "[", "\[IndentingNewLine]", 
-           RowBox[{
-            RowBox[{
-             RowBox[{"Bupd", "[", 
-              RowBox[{
-               RowBox[{"k", "[", 
-                RowBox[{"[", "1", "]"}], "]"}], ",", 
-               RowBox[{"k", "[", 
-                RowBox[{"[", "2", "]"}], "]"}], ",", "\"\<var\>\"", ",", 
-               RowBox[{"QE", "[", 
-                RowBox[{"i", "/.", "dt"}], "]"}]}], "]"}], ";"}], 
-            "\[IndentingNewLine]", ",", "\[IndentingNewLine]", 
-            RowBox[{"{", 
-             RowBox[{"k", ",", 
-              RowBox[{"Tuples", "[", 
-               RowBox[{"{", 
-                RowBox[{"alist", ",", "blist"}], "}"}], "]"}]}], "}"}]}], 
-           "\[IndentingNewLine]", "]"}]}]}], "\[IndentingNewLine]", "]"}], 
-       ";"}], "\[IndentingNewLine]", ",", "\[IndentingNewLine]", 
-      RowBox[{"{", 
-       RowBox[{"i", ",", 
-        RowBox[{"dt", "[", 
-         RowBox[{"[", 
-          RowBox[{"All", ",", "1"}], "]"}], "]"}]}], "}"}]}], 
-     "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
-    RowBox[{"Do", "[", "\[IndentingNewLine]", 
-     RowBox[{
-      RowBox[{
-       RowBox[{"k", "=", 
-        RowBox[{"i", "[", 
-         RowBox[{"[", "1", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
-       RowBox[{"If", "[", 
-        RowBox[{
-         RowBox[{
-          RowBox[{"Length", "[", 
-           RowBox[{
-            RowBox[{"bonds", "[", "k", "]"}], "[", "\"\<dt\>\"", "]"}], "]"}],
-           "\[Equal]", "0"}], ",", "\[IndentingNewLine]", 
-         RowBox[{
-          RowBox[{"control", "=", 
-           RowBox[{"{", 
-            RowBox[{"False", ",", 
-             RowBox[{"\"\<Bond for \>\"", "<>", "k"}]}], "}"}]}], ";"}]}], 
-        "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
-       RowBox[{"Do", "[", "\[IndentingNewLine]", 
-        RowBox[{
-         RowBox[{
-          RowBox[{"control", "=", 
-           RowBox[{"Which", "[", 
-            RowBox[{
-             RowBox[{"!", 
-              RowBox[{"KeyExistsQ", "[", 
-               RowBox[{
-                RowBox[{
-                 RowBox[{"bonds", "[", "k", "]"}], "[", "j", "]"}], ",", 
-                "\"\<dv\>\""}], "]"}]}], ",", 
-             RowBox[{"{", 
-              RowBox[{"False", ",", 
-               RowBox[{
-               "\"\<Valency for \>\"", "<>", "k", "<>", "\"\< and \>\"", "<>",
-                 "j"}]}], "}"}], ",", 
-             RowBox[{"!", 
-              RowBox[{"KeyExistsQ", "[", 
-               RowBox[{
-                RowBox[{
-                 RowBox[{"bonds", "[", "k", "]"}], "[", "j", "]"}], ",", 
-                "\"\<ln\>\""}], "]"}]}], ",", 
-             RowBox[{"{", 
-              RowBox[{"False", ",", 
-               RowBox[{
-               "\"\<Length for \>\"", "<>", "k", "<>", "\"\<and\>\"", "<>", 
-                "j"}]}], "}"}], ",", 
-             RowBox[{"!", 
-              RowBox[{"KeyExistsQ", "[", 
-               RowBox[{
-                RowBox[{
-                 RowBox[{"bonds", "[", "k", "]"}], "[", "j", "]"}], ",", 
-                "\"\<ds\>\""}], "]"}]}], ",", 
-             RowBox[{"{", 
-              RowBox[{"False", ",", 
-               RowBox[{
-               "\"\<Dissociation for \>\"", "<>", "k", "<>", "\"\<and\>\"", "<>",
-                 "j"}]}], "}"}], ",", "True", ",", 
-             RowBox[{"{", 
-              RowBox[{"True", ",", "\"\<\>\""}], "}"}]}], "]"}]}], ";"}], ",",
-          "\[IndentingNewLine]", 
-         RowBox[{"{", 
-          RowBox[{"j", ",", 
-           RowBox[{
-            RowBox[{"bonds", "[", "k", "]"}], "[", "\"\<dt\>\"", "]"}]}], 
-          "}"}]}], "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
-       RowBox[{
-        RowBox[{
-         RowBox[{"bonds", "[", "k", "]"}], "[", "\"\<tv\>\"", "]"}], "=", 
-        RowBox[{"GetGr", "[", 
-         RowBox[{"QM", "[", 
-          RowBox[{"ElementData", "[", 
-           RowBox[{
-            RowBox[{"i", "[", 
-             RowBox[{"[", "2", "]"}], "]"}], ",", "\"\<Group\>\""}], "]"}], 
-          "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
-       RowBox[{
-        RowBox[{
-         RowBox[{"bonds", "[", "k", "]"}], "[", "\"\<rr\>\"", "]"}], "=", 
-        RowBox[{"QM", "[", 
-         RowBox[{"ElementData", "[", 
-          RowBox[{
-           RowBox[{"i", "[", 
-            RowBox[{"[", "2", "]"}], "]"}], ",", "\"\<AtomicRadius\>\""}], 
-          "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
-       RowBox[{
-        RowBox[{
-         RowBox[{"bonds", "[", "k", "]"}], "[", "\"\<ma\>\"", "]"}], "=", 
-        RowBox[{"QM", "[", 
-         RowBox[{"ElementData", "[", 
-          RowBox[{
-           RowBox[{"i", "[", 
-            RowBox[{"[", "2", "]"}], "]"}], ",", "\"\<AtomicWeight\>\""}], 
-          "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", ",", 
-      "\[IndentingNewLine]", 
-      RowBox[{"{", 
-       RowBox[{"i", ",", "elsx"}], "}"}]}], "\[IndentingNewLine]", "]"}], ";",
-     "\[IndentingNewLine]", "\[IndentingNewLine]", 
-    RowBox[{"Return", "[", "control", "]"}], ";"}], "\[IndentingNewLine]", 
-   ")"}]}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{
    RowBox[{"SetMagnetism", "[", "]"}], ":=", 
@@ -949,9 +353,7 @@ Cell[BoxData[{
     RowBox[{
      RowBox[{"APrint", "[", "\"\<Applying Results..\>\"", "]"}], ";", 
      "\[IndentingNewLine]", 
-     RowBox[{"Clear", "@@", 
-      RowBox[{"rlx", "[", 
-       RowBox[{"[", "1", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"ClearVars", "[", "]"}], ";", "\[IndentingNewLine]", 
      RowBox[{"APrint", "[", 
       RowBox[{"\"\<Solval: \>\"", ",", 
        RowBox[{"SOL", "=", "SOLB"}]}], "]"}], ";", "\[IndentingNewLine]", 
@@ -998,115 +400,7 @@ Cell[BoxData[{
       RowBox[{"{", 
        RowBox[{"i", ",", "objs"}], "}"}]}], "\[IndentingNewLine]", "]"}], ";",
      "\[IndentingNewLine]", 
-    RowBox[{"GClose", "[", "]"}]}], "\[IndentingNewLine]", 
-   RowBox[{"(*", 
-    RowBox[{
-     RowBox[{"If", "[", 
-      RowBox[{
-       RowBox[{"dv", "<", "3"}], ",", 
-       RowBox[{
-        RowBox[{"A3", "=", "\"\<X\>\""}], ";", 
-        RowBox[{"B3", "=", "\"\<X\>\""}]}]}], "]"}], ";", 
-     "\[IndentingNewLine]", 
-     RowBox[{"If", "[", 
-      RowBox[{
-       RowBox[{"dv", "<", "2"}], ",", 
-       RowBox[{
-        RowBox[{"A2", "=", "\"\<X\>\""}], ";", 
-        RowBox[{"B2", "=", "\"\<X\>\""}]}]}], "]"}], ";", 
-     "\[IndentingNewLine]", "\[IndentingNewLine]", 
-     RowBox[{
-      RowBox[{"RXX", "[", "x_", "]"}], ":=", 
-      RowBox[{"Round", "[", 
-       RowBox[{
-        RowBox[{"10", "x"}], ",", "0.000000001"}], "]"}]}], ";", 
-     "\[IndentingNewLine]", 
-     RowBox[{
-      RowBox[{"RX", "[", "x_", "]"}], ":=", 
-      RowBox[{"(", 
-       RowBox[{
-        RowBox[{"If", "[", 
-         RowBox[{
-          RowBox[{
-           RowBox[{"Head", " ", "@", "x"}], "\[Equal]", "String"}], ",", 
-          RowBox[{"Return", "[", 
-           RowBox[{"(", 
-            RowBox[{"{", 
-             RowBox[{"\"\<X\>\"", ",", "\"\<X\>\"", ",", "\"\<X\>\""}], "}"}],
-             ")"}], "]"}]}], "]"}], ";", 
-        RowBox[{"(", 
-         RowBox[{"{", 
-          RowBox[{
-           RowBox[{"IQ", "[", 
-            RowBox[{"RXX", "[", 
-             RowBox[{"x", "[", 
-              RowBox[{"[", "1", "]"}], "]"}], "]"}], "]"}], ",", 
-           RowBox[{"IQ", "[", 
-            RowBox[{"RXX", "[", 
-             RowBox[{"x", "[", 
-              RowBox[{"[", "2", "]"}], "]"}], "]"}], "]"}], ",", 
-           RowBox[{"IQ", "[", 
-            RowBox[{"RXX", "[", 
-             RowBox[{"x", "[", 
-              RowBox[{"[", "3", "]"}], "]"}], "]"}], "]"}]}], "}"}], ")"}]}], 
-       ")"}]}], ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
-     RowBox[{"A1", "=", 
-      RowBox[{"RX", "[", "A1", "]"}]}], ";", "\[IndentingNewLine]", 
-     RowBox[{"A2", "=", 
-      RowBox[{"RX", "[", "A2", "]"}]}], ";", "\[IndentingNewLine]", 
-     RowBox[{"A3", "=", 
-      RowBox[{"RX", "[", "A3", "]"}]}], ";", "\[IndentingNewLine]", 
-     RowBox[{"B1", "=", 
-      RowBox[{"RX", "[", "B1", "]"}]}], ";", "\[IndentingNewLine]", 
-     RowBox[{"B2", "=", 
-      RowBox[{"RX", "[", "B2", "]"}]}], ";", "\[IndentingNewLine]", 
-     RowBox[{"B3", "=", 
-      RowBox[{"RX", "[", "B3", "]"}]}], ";", "\[IndentingNewLine]", 
-     "\[IndentingNewLine]", 
-     RowBox[{"j", "=", 
-      RowBox[{
-       FractionBox["1", "mA"], "+", 
-       FractionBox["1", "mB"]}]}], ";", "\[IndentingNewLine]", 
-     RowBox[{"\[Omega]A", "=", 
-      RowBox[{"c", 
-       SqrtBox[
-        RowBox[{
-         RowBox[{"coef", "[", 
-          RowBox[{"[", 
-           RowBox[{"1", ",", "1"}], "]"}], "]"}], "*", "j"}]]}]}], ";", 
-     "\[IndentingNewLine]", 
-     RowBox[{"\[Omega]B", "=", 
-      RowBox[{"c", 
-       SqrtBox[
-        RowBox[{
-         RowBox[{"coef", "[", 
-          RowBox[{"[", 
-           RowBox[{"2", ",", "1"}], "]"}], "]"}], "*", "j"}]]}]}], ";", 
-     "\[IndentingNewLine]", 
-     RowBox[{"\[Micro]A", "=", 
-      RowBox[{
-       FractionBox["e1", "2"], "*", "4", 
-       SuperscriptBox["LD", "2"], 
-       SqrtBox[
-        RowBox[{
-         RowBox[{"coef", "[", 
-          RowBox[{"[", 
-           RowBox[{"1", ",", "1"}], "]"}], "]"}], "*", "j"}]]}]}], ";", 
-     "\[IndentingNewLine]", 
-     RowBox[{"\[Micro]B", "=", 
-      RowBox[{
-       FractionBox["e1", "2"], "*", "4", 
-       SuperscriptBox["LD", "2"], 
-       SqrtBox[
-        RowBox[{
-         RowBox[{"coef", "[", 
-          RowBox[{"[", 
-           RowBox[{"2", ",", "1"}], "]"}], "]"}], "*", "j"}]]}]}], ";", 
-     "\[IndentingNewLine]", 
-     RowBox[{"\[CapitalDelta]\[Micro]", "=", 
-      RowBox[{"Abs", "[", 
-       RowBox[{"\[Micro]A", "-", "\[Micro]B"}], "]"}]}], ";"}], "*)"}], 
-   "\[IndentingNewLine]", ")"}]}], "\[IndentingNewLine]"}], "Input",
+    RowBox[{"GClose", "[", "]"}]}]}]}]}], "Input",
  CellChangeTimes->{{3.7848114955258503`*^9, 3.784811532821766*^9}, {
    3.784811566313727*^9, 3.7848116005336857`*^9}, {3.784811643965646*^9, 
    3.784811733417571*^9}, 3.784811778077479*^9, {3.784811908769329*^9, 
@@ -1259,15 +553,32 @@ Cell[BoxData[{
    3.7927632269465675`*^9}, 3.7927633642637463`*^9, {3.792763416613693*^9, 
    3.792763425115009*^9}, {3.792763459623909*^9, 3.792763469569934*^9}, {
    3.792763521032072*^9, 3.792763538128272*^9}, {3.7927635819032564`*^9, 
-   3.792763606771756*^9}},ExpressionUUID->"ad78d8e7-3118-4dbb-a100-\
-d764b1c9bd1b"],
-
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.792041048471465*^9, 3.792041056924863*^9}},
- CellLabel->"In[8]:=",ExpressionUUID->"19af803d-44d6-4d51-9836-be83fd7c039e"]
+   3.792763606771756*^9}, 3.7929032442978916`*^9, {3.792903334010556*^9, 
+   3.7929033355764637`*^9}, {3.7929034437713413`*^9, 3.79290348051851*^9}, {
+   3.7929035536310773`*^9, 3.792903567504531*^9}, {3.7929037787788134`*^9, 
+   3.7929038003741655`*^9}, {3.792903882730245*^9, 3.7929039367635813`*^9}, {
+   3.7929039902253065`*^9, 3.7929040162625427`*^9}, {3.7929043906609106`*^9, 
+   3.7929044043106785`*^9}, {3.7929051632869473`*^9, 3.792905242315649*^9}, {
+   3.7929106985687475`*^9, 3.792910798361076*^9}, {3.7929109379020023`*^9, 
+   3.7929110216967945`*^9}, {3.7929111117782116`*^9, 3.79291112837683*^9}, {
+   3.792911177798683*^9, 3.7929111846633587`*^9}, 3.7929112324040165`*^9, {
+   3.79291128696812*^9, 3.792911317398757*^9}, {3.792911435922429*^9, 
+   3.792911581070474*^9}, {3.7929116347588315`*^9, 3.792911646447578*^9}, {
+   3.792911686328938*^9, 3.792911764556308*^9}, {3.7929118963908386`*^9, 
+   3.792911900557662*^9}, {3.7929120287129974`*^9, 3.792912039005503*^9}, {
+   3.7929121620544586`*^9, 3.7929121752182846`*^9}, {3.792912246786393*^9, 
+   3.792912293618171*^9}, {3.7929123949731684`*^9, 3.792912398152667*^9}, {
+   3.7929124325746284`*^9, 3.7929125159257593`*^9}, {3.792912559711726*^9, 
+   3.792912689746539*^9}, {3.7929129824548273`*^9, 3.7929129882493353`*^9}, {
+   3.792913033129141*^9, 3.7929131491898127`*^9}, {3.792913281769437*^9, 
+   3.7929132819928384`*^9}, {3.7929134296477876`*^9, 3.792913472035448*^9}, {
+   3.792915292285987*^9, 3.792915293896686*^9}, {3.7929154768273544`*^9, 
+   3.792915479115266*^9}, 
+   3.792915635731052*^9},ExpressionUUID->"ad78d8e7-3118-4dbb-a100-\
+d764b1c9bd1b"]
 },
 WindowSize->{1436, 872},
-WindowMargins->{{Automatic, 115}, {-136, Automatic}},
+WindowMargins->{{Automatic, 21}, {41, Automatic}},
 Magnification:>1.2 Inherited,
 FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (March 6, 2018)",
 StyleDefinitions->"Default.nb"
@@ -1283,8 +594,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 54844, 1242, 6597, "Input",ExpressionUUID->"ad78d8e7-3118-4dbb-a100-d764b1c9bd1b"],
-Cell[55405, 1264, 170, 2, 35, "Input",ExpressionUUID->"19af803d-44d6-4d51-9836-be83fd7c039e"]
+Cell[558, 20, 27937, 557, 2549, "Input",ExpressionUUID->"ad78d8e7-3118-4dbb-a100-d764b1c9bd1b"]
 }
 ]
 *)

@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     84858,       1277]
-NotebookOptionsPosition[     84527,       1263]
-NotebookOutlinePosition[     84901,       1279]
-CellTagsIndexPosition[     84858,       1276]
+NotebookDataLength[     85580,       1293]
+NotebookOptionsPosition[     85249,       1279]
+NotebookOutlinePosition[     85623,       1295]
+CellTagsIndexPosition[     85580,       1292]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -40,7 +40,7 @@ Cell[BoxData[{
          RowBox[{"outp", "=", "\"\<\>\""}], ";", "\[IndentingNewLine]", 
          RowBox[{"ClearVars", "[", "]"}], ";", "\[IndentingNewLine]", 
          RowBox[{"get", "=", 
-          RowBox[{"GetVars", "[", "n", "]"}]}], ";", "\[IndentingNewLine]", 
+          RowBox[{"GetData", "[", "n", "]"}]}], ";", "\[IndentingNewLine]", 
          RowBox[{"If", "[", 
           RowBox[{
            RowBox[{"!", 
@@ -50,12 +50,26 @@ Cell[BoxData[{
             RowBox[{"Print", "[", 
              RowBox[{
              "\"\<Failed to generate structure for \>\"", "<>", "n", "<>", 
-              "\"\<:\\nMissing \>\"", "<>", 
-              RowBox[{"get", "[", 
-               RowBox[{"[", "2", "]"}], "]"}]}], "]"}], ";", 
+              "\"\<:\\n\>\""}], "]"}], ";", "\[IndentingNewLine]", 
+            RowBox[{"Do", "[", 
+             RowBox[{
+              RowBox[{"Print", "[", "i", "]"}], ",", 
+              RowBox[{"{", 
+               RowBox[{"i", ",", 
+                RowBox[{"get", "[", 
+                 RowBox[{"[", "2", "]"}], "]"}]}], "}"}]}], "]"}], ";", 
             "\[IndentingNewLine]", 
-            RowBox[{"Continue", "[", "]"}]}]}], "\[IndentingNewLine]", "]"}], 
-         ";", "\[IndentingNewLine]", 
+            RowBox[{"Continue", "[", "]"}]}], "\[IndentingNewLine]", ",", 
+           "\[IndentingNewLine]", 
+           RowBox[{
+            RowBox[{"Do", "[", 
+             RowBox[{
+              RowBox[{"Print", "[", "i", "]"}], ",", 
+              RowBox[{"{", 
+               RowBox[{"i", ",", 
+                RowBox[{"get", "[", 
+                 RowBox[{"[", "2", "]"}], "]"}]}], "}"}]}], "]"}], ";"}]}], 
+          "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
          RowBox[{"SetGeometry", "[", "]"}], ";", "\[IndentingNewLine]", 
          RowBox[{"(*", 
           RowBox[{
@@ -1257,8 +1271,10 @@ SuperscriptBox[\(cm\), \(4\)]]\)]\>\"", ",", "\"\<\[Omega]A\>\"", ",",
    3.7922203810996327`*^9, 3.792220446843231*^9, {3.792224289989561*^9, 
    3.792224413209119*^9}, {3.7922257481311483`*^9, 3.7922258141994896`*^9}, {
    3.79222595221303*^9, 3.7922259536312413`*^9}, 3.792309547501093*^9, {
-   3.7927608269277735`*^9, 
-   3.792760831375535*^9}},ExpressionUUID->"9efd49e5-64f4-44ff-a3b5-\
+   3.7927608269277735`*^9, 3.792760831375535*^9}, {3.792903355559311*^9, 
+   3.7929033561145678`*^9}, {3.792911370996067*^9, 3.792911410193224*^9}, {
+   3.7929127683191366`*^9, 
+   3.792912818517917*^9}},ExpressionUUID->"9efd49e5-64f4-44ff-a3b5-\
 5b97ee196ba7"]
 },
 WindowSize->{864, 872},
@@ -1278,7 +1294,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 83965, 1241, 1466, "Input",ExpressionUUID->"9efd49e5-64f4-44ff-a3b5-5b97ee196ba7"]
+Cell[558, 20, 84687, 1257, 1538, "Input",ExpressionUUID->"9efd49e5-64f4-44ff-a3b5-5b97ee196ba7"]
 }
 ]
 *)
