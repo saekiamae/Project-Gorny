@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     40042,        817]
-NotebookOptionsPosition[     39741,        804]
-NotebookOutlinePosition[     40086,        819]
-CellTagsIndexPosition[     40043,        816]
+NotebookDataLength[     40625,        820]
+NotebookOptionsPosition[     40324,        807]
+NotebookOutlinePosition[     40669,        822]
+CellTagsIndexPosition[     40626,        819]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -30,6 +30,7 @@ Cell[BoxData[
     RowBox[{"eles", "=", 
      RowBox[{"{", "}"}]}], ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
     RowBox[{"varcnt", "=", "0"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"atcnt", "=", "0"}], ";", "\[IndentingNewLine]", 
     RowBox[{"rulesy", "=", 
      RowBox[{"<|", "|>"}]}], ";", "\[IndentingNewLine]", 
     "\[IndentingNewLine]", 
@@ -58,7 +59,7 @@ Cell[BoxData[
          RowBox[{
           RowBox[{
            RowBox[{"bonds", "[", "obj", "]"}], "[", "dest", "]"}], "[", 
-          "\"\<lv\>\"", "]"}]}], ";", "\[IndentingNewLine]", 
+          "\"\<lv\>\"", "]"}]}], ";", "\[IndentingNewLine]", "\t", 
         "\[IndentingNewLine]", 
         RowBox[{"If", "[", 
          RowBox[{
@@ -99,26 +100,19 @@ Cell[BoxData[
          RowBox[{"rulesy", ",", 
           RowBox[{
            RowBox[{"ya", "[", "varcnt", "]"}], "\[Rule]", 
-           RowBox[{"Cos", "[", 
+           RowBox[{"(*", 
             RowBox[{"{", 
              RowBox[{
               RowBox[{"{", 
-               RowBox[{
-                RowBox[{"50", "\[Degree]"}], ",", 
-                RowBox[{"30", "\[Degree]"}]}], "}"}], ",", 
+               RowBox[{"0.25", ",", "0.75"}], "}"}], ",", 
               RowBox[{"{", 
-               RowBox[{
-                RowBox[{"30", "\[Degree]"}], ",", 
-                RowBox[{"10", "\[Degree]"}]}], "}"}], ",", 
+               RowBox[{"0.75", ",", "1"}], "}"}], ",", 
               RowBox[{"{", 
-               RowBox[{
-                RowBox[{"80", "\[Degree]"}], ",", 
-                RowBox[{"50", "\[Degree]"}]}], "}"}], ",", 
-              RowBox[{"{", 
-               RowBox[{
-                RowBox[{"10", "\[Degree]"}], ",", 
-                RowBox[{"0.1", "\[Degree]"}]}], "}"}]}], "}"}], "]"}]}]}], 
-         "]"}], ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+               RowBox[{"0", ",", "0.25"}], "}"}]}], "}"}], "*)"}], 
+           RowBox[{"{", 
+            RowBox[{"{", 
+             RowBox[{"0", ",", "1"}], "}"}], "}"}]}]}], "]"}], ";", 
+        "\[IndentingNewLine]", "\[IndentingNewLine]", 
         RowBox[{"xx", "=", 
          RowBox[{"{", 
           RowBox[{
@@ -247,7 +241,7 @@ Cell[BoxData[
         RowBox[{
          RowBox[{
           RowBox[{"bonds", "[", "obj", "]"}], "[", "\"\<pos\>\"", "]"}], "=", 
-         "pos"}], ";", "\[IndentingNewLine]", 
+         "pos"}], ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
         RowBox[{"If", "[", 
          RowBox[{
           RowBox[{"KeyExistsQ", "[", 
@@ -458,12 +452,7 @@ Cell[BoxData[
     "\[IndentingNewLine]", "\[IndentingNewLine]", 
     RowBox[{"mrules", "=", 
      RowBox[{"{", "\[IndentingNewLine]", 
-      RowBox[{
-       RowBox[{"0", "<", "\[Kappa]", "<", "0.75"}], ",", 
-       "\[IndentingNewLine]", 
-       RowBox[{"0.75", "<", "\[Kappa]", "<", "2.5"}], ",", 
-       "\[IndentingNewLine]", 
-       RowBox[{"2.5", "<", "\[Kappa]", "<", "12"}]}], "\[IndentingNewLine]", 
+      RowBox[{"0", "<", "\[Kappa]", "<", "3"}], "\[IndentingNewLine]", 
       "}"}]}], ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
     RowBox[{"yrules", "=", 
      RowBox[{"Table", "[", 
@@ -548,7 +537,8 @@ Cell[BoxData[
            FractionBox[
             RowBox[{"\[Kappa]", " ", "e2", " ", 
              RowBox[{"dIon", "[", 
-              RowBox[{"io", ",", "piq"}], "]"}]}], "unit"], ",", 
+              RowBox[{"io", ",", "piq"}], "]"}]}], 
+            FractionBox["an", "unit"]], ",", 
            RowBox[{"molecule", "[", "\"\<ei\>\"", "]"}]}], "]"}], 
          "\[IndentingNewLine]", ",", "\[IndentingNewLine]", 
          RowBox[{"If", "[", 
@@ -558,7 +548,8 @@ Cell[BoxData[
             "0"}], ",", "\[IndentingNewLine]", 
            RowBox[{"Er", "[", 
             RowBox[{
-             RowBox[{"e1", " ", "unit", " ", 
+             RowBox[{"e1", " ", 
+              FractionBox["an", "unit"], " ", 
               RowBox[{"dDim", "[", "piq", "]"}]}], ",", 
              RowBox[{"molecule", "[", "\"\<dm\>\"", "]"}]}], "]"}], 
            "\[IndentingNewLine]", ",", "\[IndentingNewLine]", "0"}], 
@@ -574,8 +565,8 @@ Cell[BoxData[
               RowBox[{
                RowBox[{"KER", "[", 
                 RowBox[{"[", "1", "]"}], "]"}], ",", "piq"}], "]"}]}], 
-            "unit"], ",", "i"}], "]"}], "\[IndentingNewLine]", ",", 
-         "\[IndentingNewLine]", 
+            FractionBox["an", "unit"]], ",", "i"}], "]"}], 
+         "\[IndentingNewLine]", ",", "\[IndentingNewLine]", 
          RowBox[{"{", 
           RowBox[{"i", ",", 
            RowBox[{"Keys", "[", "ListDis", "]"}]}], "}"}]}], 
@@ -798,8 +789,20 @@ Cell[BoxData[
    3.792761722687784*^9, 3.792761735958226*^9}, {3.792763934990946*^9, 
    3.7927639553169165`*^9}, {3.79290588277052*^9, 3.792905900014495*^9}, {
    3.792905931571577*^9, 3.7929061090374403`*^9}, {3.792906168657714*^9, 
-   3.7929061986869726`*^9}, {3.792906484886882*^9, 
-   3.7929065033462315`*^9}},ExpressionUUID->"382477af-70a4-4ec5-bbfb-\
+   3.7929061986869726`*^9}, {3.792906484886882*^9, 3.7929065033462315`*^9}, {
+   3.793020437844423*^9, 3.7930204574782104`*^9}, {3.7930206409028893`*^9, 
+   3.7930206864141254`*^9}, {3.793021215054384*^9, 3.7930212497440863`*^9}, {
+   3.7930214883051043`*^9, 3.7930216197894735`*^9}, {3.7930217136151075`*^9, 
+   3.7930217621504283`*^9}, {3.7930219351801214`*^9, 
+   3.7930220263240805`*^9}, {3.79302205674992*^9, 3.7930220946122446`*^9}, {
+   3.793022141758292*^9, 3.793022165057068*^9}, {3.793022760984294*^9, 
+   3.7930227660940027`*^9}, 3.793026033119958*^9, {3.7930264202590265`*^9, 
+   3.7930264923233376`*^9}, 3.7930268050542574`*^9, {3.79302702305963*^9, 
+   3.793027024160688*^9}, {3.7930271500530715`*^9, 3.7930271964729514`*^9}, {
+   3.7930273510975103`*^9, 3.793027358118738*^9}, {3.7930274039970646`*^9, 
+   3.793027406207157*^9}, {3.793027697684203*^9, 3.793027701107054*^9}, {
+   3.793027742099447*^9, 3.79302779680517*^9}, {3.793027991760893*^9, 
+   3.79302799222565*^9}},ExpressionUUID->"382477af-70a4-4ec5-bbfb-\
 35d9ce9dbfaf"]
 },
 WindowSize->{1143, 854},
@@ -818,7 +821,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 39179, 782, 3148, "Input",ExpressionUUID->"382477af-70a4-4ec5-bbfb-35d9ce9dbfaf"]
+Cell[558, 20, 39762, 785, 3260, "Input",ExpressionUUID->"382477af-70a4-4ec5-bbfb-35d9ce9dbfaf"]
 }
 ]
 *)
