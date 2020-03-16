@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     14724,        418]
-NotebookOptionsPosition[     14329,        404]
-NotebookOutlinePosition[     14674,        419]
-CellTagsIndexPosition[     14631,        416]
+NotebookDataLength[     15642,        445]
+NotebookOptionsPosition[     15247,        431]
+NotebookOutlinePosition[     15592,        446]
+CellTagsIndexPosition[     15549,        443]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -149,6 +149,21 @@ Cell[BoxData[{
    FractionBox[
     RowBox[{"x", "+", "y"}], "2"], "]"}]}], "\[IndentingNewLine]", 
  RowBox[{
+  RowBox[{"Heron", "[", 
+   RowBox[{"a_", ",", "b_", ",", "c_"}], "]"}], ":=", 
+  RowBox[{
+   SqrtBox[
+    RowBox[{"p", 
+     RowBox[{"(", 
+      RowBox[{"p", "-", "a"}], ")"}], 
+     RowBox[{"(", 
+      RowBox[{"p", "-", "b"}], ")"}], 
+     RowBox[{"(", 
+      RowBox[{"p", "-", "c"}], ")"}]}]], "/.", 
+   RowBox[{"p", "\[Rule]", 
+    FractionBox[
+     RowBox[{"a", "+", "b", "+", "c"}], "2"]}]}]}], "\[IndentingNewLine]", 
+ RowBox[{
   RowBox[{"CosL", "[", 
    RowBox[{"x_", ",", "y_", ",", "a_"}], "]"}], ":=", 
   SqrtBox[
@@ -165,6 +180,15 @@ Cell[BoxData[{
     SuperscriptBox["x", "2"], "+", 
     SuperscriptBox["y", "2"], "-", 
     RowBox[{"2", "x", " ", "y", " ", "*", "v"}]}]]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"ACoL", "[", 
+   RowBox[{"x_", ",", "y_", ",", "z_"}], "]"}], ":=", 
+  FractionBox[
+   RowBox[{
+    SuperscriptBox["x", "2"], "+", 
+    SuperscriptBox["y", "2"], "-", 
+    SuperscriptBox["z", "2"]}], 
+   RowBox[{"2", "x", " ", "y"}]]}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"Rv", "[", "x_", "]"}], ":=", 
   SqrtBox[
@@ -388,8 +412,11 @@ Cell[BoxData[{
    3.791871869984479*^9, 3.7918719357785254`*^9}, {3.7927584132270813`*^9, 
    3.7927584196122017`*^9}, 3.7927586356968966`*^9, 3.7927587598712807`*^9, {
    3.7927602215488467`*^9, 3.7927602218973017`*^9}, {3.7927603018628607`*^9, 
-   3.7927603249772673`*^9}, {3.7929132298761034`*^9, 
-   3.792913238383357*^9}},ExpressionUUID->"5f088378-fe54-448c-8beb-\
+   3.7927603249772673`*^9}, {3.7929132298761034`*^9, 3.792913238383357*^9}, {
+   3.79333683609804*^9, 3.79333683638228*^9}, {3.7933371266644897`*^9, 
+   3.7933371656931324`*^9}, {3.793337205717478*^9, 3.7933372443651695`*^9}, {
+   3.793337278931717*^9, 
+   3.7933372924126644`*^9}},ExpressionUUID->"5f088378-fe54-448c-8beb-\
 4f3d71f8213d"],
 
 Cell[BoxData[""], "Input",
@@ -418,8 +445,8 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 13135, 372, 1183, "Input",ExpressionUUID->"5f088378-fe54-448c-8beb-4f3d71f8213d"],
-Cell[13696, 394, 629, 8, 28, "Input",ExpressionUUID->"9db6b824-c849-4564-b6bf-a6c9f29c4b81"]
+Cell[558, 20, 14053, 399, 1282, "Input",ExpressionUUID->"5f088378-fe54-448c-8beb-4f3d71f8213d"],
+Cell[14614, 421, 629, 8, 28, "Input",ExpressionUUID->"9db6b824-c849-4564-b6bf-a6c9f29c4b81"]
 }
 ]
 *)
