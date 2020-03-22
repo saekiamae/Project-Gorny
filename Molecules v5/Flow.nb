@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     86243,       1294]
-NotebookOptionsPosition[     85912,       1280]
-NotebookOutlinePosition[     86286,       1296]
-CellTagsIndexPosition[     86243,       1293]
+NotebookDataLength[     86382,       1296]
+NotebookOptionsPosition[     86051,       1282]
+NotebookOutlinePosition[     86425,       1298]
+CellTagsIndexPosition[     86382,       1295]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -23,6 +23,8 @@ Cell[BoxData[
   RowBox[{"Main", "[", "]"}], ":=", 
   RowBox[{"(", "\[IndentingNewLine]", 
    RowBox[{
+    RowBox[{"Print", "[", "\"\<Starting..\>\"", "]"}], ";", 
+    "\[IndentingNewLine]", 
     RowBox[{"RUN", "[", "\"\<data.json\>\"", "]"}], ";", 
     "\[IndentingNewLine]", 
     RowBox[{"cT", "=", 
@@ -1274,8 +1276,8 @@ SuperscriptBox[\(cm\), \(4\)]]\)]\>\"", ",", "\"\<\[Omega]A\>\"", ",",
    3.7929127683191366`*^9, 3.792912818517917*^9}, {3.793166759147417*^9, 
    3.793166781265274*^9}, {3.7931668656486454`*^9, 3.7931668880866547`*^9}, 
    3.7931675274553623`*^9, {3.793168201026469*^9, 3.793168205233221*^9}, {
-   3.793287508117025*^9, 
-   3.79328751355681*^9}},ExpressionUUID->"9efd49e5-64f4-44ff-a3b5-\
+   3.793287508117025*^9, 3.79328751355681*^9}, {3.7938665202453423`*^9, 
+   3.7938665319896584`*^9}},ExpressionUUID->"9efd49e5-64f4-44ff-a3b5-\
 5b97ee196ba7"]
 },
 WindowSize->{864, 872},
@@ -1295,7 +1297,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 85350, 1258, 1597, "Input",ExpressionUUID->"9efd49e5-64f4-44ff-a3b5-5b97ee196ba7"]
+Cell[558, 20, 85489, 1260, 1621, "Input",ExpressionUUID->"9efd49e5-64f4-44ff-a3b5-5b97ee196ba7"]
 }
 ]
 *)
