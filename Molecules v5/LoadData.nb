@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     45515,       1031]
-NotebookOptionsPosition[     45185,       1017]
-NotebookOutlinePosition[     45559,       1033]
-CellTagsIndexPosition[     45516,       1030]
+NotebookDataLength[     45659,       1033]
+NotebookOptionsPosition[     45329,       1019]
+NotebookOutlinePosition[     45703,       1035]
+CellTagsIndexPosition[     45660,       1032]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -214,30 +214,32 @@ Cell[BoxData[
        RowBox[{
         RowBox[{
          RowBox[{"bonds", "[", "k", "]"}], "[", "\"\<color\>\"", "]"}], "=", 
-        RowBox[{"Switch", "[", 
-         RowBox[{
+        RowBox[{"\"\<\\\"\>\"", "<>", 
+         RowBox[{"Switch", "[", 
           RowBox[{
-           RowBox[{"bonds", "[", "k", "]"}], "[", "\"\<elem\>\"", "]"}], ",", 
-          "\[IndentingNewLine]", "\"\<O\>\"", ",", "\"\<#00FFFF\>\"", ",", 
-          "\[IndentingNewLine]", "\"\<S\>\"", ",", "\"\<#00FFCC\>\"", ",", 
-          "\[IndentingNewLine]", "\"\<Se\>\"", ",", "\"\<#00FFAA\>\"", ",", 
-          "\[IndentingNewLine]", "\"\<H\>\"", ",", "\"\<Red\>\"", ",", 
-          "\[IndentingNewLine]", "\"\<N\>\"", ",", "\"\<Orange\>\"", ",", 
-          "\[IndentingNewLine]", "\"\<S\>\"", ",", "\"\<Brown\>\"", ",", 
-          "\[IndentingNewLine]", "\"\<F\>\"", ",", "\"\<#FF00FF\>\"", ",", 
-          "\[IndentingNewLine]", "\"\<Cl\>\"", ",", "\"\<#DD00FF\>\"", ",", 
-          "\[IndentingNewLine]", "\"\<Br\>\"", ",", "\"\<#BB00FF\>\"", ",", 
-          "\[IndentingNewLine]", "\"\<I\>\"", ",", "\"\<#9900FF\>\"", ",", 
-          "\[IndentingNewLine]", "\"\<Li\>\"", ",", "\"\<#0000FF\>\"", ",", 
-          "\[IndentingNewLine]", "\"\<Na\>\"", ",", "\"\<#0000EE\>\"", ",", 
-          "\[IndentingNewLine]", "\"\<K\>\"", ",", "\"\<#0000DD\>\"", ",", 
-          "\[IndentingNewLine]", "\"\<Rb\>\"", ",", "\"\<#0000CC\>\"", ",", 
-          "\[IndentingNewLine]", "\"\<Cs\>\"", ",", "\"\<#0000BB\>\"", ",", 
-          "\[IndentingNewLine]", 
-          RowBox[{
-           RowBox[{"bonds", "[", "k", "]"}], "[", "\"\<elem\>\"", "]"}], ",", 
-          "\"\<White\>\""}], "\[IndentingNewLine]", "]"}]}], ";"}], 
-      "\[IndentingNewLine]", ",", "\[IndentingNewLine]", 
+           RowBox[{
+            RowBox[{"bonds", "[", "k", "]"}], "[", "\"\<elem\>\"", "]"}], ",",
+            "\[IndentingNewLine]", "\"\<O\>\"", ",", "\"\<#00FFFF\>\"", ",", 
+           "\[IndentingNewLine]", "\"\<S\>\"", ",", "\"\<#00FFCC\>\"", ",", 
+           "\[IndentingNewLine]", "\"\<Se\>\"", ",", "\"\<#00FFAA\>\"", ",", 
+           "\[IndentingNewLine]", "\"\<H\>\"", ",", "\"\<Red\>\"", ",", 
+           "\[IndentingNewLine]", "\"\<N\>\"", ",", "\"\<Orange\>\"", ",", 
+           "\[IndentingNewLine]", "\"\<S\>\"", ",", "\"\<Brown\>\"", ",", 
+           "\[IndentingNewLine]", "\"\<F\>\"", ",", "\"\<#FF00FF\>\"", ",", 
+           "\[IndentingNewLine]", "\"\<Cl\>\"", ",", "\"\<#DD00FF\>\"", ",", 
+           "\[IndentingNewLine]", "\"\<Br\>\"", ",", "\"\<#BB00FF\>\"", ",", 
+           "\[IndentingNewLine]", "\"\<I\>\"", ",", "\"\<#9900FF\>\"", ",", 
+           "\[IndentingNewLine]", "\"\<Li\>\"", ",", "\"\<#0000FF\>\"", ",", 
+           "\[IndentingNewLine]", "\"\<Na\>\"", ",", "\"\<#0000EE\>\"", ",", 
+           "\[IndentingNewLine]", "\"\<K\>\"", ",", "\"\<#0000DD\>\"", ",", 
+           "\[IndentingNewLine]", "\"\<Rb\>\"", ",", "\"\<#0000CC\>\"", ",", 
+           "\[IndentingNewLine]", "\"\<Cs\>\"", ",", "\"\<#0000BB\>\"", ",", 
+           "\[IndentingNewLine]", 
+           RowBox[{
+            RowBox[{"bonds", "[", "k", "]"}], "[", "\"\<elem\>\"", "]"}], 
+           ",", "\"\<White\>\""}], "\[IndentingNewLine]", "]"}], "<>", 
+         "\"\<\\\"\>\""}]}], ";"}], "\[IndentingNewLine]", ",", 
+      "\[IndentingNewLine]", 
       RowBox[{"{", 
        RowBox[{"i", ",", "elsx"}], "}"}]}], "\[IndentingNewLine]", "]"}], ";",
      "\[IndentingNewLine]", "\[IndentingNewLine]", 
@@ -1011,8 +1013,8 @@ Cell[BoxData[
    3.7938697615803432`*^9}, {3.793869951723765*^9, 3.79386995719646*^9}, {
    3.7938700136011763`*^9, 3.7938700639339466`*^9}, {3.79387019227986*^9, 
    3.7938702451692147`*^9}, {3.7938703165130215`*^9, 3.793870558833516*^9}, {
-   3.793870601396657*^9, 
-   3.793870655432537*^9}},ExpressionUUID->"a38efd12-1907-4c70-9a83-\
+   3.793870601396657*^9, 3.793870655432537*^9}, {3.7939917806274705`*^9, 
+   3.793991806068407*^9}},ExpressionUUID->"a38efd12-1907-4c70-9a83-\
 5d02c8484cdf"]
 },
 WindowSize->{1052, 872},
@@ -1032,7 +1034,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 44623, 995, 6488, "Input",ExpressionUUID->"a38efd12-1907-4c70-9a83-5d02c8484cdf"]
+Cell[558, 20, 44767, 997, 6488, "Input",ExpressionUUID->"a38efd12-1907-4c70-9a83-5d02c8484cdf"]
 }
 ]
 *)
