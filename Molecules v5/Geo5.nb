@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     42029,        831]
-NotebookOptionsPosition[     41698,        817]
-NotebookOutlinePosition[     42073,        833]
-CellTagsIndexPosition[     42030,        830]
+NotebookDataLength[     43816,        877]
+NotebookOptionsPosition[     43486,        863]
+NotebookOutlinePosition[     43860,        879]
+CellTagsIndexPosition[     43817,        876]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -457,13 +457,57 @@ Cell[BoxData[
             RowBox[{
              RowBox[{"bonds", "[", "obj", "]"}], "[", "\"\<crg\>\"", "]"}], 
             ",", "obj"}], "}"}]}], "]"}], ";"}]}], "\[IndentingNewLine]", 
-      "]"}]}], ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
-    RowBox[{"We", "[", 
+      "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"If", "[", 
      RowBox[{
-      RowBox[{"molecule", "[", "\"\<maxel\>\"", "]"}], ",", "\"\<\>\"", ",", 
-      RowBox[{"{", 
-       RowBox[{"0", ",", "0", ",", "0"}], "}"}]}], "]"}], ";", 
-    "\[IndentingNewLine]", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"molecule", "[", "\"\<str\>\"", "]"}], "\[NotEqual]", 
+       "\"\<Rh\>\""}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"We", "[", 
+        RowBox[{
+         RowBox[{"molecule", "[", "\"\<maxel\>\"", "]"}], ",", "\"\<\>\"", 
+         ",", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0", ",", "0"}], "}"}]}], "]"}], ";"}], 
+      "\[IndentingNewLine]", ",", "\[IndentingNewLine]", 
+      RowBox[{"Do", "[", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"start", "=", 
+          RowBox[{"molecule", "[", "\"\<maxrrel\>\"", "]"}]}], ";", 
+         "\[IndentingNewLine]", 
+         RowBox[{"end", "=", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"bonds", "[", "start", "]"}], "[", "\"\<dt\>\"", "]"}], 
+           "[", 
+           RowBox[{"[", "1", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+         RowBox[{"len", "=", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"bonds", "[", "start", "]"}], "[", "end", "]"}], "[", 
+           "\"\<ln\>\"", "]"}]}], ";", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"bonds", "[", "start", "]"}], "[", "\"\<pos\>\"", "]"}], 
+          "=", 
+          RowBox[{"{", 
+           RowBox[{
+            FractionBox[
+             RowBox[{"-", "len"}], "2"], ",", "0", ",", "0"}], "}"}]}], ";", 
+         "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"bonds", "[", "end", "]"}], "[", "\"\<pos\>\"", "]"}], "=", 
+          RowBox[{"{", 
+           RowBox[{
+            FractionBox[
+             RowBox[{"+", "len"}], "2"], ",", "0", ",", "0"}], "}"}]}], ";"}],
+         "\[IndentingNewLine]", ",", "\[IndentingNewLine]", 
+        RowBox[{"{", 
+         RowBox[{"i", ",", "obj"}], "}"}]}], "\[IndentingNewLine]", "]"}]}], 
+     "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
     RowBox[{"mrules", "=", 
      RowBox[{"{", "\[IndentingNewLine]", 
       RowBox[{"0", "<", "\[Kappa]", "<", "3"}], "\[IndentingNewLine]", 
@@ -812,11 +856,13 @@ Cell[BoxData[
    3.793866748662368*^9, 3.7938668004412355`*^9}, 3.7938693374224625`*^9, {
    3.79386938235448*^9, 3.793869387327832*^9}, {3.7938694901665297`*^9, 
    3.7938695035167055`*^9}, {3.7938695441025133`*^9, 
-   3.7938695602370033`*^9}},ExpressionUUID->"382477af-70a4-4ec5-bbfb-\
+   3.7938695602370033`*^9}, {3.7940396977224493`*^9, 3.79403977812347*^9}, 
+   3.7940400769107018`*^9, {3.7940404028212075`*^9, 
+   3.794040406360738*^9}},ExpressionUUID->"382477af-70a4-4ec5-bbfb-\
 35d9ce9dbfaf"]
 },
 WindowSize->{1143, 854},
-WindowMargins->{{Automatic, 109}, {116, Automatic}},
+WindowMargins->{{Automatic, 178}, {Automatic, 44}},
 Magnification:>1.1 Inherited,
 FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (March 6, 2018)",
 StyleDefinitions->"Default.nb"
@@ -832,7 +878,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 41136, 795, 3454, "Input",ExpressionUUID->"382477af-70a4-4ec5-bbfb-35d9ce9dbfaf"]
+Cell[558, 20, 42924, 841, 3777, "Input",ExpressionUUID->"382477af-70a4-4ec5-bbfb-35d9ce9dbfaf"]
 }
 ]
 *)
