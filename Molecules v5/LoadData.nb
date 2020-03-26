@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     57759,       1283]
-NotebookOptionsPosition[     57427,       1269]
-NotebookOutlinePosition[     57802,       1285]
-CellTagsIndexPosition[     57759,       1282]
+NotebookDataLength[     58161,       1292]
+NotebookOptionsPosition[     57829,       1278]
+NotebookOutlinePosition[     58204,       1294]
+CellTagsIndexPosition[     58161,       1291]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -951,7 +951,14 @@ Cell[BoxData[
                RowBox[{
                "\"\<Error: Missing length for \>\"", "<>", "k", "<>", 
                 "\"\< and \>\"", "<>", "j"}]}], "]"}]}]}], 
-           "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", ",", 
+           "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"bonds", "[", "k", "]"}], "[", "\"\<crg\>\"", "]"}], "+=", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"bonds", "[", "k", "]"}], "[", "j", "]"}], "[", 
+            "\"\<lv\>\"", "]"}]}], ";"}], "\[IndentingNewLine]", ",", 
          "\[IndentingNewLine]", 
          RowBox[{"{", 
           RowBox[{"j", ",", 
@@ -1264,11 +1271,13 @@ Cell[BoxData[
    3.7940370642887573`*^9, 3.7940370705889373`*^9}, {3.794037135122357*^9, 
    3.7940371733860736`*^9}, {3.7940375584542203`*^9, 3.79403755875342*^9}, 
    3.794037614654948*^9, {3.794037826091628*^9, 3.7940378612106977`*^9}, 
-   3.7940385877146325`*^9},ExpressionUUID->"a38efd12-1907-4c70-9a83-\
+   3.7940385877146325`*^9, {3.7942084729543924`*^9, 3.7942084900498466`*^9}, {
+   3.794208595962479*^9, 
+   3.79420862086547*^9}},ExpressionUUID->"a38efd12-1907-4c70-9a83-\
 5d02c8484cdf"]
 },
 WindowSize->{1052, 872},
-WindowMargins->{{Automatic, -168}, {Automatic, 54}},
+WindowMargins->{{508, Automatic}, {Automatic, 203}},
 Magnification:>1.3 Inherited,
 FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (March 6, 2018)",
 StyleDefinitions->"Default.nb"
@@ -1284,7 +1293,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 56865, 1247, 8395, "Input",ExpressionUUID->"a38efd12-1907-4c70-9a83-5d02c8484cdf"]
+Cell[558, 20, 57267, 1256, 8420, "Input",ExpressionUUID->"a38efd12-1907-4c70-9a83-5d02c8484cdf"]
 }
 ]
 *)
