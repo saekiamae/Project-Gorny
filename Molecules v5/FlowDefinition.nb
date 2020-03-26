@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     30469,        618]
-NotebookOptionsPosition[     30140,        604]
-NotebookOutlinePosition[     30513,        620]
-CellTagsIndexPosition[     30470,        617]
+NotebookDataLength[     30692,        621]
+NotebookOptionsPosition[     30363,        607]
+NotebookOutlinePosition[     30736,        623]
+CellTagsIndexPosition[     30693,        620]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -240,6 +240,7 @@ Cell[BoxData[{
     RowBox[{
      RowBox[{"APrint", "[", "\"\<Calculating..\>\"", "]"}], ";", 
      "\[IndentingNewLine]", 
+     RowBox[{"Clear", "[", "SOLC", "]"}], ";", "\[IndentingNewLine]", 
      RowBox[{"SetSharedVariable", "[", 
       RowBox[{"SOLC", ",", "calcstate"}], "]"}], ";", "\[IndentingNewLine]", 
      RowBox[{"SOL", "=", 
@@ -598,8 +599,10 @@ Cell[BoxData[{
    3.7931744137812834`*^9, 3.7931744200764785`*^9}, {3.7931745787575617`*^9, 
    3.79317461820113*^9}, {3.7931746993987713`*^9, 3.793174716855094*^9}, {
    3.794038961683631*^9, 3.794038967428297*^9}, {3.7940391552640605`*^9, 
-   3.794039182993913*^9}, {3.7940393648406515`*^9, 
-   3.794039487806861*^9}},ExpressionUUID->"ad78d8e7-3118-4dbb-a100-\
+   3.794039182993913*^9}, {3.7940393648406515`*^9, 3.794039487806861*^9}, {
+   3.794224756581353*^9, 3.794224815682297*^9}, {3.794225216503089*^9, 
+   3.7942252206250362`*^9}, {3.7942252561739836`*^9, 
+   3.7942252590064116`*^9}},ExpressionUUID->"ad78d8e7-3118-4dbb-a100-\
 d764b1c9bd1b"]
 },
 WindowSize->{1436, 872},
@@ -619,7 +622,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 29578, 582, 2669, "Input",ExpressionUUID->"ad78d8e7-3118-4dbb-a100-d764b1c9bd1b"]
+Cell[558, 20, 29801, 585, 2693, "Input",ExpressionUUID->"ad78d8e7-3118-4dbb-a100-d764b1c9bd1b"]
 }
 ]
 *)
