@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     30692,        621]
-NotebookOptionsPosition[     30363,        607]
-NotebookOutlinePosition[     30736,        623]
-CellTagsIndexPosition[     30693,        620]
+NotebookDataLength[     32427,        656]
+NotebookOptionsPosition[     32097,        642]
+NotebookOutlinePosition[     32471,        658]
+CellTagsIndexPosition[     32428,        655]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -242,14 +242,16 @@ Cell[BoxData[{
      "\[IndentingNewLine]", 
      RowBox[{"Clear", "[", "SOLC", "]"}], ";", "\[IndentingNewLine]", 
      RowBox[{"SetSharedVariable", "[", 
-      RowBox[{"SOLC", ",", "calcstate"}], "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"SOLC", ",", "calcstate", ",", "SOLA"}], "]"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"SOLA", "=", 
+      RowBox[{"<|", "|>"}]}], ";", "\[IndentingNewLine]", 
      RowBox[{"SOL", "=", 
-      RowBox[{"{", 
-       RowBox[{"1000", ",", 
-        RowBox[{"{", "}"}]}], "}"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"SOLC", "=", 
+       RowBox[{"{", 
+        RowBox[{"1000", ",", 
+         RowBox[{"{", "}"}]}], "}"}]}]}], ";", "\[IndentingNewLine]", 
      RowBox[{"calcstate", "=", "True"}], ";", "\[IndentingNewLine]", 
-     RowBox[{"SOLB", "=", 
-      RowBox[{"{", "SOL", "}"}]}], ";", "\[IndentingNewLine]", 
      RowBox[{
       RowBox[{"If", "[", 
        RowBox[{
@@ -297,18 +299,34 @@ Cell[BoxData[{
              RowBox[{"ClearVars", "[", "]"}], ";", "\[IndentingNewLine]", 
              RowBox[{"If", "[", 
               RowBox[{
+               RowBox[{"!", 
+                RowBox[{"KeyExistsQ", "[", 
+                 RowBox[{"SOLA", ",", "$KernelID"}], "]"}]}], ",", 
                RowBox[{
-                RowBox[{"SOL", "[", 
-                 RowBox[{"[", "1", "]"}], "]"}], "<", 
-                RowBox[{"SOLB", "[", 
-                 RowBox[{"[", "1", "]"}], "]"}]}], ",", 
-               RowBox[{"SOLB", "=", "SOL"}]}], "]"}], ";", 
+                RowBox[{"SOLA", "[", "$KernelID", "]"}], "=", 
+                RowBox[{"{", 
+                 RowBox[{"1000", ",", 
+                  RowBox[{"{", "}"}]}], "}"}]}]}], "]"}], ";", 
              "\[IndentingNewLine]", 
              RowBox[{"If", "[", 
               RowBox[{
                RowBox[{
                 RowBox[{"SOL", "[", 
-                 RowBox[{"[", "1", "]"}], "]"}], "<", "minerr"}], ",", 
+                 RowBox[{"[", "1", "]"}], "]"}], "<", 
+                RowBox[{
+                 RowBox[{"SOLA", "[", "$KernelID", "]"}], "[", 
+                 RowBox[{"[", "1", "]"}], "]"}]}], ",", 
+               RowBox[{"AppendTo", "[", 
+                RowBox[{"SOLA", ",", 
+                 RowBox[{"$KernelID", "->", "SOL"}]}], "]"}]}], "]"}], ";", 
+             "\[IndentingNewLine]", 
+             RowBox[{"If", "[", 
+              RowBox[{
+               RowBox[{
+                RowBox[{
+                 RowBox[{"SOL", "[", 
+                  RowBox[{"[", "1", "]"}], "]"}], "<", "minerr"}], "&&", 
+                RowBox[{"TestResult", "\[Equal]", "0"}]}], ",", 
                RowBox[{
                 RowBox[{"calcstate", "=", "False"}], ";", 
                 RowBox[{"SOLC", "=", "SOL"}]}]}], "]"}], ";", 
@@ -319,15 +337,23 @@ Cell[BoxData[{
                RowBox[{"Break", "[", "]"}]}], "]"}], ";"}], 
             "\[IndentingNewLine]", ",", "\[IndentingNewLine]", "tries"}], 
            "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
-          RowBox[{"If", "[", 
+          RowBox[{"Do", "[", "\[IndentingNewLine]", 
            RowBox[{
             RowBox[{
-             RowBox[{"SOLB", "[", 
-              RowBox[{"[", "1", "]"}], "]"}], "<", 
-             RowBox[{"SOLC", "[", 
-              RowBox[{"[", "1", "]"}], "]"}]}], ",", 
-            RowBox[{"SOLC", "=", "SOLB"}]}], "]"}], ";"}], 
-         "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+             RowBox[{"If", "[", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"v", "[", 
+                 RowBox[{"[", "1", "]"}], "]"}], "<", 
+                RowBox[{"SOLC", "[", 
+                 RowBox[{"[", "1", "]"}], "]"}]}], ",", 
+               RowBox[{"SOLC", "=", "v"}]}], "]"}], ";"}], 
+            "\[IndentingNewLine]", ",", "\[IndentingNewLine]", 
+            RowBox[{"{", 
+             RowBox[{"v", ",", 
+              RowBox[{"Values", "[", "SOLA", "]"}]}], "}"}]}], 
+           "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}], ";", 
+        "\[IndentingNewLine]", 
         RowBox[{"If", "[", 
          RowBox[{
           RowBox[{"!", "calcstate"}], ",", 
@@ -602,11 +628,20 @@ Cell[BoxData[{
    3.794039182993913*^9}, {3.7940393648406515`*^9, 3.794039487806861*^9}, {
    3.794224756581353*^9, 3.794224815682297*^9}, {3.794225216503089*^9, 
    3.7942252206250362`*^9}, {3.7942252561739836`*^9, 
-   3.7942252590064116`*^9}},ExpressionUUID->"ad78d8e7-3118-4dbb-a100-\
+   3.7942252590064116`*^9}, {3.7943865689454126`*^9, 
+   3.7943865773369417`*^9}, {3.794386848258331*^9, 3.7943868526226616`*^9}, {
+   3.7943869402223454`*^9, 3.7943869870750027`*^9}, {3.7943872381065855`*^9, 
+   3.794387239133891*^9}, {3.794387353414197*^9, 3.7943873729429655`*^9}, {
+   3.7943874181464443`*^9, 3.794387458929001*^9}, {3.794387499104493*^9, 
+   3.7943875162197075`*^9}, {3.79438755122513*^9, 3.794387613841569*^9}, {
+   3.794387688985605*^9, 3.7943876893586545`*^9}, {3.794387783540308*^9, 
+   3.7943878325213623`*^9}, {3.79438791079401*^9, 3.794387950425911*^9}, {
+   3.794388100608288*^9, 3.794388171179514*^9}, 3.794388594942489*^9, 
+   3.794388760682062*^9},ExpressionUUID->"ad78d8e7-3118-4dbb-a100-\
 d764b1c9bd1b"]
 },
 WindowSize->{1436, 872},
-WindowMargins->{{Automatic, 21}, {41, Automatic}},
+WindowMargins->{{Automatic, 160}, {51, Automatic}},
 Magnification:>1.2 Inherited,
 FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (March 6, 2018)",
 StyleDefinitions->"Default.nb"
@@ -622,7 +657,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 29801, 585, 2693, "Input",ExpressionUUID->"ad78d8e7-3118-4dbb-a100-d764b1c9bd1b"]
+Cell[558, 20, 31535, 620, 2813, "Input",ExpressionUUID->"ad78d8e7-3118-4dbb-a100-d764b1c9bd1b"]
 }
 ]
 *)
