@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     32427,        656]
-NotebookOptionsPosition[     32097,        642]
-NotebookOutlinePosition[     32471,        658]
-CellTagsIndexPosition[     32428,        655]
+NotebookDataLength[     32775,        661]
+NotebookOptionsPosition[     32445,        647]
+NotebookOutlinePosition[     32819,        663]
+CellTagsIndexPosition[     32776,        660]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -248,9 +248,10 @@ Cell[BoxData[{
       RowBox[{"<|", "|>"}]}], ";", "\[IndentingNewLine]", 
      RowBox[{"SOL", "=", 
       RowBox[{"SOLC", "=", 
-       RowBox[{"{", 
-        RowBox[{"1000", ",", 
-         RowBox[{"{", "}"}]}], "}"}]}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"rawSOL", "=", 
+        RowBox[{"{", 
+         RowBox[{"\[Infinity]", ",", 
+          RowBox[{"{", "}"}]}], "}"}]}]}]}], ";", "\[IndentingNewLine]", 
      RowBox[{"calcstate", "=", "True"}], ";", "\[IndentingNewLine]", 
      RowBox[{
       RowBox[{"If", "[", 
@@ -302,12 +303,10 @@ Cell[BoxData[{
                RowBox[{"!", 
                 RowBox[{"KeyExistsQ", "[", 
                  RowBox[{"SOLA", ",", "$KernelID"}], "]"}]}], ",", 
-               RowBox[{
-                RowBox[{"SOLA", "[", "$KernelID", "]"}], "=", 
-                RowBox[{"{", 
-                 RowBox[{"1000", ",", 
-                  RowBox[{"{", "}"}]}], "}"}]}]}], "]"}], ";", 
-             "\[IndentingNewLine]", 
+               RowBox[{"AppendTo", "[", 
+                RowBox[{"SOLA", ",", 
+                 RowBox[{"$KernelID", "\[Rule]", "rawSOL"}]}], "]"}]}], "]"}],
+              ";", "\[IndentingNewLine]", 
              RowBox[{"If", "[", 
               RowBox[{
                RowBox[{
@@ -336,32 +335,32 @@ Cell[BoxData[{
                RowBox[{"!", "calcstate"}], ",", 
                RowBox[{"Break", "[", "]"}]}], "]"}], ";"}], 
             "\[IndentingNewLine]", ",", "\[IndentingNewLine]", "tries"}], 
-           "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
-          RowBox[{"Do", "[", "\[IndentingNewLine]", 
-           RowBox[{
-            RowBox[{
-             RowBox[{"If", "[", 
-              RowBox[{
-               RowBox[{
-                RowBox[{"v", "[", 
-                 RowBox[{"[", "1", "]"}], "]"}], "<", 
-                RowBox[{"SOLC", "[", 
-                 RowBox[{"[", "1", "]"}], "]"}]}], ",", 
-               RowBox[{"SOLC", "=", "v"}]}], "]"}], ";"}], 
-            "\[IndentingNewLine]", ",", "\[IndentingNewLine]", 
-            RowBox[{"{", 
-             RowBox[{"v", ",", 
-              RowBox[{"Values", "[", "SOLA", "]"}]}], "}"}]}], 
-           "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}], ";", 
-        "\[IndentingNewLine]", 
+           "\[IndentingNewLine]", "]"}], ";"}], "\[IndentingNewLine]", "]"}], 
+        ";", "\[IndentingNewLine]", 
         RowBox[{"If", "[", 
          RowBox[{
           RowBox[{"!", "calcstate"}], ",", 
           RowBox[{"Break", "[", "]"}]}], "]"}], ";"}], "\[IndentingNewLine]", 
        ",", "\[IndentingNewLine]", 
        RowBox[{"{", 
-        RowBox[{"i", ",", "rules"}], "}"}]}], "\[IndentingNewLine]", "]"}]}], 
-    "\[IndentingNewLine]", ")"}]}], 
+        RowBox[{"i", ",", "rules"}], "}"}]}], "\[IndentingNewLine]", "]"}], 
+     ";", "\[IndentingNewLine]", 
+     RowBox[{"Do", "[", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"If", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"v", "[", 
+            RowBox[{"[", "1", "]"}], "]"}], "<", 
+           RowBox[{"SOLC", "[", 
+            RowBox[{"[", "1", "]"}], "]"}]}], ",", 
+          RowBox[{"SOLC", "=", "v"}]}], "]"}], ";"}], "\[IndentingNewLine]", 
+       ",", "\[IndentingNewLine]", 
+       RowBox[{"{", 
+        RowBox[{"v", ",", 
+         RowBox[{"Values", "[", "SOLA", "]"}]}], "}"}]}], 
+      "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", ")"}]}], 
   "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{
@@ -637,7 +636,13 @@ Cell[BoxData[{
    3.794387688985605*^9, 3.7943876893586545`*^9}, {3.794387783540308*^9, 
    3.7943878325213623`*^9}, {3.79438791079401*^9, 3.794387950425911*^9}, {
    3.794388100608288*^9, 3.794388171179514*^9}, 3.794388594942489*^9, 
-   3.794388760682062*^9},ExpressionUUID->"ad78d8e7-3118-4dbb-a100-\
+   3.794388760682062*^9, {3.7945363675373955`*^9, 3.7945363679143734`*^9}, 
+   3.7945365047383347`*^9, {3.7945365468173223`*^9, 3.7945365614449635`*^9}, {
+   3.79453660571257*^9, 3.7945366798819146`*^9}, {3.7945368661046305`*^9, 
+   3.794536917397502*^9}, {3.7945370445795665`*^9, 3.7945370486026144`*^9}, {
+   3.794537102959241*^9, 3.7945371198124113`*^9}, {3.794537154928955*^9, 
+   3.794537211107175*^9}, {3.794537661621375*^9, 
+   3.7945376863469763`*^9}},ExpressionUUID->"ad78d8e7-3118-4dbb-a100-\
 d764b1c9bd1b"]
 },
 WindowSize->{1436, 872},
@@ -657,7 +662,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 31535, 620, 2813, "Input",ExpressionUUID->"ad78d8e7-3118-4dbb-a100-d764b1c9bd1b"]
+Cell[558, 20, 31883, 625, 2813, "Input",ExpressionUUID->"ad78d8e7-3118-4dbb-a100-d764b1c9bd1b"]
 }
 ]
 *)
