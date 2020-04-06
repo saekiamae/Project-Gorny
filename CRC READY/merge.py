@@ -203,6 +203,7 @@ def main():
     load("addlen.csv",['simlen'],src="NIST")
     load("diss2.csv",["X"],en=True,src="LANGE")
     load("adddis.csv",["X"],src="OTHER")
+    load("adddip.csv",["dip"],src="OTHER")
     load("var2.csv",["X"],var2=True,src="NIST")
     load("addvar.csv",['leftv','rightv'],src="NIST")
     load("AB.csv",['leftv','rightv','simlen','dis','dip','ion'],adrx=[6,7,8,9,10,15],src="ADR")

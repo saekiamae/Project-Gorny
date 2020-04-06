@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     63293,       1385]
-NotebookOptionsPosition[     62962,       1371]
-NotebookOutlinePosition[     63336,       1387]
-CellTagsIndexPosition[     63293,       1384]
+NotebookDataLength[     65511,       1438]
+NotebookOptionsPosition[     65180,       1424]
+NotebookOutlinePosition[     65554,       1440]
+CellTagsIndexPosition[     65511,       1437]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -305,17 +305,66 @@ Cell[BoxData[
        RowBox[{"(", 
         RowBox[{"\"\<dis\>\"", "/.", "dt"}], ")"}], "\[NotEqual]", 
        "\"\<dis\>\""}], ",", "\[IndentingNewLine]", 
-      RowBox[{
-       RowBox[{"Bupd", "[", 
+      RowBox[{"If", "[", 
+       RowBox[{
         RowBox[{
-         RowBox[{"elsx", "[", 
-          RowBox[{"[", 
-           RowBox[{"1", ",", "1"}], "]"}], "]"}], ",", 
-         RowBox[{"elsx", "[", 
-          RowBox[{"[", 
-           RowBox[{"2", ",", "1"}], "]"}], "]"}], ",", "\"\<dis\>\"", ",", 
-         RowBox[{"QE", "[", 
-          RowBox[{"\"\<dis\>\"", "/.", "dt"}], "]"}]}], "]"}], ";"}]}], 
+         RowBox[{"!", 
+          RowBox[{"KeyExistsQ", "[", 
+           RowBox[{
+            RowBox[{"molecule", "[", "\"\<disel\>\"", "]"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"objs", "[", 
+              RowBox[{"[", "1", "]"}], "]"}], "}"}]}], "]"}]}], "&&", 
+         RowBox[{"disIgnore", "\[Equal]", "0"}]}], ",", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"val", "=", 
+          RowBox[{"QE", "[", 
+           RowBox[{"\"\<dis\>\"", "/.", "dt"}], "]"}]}], ";", 
+         "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"molecule", "[", "\"\<disel\>\"", "]"}], "[", 
+           RowBox[{"{", 
+            RowBox[{"objs", "[", 
+             RowBox[{"[", "1", "]"}], "]"}], "}"}], "]"}], "=", "val"}], ";", 
+         "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"molecule", "[", "\"\<disel\>\"", "]"}], "[", 
+           RowBox[{"{", 
+            RowBox[{"objs", "[", 
+             RowBox[{"[", "2", "]"}], "]"}], "}"}], "]"}], "=", "val"}], ";", 
+         "\[IndentingNewLine]", 
+         RowBox[{"AppendTo", "[", 
+          RowBox[{
+           RowBox[{"molecule", "[", "\"\<dis\>\"", "]"}], ",", 
+           RowBox[{"<|", 
+            RowBox[{
+             RowBox[{"\"\<val\>\"", "\[Rule]", "val"}], ",", 
+             RowBox[{"\"\<atoms\>\"", "\[Rule]", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"{", 
+                 RowBox[{"objs", "[", 
+                  RowBox[{"[", "1", "]"}], "]"}], "}"}], ",", 
+                RowBox[{"{", 
+                 RowBox[{"objs", "[", 
+                  RowBox[{"[", "2", "]"}], "]"}], "}"}]}], "}"}]}]}], 
+            "|>"}]}], "]"}], ";", "\[IndentingNewLine]", 
+         RowBox[{"AppendTo", "[", 
+          RowBox[{
+           RowBox[{"molecule", "[", "\"\<disvis\>\"", "]"}], ",", 
+           RowBox[{"Append", "[", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{"objs", "[", 
+                 RowBox[{"[", "1", "]"}], "]"}], "}"}], ",", 
+               RowBox[{"{", 
+                RowBox[{"objs", "[", 
+                 RowBox[{"[", "2", "]"}], "]"}], "}"}]}], "}"}], ",", "val"}],
+             "]"}]}], "]"}], ";"}]}], "\[IndentingNewLine]", "]"}]}], 
      "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
     "\[IndentingNewLine]", 
     RowBox[{"Do", "[", "\[IndentingNewLine]", 
@@ -1366,7 +1415,11 @@ Cell[BoxData[
    3.7945513944430294`*^9}, {3.794552202499215*^9, 3.794552222752931*^9}, {
    3.7945533689933395`*^9, 3.794553372309395*^9}, {3.7945535095849614`*^9, 
    3.7945535100915575`*^9}, {3.7945566602925253`*^9, 
-   3.7945566843729143`*^9}},ExpressionUUID->"a38efd12-1907-4c70-9a83-\
+   3.7945566843729143`*^9}, {3.795157863529051*^9, 3.79515787106988*^9}, {
+   3.7951579101762733`*^9, 3.795157911747072*^9}, {3.7951579737139287`*^9, 
+   3.795158024930895*^9}, {3.795158145442893*^9, 3.795158176718202*^9}, {
+   3.795159159119065*^9, 
+   3.7951591646761994`*^9}},ExpressionUUID->"a38efd12-1907-4c70-9a83-\
 5d02c8484cdf"]
 },
 WindowSize->{1052, 872},
@@ -1386,7 +1439,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 62400, 1349, 8845, "Input",ExpressionUUID->"a38efd12-1907-4c70-9a83-5d02c8484cdf"]
+Cell[558, 20, 64618, 1402, 8995, "Input",ExpressionUUID->"a38efd12-1907-4c70-9a83-5d02c8484cdf"]
 }
 ]
 *)
