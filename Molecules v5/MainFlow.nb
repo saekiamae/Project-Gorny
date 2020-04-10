@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     86393,       1288]
-NotebookOptionsPosition[     86063,       1274]
-NotebookOutlinePosition[     86436,       1290]
-CellTagsIndexPosition[     86393,       1287]
+NotebookDataLength[     86612,       1293]
+NotebookOptionsPosition[     86282,       1279]
+NotebookOutlinePosition[     86655,       1295]
+CellTagsIndexPosition[     86612,       1292]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -86,6 +86,10 @@ Cell[BoxData[
            "name"}], "\[IndentingNewLine]", ",", "\[IndentingNewLine]", 
           RowBox[{"Grid", "[", 
            RowBox[{"molecule", "[", "\"\<disvis\>\"", "]"}], "]"}], ",", 
+          RowBox[{"IQ", "[", 
+           RowBox[{
+            RowBox[{"molecule", "[", "\"\<dm\>\"", "]"}], "/", "deb"}], "]"}],
+           ",", 
           RowBox[{"molecule", "[", "\"\<len\>\"", "]"}], ",", 
           RowBox[{"ElePret", "[", "KER", "]"}], ",", 
           RowBox[{"ElePret", "[", "eles", "]"}], 
@@ -209,7 +213,7 @@ Cell[BoxData[
         RowBox[{
         "\"\<Molecule\>\"", "\[IndentingNewLine]", ",", 
          "\[IndentingNewLine]", "\"\<Dissociation[eV]\>\"", ",", 
-         "\"\<L[\[CapitalARing]]\>\"", ",", 
+         "\"\<P[D]\>\"", ",", "\"\<L[\[CapitalARing]]\>\"", ",", 
          "\"\<Atom Positions[\[CapitalARing]]\>\"", ",", 
          "\"\<Electron Positions[\[CapitalARing]]\>\""}], 
         "\[IndentingNewLine]", 
@@ -1269,7 +1273,8 @@ SuperscriptBox[\(cm\), \(4\)]]\)]\>\"", ",", "\"\<\[Omega]A\>\"", ",",
    3.794556002092019*^9}, {3.7945561367703905`*^9, 3.794556142577798*^9}, {
    3.7945561885088825`*^9, 3.7945562381316423`*^9}, 3.794556470725354*^9, {
    3.794556732098016*^9, 3.7945567360035696`*^9}, {3.79455677967653*^9, 
-   3.7945567961991034`*^9}},ExpressionUUID->"9efd49e5-64f4-44ff-a3b5-\
+   3.7945567961991034`*^9}, {3.795332055532203*^9, 
+   3.7953321095513463`*^9}},ExpressionUUID->"9efd49e5-64f4-44ff-a3b5-\
 5b97ee196ba7"]
 },
 WindowSize->{864, 872},
@@ -1289,7 +1294,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 85501, 1252, 1592, "Input",ExpressionUUID->"9efd49e5-64f4-44ff-a3b5-5b97ee196ba7"]
+Cell[558, 20, 85720, 1257, 1616, "Input",ExpressionUUID->"9efd49e5-64f4-44ff-a3b5-5b97ee196ba7"]
 }
 ]
 *)

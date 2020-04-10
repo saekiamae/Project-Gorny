@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     16853,        475]
-NotebookOptionsPosition[     16552,        462]
-NotebookOutlinePosition[     16897,        477]
-CellTagsIndexPosition[     16854,        474]
+NotebookDataLength[     17186,        484]
+NotebookOptionsPosition[     16885,        471]
+NotebookOutlinePosition[     17230,        486]
+CellTagsIndexPosition[     17187,        483]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -302,6 +302,14 @@ Cell[BoxData[{
   RowBox[{"QG", "[", "x_", "]"}], ":=", 
   RowBox[{"QE", "[", "x", "]"}]}], "\[IndentingNewLine]", 
  RowBox[{
+  RowBox[{"QAE", "[", 
+   RowBox[{"x_", ",", "e_"}], "]"}], ":=", 
+  RowBox[{"KeyExistsQ", "[", 
+   RowBox[{"x", ",", "e"}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"QAK", "[", "x_", "]"}], ":=", 
+  RowBox[{"Keys", "[", "x", "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
   RowBox[{"QE", "[", "x_", "]"}], ":=", 
   RowBox[{"ToExpression", "[", "x", "]"}]}], "\[IndentingNewLine]", 
  RowBox[{
@@ -456,8 +464,9 @@ Cell[BoxData[{
    3.7945556289422092`*^9, 3.79455563639919*^9}, 3.794555688016362*^9, {
    3.7945557226304455`*^9, 3.7945557909548826`*^9}, {3.794555828374734*^9, 
    3.794555962696808*^9}, 3.7945562781677256`*^9, {3.794556533351363*^9, 
-   3.794556607460415*^9}, {3.794556717392378*^9, 
-   3.7945567197717333`*^9}},ExpressionUUID->"5f088378-fe54-448c-8beb-\
+   3.794556607460415*^9}, {3.794556717392378*^9, 3.7945567197717333`*^9}, {
+   3.795326964697439*^9, 
+   3.7953270724563074`*^9}},ExpressionUUID->"5f088378-fe54-448c-8beb-\
 4f3d71f8213d"]
 },
 WindowSize->{1086, 872},
@@ -476,7 +485,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 15990, 440, 1506, "Input",ExpressionUUID->"5f088378-fe54-448c-8beb-4f3d71f8213d"]
+Cell[558, 20, 16323, 449, 1544, "Input",ExpressionUUID->"5f088378-fe54-448c-8beb-4f3d71f8213d"]
 }
 ]
 *)
